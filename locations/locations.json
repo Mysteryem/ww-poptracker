@@ -1409,149 +1409,66 @@
       },
       {
         "name": "Tower of the Gods",
-        "access_rules": [
-          "$totg_access"
-        ],
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "Chest Behind Bombable Walls",
-            "item_count": 1,
-            "access_rules": [
-              "bombs"
-            ]
+            "ref": "Tower of the Gods/Chest Behind Bombable Walls/"
           },
           {
             "name": "Pot Behind Bombable Walls",
-            "item_count": 1,
-            "access_rules": [
-              "bombs"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Tower of the Gods/Pot Behind Bombable Walls/"
           },
           {
             "name": "Hop Across Floating Boxes",
-            "item_count": 1
+            "ref": "Tower of the Gods/Hop Across Floating Boxes/"
           },
           {
             "name": "Light Two Torches",
-            "item_count": 1,
-            "access_rules": [
-              "bombs"
-            ]
+            "ref": "Tower of the Gods/Light Two Torches/"
           },
           {
             "name": "Skulls Room Chest",
-            "item_count": 1,
-            "access_rules": [
-              "bombs"
-            ]
+            "ref": "Tower of the Gods/Skulls Room Chest/"
           },
           {
             "name": "Shoot Eye Above Skulls Room Chest",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,bow"
-            ]
+            "ref": "Tower of the Gods/Shoot Eye Above Skulls Room Chest/"
           },
           {
             "name": "Tingle Statue Chest",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,totg_small:1,tunerlogic_off",
-              "bombs,totg_small:1,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Tower of the Gods/Tingle Statue Chest/"
           },
           {
             "name": "First Chest Guarded by Armos Knights",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,totg_small:1,bow"
-            ]
+            "ref": "Tower of the Gods/First Chest Guarded by Armos Knights/"
           },
           {
             "name": "Stone Tablet",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,totg_small:1,windwaker"
-            ]
+            "ref": "Tower of the Gods/Stone Tablet/"
           },
           {
             "name": "Darknut Miniboss Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "bombs,windwaker,totg_small:1,grapple,melody,sword",
-              "bombs,windwaker,totg_small:1,grapple,$can_lightarrow",
-              "bombs,windwaker,totg_small:1,grapple,melody,hammer",
-              "bombs,windwaker,totg_small:1,grapple,bow,sword",
-              "bombs,windwaker,totg_small:1,grapple,bow,hammer",
-              "bombs,windwaker,totg_small:1,$can_fly,melody,sword",
-              "bombs,windwaker,totg_small:1,$can_fly,$can_lightarrow",
-              "bombs,windwaker,totg_small:1,$can_fly,melody,hammer",
-              "bombs,windwaker,totg_small:1,$can_fly,bow,sword",
-              "bombs,windwaker,totg_small:1,$can_fly,bow,hammer"
-            ]
-          },
-          {
-            "name": "Second Chest Guarded by Armos Knights",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,$can_change_wind,melody,bow,totg_small:1,grapple",
-              "bombs,$can_change_wind,melody,bow,totg_small:1,$can_fly"
-            ]
+            "ref": "Tower of the Gods/Darknut Miniboss Room/"
           },
           {
             "name": "Floating Platforms Room",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:1,grapple",
-              "bombs,windwaker,melody,bow,totg_small:1,$can_fly"
-            ]
+            "ref": "Tower of the Gods/Floating Platforms Room/"
           },
           {
             "name": "Top of Floating Platforms Room",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:1,grapple",
-              "bombs,windwaker,melody,bow,totg_small:1,$can_fly"
-            ]
+            "ref": "Tower of the Gods/Top of Floating Platforms Room/"
           },
           {
             "name": "Eastern Pot in Big Key Chest Room",
-            "item_count": 1,
-            "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Tower of the Gods/Eastern Pot in Big Key Chest Room/"
           },
           {
             "name": "Big Key Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly"
-            ]
+            "ref": "Tower of the Gods/Big Key Chest/"
           },
           {
             "name": "Gohdan Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly,totg_big"
-            ]
+            "ref": "Tower of the Gods/Gohdan Heart Container/"
           }
         ],
         "map_locations": [
