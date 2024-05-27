@@ -1,13 +1,21 @@
 [
   {
     "name": "Earth Temple",
-    "chest_unopened_img": "images/items/chest_closed.png",
-    "chest_opened_img": "images/items/chest_open.png",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "access_rules": [
+      "$et_access"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
     "children": [
       {
+        "name": "Transparent Chest In Warp Pot Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Transparent Chest In Warp Pot Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png"
           }
         ],
         "map_locations": [
@@ -19,9 +27,16 @@
         ]
       },
       {
+        "name": "Behind Curtain In Warp Pot Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Behind Curtain In Warp Pot Room"
+            "access_rules": [
+              "$can_magicarrow,boomerang",
+              "$can_magicarrow,hookshot"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -33,9 +48,12 @@
         ]
       },
       {
+        "name": "Chest Behind Destructible Walls",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Chest Behind Destructible Walls"
+            "access_rules": [
+              "shield_2,hammer"
+            ]
           }
         ],
         "map_locations": [
@@ -47,9 +65,12 @@
         ]
       },
       {
+        "name": "Transparent Chest in First Crypt",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Transparent Chest in First Crypt"
+            "access_rules": [
+              "hammer"
+            ]
           }
         ],
         "map_locations": [
@@ -61,9 +82,14 @@
         ]
       },
       {
+        "name": "Chest In Three Blocks Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Chest In Three Blocks Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "et_small:2,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -75,9 +101,12 @@
         ]
       },
       {
+        "name": "Chest Behind Statues",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Chest Behind Statues"
+            "access_rules": [
+              "et_small:2,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -89,9 +118,12 @@
         ]
       },
       {
+        "name": "Casket in Second Crypt",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Casket in Second Crypt"
+            "access_rules": [
+              "et_small:2,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -103,9 +135,18 @@
         ]
       },
       {
+        "name": "Stalfos Miniboss Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Stalfos Miniboss Room"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "et_small:3,$can_magicarrow,sword",
+              "et_small:3,$can_magicarrow,bombs",
+              "et_small:3,$can_magicarrow,hammer",
+              "et_small:3,$can_magicarrow,hookshot",
+              "et_small:3,$can_lightarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -117,9 +158,18 @@
         ]
       },
       {
+        "name": "Tingle Statue Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Tingle Statue Chest"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "shield_2,bombs,tunerlogic_off",
+              "shield_2,bombs,tunerlogic_on,tuner"
+            ],
+            "visibility_rules": [
+              "tinglechests_on"
+            ]
           }
         ],
         "map_locations": [
@@ -131,9 +181,12 @@
         ]
       },
       {
+        "name": "End of Foggy Room With Floormasters",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/End of Foggy Room With Floormasters"
+            "access_rules": [
+              "shield_2,lyric"
+            ]
           }
         ],
         "map_locations": [
@@ -145,9 +198,15 @@
         ]
       },
       {
+        "name": "Kill All Floormasters in Foggy Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Kill All Floormasters in Foggy Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "shield_2,lyric,sword",
+              "shield_2,lyric,bow"
+            ]
           }
         ],
         "map_locations": [
@@ -159,9 +218,16 @@
         ]
       },
       {
+        "name": "Behind Curtain Next to Hammer Button",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Behind Curtain Next to Hammer Button"
+            "access_rules": [
+              "shield_2,lyric,$can_magicarrow,hookshot",
+              "shield_2,lyric,$can_magicarrow,boomerang"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -173,9 +239,12 @@
         ]
       },
       {
+        "name": "Chest in Third Crypt",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Chest in Third Crypt"
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3"
+            ]
           }
         ],
         "map_locations": [
@@ -187,9 +256,12 @@
         ]
       },
       {
+        "name": "Many Mirrors Room Left Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Many Mirrors Room Left Chest"
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3"
+            ]
           }
         ],
         "map_locations": [
@@ -201,9 +273,12 @@
         ]
       },
       {
+        "name": "Many Mirrors Room Right Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Many Mirrors Room Right Chest"
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3"
+            ]
           }
         ],
         "map_locations": [
@@ -215,9 +290,14 @@
         ]
       },
       {
+        "name": "Stalfos Crypt Room",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Stalfos Crypt Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3"
+            ]
           }
         ],
         "map_locations": [
@@ -229,9 +309,17 @@
         ]
       },
       {
+        "name": "Big Key Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Big Key Chest"
+            "chest_unopened_img": "images/items/chest_bigkey.png",
+            "chest_opened_img": "images/items/chest_bigkey_gray.png",
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3,$can_magicarrow",
+              "shield_2,lyric,hammer,et_small:3,bombs",
+              "shield_2,lyric,hammer,et_small:3,leaf",
+              "shield_2,lyric,hammer,et_small:3,hookshot"
+            ]
           }
         ],
         "map_locations": [
@@ -243,9 +331,14 @@
         ]
       },
       {
+        "name": "Jalhalla Heart Container",
         "sections": [
           {
-            "ref": "The Great Sea/Earth Temple/Jalhalla Heart Container"
+            "chest_unopened_img": "images/items/heart2.png",
+            "chest_opened_img": "images/items/heart2_gray.png",
+            "access_rules": [
+              "shield_2,lyric,hammer,et_small:3,et_big"
+            ]
           }
         ],
         "map_locations": [

@@ -2463,171 +2463,78 @@
       },
       {
         "name": "Earth Temple",
-        "access_rules": [
-          "$et_access"
-        ],
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "Transparent Chest In Warp Pot Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png"
+            "ref": "Earth Temple/Transparent Chest In Warp Pot Room/"
           },
           {
             "name": "Behind Curtain In Warp Pot Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_magicarrow,boomerang",
-              "$can_magicarrow,hookshot"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Earth Temple/Behind Curtain In Warp Pot Room/"
           },
           {
             "name": "Chest Behind Destructible Walls",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,hammer"
-            ]
+            "ref": "Earth Temple/Chest Behind Destructible Walls/"
           },
           {
             "name": "Transparent Chest in First Crypt",
-            "item_count": 1,
-            "access_rules": [
-              "hammer"
-            ]
+            "ref": "Earth Temple/Transparent Chest in First Crypt/"
           },
           {
             "name": "Chest In Three Blocks Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "et_small:2,$can_magicarrow"
-            ]
+            "ref": "Earth Temple/Chest In Three Blocks Room/"
           },
           {
             "name": "Chest Behind Statues",
-            "item_count": 1,
-            "access_rules": [
-              "et_small:2,$can_magicarrow"
-            ]
+            "ref": "Earth Temple/Chest Behind Statues/"
           },
           {
             "name": "Casket in Second Crypt",
-            "item_count": 1,
-            "access_rules": [
-              "et_small:2,$can_magicarrow"
-            ]
+            "ref": "Earth Temple/Casket in Second Crypt/"
           },
           {
             "name": "Stalfos Miniboss Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "et_small:3,$can_magicarrow,sword",
-              "et_small:3,$can_magicarrow,bombs",
-              "et_small:3,$can_magicarrow,hammer",
-              "et_small:3,$can_magicarrow,hookshot",
-              "et_small:3,$can_lightarrow"
-            ]
+            "ref": "Earth Temple/Stalfos Miniboss Room/"
           },
           {
             "name": "Tingle Statue Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "shield_2,bombs,tunerlogic_off",
-              "shield_2,bombs,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Earth Temple/Tingle Statue Chest/"
           },
           {
             "name": "End of Foggy Room With Floormasters",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,lyric"
-            ]
+            "ref": "Earth Temple/End of Foggy Room With Floormasters/"
           },
           {
             "name": "Kill All Floormasters in Foggy Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "shield_2,lyric,sword",
-              "shield_2,lyric,bow"
-            ]
+            "ref": "Earth Temple/Kill All Floormasters in Foggy Room/"
           },
           {
             "name": "Behind Curtain Next to Hammer Button",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,lyric,$can_magicarrow,hookshot",
-              "shield_2,lyric,$can_magicarrow,boomerang"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Earth Temple/Behind Curtain Next to Hammer Button/"
           },
           {
             "name": "Chest in Third Crypt",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
-            ]
+            "ref": "Earth Temple/Chest in Third Crypt/"
           },
           {
             "name": "Many Mirrors Room Left Chest",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
-            ]
+            "ref": "Earth Temple/Many Mirrors Room Left Chest/"
           },
           {
             "name": "Many Mirrors Room Right Chest",
-            "item_count": 1,
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
-            ]
+            "ref": "Earth Temple/Many Mirrors Room Right Chest/"
           },
           {
             "name": "Stalfos Crypt Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
-            ]
+            "ref": "Earth Temple/Stalfos Crypt Room/"
           },
           {
             "name": "Big Key Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3,$can_magicarrow",
-              "shield_2,lyric,hammer,et_small:3,bombs",
-              "shield_2,lyric,hammer,et_small:3,leaf",
-              "shield_2,lyric,hammer,et_small:3,hookshot"
-            ]
+            "ref": "Earth Temple/Big Key Chest/"
           },
           {
             "name": "Jalhalla Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "shield_2,lyric,hammer,et_small:3,et_big"
-            ]
+            "ref": "Earth Temple/Jalhalla Heart Container/"
           }
         ],
         "map_locations": [
