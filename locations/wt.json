@@ -1,13 +1,19 @@
 [
   {
     "name": "Wind Temple",
-    "chest_unopened_img": "images/items/chest_closed.png",
-    "chest_opened_img": "images/items/chest_open.png",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "access_rules": [
+      "$wt_access"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
     "children": [
       {
+        "name": "Chest Between Two Dirt Patches",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest Between Two Dirt Patches"
           }
         ],
         "map_locations": [
@@ -19,9 +25,15 @@
         ]
       },
       {
+        "name": "Behind Stone Head in Hidden Upper Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Behind Stone Head in Hidden Upper Room"
+            "access_rules": [
+              "$can_fly,hookshot"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -33,9 +45,18 @@
         ]
       },
       {
+        "name": "Tingle Statue Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Tingle Statue Chest"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "$can_fly,bombs,tunerlogic_off",
+              "$can_fly,bombs,tunerlogic_on,tuner"
+            ],
+            "visibility_rules": [
+              "tinglechests_on"
+            ]
           }
         ],
         "map_locations": [
@@ -47,9 +68,12 @@
         ]
       },
       {
+        "name": "Chest Behind Stone Head",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest Behind Stone Head"
+            "access_rules": [
+              "$can_fly,hookshot"
+            ]
           }
         ],
         "map_locations": [
@@ -61,9 +85,12 @@
         ]
       },
       {
+        "name": "Chest in Left Alcove",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest in Left Alcove"
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -75,9 +102,14 @@
         ]
       },
       {
+        "name": "Big Key Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Big Key Chest"
+            "chest_unopened_img": "images/items/chest_bigkey.png",
+            "chest_opened_img": "images/items/chest_bigkey_gray.png",
+            "access_rules": [
+              "$can_fly,aria"
+            ]
           }
         ],
         "map_locations": [
@@ -89,9 +121,12 @@
         ]
       },
       {
+        "name": "Chest In Many Cyclones Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest In Many Cyclones Room"
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -103,9 +138,15 @@
         ]
       },
       {
+        "name": "Behind Stone Head in Many Cyclones Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Behind Stone Head in Many Cyclones Room"
+            "access_rules": [
+              "$can_fly,hookshot"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -117,9 +158,14 @@
         ]
       },
       {
+        "name": "Chest In Middle of Hub Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest In Middle of Hub Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -131,9 +177,12 @@
         ]
       },
       {
+        "name": "Spike Wall Room - First Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Spike Wall Room - First Chest"
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -145,9 +194,14 @@
         ]
       },
       {
+        "name": "Spike Wall Room - Destroy All Cracked Floors",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Spike Wall Room - Destroy All Cracked Floors"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -159,9 +213,14 @@
         ]
       },
       {
+        "name": "Wizzrobe Miniboss Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Wizzrobe Miniboss Room"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "$can_fly,wt_small:2"
+            ]
           }
         ],
         "map_locations": [
@@ -173,9 +232,12 @@
         ]
       },
       {
+        "name": "Chest at Top of Hub Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest at Top of Hub Room"
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -187,9 +249,12 @@
         ]
       },
       {
+        "name": "Chest Behind Seven Armos",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Chest Behind Seven Armos"
+            "access_rules": [
+              "$can_fly"
+            ]
           }
         ],
         "map_locations": [
@@ -201,9 +266,12 @@
         ]
       },
       {
+        "name": "Kill All Enemies in Tall Basement Room",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Kill All Enemies in Tall Basement Room"
+            "access_rules": [
+              "$can_fly,hookshot,wt_small:2"
+            ]
           }
         ],
         "map_locations": [
@@ -215,9 +283,14 @@
         ]
       },
       {
+        "name": "Molgera Heart Container",
         "sections": [
           {
-            "ref": "The Great Sea/Wind Temple/Molgera Heart Container"
+            "chest_unopened_img": "images/items/heart2.png",
+            "chest_opened_img": "images/items/heart2_gray.png",
+            "access_rules": [
+              "$can_fly,hookshot,wt_small:2,aria,wt_big"
+            ]
           }
         ],
         "map_locations": [

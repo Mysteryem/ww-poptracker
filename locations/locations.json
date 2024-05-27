@@ -138,143 +138,70 @@
       },
       {
         "name": "Wind Temple",
-        "access_rules": [
-          "$wt_access"
-        ],
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "Chest Between Two Dirt Patches",
-            "item_count": 1
+            "ref": "Wind Temple/Chest Between Two Dirt Patches/"
           },
           {
             "name": "Behind Stone Head in Hidden Upper Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly,hookshot"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Wind Temple/Behind Stone Head in Hidden Upper Room/"
           },
           {
             "name": "Tingle Statue Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "$can_fly,bombs,tunerlogic_off",
-              "$can_fly,bombs,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Wind Temple/Tingle Statue Chest/"
           },
           {
             "name": "Chest Behind Stone Head",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly,hookshot"
-            ]
+            "ref": "Wind Temple/Chest Behind Stone Head/"
           },
           {
             "name": "Chest in Left Alcove",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Chest in Left Alcove/"
           },
           {
             "name": "Big Key Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "$can_fly,aria"
-            ]
+            "ref": "Wind Temple/Big Key Chest/"
           },
           {
             "name": "Chest In Many Cyclones Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Chest In Many Cyclones Room/"
           },
           {
             "name": "Behind Stone Head in Many Cyclones Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly,hookshot"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Wind Temple/Behind Stone Head in Many Cyclones Room/"
           },
           {
             "name": "Chest In Middle of Hub Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Chest In Middle of Hub Room/"
           },
           {
             "name": "Spike Wall Room - First Chest",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Spike Wall Room - First Chest/"
           },
           {
             "name": "Spike Wall Room - Destroy All Cracked Floors",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Spike Wall Room - Destroy All Cracked Floors/"
           },
           {
             "name": "Wizzrobe Miniboss Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "$can_fly,wt_small:2"
-            ]
+            "ref": "Wind Temple/Wizzrobe Miniboss Room/"
           },
           {
             "name": "Chest at Top of Hub Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Chest at Top of Hub Room/"
           },
           {
             "name": "Chest Behind Seven Armos",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly"
-            ]
+            "ref": "Wind Temple/Chest Behind Seven Armos/"
           },
           {
             "name": "Kill All Enemies in Tall Basement Room",
-            "item_count": 1,
-            "access_rules": [
-              "$can_fly,hookshot,wt_small:2"
-            ]
+            "ref": "Wind Temple/Kill All Enemies in Tall Basement Room/"
           },
           {
             "name": "Molgera Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "$can_fly,hookshot,wt_small:2,aria,wt_big"
-            ]
+            "ref": "The Great Sea/Wind Temple/Molgera Heart Container/"
           }
         ],
         "map_locations": [
