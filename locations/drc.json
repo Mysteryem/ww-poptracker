@@ -1,14 +1,16 @@
 [
   {
     "name": "Dragon Roost Cavern",
-    "chest_unopened_img": "images/items/chest_closed.png",
-    "chest_opened_img": "images/items/chest_open.png",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "visibility_rules": [
+      "dungeons_on"
+    ],
     "children": [
       {
+        "name": "First Room",
         "sections": [
-          {
-            "ref": "The Great Sea/Dragon Roost Cavern/First Room"
-          }
+          {}
         ],
         "map_locations": [
           {
@@ -19,9 +21,14 @@
         ]
       },
       {
+        "name": "Alcove With Water Jugs",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Alcove With Water Jugs"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "drc_small:1"
+            ]
           }
         ],
         "map_locations": [
@@ -33,9 +40,15 @@
         ]
       },
       {
+        "name": "Water Jug on Upper Shelf",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Water Jug on Upper Shelf"
+            "access_rules": [
+              "drc_small:1"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -47,9 +60,12 @@
         ]
       },
       {
+        "name": "Boarded Up Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Boarded Up Chest"
+            "access_rules": [
+              "drc_small:1"
+            ]
           }
         ],
         "map_locations": [
@@ -61,9 +77,16 @@
         ]
       },
       {
+        "name": "Chest Across Lava Pit",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Chest Across Lava Pit"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "drc_small:2,grapple",
+              "drc_small:2,$can_fly",
+              "drc_small:2,hookshot"
+            ]
           }
         ],
         "map_locations": [
@@ -75,9 +98,14 @@
         ]
       },
       {
+        "name": "Rat Room",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Rat Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "drc_small:2"
+            ]
           }
         ],
         "map_locations": [
@@ -89,9 +117,12 @@
         ]
       },
       {
+        "name": "Rat Room Boarded Up Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Rat Room Boarded Up Chest"
+            "access_rules": [
+              "drc_small:2"
+            ]
           }
         ],
         "map_locations": [
@@ -103,9 +134,12 @@
         ]
       },
       {
+        "name": "Bird's Nest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Bird's Nest"
+            "access_rules": [
+              "drc_small:3"
+            ]
           }
         ],
         "map_locations": [
@@ -117,9 +151,12 @@
         ]
       },
       {
+        "name": "Dark Room",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Dark Room"
+            "access_rules": [
+              "drc_small:4"
+            ]
           }
         ],
         "map_locations": [
@@ -131,9 +168,20 @@
         ]
       },
       {
+        "name": "Tingle Statue Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue Chest"
+            "access_rules": [
+              "grapple,bombs,drc_small:4,tunerlogic_off",
+              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_off",
+              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_off",
+              "grapple,bombs,drc_small:4,tunerlogic_on,tuner",
+              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_on,tuner",
+              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_on,tuner"
+            ],
+            "visibility_rules": [
+              "tinglechests_on"
+            ]
           }
         ],
         "map_locations": [
@@ -145,9 +193,15 @@
         ]
       },
       {
+        "name": "Pot on Upper Shelf in Pot Room",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Pot on Upper Shelf in Pot Room"
+            "access_rules": [
+              "drc_small:4"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -159,9 +213,12 @@
         ]
       },
       {
+        "name": "Pot Room Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Pot Room Chest"
+            "access_rules": [
+              "drc_small:4"
+            ]
           }
         ],
         "map_locations": [
@@ -173,9 +230,14 @@
         ]
       },
       {
+        "name": "Miniboss",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Miniboss"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "drc_small:4"
+            ]
           }
         ],
         "map_locations": [
@@ -187,9 +249,13 @@
         ]
       },
       {
+        "name": "Under Rope Bridge",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Under Rope Bridge"
+            "access_rules": [
+              "drc_small:4,grapple",
+              "drc_small:4,$can_fly,$can_change_wind"
+            ]
           }
         ],
         "map_locations": [
@@ -201,9 +267,16 @@
         ]
       },
       {
+        "name": "Tingle Statue in Hub Room",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue in Hub Room"
+            "access_rules": [
+              "drc_small:4,bombs,tunerlogic_off",
+              "drc_small:4,bombs,tunerlogic_on,tuner"
+            ],
+            "visibility_rules": [
+              "tinglechests_on"
+            ]
           }
         ],
         "map_locations": [
@@ -215,9 +288,19 @@
         ]
       },
       {
+        "name": "Big Key Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Big Key Chest"
+            "chest_unopened_img": "images/items/chest_bigkey.png",
+            "chest_opened_img": "images/items/chest_bigkey_gray.png",
+            "access_rules": [
+              "grapple,drc_small:4,sword",
+              "grapple,drc_small:4,bombs",
+              "grapple,drc_small:4,bow",
+              "grapple,drc_small:4,hammer",
+              "grapple,drc_small:1,$can_fly",
+              "grapple,drc_small:1,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -229,9 +312,15 @@
         ]
       },
       {
+        "name": "Boss Stairs Left Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Left Chest"
+            "access_rules": [
+              "drc_small:4,grapple",
+              "drc_small:4,$can_fly",
+              "drc_small:4,hookshot",
+              "drc_small:4,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -243,9 +332,15 @@
         ]
       },
       {
+        "name": "Boss Stairs Right Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Chest"
+            "access_rules": [
+              "drc_small:4,grapple",
+              "drc_small:4,$can_fly",
+              "drc_small:4,hookshot",
+              "drc_small:4,$can_magicarrow"
+            ]
           }
         ],
         "map_locations": [
@@ -257,9 +352,18 @@
         ]
       },
       {
+        "name": "Boss Stairs Right Pot",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Pot"
+            "access_rules": [
+              "drc_small:4,grapple",
+              "drc_small:4,$can_fly",
+              "drc_small:4,hookshot",
+              "drc_small:4,$can_magicarrow"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -271,9 +375,14 @@
         ]
       },
       {
+        "name": "Gohma Heart Container",
         "sections": [
           {
-            "ref": "The Great Sea/Dragon Roost Cavern/Gohma Heart Container"
+            "chest_unopened_img": "images/items/heart2.png",
+            "chest_opened_img": "images/items/heart2_gray.png",
+            "access_rules": [
+              "drc_small:4,grapple,drc_big"
+            ]
           }
         ],
         "map_locations": [

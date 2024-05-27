@@ -929,196 +929,86 @@
       },
       {
         "name": "Dragon Roost Cavern",
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "First Room",
-            "item_count": 1
+            "ref": "Dragon Roost Cavern/First Room/"
           },
           {
             "name": "Alcove With Water Jugs",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:1"
-            ]
+            "ref": "Dragon Roost Cavern/Alcove With Water Jugs/"
           },
           {
             "name": "Water Jug on Upper Shelf",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:1"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Dragon Roost Cavern/Water Jug on Upper Shelf/"
           },
           {
             "name": "Boarded Up Chest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:1"
-            ]
+            "ref": "Dragon Roost Cavern/Boarded Up Chest/"
           },
           {
             "name": "Chest Across Lava Pit",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:2,grapple",
-              "drc_small:2,$can_fly",
-              "drc_small:2,hookshot"
-            ]
+            "ref": "Dragon Roost Cavern/Chest Across Lava Pit/"
           },
           {
             "name": "Rat Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "drc_small:2"
-            ]
+            "ref": "Dragon Roost Cavern/Rat Room/"
           },
           {
             "name": "Rat Room Boarded Up Chest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:2"
-            ]
+            "ref": "Dragon Roost Cavern/Rat Room Boarded Up Chest/"
           },
           {
             "name": "Bird's Nest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:3"
-            ]
+            "ref": "Dragon Roost Cavern/Bird's Nest/"
           },
           {
             "name": "Dark Room",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4"
-            ]
+            "ref": "Dragon Roost Cavern/Dark Room/"
           },
           {
             "name": "Tingle Statue in Hub Room",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4,bombs,tunerlogic_off",
-              "drc_small:4,bombs,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Dragon Roost Cavern/Tingle Statue in Hub Room/"
           },
           {
             "name": "Pot on Upper Shelf in Pot Room",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Dragon Roost Cavern/Pot on Upper Shelf in Pot Room/"
           },
           {
             "name": "Pot Room Chest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4"
-            ]
+            "ref": "Dragon Roost Cavern/Pot Room Chest/"
           },
           {
             "name": "Miniboss",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "drc_small:4"
-            ]
+            "ref": "Dragon Roost Cavern/Miniboss/"
           },
           {
             "name": "Under Rope Bridge",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly,$can_change_wind"
-            ]
+            "ref": "Dragon Roost Cavern/Under Rope Bridge/"
           },
           {
             "name": "Tingle Statue Chest",
-            "item_count": 1,
-            "access_rules": [
-              "grapple,bombs,drc_small:4,tunerlogic_off",
-              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_off",
-              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_off",
-              "grapple,bombs,drc_small:4,tunerlogic_on,tuner",
-              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_on,tuner",
-              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Dragon Roost Cavern/Tingle Statue Chest/"
           },
           {
             "name": "Big Key Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "grapple,drc_small:4,sword",
-              "grapple,drc_small:4,bombs",
-              "grapple,drc_small:4,bow",
-              "grapple,drc_small:4,hammer",
-              "grapple,drc_small:1,$can_fly",
-              "grapple,drc_small:1,$can_magicarrow"
-            ]
+            "ref": "Dragon Roost Cavern/Big Key Chest/"
           },
           {
             "name": "Boss Stairs Left Chest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
-            ]
+            "ref": "Dragon Roost Cavern/Boss Stairs Left Chest/"
           },
           {
             "name": "Boss Stairs Right Chest",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
-            ]
+            "ref": "Dragon Roost Cavern/Boss Stairs Right Chest/"
           },
           {
             "name": "Boss Stairs Right Pot",
-            "item_count": 1,
-            "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Dragon Roost Cavern/Boss Stairs Right Pot/"
           },
           {
             "name": "Gohma Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "drc_small:4,grapple,drc_big"
-            ]
+            "ref": "Dragon Roost Cavern/Gohma Heart Container/"
           }
         ],
         "map_locations": [
