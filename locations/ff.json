@@ -1,13 +1,24 @@
 [
   {
     "name": "Forsaken Fortress",
-    "chest_unopened_img": "images/items/chest_closed.png",
-    "chest_opened_img": "images/items/chest_open.png",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "access_rules": [
+      "[bombs]"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
     "children": [
       {
+        "name": "Phantom Ganon",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Phantom Ganon"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "mastersword"
+            ]
           }
         ],
         "map_locations": [
@@ -19,9 +30,14 @@
         ]
       },
       {
+        "name": "Chest Guarded by Bokoblin",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Chest Guarded by Bokoblin"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "hammer"
+            ]
           }
         ],
         "map_locations": [
@@ -33,9 +49,12 @@
         ]
       },
       {
+        "name": "Chest on Bed",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Chest on Bed"
+            "access_rules": [
+              "hammer"
+            ]
           }
         ],
         "map_locations": [
@@ -47,9 +66,15 @@
         ]
       },
       {
+        "name": "Chest Outside Upper Jail Cell",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Chest Outside Upper Jail Cell"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "hammer,[$can_fly]",
+              "hammer,[hookshot]"
+            ]
           }
         ],
         "map_locations": [
@@ -61,9 +86,14 @@
         ]
       },
       {
+        "name": "Chest Inside Lower Jail Cell",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Chest Inside Lower Jail Cell"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "hammer"
+            ]
           }
         ],
         "map_locations": [
@@ -75,9 +105,15 @@
         ]
       },
       {
+        "name": "Helmaroc King Heart Container",
         "sections": [
           {
-            "ref": "The Great Sea/Forsaken Fortress/Helmaroc King Heart Container"
+            "chest_unopened_img": "images/items/heart2.png",
+            "chest_opened_img": "images/items/heart2_gray.png",
+            "access_rules": [
+              "hammer,$can_fly",
+              "hammer,hookshot"
+            ]
           }
         ],
         "map_locations": [

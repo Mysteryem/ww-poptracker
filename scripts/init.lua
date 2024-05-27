@@ -10,12 +10,12 @@ Tracker:AddItems("items/settings.json")
 Tracker:AddMaps("maps/maps.json") 
 
 -- Locations
+Tracker:AddLocations("locations/ff.json")
 Tracker:AddLocations("locations/locations.json")
 Tracker:AddLocations("locations/salvage.json")
 Tracker:AddLocations("locations/drc.json")
 Tracker:AddLocations("locations/fw.json")
 Tracker:AddLocations("locations/totg.json")
-Tracker:AddLocations("locations/ff.json")
 Tracker:AddLocations("locations/et.json")
 Tracker:AddLocations("locations/wt.json")
 

@@ -6,66 +6,30 @@
     "children": [
       {
         "name": "Forsaken Fortress",
-        "access_rules": [
-          "[bombs]"
-        ],
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "Phantom Ganon",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "mastersword"
-            ]
+            "ref": "Forsaken Fortress/Phantom Ganon/"
           },
           {
             "name": "Chest Guarded by Bokoblin",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "hammer"
-            ]
+            "ref": "Forsaken Fortress/Chest Guarded by Bokoblin/"
           },
           {
             "name": "Chest on Bed",
-            "item_count": 1,
-            "access_rules": [
-              "hammer"
-            ]
+            "ref": "Forsaken Fortress/Chest on Bed/"
           },
           {
             "name": "Chest Outside Upper Jail Cell",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "hammer,[$can_fly]",
-              "hammer,[hookshot]"
-            ]
+            "ref": "Forsaken Fortress/Chest Outside Upper Jail Cell/"
           },
           {
             "name": "Chest Inside Lower Jail Cell",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "hammer"
-            ]
+            "ref": "Forsaken Fortress/Chest Inside Lower Jail Cell/"
           },
           {
             "name": "Helmaroc King Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "hammer,$can_fly",
-              "hammer,hookshot"
-            ]
+            "ref": "Forsaken Fortress/Helmaroc King Heart Container/"
           }
         ],
         "map_locations": [

@@ -129,12 +129,12 @@ LOCATION_MAPPING = {
     [0x2380af] = {"@The Great Sea/Mailbox/Letter from Aryll"},
     [0x2380b0] = {"@The Great Sea/Mailbox/Letter from Tingle"},
 
-    [0x238072] = {"@The Great Sea/Forsaken Fortress/Phantom Ganon"},
-    [0x238073] = {"@The Great Sea/Forsaken Fortress/Chest Outside Upper Jail Cell"},
-    [0x238074] = {"@The Great Sea/Forsaken Fortress/Chest Inside Lower Jail Cell"},
-    [0x238075] = {"@The Great Sea/Forsaken Fortress/Chest Guarded by Bokoblin"},
-    [0x238076] = {"@The Great Sea/Forsaken Fortress/Chest on Bed"},
-    [0x238077] = {"@The Great Sea/Forsaken Fortress/Helmaroc King Heart Container"},
+    [0x238072] = {"@Forsaken Fortress/Phantom Ganon/"},
+    [0x238073] = {"@Forsaken Fortress/Chest Outside Upper Jail Cell/"},
+    [0x238074] = {"@Forsaken Fortress/Chest Inside Lower Jail Cell/"},
+    [0x238075] = {"@Forsaken Fortress/Chest Guarded by Bokoblin/"},
+    [0x238076] = {"@Forsaken Fortress/Chest on Bed/"},
+    [0x238077] = {"@Forsaken Fortress/Helmaroc King Heart Container/"},
 
     [0x238078] = {"@The Great Sea/Mother and Child Isles/Inside Mother Isle"},
 
