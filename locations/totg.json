@@ -1,233 +1,233 @@
 [
-    {
-        "name": "Tower of the Gods",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Chest Behind Bombable Walls"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 138,
-						"y": 153
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Pot Behind Bombable Walls"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 143,
-						"y": 138
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Tower of the Gods/Hop Across Floating Boxes"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 155,
-						"y": 176
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Tower of the Gods/Light Two Torches"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 49,
-						"y": 124
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Tower of the Gods/Skulls Room Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 39,
-						"y": 108
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Shoot Eye Above Skulls Room Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 27,
-						"y": 108
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Tingle Statue Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 265,
-						"y": 179
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/First Chest Guarded by Armos Knights"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 301,
-						"y": 179
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Stone Tablet"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 265,
-						"y": 146
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Darknut Miniboss Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 228,
-						"y": 178
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Second Chest Guarded by Armos Knights"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 233,
-						"y": 105
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Floating Platforms Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 303,
-						"y": 118
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Top of Floating Platforms Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 303,
-						"y": 93
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Eastern Pot in Big Key Chest Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 165,
-						"y": 227
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Big Key Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 151,
-						"y": 250
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Tower of the Gods/Gohdan Heart Container"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "totg",
-						"x": 260,
-						"y": 335
-					}
-				]
-			}                                       
+  {
+    "name": "Tower of the Gods",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Chest Behind Bombable Walls"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 138,
+            "y": 153
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Pot Behind Bombable Walls"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 143,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Hop Across Floating Boxes"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 155,
+            "y": 176
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Light Two Torches"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 49,
+            "y": 124
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Skulls Room Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 39,
+            "y": 108
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Shoot Eye Above Skulls Room Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 27,
+            "y": 108
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Tingle Statue Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 265,
+            "y": 179
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/First Chest Guarded by Armos Knights"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 301,
+            "y": 179
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Stone Tablet"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 265,
+            "y": 146
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Darknut Miniboss Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 228,
+            "y": 178
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Second Chest Guarded by Armos Knights"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 233,
+            "y": 105
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Floating Platforms Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 303,
+            "y": 118
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Top of Floating Platforms Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 303,
+            "y": 93
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Eastern Pot in Big Key Chest Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 165,
+            "y": 227
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Big Key Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 151,
+            "y": 250
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Tower of the Gods/Gohdan Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 260,
+            "y": 335
+          }
+        ]
+      }
+    ]
+  }
 ]

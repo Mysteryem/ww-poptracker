@@ -1,93 +1,93 @@
 [
-    {
-        "name": "Forsaken Fortress",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forsaken Fortress/Phantom Ganon"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 121,
-						"y": 75
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forsaken Fortress/Chest Guarded by Bokoblin"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 174,
-						"y":244
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forsaken Fortress/Chest on Bed"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 74,
-						"y": 140
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forsaken Fortress/Chest Outside Upper Jail Cell"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 140,
-						"y": 312
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forsaken Fortress/Chest Inside Lower Jail Cell"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 129,
-						"y": 150
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forsaken Fortress/Helmaroc King Heart Container"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "ff",
-						"x": 26,
-						"y": 214
-					}
-				]
-			}                                            
+  {
+    "name": "Forsaken Fortress",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Phantom Ganon"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 121,
+            "y": 75
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Chest Guarded by Bokoblin"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 174,
+            "y": 244
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Chest on Bed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 74,
+            "y": 140
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Chest Outside Upper Jail Cell"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 140,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Chest Inside Lower Jail Cell"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 129,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forsaken Fortress/Helmaroc King Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ff",
+            "x": 26,
+            "y": 214
+          }
+        ]
+      }
+    ]
+  }
 ]

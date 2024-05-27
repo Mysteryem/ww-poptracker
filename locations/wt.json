@@ -1,233 +1,233 @@
 [
-    {
-        "name": "Wind Temple",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Chest Between Two Dirt Patches"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 127,
-						"y": 202
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Wind Temple/Behind Stone Head in Hidden Upper Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 180,
-						"y": 145
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Wind Temple/Tingle Statue Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 256,
-						"y": 115
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Wind Temple/Chest Behind Stone Head"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 357,
-						"y": 165
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Wind Temple/Chest in Left Alcove"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 227,
-						"y": 309
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Big Key Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 291,
-						"y": 374
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Chest In Many Cyclones Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 112,
-						"y": 427
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Behind Stone Head in Many Cyclones Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 68,
-						"y": 270
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Chest In Middle of Hub Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 313,
-						"y": 221
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Spike Wall Room - First Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 300,
-						"y": 302
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Spike Wall Room - Destroy All Cracked Floors"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 279,
-						"y": 290
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Wizzrobe Miniboss Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 413,
-						"y": 203
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Chest at Top of Hub Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 369,
-						"y": 186
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Chest Behind Seven Armos"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 237,
-						"y": 207
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Kill All Enemies in Tall Basement Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 387,
-						"y": 291
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Wind Temple/Molgera Heart Container"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "wt",
-						"x": 156,
-						"y": 507
-					}
-				]
-			}                                            
+  {
+    "name": "Wind Temple",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest Between Two Dirt Patches"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 127,
+            "y": 202
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Behind Stone Head in Hidden Upper Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 180,
+            "y": 145
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Tingle Statue Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 256,
+            "y": 115
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest Behind Stone Head"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 357,
+            "y": 165
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest in Left Alcove"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 227,
+            "y": 309
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Big Key Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 291,
+            "y": 374
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest In Many Cyclones Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 112,
+            "y": 427
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Behind Stone Head in Many Cyclones Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 68,
+            "y": 270
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest In Middle of Hub Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 313,
+            "y": 221
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Spike Wall Room - First Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 300,
+            "y": 302
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Spike Wall Room - Destroy All Cracked Floors"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 279,
+            "y": 290
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Wizzrobe Miniboss Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 413,
+            "y": 203
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest at Top of Hub Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 369,
+            "y": 186
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Chest Behind Seven Armos"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 237,
+            "y": 207
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Kill All Enemies in Tall Basement Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 387,
+            "y": 291
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Wind Temple/Molgera Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 156,
+            "y": 507
+          }
+        ]
+      }
+    ]
+  }
 ]

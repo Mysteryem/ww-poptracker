@@ -1,261 +1,261 @@
 [
-    {
-        "name": "Forbidden Woods",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/First Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 155,
-						"y": 565
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forbidden Woods/Inside Hollow Tree's Mouth"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 208,
-						"y": 517
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forbidden Woods/Climb to Top Using Boko Baba Bulbs"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 125,
-						"y": 467
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forbidden Woods/Pot High Above Hollow Tree"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 238,
-						"y": 450
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Forbidden Woods/Hole in Tree"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 330,
-						"y": 357
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Morth Pit"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 380,
-						"y": 184
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Vine Maze Left Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 298,
-						"y": 165
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Vine Maze Right Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 287,
-						"y": 142
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Highest Pot in Vine Maze"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 347,
-						"y": 122
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Tall Room Before Miniboss"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 592,
-						"y": 106
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Mothula Miniboss Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 626,
-						"y": 49
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Past Seeds Hanging by Vines"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 512,
-						"y": 174
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Chest Across Red Hanging Flower"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 138,
-						"y": 207
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Tingle Statue Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 202,
-						"y": 226
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Chest in Locked Tree Trunk"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 213,
-						"y": 172
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Big Key Chest"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 109,
-						"y": 288
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Double Mothula Room"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 504,
-						"y": 336
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Forbidden Woods/Kalle Demos Heart Container"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "fw",
-						"x": 642,
-						"y": 410
-					}
-				]
-			}                                          
+  {
+    "name": "Forbidden Woods",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/First Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 155,
+            "y": 565
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Inside Hollow Tree's Mouth"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 208,
+            "y": 517
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Climb to Top Using Boko Baba Bulbs"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 125,
+            "y": 467
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Pot High Above Hollow Tree"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 238,
+            "y": 450
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Hole in Tree"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 330,
+            "y": 357
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Morth Pit"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 380,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Vine Maze Left Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 298,
+            "y": 165
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Vine Maze Right Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 287,
+            "y": 142
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Highest Pot in Vine Maze"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 347,
+            "y": 122
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Tall Room Before Miniboss"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 592,
+            "y": 106
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Mothula Miniboss Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 626,
+            "y": 49
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Past Seeds Hanging by Vines"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 512,
+            "y": 174
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Chest Across Red Hanging Flower"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 138,
+            "y": 207
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Tingle Statue Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 202,
+            "y": 226
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Chest in Locked Tree Trunk"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 213,
+            "y": 172
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Big Key Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 109,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Double Mothula Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 504,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Forbidden Woods/Kalle Demos Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 642,
+            "y": 410
+          }
+        ]
+      }
+    ]
+  }
 ]

@@ -1,261 +1,261 @@
 [
-    {
-        "name": "Earth Temple",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Transparent Chest In Warp Pot Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 225,
-						"y": 223
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Behind Curtain In Warp Pot Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 225,
-						"y": 202
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Earth Temple/Chest Behind Destructible Walls"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 337,
-						"y": 314
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Earth Temple/Transparent Chest in First Crypt"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 415,
-						"y": 285
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Earth Temple/Chest In Three Blocks Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 336,
-						"y": 23
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Chest Behind Statues"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 432,
-						"y": 45
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Casket in Second Crypt"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 524,
-						"y": 62
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Stalfos Miniboss Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 528,
-						"y": 138
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Tingle Statue Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 570,
-						"y": 208
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/End of Foggy Room With Floormasters"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 455,
-						"y": 286
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Kill All Floormasters in Foggy Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 520,
-						"y": 330
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Behind Curtain Next to Hammer Button"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 704,
-						"y": 317
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Chest in Third Crypt"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 559,
-						"y": 382
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Many Mirrors Room Left Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 402,
-						"y": 401
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Many Mirrors Room Right Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 338,
-						"y": 437
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Stalfos Crypt Room"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 294,
-						"y": 478
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Big Key Chest"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 244,
-						"y": 332
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Earth Temple/Jalhalla Heart Container"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "et",
-						"x": 393,
-						"y": 550
-					}
-				]
-			}                                            
+  {
+    "name": "Earth Temple",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Transparent Chest In Warp Pot Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 225,
+            "y": 223
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Behind Curtain In Warp Pot Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 225,
+            "y": 202
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Chest Behind Destructible Walls"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 337,
+            "y": 314
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Transparent Chest in First Crypt"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 415,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Chest In Three Blocks Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 336,
+            "y": 23
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Chest Behind Statues"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 432,
+            "y": 45
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Casket in Second Crypt"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 524,
+            "y": 62
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Stalfos Miniboss Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 528,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Tingle Statue Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 570,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/End of Foggy Room With Floormasters"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 455,
+            "y": 286
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Kill All Floormasters in Foggy Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 520,
+            "y": 330
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Behind Curtain Next to Hammer Button"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 704,
+            "y": 317
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Chest in Third Crypt"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 559,
+            "y": 382
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Many Mirrors Room Left Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 402,
+            "y": 401
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Many Mirrors Room Right Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 338,
+            "y": 437
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Stalfos Crypt Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 294,
+            "y": 478
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Big Key Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 244,
+            "y": 332
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Earth Temple/Jalhalla Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 393,
+            "y": 550
+          }
+        ]
+      }
+    ]
+  }
 ]

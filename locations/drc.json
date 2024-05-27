@@ -1,289 +1,289 @@
 [
-    {
-        "name": "Dragon Roost Cavern",
-        "chest_unopened_img": "images/items/chest_closed.png",
-        "chest_opened_img": "images/items/chest_open.png",
-        "children": [
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/First Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 238,
-						"y": 480
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Dragon Roost Cavern/Alcove With Water Jugs"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 425,
-						"y": 527
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Dragon Roost Cavern/Water Jug on Upper Shelf"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 384,
-						"y": 515
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Dragon Roost Cavern/Boarded Up Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 291,
-						"y": 516
-					}
-				]
-			},
-            {
-				"sections": [
-                    {
-                        "ref": "The Great Sea/Dragon Roost Cavern/Chest Across Lava Pit"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 301,
-						"y": 395
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Rat Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 163,
-						"y": 118
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Rat Room Boarded Up Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 198,
-						"y": 110
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Bird's Nest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 60,
-						"y": 119
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Dark Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 496,
-						"y": 345
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 468,
-						"y": 361
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Pot on Upper Shelf in Pot Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 169,
-						"y": 440
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Pot Room Chest"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 155,
-						"y": 414
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Miniboss"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 455,
-						"y": 129
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Under Rope Bridge"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 514,
-						"y": 559
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue in Hub Room"
-                    }
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 331,
-						"y": 405
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Big Key Chest"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 543,
-						"y": 493
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Left Chest"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 103,
-						"y": 390
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Chest"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 123,
-						"y": 403
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Pot"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 139,
-						"y": 384
-					}
-				]
-			},
-            {
-				"sections": [
-					{
-                        "ref": "The Great Sea/Dragon Roost Cavern/Gohma Heart Container"
-					}
-                ],
-				"map_locations": [
-					{
-						"map": "drc",
-						"x": 191,
-						"y": 333
-					}
-				]
-			}                                            
+  {
+    "name": "Dragon Roost Cavern",
+    "chest_unopened_img": "images/items/chest_closed.png",
+    "chest_opened_img": "images/items/chest_open.png",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/First Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 238,
+            "y": 480
+          }
         ]
-    }
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Alcove With Water Jugs"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 425,
+            "y": 527
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Water Jug on Upper Shelf"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 384,
+            "y": 515
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Boarded Up Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 291,
+            "y": 516
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Chest Across Lava Pit"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 301,
+            "y": 395
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Rat Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 163,
+            "y": 118
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Rat Room Boarded Up Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 198,
+            "y": 110
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Bird's Nest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 60,
+            "y": 119
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Dark Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 496,
+            "y": 345
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 468,
+            "y": 361
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Pot on Upper Shelf in Pot Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 169,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Pot Room Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 155,
+            "y": 414
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Miniboss"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 455,
+            "y": 129
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Under Rope Bridge"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 514,
+            "y": 559
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Tingle Statue in Hub Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 331,
+            "y": 405
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Big Key Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 543,
+            "y": 493
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Left Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 103,
+            "y": 390
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 123,
+            "y": 403
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Boss Stairs Right Pot"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 139,
+            "y": 384
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "The Great Sea/Dragon Roost Cavern/Gohma Heart Container"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "drc",
+            "x": 191,
+            "y": 333
+          }
+        ]
+      }
+    ]
+  }
 ]
