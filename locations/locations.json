@@ -2059,225 +2059,78 @@
       },
       {
         "name": "Forbidden Woods",
-        "access_rules": [
-          "$fw_access"
-        ],
-        "visibility_rules": [
-          "dungeons_on"
-        ],
         "sections": [
           {
             "name": "First Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/First Room/"
           },
           {
             "name": "Inside Hollow Tree's Mouth",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/Inside Hollow Tree's Mouth/"
           },
           {
             "name": "Climb to Top Using Boko Baba Bulbs",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "boomerang",
-              "bombs",
-              "bow,sword",
-              "bow,hammer",
-              "bow,magic_2",
-              "hookshot,sword",
-              "hookshot,hammer",
-              "hookshot,magic_2"
-            ]
+            "ref": "Forbidden Woods/Climb to Top Using Boko Baba Bulbs/"
           },
           {
             "name": "Pot High Above Hollow Tree",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Forbidden Woods/Pot High Above Hollow Tree/"
           },
           {
             "name": "Hole in Tree",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/Hole in Tree/"
           },
           {
             "name": "Morth Pit",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/Morth Pit/"
           },
           {
             "name": "Vine Maze Left Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/Vine Maze Left Chest/"
           },
           {
             "name": "Vine Maze Right Chest",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
+            "ref": "Forbidden Woods/Vine Maze Right Chest/"
           },
           {
             "name": "Highest Pot in Vine Maze",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ],
-            "visibility_rules": [
-              "secretpot_on"
-            ]
+            "ref": "Forbidden Woods/Highest Pot in Vine Maze/"
           },
           {
             "name": "Tall Room Before Miniboss",
-            "item_count": 1,
-            "access_rules": [
-              "sword,fw_small",
-              "boomerang,fw_small",
-              "hammer,fw_small",
-              "bombs,fw_small",
-              "fw_small,magic_2,bow"
-            ]
+            "ref": "Forbidden Woods/Tall Room Before Miniboss/"
           },
           {
             "name": "Mothula Miniboss Room",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "sword,fw_small",
-              "hammer,fw_small",
-              "bombs,fw_small",
-              "boomerang,bow,fw_small",
-              "magic_2,bow,fw_small"
-            ]
+            "ref": "Forbidden Woods/Mothula Miniboss Room/"
           },
           {
             "name": "Past Seeds Hanging by Vines",
-            "item_count": 1,
-            "access_rules": [
-              "boomerang,fw_small",
-              "bombs,fw_small",
-              "fw_small,bow,sword",
-              "fw_small,bow,hammer",
-              "fw_small,bow,magic_2",
-              "fw_small,hookshot,sword",
-              "fw_small,hookshot,hammer",
-              "fw_small,hookshot,magic_2"
-            ]
+            "ref": "Forbidden Woods/Past Seeds Hanging by Vines/"
           },
           {
             "name": "Chest Across Red Hanging Flower",
-            "item_count": 1,
-            "access_rules": [
-              "boomerang"
-            ]
+            "ref": "Forbidden Woods/Chest Across Red Hanging Flower/"
           },
           {
             "name": "Tingle Statue Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "boomerang,bombs,tunerlogic_off",
-              "boomerang,bombs,tunerlogic_on,tuner"
-            ],
-            "visibility_rules": [
-              "tinglechests_on"
-            ]
+            "ref": "Forbidden Woods/Tingle Statue Chest/"
           },
           {
             "name": "Chest in Locked Tree Trunk",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "boomerang"
-            ]
+            "ref": "Forbidden Woods/Chest in Locked Tree Trunk/"
           },
           {
             "name": "Big Key Chest",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/chest_bigkey.png",
-            "chest_opened_img": "images/items/chest_bigkey_gray.png",
-            "access_rules": [
-              "boomerang"
-            ]
+            "ref": "Forbidden Woods/Big Key Chest/"
           },
           {
             "name": "Double Mothula Room",
-            "item_count": 1,
-            "access_rules": [
-              "sword",
-              "bombs",
-              "hammer",
-              "bow,boomerang",
-              "bow,magic_2"
-            ]
+            "ref": "Forbidden Woods/Double Mothula Room/"
           },
           {
             "name": "Kalle Demos Heart Container",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/heart2.png",
-            "chest_opened_img": "images/items/heart2_gray.png",
-            "access_rules": [
-              "fw_big,boomerang,sword",
-              "fw_big,boomerang,bow",
-              "fw_big,boomerang,bombs",
-              "fw_big,boomerang,hammer"
-            ]
+            "ref": "Forbidden Woods/Kalle Demos Heart Container/"
           }
         ],
         "map_locations": [

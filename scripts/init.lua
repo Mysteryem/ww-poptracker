@@ -14,9 +14,9 @@ Tracker:AddLocations("locations/ff.json")
 Tracker:AddLocations("locations/wt.json")
 Tracker:AddLocations("locations/drc.json")
 Tracker:AddLocations("locations/totg.json")
+Tracker:AddLocations("locations/fw.json")
 Tracker:AddLocations("locations/locations.json")
 Tracker:AddLocations("locations/salvage.json")
-Tracker:AddLocations("locations/fw.json")
 Tracker:AddLocations("locations/et.json")
 
 -- Layout

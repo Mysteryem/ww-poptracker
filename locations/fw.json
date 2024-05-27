@@ -1,13 +1,28 @@
 [
   {
     "name": "Forbidden Woods",
-    "chest_unopened_img": "images/items/chest_closed.png",
-    "chest_opened_img": "images/items/chest_open.png",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "access_rules": [
+      "$fw_access"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
     "children": [
       {
+        "name": "First Room",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/First Room"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -19,9 +34,16 @@
         ]
       },
       {
+        "name": "Inside Hollow Tree's Mouth",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Inside Hollow Tree's Mouth"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -33,9 +55,21 @@
         ]
       },
       {
+        "name": "Climb to Top Using Boko Baba Bulbs",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Climb to Top Using Boko Baba Bulbs"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "boomerang",
+              "bombs",
+              "bow,sword",
+              "bow,hammer",
+              "bow,magic_2",
+              "hookshot,sword",
+              "hookshot,hammer",
+              "hookshot,magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -47,9 +81,19 @@
         ]
       },
       {
+        "name": "Pot High Above Hollow Tree",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Pot High Above Hollow Tree"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -61,9 +105,16 @@
         ]
       },
       {
+        "name": "Hole in Tree",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Hole in Tree"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -75,9 +126,16 @@
         ]
       },
       {
+        "name": "Morth Pit",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Morth Pit"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -89,9 +147,18 @@
         ]
       },
       {
+        "name": "Vine Maze Left Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Vine Maze Left Chest"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -103,9 +170,16 @@
         ]
       },
       {
+        "name": "Vine Maze Right Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Vine Maze Right Chest"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -117,9 +191,19 @@
         ]
       },
       {
+        "name": "Highest Pot in Vine Maze",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Highest Pot in Vine Maze"
+            "access_rules": [
+              "sword",
+              "hammer",
+              "boomerang",
+              "bombs",
+              "magic_2"
+            ],
+            "visibility_rules": [
+              "secretpot_on"
+            ]
           }
         ],
         "map_locations": [
@@ -131,9 +215,16 @@
         ]
       },
       {
+        "name": "Tall Room Before Miniboss",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Tall Room Before Miniboss"
+            "access_rules": [
+              "sword,fw_small",
+              "boomerang,fw_small",
+              "hammer,fw_small",
+              "bombs,fw_small",
+              "fw_small,magic_2,bow"
+            ]
           }
         ],
         "map_locations": [
@@ -145,9 +236,18 @@
         ]
       },
       {
+        "name": "Mothula Miniboss Room",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Mothula Miniboss Room"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "sword,fw_small",
+              "hammer,fw_small",
+              "bombs,fw_small",
+              "boomerang,bow,fw_small",
+              "magic_2,bow,fw_small"
+            ]
           }
         ],
         "map_locations": [
@@ -159,9 +259,19 @@
         ]
       },
       {
+        "name": "Past Seeds Hanging by Vines",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Past Seeds Hanging by Vines"
+            "access_rules": [
+              "boomerang,fw_small",
+              "bombs,fw_small",
+              "fw_small,bow,sword",
+              "fw_small,bow,hammer",
+              "fw_small,bow,magic_2",
+              "fw_small,hookshot,sword",
+              "fw_small,hookshot,hammer",
+              "fw_small,hookshot,magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -173,9 +283,12 @@
         ]
       },
       {
+        "name": "Chest Across Red Hanging Flower",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Chest Across Red Hanging Flower"
+            "access_rules": [
+              "boomerang"
+            ]
           }
         ],
         "map_locations": [
@@ -187,9 +300,18 @@
         ]
       },
       {
+        "name": "Tingle Statue Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Tingle Statue Chest"
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "boomerang,bombs,tunerlogic_off",
+              "boomerang,bombs,tunerlogic_on,tuner"
+            ],
+            "visibility_rules": [
+              "tinglechests_on"
+            ]
           }
         ],
         "map_locations": [
@@ -201,9 +323,14 @@
         ]
       },
       {
+        "name": "Chest in Locked Tree Trunk",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Chest in Locked Tree Trunk"
+            "chest_unopened_img": "images/items/chest_metal.png",
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "boomerang"
+            ]
           }
         ],
         "map_locations": [
@@ -215,9 +342,14 @@
         ]
       },
       {
+        "name": "Big Key Chest",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Big Key Chest"
+            "chest_unopened_img": "images/items/chest_bigkey.png",
+            "chest_opened_img": "images/items/chest_bigkey_gray.png",
+            "access_rules": [
+              "boomerang"
+            ]
           }
         ],
         "map_locations": [
@@ -229,9 +361,16 @@
         ]
       },
       {
+        "name": "Double Mothula Room",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Double Mothula Room"
+            "access_rules": [
+              "sword",
+              "bombs",
+              "hammer",
+              "bow,boomerang",
+              "bow,magic_2"
+            ]
           }
         ],
         "map_locations": [
@@ -243,9 +382,17 @@
         ]
       },
       {
+        "name": "Kalle Demos Heart Container",
         "sections": [
           {
-            "ref": "The Great Sea/Forbidden Woods/Kalle Demos Heart Container"
+            "chest_unopened_img": "images/items/heart2.png",
+            "chest_opened_img": "images/items/heart2_gray.png",
+            "access_rules": [
+              "fw_big,boomerang,sword",
+              "fw_big,boomerang,bow",
+              "fw_big,boomerang,bombs",
+              "fw_big,boomerang,hammer"
+            ]
           }
         ],
         "map_locations": [
