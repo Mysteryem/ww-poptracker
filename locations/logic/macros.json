@@ -554,6 +554,28 @@
             "@Macros/can_defeat_jalhalla_poes"
           ]
         ]
+      },
+      {
+        "name": "can_remove_peahat_armor",
+        "access_rules": [
+          "boomerang",
+          "hookshot",
+          "@Macros/can_fan_with_deku_leaf",
+          "hammer",
+          "bow",
+          "bombs"
+        ]
+      },
+      {
+        "name": "can_defeat_molgera",
+        "access_rules": [
+          "hookshot, sword",
+          "hookshot, bow",
+          "hookshot, boomerang",
+          "hookshot, grapple",
+          "hookshot, hammer",
+          "hookshot, bombs"
+        ]
       }
     ]
   }

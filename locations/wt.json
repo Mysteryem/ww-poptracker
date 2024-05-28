@@ -4,7 +4,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "$wt_access"
+      "@Exit Logic/can_access_wind_temple"
     ],
     "visibility_rules": [
       "dungeons_on"
@@ -213,25 +213,6 @@
         ]
       },
       {
-        "name": "Wizzrobe Miniboss Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "$can_fly,wt_small:2"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "wt",
-            "x": 413,
-            "y": 203
-          }
-        ]
-      },
-      {
         "name": "Chest at Top of Hub Room",
         "sections": [
           {
@@ -281,7 +262,48 @@
             "y": 291
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Wind Temple Miniboss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_wind_temple_miniboss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
+      {
+        "name": "Wizzrobe Miniboss Room",
+        "sections": [
+          {
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Macros/can_defeat_darknuts, @Macros/can_remove_peahat_armor"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wt",
+            "x": 413,
+            "y": 203
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Molgera Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_molgera_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Molgera Heart Container",
         "sections": [
@@ -289,7 +311,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "$can_fly,hookshot,wt_small:2,aria,wt_big"
+              "@Macros/can_defeat_molgera"
             ]
           }
         ],

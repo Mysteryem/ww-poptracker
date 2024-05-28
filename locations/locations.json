@@ -185,7 +185,7 @@
           },
           {
             "name": "Wizzrobe Miniboss Room",
-            "ref": "Wind Temple/Wizzrobe Miniboss Room/"
+            "ref": "Wind Temple Miniboss Arena/Wizzrobe Miniboss Room/"
           },
           {
             "name": "Chest at Top of Hub Room",
@@ -201,7 +201,7 @@
           },
           {
             "name": "Molgera Heart Container",
-            "ref": "The Great Sea/Wind Temple/Molgera Heart Container/"
+            "ref": "Molgera Boss Arena/Molgera Heart Container/"
           }
         ],
         "map_locations": [

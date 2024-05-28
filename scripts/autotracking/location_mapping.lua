@@ -180,11 +180,11 @@ LOCATION_MAPPING = {
     [0x23809c] = {"@Wind Temple/Chest In Middle of Hub Room/"},
     [0x23809d] = {"@Wind Temple/Spike Wall Room - First Chest/"},
     [0x23809e] = {"@Wind Temple/Spike Wall Room - Destroy All Cracked Floors/"},
-    [0x23809f] = {"@Wind Temple/Wizzrobe Miniboss Room/"},
+    [0x23809f] = {"@Wind Temple Miniboss Arena/Wizzrobe Miniboss Room/"},
     [0x2380a0] = {"@Wind Temple/Chest at Top of Hub Room/"},
     [0x2380a1] = {"@Wind Temple/Chest Behind Seven Armos/"},
     [0x2380a2] = {"@Wind Temple/Kill All Enemies in Tall Basement Room/"},
-    [0x2380a3] = {"@Wind Temple/Molgera Heart Container/"},
+    [0x2380a3] = {"@Molgera Boss Arena/Molgera Heart Container/"},
 
     [0x2380b1] = {"@The Great Sea/Great Sea/Beedle's Shop Ship - 20 Rupee Item"},
     [0x2380b2] = {"@The Great Sea/Great Sea/Salvage Corp Gift"},
