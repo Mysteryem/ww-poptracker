@@ -576,6 +576,155 @@
           "hookshot, hammer",
           "hookshot, bombs"
         ]
+      },
+      {
+        "name": "can_defeat_keese",
+        "access_rules": [
+          "sword",
+          "hookshot",
+          "grapple",
+          "boomerang",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_miniblins",
+        "access_rules": [
+          "sword",
+          "grapple",
+          "boomerang",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_magtails",
+        "access_rules": [
+          "sword",
+          "hammer",
+          "boomerang",
+          "bombs",
+          "grapple",
+          "bow"
+        ]
+      },
+      {
+        "name": "can_defeat_fire_keese",
+        "access_rules": [
+          "@Macros/can_defeat_keese"
+        ]
+      },
+      {
+        "name": "can_defeat_peahats",
+        "access_rules": [
+          "boomerang",
+          "hookshot, sword",
+          "@Macros/can_fan_with_deku_leaf, sword",
+          "hammer",
+          "bow",
+          "bombs"
+        ]
+      },
+      {
+        "name": "can_defeat_wizzrobes",
+        "access_rules": [
+          "sword",
+          "bow",
+          "hookshot",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "_grapple_or_sword_or_hammer",
+        "access_rules": [
+          "grapple",
+          "sword",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_redeads",
+        "access_rules": [
+          "sword",
+          "@Macros/has_light_arrows",
+          "hammer",
+          "bombs"
+        ]
+      },
+      {
+        "name": "can_defeat_poes"
+      },
+      {
+        "name": "can_hit_diamond_switches_at_range",
+        "access_rules": [
+          "boomerang",
+          "bow",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_defeat_miniblins_easily",
+        "access_rules": [
+          "sword",
+          "boomerang",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_morths",
+        "access_rules": [
+          "sword",
+          "boomerang",
+          "bow",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_defeat_kargarocs",
+        "access_rules": [
+          "sword",
+          "boomerang",
+          "bow",
+          "hammer",
+          "bombs"
+        ]
+      },
+      {
+        "name": "can_defeat_wizzrobes_at_range",
+        "access_rules": [
+          "bow",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_stun_magtails",
+        "access_rules": [
+          "sword",
+          "hammer",
+          "boomerang",
+          "bombs",
+          "grapple",
+          "bow"
+        ]
+      },
+      {
+        "name": "can_defeat_darknuts_easily",
+        "access_rules": [
+          "sword",
+          "@Macros/has_light_arrows"
+        ]
+      },
+      {
+        "name": "can_defeat_mighty_darknuts",
+        "access_rules": [
+          "@Macros/can_defeat_darknuts_easily"
+        ]
       }
     ]
   }

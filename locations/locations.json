@@ -56,7 +56,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_remove_rocks,weapon"
+              "@Exit Logic/can_access_star_island_secret_cave, @Macros/can_defeat_magtails"
             ],
             "visibility_rules": [
               "combat_on"
@@ -77,6 +77,9 @@
           {
             "name": "Great Fairy",
             "item_count": 1,
+            "access_rules": [
+              "@Exit Logic/can_access_northern_fairy_fountain"
+            ],
             "visibility_rules": [
               "fairies_on"
             ]
@@ -313,9 +316,19 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "hookshot,$can_change_wind,sword",
-              "hookshot,$can_change_wind,hammer",
-              "hookshot,$can_change_wind,bombs,$can_lightarrow"
+              [
+                "@Exit Logic/can_access_overlook_island_secret_cave",
+                "@Macros/can_defeat_stalfos",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_red_chuchus",
+                "@Macros/can_defeat_green_chuchus",
+                "@Macros/can_defeat_keese",
+                "@Macros/can_defeat_fire_keese",
+                "@Macros/can_defeat_morths",
+                "@Macros/can_defeat_kargarocs",
+                "@Macros/can_defeat_darknuts",
+                "@Macros/can_play_winds_requiem"
+              ]
             ],
             "visibility_rules": [
               "combat_on"
@@ -787,6 +800,9 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Exit Logic/can_access_pawprint_isle_chuchu_cave"
+            ],
             "visibility_rules": [
               "puzzlecaves_on"
             ]
@@ -795,7 +811,7 @@
             "name": "Chuchu Cave - Behind Left Boulder",
             "item_count": 1,
             "access_rules": [
-              "$can_remove_rocks"
+              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, @Macros/can_move_boulders"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -805,7 +821,7 @@
             "name": "Chuchu Cave - Behind Right Boulder",
             "item_count": 1,
             "access_rules": [
-              "$can_remove_rocks"
+              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, @Macros/can_move_boulders"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -815,7 +831,7 @@
             "name": "Chuchu Cave - Scale the Wall",
             "item_count": 1,
             "access_rules": [
-              "grapple"
+              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, grapple"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -825,11 +841,17 @@
             "name": "Wizzrobe Cave",
             "item_count": 1,
             "access_rules": [
-              "hookshot,hammer",
-              "hookshot,bombs",
-              "hookshot,bow",
-              "hookshot,boomerang,sword",
-              "hookshot,leaf,sword"
+              [
+                "@Exit Logic/can_access_pawprint_isle_wizzrobe_cave",
+                "@Macros/can_defeat_wizzrobes_at_range",
+                "@Macros/can_defeat_fire_keese",
+                "@Macros/can_defeat_magtails",
+                "@Macros/can_defeat_red_chuchus",
+                "@Macros/can_defeat_green_chuchus",
+                "@Macros/can_defeat_yellow_chuchus",
+                "@Macros/can_defeat_red_bubbles",
+                "@Macros/can_remove_peahat_armor"
+              ]
             ],
             "visibility_rules": [
               "combat_on"
@@ -909,10 +931,11 @@
             "name": "Secret Cave",
             "item_count": 1,
             "access_rules": [
-              "bombs",
-              "power,sword",
-              "power,hammer",
-              "power,bow"
+              [
+                "@Exit Logic/can_access_dragon_roost_island_secret_cave",
+                "@Macros/can_defeat_keese",
+                "@Macros/can_defeat_red_chuchus"
+              ]
             ],
             "visibility_rules": [
               "combat_on"
@@ -1063,7 +1086,7 @@
             "name": "Great Fairy",
             "item_count": 1,
             "access_rules": [
-              "hammer"
+              "@Exit Logic/can_access_western_fairy_fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1094,7 +1117,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs"
+              "@Exit Logic/can_access_rock_spire_isle_secret_cave"
             ],
             "visibility_rules": [
               "combat_on"
@@ -1185,7 +1208,7 @@
             "name": "Great Fairy",
             "item_count": 1,
             "access_rules": [
-              "$can_remove_rocks"
+              "@Exit Logic/can_access_eastern_fairy_fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1219,7 +1242,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_magicarrow"
+              "@Exit Logic/can_access_fire_mountain_secret_cave, @Macros/can_defeat_magtails"
             ],
             "visibility_rules": [
               "puzzlecaves_on",
@@ -1486,8 +1509,7 @@
             "name": "Master Sword Chamber",
             "item_count": 1,
             "access_rules": [
-              "triforce_8,sword",
-              "triforce_8,$can_lightarrow"
+              "@Exit Logic/can_access_master_sword_chamber, @Macros/can_defeat_mighty_darknuts"
             ]
           },
           {
@@ -1521,7 +1543,7 @@
             "name": "Great Fairy",
             "item_count": 1,
             "access_rules": [
-              "hammer"
+              "@Exit Logic/can_access_thorned_fairy_fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1575,7 +1597,7 @@
             "name": "Cave",
             "item_count": 1,
             "access_rules": [
-              "$can_magicarrow"
+              "@Exit Logic/can_access_needle_rock_isle_secret_cave, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1646,9 +1668,13 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "power,$can_change_wind,sword",
-              "power,$can_change_wind,$can_lightarrow",
-              "power,$can_change_wind,hammer"
+              [
+                "@Exit Logic/can_access_stone_watcher_island_secret_cave",
+                "@Macros/can_defeat_armos",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_darknuts",
+                "@Macros/can_play_winds_requiem"
+              ]
             ],
             "visibility_rules": [
               "combat_on"
@@ -1702,7 +1728,7 @@
             "name": "Cabana Labyrinth - Lower Floor Chest",
             "item_count": 1,
             "access_rules": [
-              "deed,delivery,grapple,hammer"
+              "@Exit Logic/can_access_cabana_labyrinth, hammer"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1714,7 +1740,11 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "deed,delivery,grapple,hammer,$can_change_wind"
+              [
+                "@Exit Logic/can_access_cabana_labyrinth",
+                "hammer",
+                "@Macros/can_play_winds_requiem"
+              ]
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1778,7 +1808,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_remove_rocks,weapon"
+              "@Exit Logic/can_access_bomb_island_secret_cave, @Macros/can_stun_magtails"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1816,7 +1846,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "bait,$can_change_wind"
+              "@Exit Logic/can_access_birds_peak_rock_secret_cave, @Macros/can_play_winds_requiem"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1838,7 +1868,7 @@
             "name": "Warp Maze Cave - First Chest",
             "item_count": 1,
             "access_rules": [
-              "hookshot"
+              "@Exit Logic/can_access_diamond_steppe_island_warp_maze_cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1850,7 +1880,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "hookshot"
+              "@Exit Logic/can_access_diamond_steppe_island_warp_maze_cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1917,7 +1947,7 @@
             "name": "Cave",
             "item_count": 1,
             "access_rules": [
-              "boots,hammer"
+              "@Exit Logic/can_access_shark_island_secret_cave, @Macros/can_defeat_miniblins"
             ],
             "visibility_rules": [
               "combat_on"
@@ -1939,8 +1969,7 @@
             "name": "Great Fairy",
             "item_count": 1,
             "access_rules": [
-              "bombs",
-              "$can_magicarrow"
+              "@Exit Logic/can_access_southern_fairy_fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1981,15 +2010,15 @@
       },
       {
         "name": "Ice Ring Isle",
-        "access_rules": [
-          "$can_magicarrow"
-        ],
         "sections": [
           {
             "name": "Frozen Chest",
             "item_count": 1,
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "@Macros/has_fire_arrows"
+            ],
             "visibility_rules": [
               "islandpuzzles_on"
             ]
@@ -1999,6 +2028,9 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Exit Logic/can_access_ice_ring_isle_secret_cave"
+            ],
             "visibility_rules": [
               "puzzlecaves_on"
             ]
@@ -2007,7 +2039,7 @@
             "name": "Inner Cave - Chest",
             "item_count": 1,
             "access_rules": [
-              "boots"
+              "@Exit Logic/can_access_ice_ring_isle_inner_cave, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
               "puzzlecaves_on",
@@ -2148,13 +2180,7 @@
             "name": "Cave",
             "item_count": 1,
             "access_rules": [
-              "sword",
-              "boomerang",
-              "hammer",
-              "bow",
-              "hookshot",
-              "bombs",
-              "leaf,grapple"
+              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, @Macros/can_defeat_boko_babas"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -2166,13 +2192,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_fly,sword",
-              "$can_fly,boomerang",
-              "$can_fly,hammer",
-              "$can_fly,bow",
-              "$can_fly,hookshot",
-              "$can_fly,bombs",
-              "$can_fly,grapple"
+              "@Exit Logic/can_access_cliff_plateau_isles_inner_cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -2216,10 +2236,11 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "leaf,sword",
-              "leaf,bow",
-              "leaf,bombs",
-              "leaf,hammer"
+              [
+                "@Exit Logic/can_access_horseshoe_island_secret_cave",
+                "@Macros/can_defeat_mothulas",
+                "@Macros/can_defeat_winged_mothulas"
+              ]
             ],
             "visibility_rules": [
               "combat_on"
@@ -2287,7 +2308,7 @@
             "name": "Great Fairy",
             "item_count": 1,
             "access_rules": [
-              "$can_cut_trees,$can_change_wind,$can_fly,$can_remove_rocks"
+              "@Exit Logic/can_access_outset_fairy_fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -2319,14 +2340,26 @@
             "name": "Savage Labyrinth Floor - 30",
             "item_count": 1,
             "access_rules": [
-              "$can_change_wind,power,hookshot,boomerang,sword",
-              "$can_change_wind,power,hookshot,hammer",
-              "$can_change_wind,power,hookshot,$can_lightarrow,sword",
-              "$can_change_wind,power,hookshot,$can_lightarrow,grapple",
-              "$can_change_wind,power,sword,leaf",
-              "$can_change_wind,power,boomerang,leaf,hammer",
-              "$can_change_wind,power,boomerang,leaf,$can_lightarrow,grapple",
-              "$can_change_wind,power,hammer,leaf,"
+              [
+                "@Exit Logic/can_access_savage_labyrinth",
+                "@Macros/can_defeat_keese",
+                "@Macros/can_defeat_miniblins",
+                "@Macros/can_defeat_red_chuchus",
+                "@Macros/can_defeat_magtails",
+                "@Macros/can_defeat_fire_keese",
+                "@Macros/can_defeat_peahats",
+                "@Macros/can_defeat_green_chuchus",
+                "@Macros/can_defeat_boko_babas",
+                "@Macros/can_defeat_mothulas",
+                "@Macros/can_defeat_winged_mothulas",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_armos",
+                "@Macros/can_defeat_yellow_chuchus",
+                "@Macros/can_defeat_red_bubbles",
+                "@Macros/can_defeat_darknuts",
+                "@Macros/can_play_winds_requiem",
+                "@Macros/_grapple_or_sword_or_hammer"
+              ]
             ],
             "visibility_rules": [
               "labyrinth_on"
@@ -2336,8 +2369,16 @@
             "name": "Savage Labyrinth Floor - 50",
             "item_count": 1,
             "access_rules": [
-              "leaf,power,$can_change_wind,shield_2,hammer",
-              "hookshot,power,$can_change_wind,shield_2,hammer"
+              [
+                "@The Great Sea/Outset Island/Savage Labyrinth Floor - 30",
+                "@Macros/can_aim_mirror_shield",
+                "@Macros/can_defeat_redeads",
+                "@Macros/can_defeat_blue_bubbles",
+                "@Macros/can_defeat_dark_chuchus",
+                "@Macros/can_defeat_poes",
+                "@Macros/can_defeat_stalfos",
+                "hammer"
+              ]
             ],
             "visibility_rules": [
               "labyrinth_on"
@@ -2606,8 +2647,11 @@
             "name": "Cave",
             "item_count": 1,
             "access_rules": [
-              "shield_2,$can_fly,$can_change_wind",
-              "shield_2,hookshot"
+              [
+                "@Exit Logic/can_access_angular_isles_secret_cave",
+                "@Macros/can_aim_mirror_shield",
+                "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+              ]
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -2638,15 +2682,11 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "hookshot,sword",
-              "hookshot,boomerang",
-              "hookshot,bow",
-              "hookshot,bombs",
-              "hookshot,hammer",
-              "$can_fly,bow",
-              "$can_fly,boomerang,sword",
-              "$can_fly,boomerang,bombs",
-              "$can_fly,boomerang,hammer"
+              [
+                "@Exit Logic/can_access_boating_course_secret_cave",
+                "@Macros/can_hit_diamond_switches_at_range",
+                "@Macros/can_defeat_miniblins_easily"
+              ]
             ],
             "visibility_rules": [
               "puzzlecaves_on",
