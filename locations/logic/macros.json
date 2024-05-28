@@ -725,6 +725,31 @@
         "access_rules": [
           "@Macros/can_defeat_darknuts_easily"
         ]
+      },
+      {
+        "name": "_can_farm_knights_crests",
+        "access_rules": [
+          "@The Great Sea/Ice Ring Isle/Inner Cave - Chest",
+          "@The Great Sea/Outset Island/Savage Labyrinth Floor - 30",
+          "@Earth Temple/Big Key Chest/, @Macros/can_defeat_darknuts_easily",
+          "@Wind Temple/Big Key Chest/, @Macros/can_defeat_darknuts_easily",
+          "@The Great Sea/Shark Island/Cave",
+          "@The Great Sea/Stone Watcher Island/Cave, @Macros/can_defeat_darknuts_easily",
+          "@The Great Sea/Overlook Island/Cave, @Macros/can_defeat_darknuts_easily",
+          "@Macros/can_access_hyrule"
+        ]
+      },
+      {
+        "name": "can_farm_knights_crests",
+        "access_rules": [
+          "spoils, grapple, @Macros/_can_farm_knights_crests"
+        ]
+      },
+      {
+        "name": "can_sword_fight_with_orca",
+        "access_rules": [
+          "sword"
+        ]
       }
     ]
   }

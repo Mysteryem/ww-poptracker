@@ -2290,15 +2290,12 @@
             "name": "Orca - Give 10 Knight's Crests",
             "item_count": 1,
             "access_rules": [
-              "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,$can_magicarrow",
-              "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,bombs",
-              "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,leaf",
-              "spoils,grapple,sword,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,hookshot",
-              "spoils,grapple,sword,$can_magicarrow,boots",
-              "spoils,grapple,sword,hammer,boots",
-              "spoils,grapple,sword,power,$can_change_wind",
-              "spoils,grapple,sword,hookshot,$can_change_wind",
-              "spoils,grapple,sword,triforce_8"
+              [
+                "spoils",
+                "@Macros/can_farm_knights_crests",
+                "@Macros/can_sword_fight_with_orca",
+                "magic"
+              ]
             ],
             "visibility_rules": [
               "spoilssq_on"
