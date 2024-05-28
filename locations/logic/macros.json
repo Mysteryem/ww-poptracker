@@ -801,6 +801,18 @@
             "spoils"
           ]
         ]
+      },
+      {
+        "name": "can_defeat_phantom_ganon",
+        "access_rules": [
+          "mastersword"
+        ]
+      },
+      {
+        "name": "can_reach_and_defeat_phantom_ganon",
+        "access_rules": [
+          "@Macros/can_get_past_forsaken_fortress_gate, @Macros/can_defeat_phantom_ganon"
+        ]
       }
     ]
   }

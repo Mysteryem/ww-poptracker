@@ -3,9 +3,6 @@
     "name": "Forsaken Fortress",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
-    "access_rules": [
-      "[bombs]"
-    ],
     "visibility_rules": [
       "dungeons_on"
     ],
@@ -17,7 +14,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "mastersword"
+              "@Macros/can_reach_and_defeat_phantom_ganon"
             ]
           }
         ],
@@ -36,7 +33,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "hammer"
+              "@Macros/can_get_inside_forsaken_fortress"
             ]
           }
         ],
@@ -53,7 +50,7 @@
         "sections": [
           {
             "access_rules": [
-              "hammer"
+              "@Macros/can_get_inside_forsaken_fortress"
             ]
           }
         ],
@@ -72,8 +69,10 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "hammer,[$can_fly]",
-              "hammer,[hookshot]"
+              [
+                "@Macros/can_get_inside_forsaken_fortress",
+                "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+              ]
             ]
           }
         ],
@@ -92,7 +91,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "hammer"
+              "@Macros/can_get_inside_forsaken_fortress"
             ]
           }
         ],
