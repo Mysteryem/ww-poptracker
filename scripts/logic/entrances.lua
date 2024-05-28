@@ -157,7 +157,8 @@ function update_entrances()
         if exit then
             local current_mapped_entrance = exit_to_entrance[exit]
             if current_mapped_entrance then
-                print("Exit '" .. exit .. "' is already mapped from '" .. current_mapped_entrance .. "'. Ignoring the extra mapping from '" .. entrance.name .. "'")
+                impossible_exits[exit] = true
+                print("Exit '" .. exit .. "' trying to be mapped from " .. entrance.name .. ", but is already mapped from '" .. current_mapped_entrance .. "'. Marking the exit as impossible.")
             else
                 exit_to_entrance[exit] = entrance.name
             end
