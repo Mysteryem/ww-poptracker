@@ -14,6 +14,9 @@
         "name": "Chest Between Two Dirt Patches",
         "sections": [
           {
+            "access_rules": [
+              "@Macros/can_play_command_melody"
+            ]
           }
         ],
         "map_locations": [
@@ -29,7 +32,12 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly,hookshot"
+              [
+                "@Macros/can_play_command_melody",
+                "boots",
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "hookshot"
+              ]
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -51,8 +59,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_fly,bombs,tunerlogic_off",
-              "$can_fly,bombs,tunerlogic_on,tuner"
+              "@Macros/can_reach_wind_temple_kidnapping_room, @Macros/has_tingle_bombs"
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -72,7 +79,11 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly,hookshot"
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "boots",
+                "hookshot"
+              ]
             ]
           }
         ],
@@ -89,7 +100,11 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly"
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "boots",
+                "@Macros/can_fan_with_deku_leaf"
+              ]
             ]
           }
         ],
@@ -108,6 +123,13 @@
             "chest_unopened_img": "images/items/chest_bigkey.png",
             "chest_opened_img": "images/items/chest_bigkey_gray.png",
             "access_rules": [
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "boots",
+                "@Macros/can_fan_with_deku_leaf",
+                "@Macros/can_play_wind_gods_aria",
+                "@Macros/can_defeat_darknuts"
+              ],
               "$can_fly,aria"
             ]
           }
@@ -125,7 +147,19 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly"
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "boots",
+                "@Macros/can_fan_with_deku_leaf",
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+              ],
+              [
+                "@Macros/can_reach_wind_temple_kidnapping_room",
+                "hookshot",
+                "@Macros/can_defeat_blue_bubbles",
+                "@Macros/can_fly_with_deku_leaf_indoors"
+              ]
             ]
           }
         ],
@@ -142,7 +176,7 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly,hookshot"
+              "@Macros/can_reach_end_of_wind_temple_many_cyclones_room, hookshot"
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -164,7 +198,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_fly"
+              "@Macros/can_open_wind_temple_upper_giant_grate"
             ]
           }
         ],
@@ -181,7 +215,7 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly"
+              "@Macros/can_open_wind_temple_upper_giant_grate, boots"
             ]
           }
         ],
@@ -200,7 +234,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_fly"
+              "@Macros/can_open_wind_temple_upper_giant_grate, boots"
             ]
           }
         ],
@@ -217,7 +251,7 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly"
+              "@Macros/can_activate_wind_temple_giant_fan"
             ]
           }
         ],
@@ -234,7 +268,7 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly"
+              "@Macros/can_activate_wind_temple_giant_fan, @Macros/can_defeat_armos"
             ]
           }
         ],
@@ -251,7 +285,12 @@
         "sections": [
           {
             "access_rules": [
-              "$can_fly,hookshot,wt_small:2"
+              [
+                "@Macros/can_reach_wind_temple_tall_basement_room",
+                "@Macros/can_defeat_stalfos",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_morths"
+              ]
             ]
           }
         ],

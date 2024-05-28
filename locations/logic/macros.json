@@ -885,6 +885,12 @@
         "access_rules": [
           "@Macros/can_reach_earth_temple_tall_vine_room"
         ]
+      },
+      {
+        "name": "can_activate_wind_temple_giant_fan",
+        "access_rules": [
+          "@Macros/can_open_wind_temple_upper_giant_grate, @Macros/can_play_command_melody"
+        ]
       }
     ]
   }
