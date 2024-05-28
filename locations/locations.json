@@ -593,30 +593,7 @@
             "name": "Chu Jelly Juice Shop - Give 15 Blue Chu Jelly",
             "item_count": 1,
             "access_rules": [
-              "spoils,grapple,bombs",
-              "spoils,grapple,bow",
-              "spoils,grapple,hammer",
-              "spoils,grapple,leaf",
-              "spoils,grapple,boomerang,sword",
-              "spoils,bombs,bow",
-              "spoils,bombs,hammer",
-              "spoils,bombs,leaf",
-              "spoils,bombs,boomerang,sword",
-              "spoils,leaf,bow",
-              "spoils,leaf,hammer",
-              "spoils,leaf,boomerang,sword",
-              "spoils,power,bombs",
-              "spoils,power,grapple",
-              "spoils,power,bow",
-              "spoils,power,hammer",
-              "spoils,power,leaf,sword",
-              "spoils,power,boomerang,sword",
-              "spoils,hookshot,bombs",
-              "spoils,hookshot,grapple",
-              "spoils,hookshot,bow",
-              "spoils,hookshot,hammer",
-              "spoils,hookshot,leaf,sword",
-              "spoils,hookshot,boomerang,sword"
+              "@Macros/can_obtain_15_blue_chu_jelly"
             ],
             "visibility_rules": [
               "spoilssq_on"

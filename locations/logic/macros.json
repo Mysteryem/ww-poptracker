@@ -765,6 +765,42 @@
       },
       {
         "name": "rescued_tingle"
+      },
+      {
+        "name": "can_defeat_blue_chuchus",
+        "access_rules": [
+          "@Macros/can_defeat_yellow_chuchus"
+        ]
+      },
+      {
+        "name": "can_get_blue_chu_jelly_from_blue_chuchus",
+        "access_rules": [
+          "@Macros/can_defeat_blue_chuchus",
+          "grapple"
+        ]
+      },
+      {
+        "name": "_can_obtain_15_blue_chu_jelly",
+        "access_rules": [
+          "@Macros/can_move_boulders",
+          "hookshot",
+          "bombs",
+          "grapple",
+          "@Entrance Logic/Secret Cave Entrance on Shark Island, @Macros/can_fly_with_deku_leaf_outdoors",
+          "@The Great Sea/Cliff Plateau Isles/Highest Isle",
+          "@Macros/can_fan_with_deku_leaf",
+          "@Entrance Logic/Secret Cave Entrance on Boating Course"
+        ]
+      },
+      {
+        "name": "can_obtain_15_blue_chu_jelly",
+        "access_rules": [
+          [
+            "@Macros/can_get_blue_chu_jelly_from_blue_chuchus",
+            "@Macros/_can_obtain_15_blue_chu_jelly",
+            "spoils"
+          ]
+        ]
       }
     ]
   }
