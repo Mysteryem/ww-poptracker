@@ -2764,7 +2764,11 @@
             "name": "Letter from Baito",
             "item_count": 1,
             "access_rules": [
-              "delivery,mom,power,windwaker,melody,shield_2,lyric,hammer,et_small:3,et_big"
+              [
+                "delivery",
+                "mom",
+                "@Jalhalla Boss Arena/Jalhalla Heart Container/"
+              ]
             ],
             "visibility_rules": [
               "mail_on,dungeons_on"
@@ -2804,10 +2808,7 @@
             "name": "Letter from Orca",
             "item_count": 1,
             "access_rules": [
-              "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,sword",
-              "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,bow",
-              "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,bombs",
-              "grapple,leaf,magic,$can_change_wind,fw_big,boomerang,hammer"
+              "@Kalle Demos Boss Arena/Kalle Demos Heart Container/"
             ],
             "visibility_rules": [
               "mail_on,dungeons_on"
@@ -2827,8 +2828,10 @@
             "name": "Letter from Aryll",
             "item_count": 1,
             "access_rules": [
-              "hammer,leaf,$can_play_song_of_passing",
-              "hammer,hookshot,$can_play_song_of_passing"
+              [
+                "@Helmaroc King Boss Arena/Helmaroc King Heart Container/",
+                "@Macros/can_play_song_of_passing"
+              ]
             ],
             "visibility_rules": [
               "mail_on,dungeons_on"
@@ -2838,10 +2841,12 @@
             "name": "Letter from Tingle",
             "item_count": 1,
             "access_rules": [
-              "[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing,tunerlogic_off",
-              "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing,tunerlogic_off",
-              "[bombs],hammer,$can_fly,wallet,$can_play_song_of_passing,tunerlogic_on,tuner",
-              "[bombs],hammer,hookshot,wallet,$can_play_song_of_passing,tunerlogic_on,tuner"
+              [
+                "@Macros/rescued_tingle",
+                "wallet",
+                "@Helmaroc King Boss Arena/Helmaroc King Heart Container/",
+                "@Macros/can_play_song_of_passing"
+              ]
             ],
             "visibility_rules": [
               "mail_on,dungeons_on"

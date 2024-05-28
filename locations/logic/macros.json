@@ -27,6 +27,12 @@
         ]
       },
       {
+        "name": "can_play_song_of_passing",
+        "access_rules": [
+          "windwaker, passing"
+        ]
+      },
+      {
         "name": "can_fly_with_deku_leaf_indoors",
         "access_rules": [
           "leaf, magic"
@@ -750,6 +756,9 @@
         "access_rules": [
           "sword"
         ]
+      },
+      {
+        "name": "rescued_tingle"
       }
     ]
   }
