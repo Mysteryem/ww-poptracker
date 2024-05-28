@@ -472,6 +472,12 @@
         "access_rules": [
           "@Macros/can_reach_outset_island_upper_level, @Macros/can_fly_with_deku_leaf_outdoors"
         ]
+      },
+      {
+        "name": "can_defeat_gohma",
+        "access_rules": [
+          "grapple"
+        ]
       }
     ]
   }

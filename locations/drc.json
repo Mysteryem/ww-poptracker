@@ -3,6 +3,9 @@
     "name": "Dragon Roost Cavern",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
+    "access_rules": [
+      "@Exit Logic/can_access_dragon_roost_cavern"
+    ],
     "visibility_rules": [
       "dungeons_on"
     ],
@@ -373,7 +376,18 @@
             "y": 384
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Gohma Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_gohma_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Gohma Heart Container",
         "sections": [
@@ -381,7 +395,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "drc_small:4,grapple,drc_big"
+              "@Macros/can_defeat_gohma"
             ]
           }
         ],

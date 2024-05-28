@@ -72,7 +72,7 @@ LOCATION_MAPPING = {
     [0x238049] = {"@Dragon Roost Cavern/Boss Stairs Left Chest/"},
     [0x238048] = {"@Dragon Roost Cavern/Boss Stairs Right Chest/"},
     [0x23804a] = {"@Dragon Roost Cavern/Boss Stairs Right Pot/"},
-    [0x23804b] = {"@Dragon Roost Cavern/Gohma Heart Container/"},
+    [0x23804b] = {"@Gohma Boss Arena/Gohma Heart Container/"},
 
     [0x23804c] = {"@The Great Sea/Forest Haven/On Tree Branch"},
     [0x23804d] = {"@The Great Sea/Forest Haven/Small Island Chest"},
