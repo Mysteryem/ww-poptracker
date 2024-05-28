@@ -4,7 +4,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "$fw_access"
+      "@Exit Logic/can_access_forbidden_woods"
     ],
     "visibility_rules": [
       "dungeons_on"
@@ -236,29 +236,6 @@
         ]
       },
       {
-        "name": "Mothula Miniboss Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "sword,fw_small",
-              "hammer,fw_small",
-              "bombs,fw_small",
-              "boomerang,bow,fw_small",
-              "magic_2,bow,fw_small"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "fw",
-            "x": 626,
-            "y": 49
-          }
-        ]
-      },
-      {
         "name": "Past Seeds Hanging by Vines",
         "sections": [
           {
@@ -380,7 +357,48 @@
             "y": 336
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Forbidden Woods Miniboss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_forbidden_woods_miniboss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
+      {
+        "name": "Mothula Miniboss Room",
+        "sections": [
+          {
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Macros/can_defeat_winged_mothulas"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "fw",
+            "x": 626,
+            "y": 49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kalle Demos Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_kalle_demos_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Kalle Demos Heart Container",
         "sections": [
@@ -388,10 +406,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "fw_big,boomerang,sword",
-              "fw_big,boomerang,bow",
-              "fw_big,boomerang,bombs",
-              "fw_big,boomerang,hammer"
+              "@Macros/can_defeat_kalle_demos"
             ]
           }
         ],

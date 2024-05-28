@@ -87,14 +87,14 @@ LOCATION_MAPPING = {
     [0x238055] = {"@Forbidden Woods/Vine Maze Right Chest/"},
     [0x238056] = {"@Forbidden Woods/Highest Pot in Vine Maze/"},
     [0x238057] = {"@Forbidden Woods/Tall Room Before Miniboss/"},
-    [0x238058] = {"@Forbidden Woods/Mothula Miniboss Room/"},
+    [0x238058] = {"@Forbidden Woods Miniboss Arena/Mothula Miniboss Room/"},
     [0x238059] = {"@Forbidden Woods/Past Seeds Hanging by Vines/"},
     [0x23805a] = {"@Forbidden Woods/Chest Across Red Hanging Flower/"},
     [0x23805b] = {"@Forbidden Woods/Tingle Statue Chest/"},
     [0x23805c] = {"@Forbidden Woods/Chest in Locked Tree Trunk/"},
     [0x23805d] = {"@Forbidden Woods/Big Key Chest/"},
     [0x23805e] = {"@Forbidden Woods/Double Mothula Room/"},
-    [0x23805f] = {"@Forbidden Woods/Kalle Demos Heart Container/"},
+    [0x23805f] = {"@Kalle Demos Boss Arena/Kalle Demos Heart Container/"},
 
     [0x238060] = {"@The Great Sea/Greatfish Isle/Hidden Chest"},
 

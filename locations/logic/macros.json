@@ -478,6 +478,21 @@
         "access_rules": [
           "grapple"
         ]
+      },
+      {
+        "name": "can_defeat_winged_mothulas",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_kalle_demos",
+        "access_rules": [
+          "boomerang"
+        ]
       }
     ]
   }

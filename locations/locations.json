@@ -2102,7 +2102,7 @@
           },
           {
             "name": "Mothula Miniboss Room",
-            "ref": "Forbidden Woods/Mothula Miniboss Room/"
+            "ref": "Forbidden Woods Miniboss Arena/Mothula Miniboss Room/"
           },
           {
             "name": "Past Seeds Hanging by Vines",
@@ -2130,7 +2130,7 @@
           },
           {
             "name": "Kalle Demos Heart Container",
-            "ref": "Forbidden Woods/Kalle Demos Heart Container/"
+            "ref": "Kalle Demos Boss Arena/Kalle Demos Heart Container/"
           }
         ],
         "map_locations": [
