@@ -16,13 +16,6 @@
           {
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
-            ]
           }
         ],
         "map_locations": [
@@ -38,11 +31,8 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              "@Macros/can_defeat_door_flowers",
+              "@Macros/can_defeat_boko_babas"
             ]
           }
         ],
@@ -61,14 +51,10 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "boomerang",
-              "bombs",
-              "bow,sword",
-              "bow,hammer",
-              "bow,magic_2",
-              "hookshot,sword",
-              "hookshot,hammer",
-              "hookshot,magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_door_flowers"
+              ]
             ]
           }
         ],
@@ -85,11 +71,7 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              "@Macros/can_fly_with_deku_leaf_indoors"
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -109,11 +91,10 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas"
+              ]
             ]
           }
         ],
@@ -130,11 +111,11 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple"
+              ]
             ]
           }
         ],
@@ -153,11 +134,11 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple"
+              ]
             ]
           }
         ],
@@ -174,11 +155,11 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple"
+              ]
             ]
           }
         ],
@@ -195,11 +176,11 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "hammer",
-              "boomerang",
-              "bombs",
-              "magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple"
+              ]
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -219,11 +200,13 @@
         "sections": [
           {
             "access_rules": [
-              "sword,fw_small",
-              "boomerang,fw_small",
-              "hammer,fw_small",
-              "bombs,fw_small",
-              "fw_small,magic_2,bow"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "fw_small:1",
+                "@Macros/can_defeat_peahats"
+              ]
             ]
           }
         ],
@@ -240,14 +223,14 @@
         "sections": [
           {
             "access_rules": [
-              "boomerang,fw_small",
-              "bombs,fw_small",
-              "fw_small,bow,sword",
-              "fw_small,bow,hammer",
-              "fw_small,bow,magic_2",
-              "fw_small,hookshot,sword",
-              "fw_small,hookshot,hammer",
-              "fw_small,hookshot,magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "fw_small:1",
+                "@Macros/can_defeat_door_flowers",
+                "@Macros/can_destroy_seeds_hanging_by_vines"
+              ]
             ]
           }
         ],
@@ -264,7 +247,12 @@
         "sections": [
           {
             "access_rules": [
-              "boomerang"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "boomerang"
+              ]
             ]
           }
         ],
@@ -283,8 +271,12 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "boomerang,bombs,tunerlogic_off",
-              "boomerang,bombs,tunerlogic_on,tuner"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "grapple",
+                "boomerang",
+                "@Macros/_has_tingle_bombs_or_can_activate_tingle_bomb_triggers_without_tingle_tuner"
+              ]
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -306,7 +298,12 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "boomerang"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "boomerang"
+              ]
             ]
           }
         ],
@@ -325,7 +322,12 @@
             "chest_unopened_img": "images/items/chest_bigkey.png",
             "chest_opened_img": "images/items/chest_bigkey_gray.png",
             "access_rules": [
-              "boomerang"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "grapple",
+                "boomerang"
+              ]
             ]
           }
         ],
@@ -342,11 +344,12 @@
         "sections": [
           {
             "access_rules": [
-              "sword",
-              "bombs",
-              "hammer",
-              "bow,boomerang",
-              "bow,magic_2"
+              [
+                "@Macros/can_fly_with_deku_leaf_indoors",
+                "@Macros/can_defeat_boko_babas",
+                "@Macros/_can_defeat_door_flowers_or_grapple",
+                "@Macros/can_defeat_mothulas"
+              ]
             ]
           }
         ],

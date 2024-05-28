@@ -835,6 +835,25 @@
           "bombs",
           "tunerlogic_on, tuner"
         ]
+      },
+      {
+        "name": "can_destroy_seeds_hanging_by_vines",
+        "access_rules": [
+          "boomerang",
+          "bow",
+          "bombs",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_activate_tingle_bomb_triggers_without_tingle_tuner"
+      },
+      {
+        "name": "_has_tingle_bombs_or_can_activate_tingle_bomb_triggers_without_tingle_tuner",
+        "access_rules": [
+          "@Macros/has_tingle_bombs",
+          "@Macros/can_activate_tingle_bomb_triggers_without_tingle_tuner"
+        ]
       }
     ]
   }
