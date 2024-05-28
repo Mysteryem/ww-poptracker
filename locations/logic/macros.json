@@ -519,6 +519,41 @@
         "access_rules": [
           "hammer"
         ]
+      },
+      {
+        "name": "can_defeat_stalfos",
+        "access_rules": [
+          "sword",
+          "bombs",
+          "hammer",
+          "@Macros/has_light_arrows"
+        ]
+      },
+      {
+        "name": "_can_aim_mirror_shield_or_has_light_arrows",
+        "access_rules": [
+          "@Macros/can_aim_mirror_shield",
+          "@Macros/has_light_arrows"
+        ]
+      },
+      {
+        "name": "can_defeat_jalhalla_poes",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_jalhalla",
+        "access_rules": [
+          [
+            "@Macros/_can_aim_mirror_shield_or_has_light_arrows",
+            "power",
+            "@Macros/can_defeat_jalhalla_poes"
+          ]
+        ]
       }
     ]
   }

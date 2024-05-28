@@ -2494,7 +2494,7 @@
           },
           {
             "name": "Stalfos Miniboss Room",
-            "ref": "Earth Temple/Stalfos Miniboss Room/"
+            "ref": "Earth Temple Miniboss Arena/Stalfos Miniboss Room/"
           },
           {
             "name": "Tingle Statue Chest",
@@ -2534,7 +2534,7 @@
           },
           {
             "name": "Jalhalla Heart Container",
-            "ref": "Earth Temple/Jalhalla Heart Container/"
+            "ref": "Jalhalla Boss Arena/Jalhalla Heart Container/"
           }
         ],
         "map_locations": [

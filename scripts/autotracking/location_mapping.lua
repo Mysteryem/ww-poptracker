@@ -157,7 +157,7 @@ LOCATION_MAPPING = {
     [0x238086] = {"@Earth Temple/Chest In Three Blocks Room/"},
     [0x238087] = {"@Earth Temple/Chest Behind Statues/"},
     [0x238088] = {"@Earth Temple/Casket in Second Crypt/"},
-    [0x238089] = {"@Earth Temple/Stalfos Miniboss Room/"},
+    [0x238089] = {"@Earth Temple Miniboss Arena/Stalfos Miniboss Room/"},
     [0x23808a] = {"@Earth Temple/Tingle Statue Chest/"},
     [0x23808b] = {"@Earth Temple/End of Foggy Room With Floormasters/"},
     [0x23808c] = {"@Earth Temple/Kill All Floormasters in Foggy Room/"},
@@ -167,7 +167,7 @@ LOCATION_MAPPING = {
     [0x238090] = {"@Earth Temple/Many Mirrors Room Left Chest/"},
     [0x238091] = {"@Earth Temple/Stalfos Crypt Room/"},
     [0x238092] = {"@Earth Temple/Big Key Chest/"},
-    [0x238093] = {"@Earth Temple/Jalhalla Heart Container/"},
+    [0x238093] = {"@Jalhalla Boss Arena/Jalhalla Heart Container/"},
 
     [0x238094] = {"@Wind Temple/Chest Between Two Dirt Patches/"},
     [0x238095] = {"@Wind Temple/Behind Stone Head in Hidden Upper Room/"},

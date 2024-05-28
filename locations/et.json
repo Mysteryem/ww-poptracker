@@ -4,7 +4,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "$et_access"
+      "@Exit Logic/can_access_earth_temple"
     ],
     "visibility_rules": [
       "dungeons_on"
@@ -131,29 +131,6 @@
             "map": "et",
             "x": 524,
             "y": 62
-          }
-        ]
-      },
-      {
-        "name": "Stalfos Miniboss Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "et_small:3,$can_magicarrow,sword",
-              "et_small:3,$can_magicarrow,bombs",
-              "et_small:3,$can_magicarrow,hammer",
-              "et_small:3,$can_magicarrow,hookshot",
-              "et_small:3,$can_lightarrow"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "et",
-            "x": 528,
-            "y": 138
           }
         ]
       },
@@ -329,7 +306,49 @@
             "y": 332
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Earth Temple Miniboss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_earth_temple_miniboss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
+      {
+        "name": "Stalfos Miniboss Room",
+        "sections": [
+          {
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Macros/can_defeat_stalfos",
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "et",
+            "x": 528,
+            "y": 138
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jalhalla Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_jalhalla_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Jalhalla Heart Container",
         "sections": [
@@ -337,7 +356,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3,et_big"
+              "@Macros/can_defeat_jalhalla"
             ]
           }
         ],
