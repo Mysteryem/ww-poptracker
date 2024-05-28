@@ -134,7 +134,7 @@ LOCATION_MAPPING = {
     [0x238074] = {"@Forsaken Fortress/Chest Inside Lower Jail Cell/"},
     [0x238075] = {"@Forsaken Fortress/Chest Guarded by Bokoblin/"},
     [0x238076] = {"@Forsaken Fortress/Chest on Bed/"},
-    [0x238077] = {"@Forsaken Fortress/Helmaroc King Heart Container/"},
+    [0x238077] = {"@Helmaroc King Boss Arena/Helmaroc King Heart Container/"},
 
     [0x238078] = {"@The Great Sea/Mother and Child Isles/Inside Mother Isle"},
 

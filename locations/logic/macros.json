@@ -513,6 +513,12 @@
         "access_rules": [
           "bow, bombs"
         ]
+      },
+      {
+        "name": "can_defeat_helmaroc_king",
+        "access_rules": [
+          "hammer"
+        ]
       }
     ]
   }

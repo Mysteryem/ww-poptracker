@@ -103,7 +103,18 @@
             "y": 150
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Helmaroc King Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_helmaroc_king_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Helmaroc King Heart Container",
         "sections": [
@@ -111,8 +122,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "hammer,$can_fly",
-              "hammer,hookshot"
+              "@Macros/can_defeat_helmaroc_king"
             ]
           }
         ],
