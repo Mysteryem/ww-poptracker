@@ -15,7 +15,10 @@
         "sections": [
           {
             "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png"
+            "chest_opened_img": "images/items/chest_metal_gray.png",
+            "access_rules": [
+              "@Macros/can_play_command_melody"
+            ]
           }
         ],
         "map_locations": [
@@ -31,8 +34,11 @@
         "sections": [
           {
             "access_rules": [
-              "$can_magicarrow,boomerang",
-              "$can_magicarrow,hookshot"
+              [
+                "@Macros/can_play_command_melody",
+                "@Macros/has_fire_arrows",
+                "@Macros/_boomerang_or_hookshot"
+              ]
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -52,7 +58,7 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,hammer"
+              "@Macros/can_reach_earth_temple_right_path, shield_2"
             ]
           }
         ],
@@ -69,7 +75,11 @@
         "sections": [
           {
             "access_rules": [
-              "hammer"
+              [
+                "@Macros/can_reach_earth_temple_right_path",
+                "power",
+                "@Macros/_can_play_command_melody_or_has_mirror_shield"
+              ]
             ]
           }
         ],
@@ -88,7 +98,13 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "et_small:2,$can_magicarrow"
+              [
+                "@Macros/can_reach_earth_temple_left_path",
+                "@Macros/has_fire_arrows",
+                "power",
+                "@Macros/can_defeat_floormasters",
+                "@Macros/_can_play_command_melody_or_can_aim_mirror_shield"
+              ]
             ]
           }
         ],
@@ -105,7 +121,10 @@
         "sections": [
           {
             "access_rules": [
-              "et_small:2,$can_magicarrow"
+              [
+                "@Macros/can_reach_earth_temple_moblins_and_poes_room",
+                "@Macros/_can_play_command_melody_or_can_aim_mirror_shield"
+              ]
             ]
           }
         ],
@@ -122,7 +141,7 @@
         "sections": [
           {
             "access_rules": [
-              "et_small:2,$can_magicarrow"
+              "@Macros/can_reach_earth_temple_moblins_and_poes_room"
             ]
           }
         ],
@@ -141,8 +160,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "shield_2,bombs,tunerlogic_off",
-              "shield_2,bombs,tunerlogic_on,tuner"
+              "@Macros/can_reach_earth_temple_basement, @Macros/has_tingle_bombs"
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -162,7 +180,10 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,lyric"
+              [
+                "@Macros/can_reach_earth_temple_redead_hub_room",
+                "@Macros/_can_play_command_melody_or_can_aim_mirror_shield"
+              ]
             ]
           }
         ],
@@ -181,8 +202,11 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "shield_2,lyric,sword",
-              "shield_2,lyric,bow"
+              [
+                "@Macros/can_reach_earth_temple_redead_hub_room",
+                "@Macros/_can_play_command_melody_or_can_aim_mirror_shield",
+                "@Macros/can_defeat_floormasters"
+              ]
             ]
           }
         ],
@@ -199,8 +223,12 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,lyric,$can_magicarrow,hookshot",
-              "shield_2,lyric,$can_magicarrow,boomerang"
+              [
+                "@Macros/can_reach_earth_temple_redead_hub_room",
+                "@Macros/_can_play_command_melody_or_can_aim_mirror_shield",
+                "@Macros/has_fire_arrows",
+                "@Macros/_boomerang_or_hookshot"
+              ]
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -220,7 +248,7 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
+              "@Macros/can_reach_earth_temple_third_crypt"
             ]
           }
         ],
@@ -237,7 +265,12 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
+              [
+                "@Macros/can_reach_earth_temple_many_mirrors_room",
+                "power",
+                "@Macros/can_play_command_melody",
+                "@Macros/can_aim_mirror_shield"
+              ]
             ]
           }
         ],
@@ -254,7 +287,7 @@
         "sections": [
           {
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
+              "@Macros/can_reach_earth_temple_many_mirrors_room, @Macros/can_play_command_melody"
             ]
           }
         ],
@@ -273,7 +306,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3"
+              "@Macros/can_reach_earth_temple_many_mirrors_room, @Macros/can_defeat_stalfos"
             ]
           }
         ],
@@ -292,10 +325,14 @@
             "chest_unopened_img": "images/items/chest_bigkey.png",
             "chest_opened_img": "images/items/chest_bigkey_gray.png",
             "access_rules": [
-              "shield_2,lyric,hammer,et_small:3,$can_magicarrow",
-              "shield_2,lyric,hammer,et_small:3,bombs",
-              "shield_2,lyric,hammer,et_small:3,leaf",
-              "shield_2,lyric,hammer,et_small:3,hookshot"
+              [
+                "@Macros/can_reach_earth_temple_many_mirrors_room",
+                "power",
+                "@Macros/can_play_command_melody",
+                "@Macros/can_aim_mirror_shield",
+                "@Macros/can_defeat_blue_bubbles",
+                "@Macros/can_defeat_darknuts"
+              ]
             ]
           }
         ],

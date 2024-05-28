@@ -862,6 +862,29 @@
           "@Macros/can_bring_west_servant_of_the_tower",
           "@Macros/can_bring_north_servant_of_the_tower"
         ]
+      },
+      {
+        "name": "_boomerang_or_hookshot",
+        "access_rules": [
+          "boomerang",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_right_path",
+        "access_rules": [
+          [
+            "@Macros/can_reach_earth_temple_sun_statue_room",
+            "@Macros/can_play_command_melody",
+            "hammer"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_many_mirrors_room",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_tall_vine_room"
+        ]
       }
     ]
   }
