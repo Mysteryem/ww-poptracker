@@ -167,7 +167,7 @@ function update_entrances()
     -- Check for unreachable exits
     for _, entrance in ipairs(ENTRANCES) do
         local exit_name = entrance.exit
-        if not is_exit_possible(entrance.exit) then
+        if exit_name and not is_exit_possible(exit_name) then
             print("Exit '" .. exit_name .. "' is impossible to reach")
             impossible_exits[exit_name] = true
         end
