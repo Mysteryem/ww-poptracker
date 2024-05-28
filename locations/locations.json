@@ -2431,7 +2431,12 @@
             "name": "Withered Trees",
             "item_count": 1,
             "access_rules": [
-              "grapple,bottle,$can_fly,$can_play_ballad_of_gales"
+              [
+                "@Macros/can_access_forest_haven",
+                "bottle",
+                "@can_play_ballad_of_gales",
+                "@The Great Sea/Cliff Plateau Isles/Highest Isle"
+              ]
             ],
             "visibility_rules": [
               "longsq_on"

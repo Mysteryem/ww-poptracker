@@ -33,6 +33,12 @@
         ]
       },
       {
+        "name": "can_play_ballad_of_gales",
+        "access_rules": [
+          "windwaker, ballad"
+        ]
+      },
+      {
         "name": "can_fly_with_deku_leaf_indoors",
         "access_rules": [
           "leaf, magic"
