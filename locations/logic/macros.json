@@ -854,6 +854,14 @@
           "@Macros/has_tingle_bombs",
           "@Macros/can_activate_tingle_bomb_triggers_without_tingle_tuner"
         ]
+      },
+      {
+        "name": "_can_bring_any_servant_of_the_tower",
+        "access_rules": [
+          "@Macros/can_bring_east_servant_of_the_tower",
+          "@Macros/can_bring_west_servant_of_the_tower",
+          "@Macros/can_bring_north_servant_of_the_tower"
+        ]
       }
     ]
   }

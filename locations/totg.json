@@ -101,7 +101,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,bow"
+              "bombs, bow"
             ]
           }
         ],
@@ -118,8 +118,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,totg_small:1,tunerlogic_off",
-              "bombs,totg_small:1,tunerlogic_on,tuner"
+              "@Macros/can_reach_tower_of_the_gods_second_floor, @Macros/has_tingle_bombs"
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -139,7 +138,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,totg_small:1,bow"
+              "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
             ]
           }
         ],
@@ -156,7 +155,11 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,totg_small:1,windwaker"
+              [
+                "@Macros/can_reach_tower_of_the_gods_second_floor",
+                "@Macros/_can_bring_any_servant_of_the_tower",
+                "windwaker"
+              ]
             ]
           }
         ],
@@ -173,8 +176,11 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,$can_change_wind,melody,bow,totg_small:1,grapple",
-              "bombs,$can_change_wind,melody,bow,totg_small:1,$can_fly"
+              [
+                "@Macros/can_reach_tower_of_the_gods_second_floor",
+                "bombs",
+                "@Macros/can_play_winds_requiem"
+              ]
             ]
           }
         ],
@@ -191,8 +197,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:1,grapple",
-              "bombs,windwaker,melody,bow,totg_small:1,$can_fly"
+              "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
             ]
           }
         ],
@@ -209,8 +214,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:1,grapple",
-              "bombs,windwaker,melody,bow,totg_small:1,$can_fly"
+              "@Macros/can_reach_tower_of_the_gods_second_floor, bow"
             ]
           }
         ],
@@ -227,7 +231,7 @@
         "sections": [
           {
             "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly"
+              "@Macros/can_reach_tower_of_the_gods_third_floor"
             ],
             "visibility_rules": [
               "secretpot_on"
@@ -249,7 +253,7 @@
             "chest_unopened_img": "images/items/chest_bigkey.png",
             "chest_opened_img": "images/items/chest_bigkey_gray.png",
             "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly"
+              "@Macros/can_reach_tower_of_the_gods_third_floor"
             ]
           }
         ],
