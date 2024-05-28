@@ -891,6 +891,202 @@
         "access_rules": [
           "@Macros/can_open_wind_temple_upper_giant_grate, @Macros/can_play_command_melody"
         ]
+      },
+      {
+        "name": "can_defeat_12_eye_big_octos",
+        "access_rules": [
+          "bow, quiver",
+          "bow_3",
+          "bombs",
+          "boomerang"
+        ]
+      },
+      {
+        "name": "rescued_aryll"
+      },
+      {
+        "name": "_can_fly_with_deku_leaf_outdoors_or_hookshot",
+        "access_rules": [
+          "@Macros/can_fly_with_deku_leaf_outdoors",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_farm_green_chu_jelly",
+        "access_rules": [
+          "grapple, spoils"
+        ]
+      },
+      {
+        "name": "can_farm_joy_pendants",
+        "access_rules": [
+          "grapple, spoils"
+        ]
+      },
+      {
+        "name": "can_farm_skull_necklaces",
+        "access_rules": [
+          "grapple, spoils"
+        ]
+      },
+      {
+        "name": "can_farm_golden_feathers",
+        "access_rules": [
+          "grapple, spoils"
+        ]
+      },
+      {
+        "name": "can_farm_lots_of_rupees"
+      },
+      {
+        "name": "can_destroy_cannons",
+        "access_rules": [
+          "bombs",
+          "boomerang"
+        ]
+      },
+      {
+        "name": "can_get_past_hyrule_barrier",
+        "access_rules": [
+          "@Macros/can_access_hyrule, mastersword_full",
+          "@Macros/can_access_hyrule, tww_in_swordless_mode"
+        ]
+      },
+      {
+        "name": "can_access_ganons_tower",
+        "access_rules": [
+          "@Macros/can_get_past_hyrule_barrier, @Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+        ]
+      },
+      {
+        "name": "can_complete_memory_dragon_roost_cavern_and_gohma",
+        "access_rules": [
+          [
+            "grapple",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_defeat_gohma"
+          ]
+        ]
+      },
+      {
+        "name": "can_complete_memory_forbidden_woods_and_kalle_demos",
+        "access_rules": [
+          [
+            "@Macros/can_fan_with_deku_leaf",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_defeat_kalle_demos"
+          ]
+        ]
+      },
+      {
+        "name": "can_complete_memory_earth_temple_and_jalhalla",
+        "access_rules": [
+          "@Macros/can_defeat_jalhalla"
+        ]
+      },
+      {
+        "name": "can_complete_memory_wind_temple_and_molgera",
+        "access_rules": [
+          "@Macros/can_fly_with_deku_leaf_indoors, @Macros/can_defeat_molgera"
+        ]
+      },
+      {
+        "name": "can_complete_all_memory_dungeons_and_bosses",
+        "access_rules": [
+          [
+            "@Macros/can_complete_memory_dragon_roost_cavern_and_gohma",
+            "@Macros/can_complete_memory_forbidden_woods_and_kalle_demos",
+            "@Macros/can_complete_memory_earth_temple_and_jalhalla",
+            "@Macros/can_complete_memory_wind_temple_and_molgera"
+          ]
+        ]
+      },
+      {
+        "name": "can_unlock_ganons_tower_four_boss_door",
+        "access_rules": [
+          "@Macros/can_complete_all_memory_dungeons_and_bosses",
+          "tww_rematch_bosses_skipped"
+        ]
+      },
+      {
+        "name": "can_reach_ganons_tower_phantom_ganon_room",
+        "access_rules": [
+          "@Macros/can_access_ganons_tower, @Macros/can_unlock_ganons_tower_four_boss_door"
+        ]
+      },
+      {
+        "name": "can_defeat_moblins",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_unlock_puppet_ganon_door",
+        "access_rules": [
+          [
+            "@Macros/can_defeat_moblins",
+            "@Macros/can_defeat_mighty_darknuts"
+          ]
+        ]
+      },
+      {
+        "name": "can_defeat_puppet_ganon",
+        "access_rules": [
+          "@Macros/has_light_arrows, boomerang"
+        ]
+      },
+      {
+        "name": "can_reach_and_defeat_puppet_ganon",
+        "access_rules": [
+          [
+            "@Macros/can_reach_ganons_tower_phantom_ganon_room",
+            "@Macros/has_light_arrows",
+            "@Macros/can_unlock_puppet_ganon_door",
+            "@Macros/can_defeat_puppet_ganon"
+          ]
+        ]
+      },
+      {
+        "name": "can_defeat_ganondorf",
+        "access_rules": [
+          "sword, shield",
+          "tww_in_swordless_mode, shield"
+        ]
+      },
+      {
+        "name": "can_reach_and_defeat_ganondorf",
+        "access_rules": [
+          [
+            "@Macros/can_reach_and_defeat_puppet_ganon",
+            "grapple",
+            "hookshot",
+            "@Macros/can_defeat_ganondorf"
+          ]
+        ]
+      },
+      {
+        "name": "can_defeat_big_octos",
+        "access_rules": [
+          "bow",
+          "bombs",
+          "boomerang"
+        ]
+      },
+      {
+        "name": "can_buy_bait"
+      },
+      {
+        "name": "can_defeat_bombchus",
+        "access_rules": [
+          "sword",
+          "bow",
+          "boomerang",
+          "hammer",
+          "grapple"
+        ]
       }
     ]
   }

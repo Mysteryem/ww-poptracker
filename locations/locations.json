@@ -121,10 +121,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bow_3",
-              "grapple,bow,quiver",
-              "grapple,bombs",
-              "grapple,boomerang"
+              "@Macros/can_defeat_12_eye_big_octos, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -233,12 +230,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "sword",
-              "grapple",
-              "boomerang",
-              "bow",
-              "bombs",
-              "hammer"
+              "@Macros/can_defeat_miniblins"
             ],
             "visibility_rules": [
               "submarines_on"
@@ -276,8 +268,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bow",
-              "hookshot"
+              "@Macros/can_defeat_wizzrobes_at_range"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -289,10 +280,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bow_3",
-              "grapple,bow,quiver",
-              "grapple,bombs",
-              "grapple,boomerang"
+              "@Macros/can_defeat_12_eye_big_octos, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -352,7 +340,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind"
+              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -376,7 +364,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "windwaker,ballad"
+              "@Macros/can_play_ballad_of_gales"
             ],
             "visibility_rules": [
               "misc_on"
@@ -420,6 +408,9 @@
           {
             "name": "Maggie - Free Item",
             "item_count": 1,
+            "access_rules": [
+              "@Macros/rescued_aryll"
+            ],
             "visibility_rules": [
               "gifts_on"
             ]
@@ -471,7 +462,7 @@
             "name": "Lenzo's House - Left Chest",
             "item_count": 1,
             "access_rules": [
-              "picto"
+              "@Macros/can_play_winds_requiem, picto"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -481,7 +472,7 @@
             "name": "Lenzo's House - Right Chest",
             "item_count": 1,
             "access_rules": [
-              "picto"
+              "@Macros/can_play_winds_requiem, picto"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -491,7 +482,7 @@
             "name": "Maggie - Delivery Reward",
             "item_count": 1,
             "access_rules": [
-              "delivery,moblin"
+              "@Macros/rescued_aryll, delivery, moblin"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -501,7 +492,7 @@
             "name": "Cafe Bar - Postman",
             "item_count": 1,
             "access_rules": [
-              "delivery,maggie"
+              "@Macros/rescued_aryll, delivery, maggie"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -511,7 +502,7 @@
             "name": "Kreeb - Light Up Lighthouse",
             "item_count": 1,
             "access_rules": [
-              "$can_magicarrow,$can_change_wind"
+              "@Macros/can_play_winds_requiem, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -523,8 +514,11 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_change_wind,$can_magicarrow,$can_fly",
-              "$can_magicarrow,hookshot"
+              [
+                "@Macros/can_play_winds_requiem",
+                "@Macros/has_fire_arrows",
+                "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot"
+              ]
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -534,7 +528,7 @@
             "name": "Zunari - Stock Exotic Flower in Zunari's Shop",
             "item_count": 1,
             "access_rules": [
-              "delivery"
+              "@Macros/rescued_aryll, delivery"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -543,6 +537,9 @@
           {
             "name": "Mila - Follow the Thief",
             "item_count": 1,
+            "access_rules": [
+              "@Macros/rescued_aryll"
+            ],
             "visibility_rules": [
               "shortsq_on"
             ]
@@ -551,7 +548,7 @@
             "name": "Pompie and Vera - Secret Meeting Photo",
             "item_count": 1,
             "access_rules": [
-              "picto"
+              "@Macros/can_play_winds_requiem, picto"
             ],
             "visibility_rules": [
               "shortsq_on"
@@ -583,7 +580,7 @@
             "name": "Chu Jelly Juice Shop - Give 15 Green Chu Jelly",
             "item_count": 1,
             "access_rules": [
-              "grapple,spoils"
+              "@Macros/can_farm_green_chu_jelly"
             ],
             "visibility_rules": [
               "spoilssq_on"
@@ -613,7 +610,7 @@
             "name": "Mrs. Marie - Give 21 Joy Pendants",
             "item_count": 1,
             "access_rules": [
-              "grapple,spoils"
+              "spoils, @Macros/can_farm_joy_pendants"
             ],
             "visibility_rules": [
               "spoilssq_on"
@@ -623,7 +620,7 @@
             "name": "Mrs. Marie - Give 40 Joy Pendants",
             "item_count": 1,
             "access_rules": [
-              "grapple,spoils"
+              "spoils, @Macros/can_farm_joy_pendants"
             ],
             "visibility_rules": [
               "spoilssq_on"
@@ -633,7 +630,7 @@
             "name": "Maggie's Father - Give 20 Skull Necklaces",
             "item_count": 1,
             "access_rules": [
-              "grapple,spoils"
+              "@Macros/rescued_aryll, spoils, @Macros/can_farm_skull_necklaces"
             ],
             "visibility_rules": [
               "spoilssq_on"
@@ -653,8 +650,7 @@
             "name": "Lenzo's House - Bring Forest Firefly",
             "item_count": 1,
             "access_rules": [
-              "picto,bottle,grapple",
-              "picto,bottle,$can_fly"
+              "picto, bottle, @Macros/can_access_forest_haven"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -664,7 +660,7 @@
             "name": "Sam - Decorate the Town",
             "item_count": 1,
             "access_rules": [
-              "delivery"
+              "@Macros/rescued_aryll, delivery"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -674,7 +670,7 @@
             "name": "Kamo - Full Moon Photo",
             "item_count": 1,
             "access_rules": [
-              "picto_2,$can_play_song_of_passing"
+              "picto_2, @Macros/can_play_song_of_passing"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -684,7 +680,7 @@
             "name": "Linda and Anton",
             "item_count": 1,
             "access_rules": [
-              "picto_2,$can_play_song_of_passing"
+              "picto_2, @Macros/can_play_song_of_passing"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -867,7 +863,7 @@
             "name": "Rito Aerie - Give Hoskit 20 Golden Feathers",
             "item_count": 1,
             "access_rules": [
-              "grapple,spoils"
+              "spoils, @Macros/can_farm_golden_feathers"
             ],
             "visibility_rules": [
               "spoilssq_on"
@@ -878,7 +874,7 @@
             "item_count": 1,
             "access_rules": [
               "bow",
-              "bait",
+              "bait, @Macros/can_buy_hyoi_pears",
               "boomerang",
               "bombs"
             ],
@@ -890,8 +886,7 @@
             "name": "Fly Across Platforms Around Island",
             "item_count": 1,
             "access_rules": [
-              "$can_fly,$can_change_wind,$can_cut_grass",
-              "$can_fly,$can_change_wind,magic_2"
+              "@Macros/can_fly_with_deku_leaf_outdoors, @Macros/_can_cut_grass_or_has_magic_meter_upgrade"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -1026,7 +1021,7 @@
             "name": "Bird-Man Contest - First Prize",
             "item_count": 1,
             "access_rules": [
-              "leaf,magic_2"
+              "@Macros/can_fly_with_deku_leaf_outdoors, magic_2"
             ],
             "visibility_rules": [
               "minigames_on"
@@ -1038,10 +1033,13 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bow",
-              "hookshot,sword",
-              "hookshot,hammer",
-              "hookshot,bombs"
+              [
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_red_chuchus",
+                "@Macros/can_defeat_green_chuchus",
+                "@Macros/can_defeat_miniblins",
+                "@Macros/can_defeat_wizzrobes_at_range"
+              ]
             ],
             "visibility_rules": [
               "submarines_on"
@@ -1104,7 +1102,7 @@
             "name": "Beedle's Special Shop Ship - 500 Item",
             "item_count": 1,
             "access_rules": [
-              "wallet"
+              "wallet, @Macros/can_farm_lots_of_rupees"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -1114,7 +1112,7 @@
             "name": "Beedle's Special Shop Ship - 900 Item",
             "item_count": 1,
             "access_rules": [
-              "wallet"
+              "wallet, @Macros/can_farm_lots_of_rupees"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -1124,7 +1122,7 @@
             "name": "Beedle's Special Shop Ship - 950 Item",
             "item_count": 1,
             "access_rules": [
-              "wallet"
+              "wallet, @Macros/can_farm_lots_of_rupees"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -1134,7 +1132,7 @@
             "name": "Western Lookout Platform - Destroy the Cannons",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons,$can_fly,$can_change_wind"
+              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1144,7 +1142,7 @@
             "name": "Eastern Lookout Platform - Destroy the Cannons",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons,$can_fly,$can_change_wind"
+              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1163,7 +1161,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bombs"
+              "bombs, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -1195,7 +1193,7 @@
             "name": "Lookout Platform - Defeat the Cannons and Enemies",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1294,7 +1292,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind"
+              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -1318,7 +1316,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_fly,$can_change_wind"
+              "@Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -1342,7 +1340,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind"
+              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -1373,7 +1371,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind"
+              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -1383,7 +1381,7 @@
             "name": "Lookout Platform - Destroy the Cannons",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1493,15 +1491,17 @@
             "name": "Ganon's Tower - Maze Chest",
             "item_count": 1,
             "access_rules": [
-              "triforce_8,mastersword_full,hookshot",
-              "triforce_8,mastersword_full,$can_fly"
+              [
+                "@Macros/can_reach_ganons_tower_phantom_ganon_room",
+                "@Macros/can_defeat_phantom_ganon"
+              ]
             ]
           },
           {
             "name": "Defeat Ganondorf",
             "item_count": 1,
             "access_rules": [
-              "triforce_8,mastersword_full,$can_lightarrow,boomerang,grapple,hookshot,shield"
+              "@Macros/can_reach_and_defeat_ganondorf"
             ]
           }
         ],
@@ -1530,7 +1530,7 @@
             "name": "Northeastern Lookout Platform - Destroy the Cannons",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1540,7 +1540,7 @@
             "name": "Southwestern Lookout Platform - Defeat the Enemies",
             "item_count": 1,
             "access_rules": [
-              "$can_fly,$can_change_wind"
+              "@Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1564,7 +1564,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "bait"
+              "bait, @Macros/can_buy_hyoi_pears"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -1586,7 +1586,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bombs"
+              "bombs, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -1610,7 +1610,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "bombs,$can_change_wind"
+              "bombs, @Macros/can_play_winds_requiem"
             ],
             "visibility_rules": [
               "misc_on"
@@ -1620,8 +1620,7 @@
             "name": "Lookout Platform - Defeat the Enemies",
             "item_count": 1,
             "access_rules": [
-              "bow",
-              "hookshot"
+              "@Macros/can_defeat_wizzrobes_at_range"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1670,7 +1669,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1695,7 +1694,7 @@
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
               "hookshot",
-              "$can_fly"
+              "@Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -1733,9 +1732,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bow",
-              "grapple,bombs",
-              "grapple,boomerang"
+              "@Macros/can_defeat_big_octos, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -1869,9 +1866,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "grapple,bow",
-              "grapple,bombs",
-              "grapple,boomerang"
+              "@Macros/can_defeat_big_octos, grapple"
             ],
             "visibility_rules": [
               "octos_on"
@@ -1895,7 +1890,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_destroy_cannons,$can_fly,$can_change_wind"
+              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -1958,8 +1953,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind",
-              "boomerang,$can_fly,$can_change_wind"
+              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -1969,8 +1963,7 @@
             "name": "Lookout Platform - Destroy the Southeast Cannons",
             "item_count": 1,
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind",
-              "boomerang,$can_fly,$can_change_wind"
+              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "lookouts_on"
@@ -2034,13 +2027,13 @@
       },
       {
         "name": "Forest Haven",
-        "access_rules": [
-          "grapple"
-        ],
         "sections": [
           {
             "name": "On Tree Branch",
             "item_count": 1,
+            "access_rules": [
+              "@Macros/can_access_forest_haven, grapple"
+            ],
             "visibility_rules": [
               "islandpuzzles_on"
             ]
@@ -2051,7 +2044,12 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "$can_fly,$can_change_wind"
+              [
+                "@Macros/can_access_forest_haven",
+                "grapple",
+                "@Macros/can_fly_with_deku_leaf_outdoors",
+                "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+              ]
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -2200,8 +2198,10 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "leaf,hookshot",
-              "$can_fly"
+              [
+                "@Macros/can_fan_with_deku_leaf",
+                "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot"
+              ]
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -2304,7 +2304,11 @@
             "name": "Dig up Black Soil",
             "item_count": 1,
             "access_rules": [
-              "bait,power"
+              [
+                "bait",
+                "@Macros/can_buy_bait",
+                "power"
+              ]
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -2398,7 +2402,7 @@
             "name": "Goron Trading Reward",
             "item_count": 1,
             "access_rules": [
-              "delivery"
+              "@Macros/rescued_aryll, delivery"
             ],
             "visibility_rules": [
               "longsq_on"
@@ -2425,10 +2429,14 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "ghost,sword",
-              "ghost,bombs",
-              "ghost,hammer",
-              "ghost,$can_lightarrow"
+              [
+                "ghost",
+                "@Macros/can_play_ballad_of_gales",
+                "@Macros/can_defeat_wizzrobes",
+                "@Macros/can_defeat_poes",
+                "@Macros/can_defeat_redeads",
+                "@Macros/can_defeat_stalfos"
+              ]
             ],
             "visibility_rules": [
               "misc_on"
@@ -2450,7 +2458,7 @@
             "name": "Top of the Island",
             "item_count": 1,
             "access_rules": [
-              "bait"
+              "bait, @Macros/can_buy_hyoi_pears"
             ],
             "visibility_rules": [
               "islandpuzzles_on"
@@ -2462,11 +2470,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "sword",
-              "bow",
-              "boomerang",
-              "hammer",
-              "hook"
+              "@Macros/can_defeat_bombchus"
             ],
             "visibility_rules": [
               "submarines_on"
@@ -2574,7 +2578,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "bombs,$can_fly,$can_change_wind"
+              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
             ],
             "visibility_rules": [
               "reefs_on"
@@ -2593,9 +2597,7 @@
             "chest_unopened_img": "images/items/chest_salvage.png",
             "chest_opened_img": "images/items/chest_salvage_gray.png",
             "access_rules": [
-              "bow",
-              "bombs",
-              "boomerang"
+              "@Macros/can_defeat_big_octos"
             ],
             "visibility_rules": [
               "fairies_on,octos_on"
@@ -2704,7 +2706,7 @@
             "name": "Lookout Platform - Destroy the Cannons",
             "item_count": 1,
             "access_rules": [
-              "$can_destroy_cannons"
+              "@Macros/can_destroy_cannons"
             ],
             "visibility_rules": [
               "lookouts_on"
