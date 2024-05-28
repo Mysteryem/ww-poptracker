@@ -1,0 +1,486 @@
+[
+  {
+    "name": "Dungeon Entrance on Dragon Roost Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Dungeon Entrance on Dragon Roost Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Dungeon Entrance on Dragon Roost Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Entrance in Forest Haven Sector",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Dungeon Entrance in Forest Haven Sector",
+    "stages": [
+      {
+        "img": "images/items/entrances/Dungeon Entrance in Forest Haven Sector.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Entrance in Tower of the Gods Sector",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Dungeon Entrance in Tower of the Gods Sector",
+    "stages": [
+      {
+        "img": "images/items/entrances/Dungeon Entrance in Tower of the Gods Sector.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Entrance on Headstone Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Dungeon Entrance on Headstone Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Dungeon Entrance on Headstone Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Entrance on Gale Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Dungeon Entrance on Gale Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Dungeon Entrance on Gale Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Entrance in Forbidden Woods",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Miniboss Entrance in Forbidden Woods",
+    "stages": [
+      {
+        "img": "images/items/entrances/Miniboss Entrance in Forbidden Woods.png"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Entrance in Tower of the Gods",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Miniboss Entrance in Tower of the Gods",
+    "stages": [
+      {
+        "img": "images/items/entrances/Miniboss Entrance in Tower of the Gods.png"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Entrance in Earth Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Miniboss Entrance in Earth Temple",
+    "stages": [
+      {
+        "img": "images/items/entrances/Miniboss Entrance in Earth Temple.png"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Entrance in Wind Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Miniboss Entrance in Wind Temple",
+    "stages": [
+      {
+        "img": "images/items/entrances/Miniboss Entrance in Wind Temple.png"
+      }
+    ]
+  },
+  {
+    "name": "Miniboss Entrance in Hyrule Castle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Miniboss Entrance in Hyrule Castle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Miniboss Entrance in Hyrule Castle.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Dragon Roost Cavern",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Dragon Roost Cavern",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Dragon Roost Cavern.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Forbidden Woods",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Forbidden Woods",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Forbidden Woods.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Tower of the Gods",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Tower of the Gods",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Tower of the Gods.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Forsaken Fortress",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Forsaken Fortress",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Forsaken Fortress.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Earth Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Earth Temple",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Earth Temple.png"
+      }
+    ]
+  },
+  {
+    "name": "Boss Entrance in Wind Temple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Boss Entrance in Wind Temple",
+    "stages": [
+      {
+        "img": "images/items/entrances/Boss Entrance in Wind Temple.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Outset Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Outset Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Outset Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Dragon Roost Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Dragon Roost Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Dragon Roost Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Fire Mountain",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Fire Mountain",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Fire Mountain.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Ice Ring Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Ice Ring Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Ice Ring Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Private Oasis",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Private Oasis",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Private Oasis.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Needle Rock Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Needle Rock Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Needle Rock Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Angular Isles",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Angular Isles",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Angular Isles.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Boating Course",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Boating Course",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Boating Course.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Stone Watcher Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Stone Watcher Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Stone Watcher Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Overlook Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Overlook Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Overlook Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Bird's Peak Rock",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Bird's Peak Rock",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Bird's Peak Rock.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Pawprint Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Pawprint Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Pawprint Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Pawprint Isle Side Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Pawprint Isle Side Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Pawprint Isle Side Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Diamond Steppe Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Diamond Steppe Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Diamond Steppe Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Bomb Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Bomb Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Bomb Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Rock Spire Isle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Rock Spire Isle",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Rock Spire Isle.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Shark Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Shark Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Shark Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Cliff Plateau Isles",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Cliff Plateau Isles",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Cliff Plateau Isles.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Horseshoe Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Horseshoe Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Horseshoe Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Secret Cave Entrance on Star Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Secret Cave Entrance on Star Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Secret Cave Entrance on Star Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Inner Entrance in Ice Ring Isle Secret Cave",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Inner Entrance in Ice Ring Isle Secret Cave",
+    "stages": [
+      {
+        "img": "images/items/entrances/Inner Entrance in Ice Ring Isle Secret Cave.png"
+      }
+    ]
+  },
+  {
+    "name": "Inner Entrance in Cliff Plateau Isles Secret Cave",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Inner Entrance in Cliff Plateau Isles Secret Cave",
+    "stages": [
+      {
+        "img": "images/items/entrances/Inner Entrance in Cliff Plateau Isles Secret Cave.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Outset Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Outset Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Outset Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Thorned Fairy Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Thorned Fairy Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Thorned Fairy Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Eastern Fairy Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Eastern Fairy Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Eastern Fairy Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Western Fairy Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Western Fairy Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Western Fairy Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Southern Fairy Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Southern Fairy Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Southern Fairy Island.png"
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Entrance on Northern Fairy Island",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "Placeholder for Fairy Fountain Entrance on Northern Fairy Island",
+    "stages": [
+      {
+        "img": "images/items/entrances/Fairy Fountain Entrance on Northern Fairy Island.png"
+      }
+    ]
+  }
+]

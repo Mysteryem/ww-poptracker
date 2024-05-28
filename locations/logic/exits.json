@@ -1,0 +1,271 @@
+[
+  {
+    "name": "Exit Logic",
+    "children": [
+      {
+        "name": "can_access_dragon_roost_cavern",
+        "access_rules": [
+          "$can_access_exit|Dragon Roost Cavern"
+        ]
+      },
+      {
+        "name": "can_access_forbidden_woods",
+        "access_rules": [
+          "$can_access_exit|Forbidden Woods"
+        ]
+      },
+      {
+        "name": "can_access_tower_of_the_gods",
+        "access_rules": [
+          "$can_access_exit|Tower of the Gods"
+        ]
+      },
+      {
+        "name": "can_access_earth_temple",
+        "access_rules": [
+          "$can_access_exit|Earth Temple"
+        ]
+      },
+      {
+        "name": "can_access_wind_temple",
+        "access_rules": [
+          "$can_access_exit|Wind Temple"
+        ]
+      },
+      {
+        "name": "can_access_forbidden_woods_miniboss_arena",
+        "access_rules": [
+          "$can_access_exit|Forbidden Woods Miniboss Arena"
+        ]
+      },
+      {
+        "name": "can_access_tower_of_the_gods_miniboss_arena",
+        "access_rules": [
+          "$can_access_exit|Tower of the Gods Miniboss Arena"
+        ]
+      },
+      {
+        "name": "can_access_earth_temple_miniboss_arena",
+        "access_rules": [
+          "$can_access_exit|Earth Temple Miniboss Arena"
+        ]
+      },
+      {
+        "name": "can_access_wind_temple_miniboss_arena",
+        "access_rules": [
+          "$can_access_exit|Wind Temple Miniboss Arena"
+        ]
+      },
+      {
+        "name": "can_access_master_sword_chamber",
+        "access_rules": [
+          "$can_access_exit|Master Sword Chamber"
+        ]
+      },
+      {
+        "name": "can_access_gohma_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Gohma Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_kalle_demos_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Kalle Demos Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_gohdan_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Gohdan Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_helmaroc_king_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Helmaroc King Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_jalhalla_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Jalhalla Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_molgera_boss_arena",
+        "access_rules": [
+          "$can_access_exit|Molgera Boss Arena"
+        ]
+      },
+      {
+        "name": "can_access_savage_labyrinth",
+        "access_rules": [
+          "$can_access_exit|Savage Labyrinth"
+        ]
+      },
+      {
+        "name": "can_access_dragon_roost_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Dragon Roost Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_fire_mountain_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Fire Mountain Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_ice_ring_isle_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Ice Ring Isle Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_cabana_labyrinth",
+        "access_rules": [
+          "$can_access_exit|Cabana Labyrinth"
+        ]
+      },
+      {
+        "name": "can_access_needle_rock_isle_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Needle Rock Isle Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_angular_isles_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Angular Isles Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_boating_course_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Boating Course Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_stone_watcher_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Stone Watcher Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_overlook_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Overlook Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_birds_peak_rock_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Bird's Peak Rock Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_pawprint_isle_chuchu_cave",
+        "access_rules": [
+          "$can_access_exit|Pawprint Isle Chuchu Cave"
+        ]
+      },
+      {
+        "name": "can_access_pawprint_isle_wizzrobe_cave",
+        "access_rules": [
+          "$can_access_exit|Pawprint Isle Wizzrobe Cave"
+        ]
+      },
+      {
+        "name": "can_access_diamond_steppe_island_warp_maze_cave",
+        "access_rules": [
+          "$can_access_exit|Diamond Steppe Island Warp Maze Cave"
+        ]
+      },
+      {
+        "name": "can_access_bomb_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Bomb Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_rock_spire_isle_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Rock Spire Isle Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_shark_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Shark Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_cliff_plateau_isles_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Cliff Plateau Isles Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_horseshoe_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Horseshoe Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_star_island_secret_cave",
+        "access_rules": [
+          "$can_access_exit|Star Island Secret Cave"
+        ]
+      },
+      {
+        "name": "can_access_ice_ring_isle_inner_cave",
+        "access_rules": [
+          "$can_access_exit|Ice Ring Isle Inner Cave"
+        ]
+      },
+      {
+        "name": "can_access_cliff_plateau_isles_inner_cave",
+        "access_rules": [
+          "$can_access_exit|Cliff Plateau Isles Inner Cave"
+        ]
+      },
+      {
+        "name": "can_access_outset_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Outset Fairy Fountain"
+        ]
+      },
+      {
+        "name": "can_access_thorned_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Thorned Fairy Fountain"
+        ]
+      },
+      {
+        "name": "can_access_eastern_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Eastern Fairy Fountain"
+        ]
+      },
+      {
+        "name": "can_access_western_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Western Fairy Fountain"
+        ]
+      },
+      {
+        "name": "can_access_southern_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Southern Fairy Fountain"
+        ]
+      },
+      {
+        "name": "can_access_northern_fairy_fountain",
+        "access_rules": [
+          "$can_access_exit|Northern Fairy Fountain"
+        ]
+      }
+    ]
+  }
+]

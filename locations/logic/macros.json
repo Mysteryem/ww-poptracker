@@ -1,0 +1,478 @@
+[
+  {
+    "name": "Macros",
+    "children": [
+      {
+        "name": "can_play_winds_requiem",
+        "access_rules": [
+          "windwaker, requiem"
+        ]
+      },
+      {
+        "name": "can_play_command_melody",
+        "access_rules": [
+          "windwaker, melody"
+        ]
+      },
+      {
+        "name": "can_play_earth_gods_lyric",
+        "access_rules": [
+          "windwaker, lyric"
+        ]
+      },
+      {
+        "name": "can_play_wind_gods_aria",
+        "access_rules": [
+          "windwaker, aria"
+        ]
+      },
+      {
+        "name": "can_fly_with_deku_leaf_indoors",
+        "access_rules": [
+          "leaf, magic"
+        ]
+      },
+      {
+        "name": "can_fly_with_deku_leaf_outdoors",
+        "access_rules": [
+          "leaf, magic, @Macros/can_play_winds_requiem"
+        ]
+      },
+      {
+        "name": "can_fan_with_deku_leaf",
+        "access_rules": [
+          "leaf"
+        ]
+      },
+      {
+        "name": "can_access_forest_haven",
+        "access_rules": [
+          "grapple",
+          "@Macros/can_fly_with_deku_leaf_outdoors"
+        ]
+      },
+      {
+        "name": "can_cut_grass",
+        "access_rules": [
+          "sword",
+          "hammer",
+          "boomerang",
+          "bombs"
+        ]
+      },
+      {
+        "name": "_can_cut_grass_or_has_magic_meter_upgrade",
+        "access_rules": [
+          "@Macros/can_cut_grass",
+          "magic_2"
+        ]
+      },
+      {
+        "name": "can_defeat_boko_babas",
+        "access_rules": [
+          "sword",
+          "boomerang",
+          "hammer",
+          "bow",
+          "hookshot",
+          "bombs",
+          "@Macros/can_fan_with_deku_leaf, grapple"
+        ]
+      },
+      {
+        "name": "can_defeat_red_chuchus",
+        "access_rules": [
+          "sword",
+          "hammer",
+          "bombs",
+          "bow"
+        ]
+      },
+      {
+        "name": "can_defeat_green_chuchus",
+        "access_rules": [
+          "@Macros/can_defeat_red_chuchus"
+        ]
+      },
+      {
+        "name": "can_defeat_dark_chuchus"
+      },
+      {
+        "name": "can_defeat_yellow_chuchus",
+        "access_rules": [
+          "boomerang, sword",
+          "bow",
+          "bombs",
+          "@Macros/can_fan_with_deku_leaf, sword",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_floormasters",
+        "access_rules": [
+          "sword",
+          "bow"
+        ]
+      },
+      {
+        "name": "has_fire_arrows",
+        "access_rules": [
+          "magic, bow_2"
+        ]
+      },
+      {
+        "name": "has_ice_arrows",
+        "access_rules": [
+          "magic, bow_2"
+        ]
+      },
+      {
+        "name": "can_reach_tower_of_the_gods_second_floor",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_tower_of_the_gods",
+            "bombs",
+            "totg_small:1",
+            "@Macros/can_defeat_yellow_chuchus"
+          ]
+        ]
+      },
+      {
+        "name": "_grapple_or_can_fly_with_deku_leaf_indoors",
+        "access_rules": [
+          "grapple",
+          "@Macros/can_fly_with_deku_leaf_indoors"
+        ]
+      },
+      {
+        "name": "_can_play_command_melody_or_bow",
+        "access_rules": [
+          "@Macros/can_play_command_melody",
+          "bow"
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_sun_statue_room",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_earth_temple",
+            "@Macros/can_play_command_melody",
+            "@Macros/can_defeat_red_chuchus",
+            "@Macros/can_defeat_green_chuchus",
+            "@Macros/can_defeat_dark_chuchus"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_left_path",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_sun_statue_room, et_small:2"
+        ]
+      },
+      {
+        "name": "_can_play_command_melody_or_has_mirror_shield",
+        "access_rules": [
+          "@Macros/can_play_command_melody",
+          "shield_2"
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_moblins_and_poes_room",
+        "access_rules": [
+          [
+            "@Macros/can_reach_earth_temple_left_path",
+            "@Macros/has_fire_arrows",
+            "power",
+            "@Macros/can_defeat_floormasters",
+            "@Macros/_can_play_command_melody_or_has_mirror_shield"
+          ]
+        ]
+      },
+      {
+        "name": "_can_defeat_blue_bubbles_with_leaf_or_hookshot",
+        "access_rules": [
+          "sword",
+          "bow",
+          "grapple",
+          "hammer"
+        ]
+      },
+      {
+        "name": "_leaf_or_hookshot",
+        "access_rules": [
+          "leaf",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_defeat_blue_bubbles",
+        "access_rules": [
+          "@Macros/has_ice_arrows",
+          "bombs",
+          "@Macros/_leaf_or_hookshot, @Macros/_can_defeat_blue_bubbles_with_leaf_or_hookshot"
+        ]
+      },
+      {
+        "name": "can_reach_wind_temple_kidnapping_room",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_wind_temple",
+            "@Macros/can_play_command_melody",
+            "boots",
+            "@Macros/can_fly_with_deku_leaf_indoors"
+          ]
+        ]
+      },
+      {
+        "name": "_can_reach_end_of_wind_temple_many_cyclones_room",
+        "access_rules": [
+          "boots, @Macros/can_fan_with_deku_leaf, @Macros/can_fly_with_deku_leaf_indoors, @Macros/can_cut_grass",
+          "hookshot, @Macros/can_defeat_blue_bubbles, @Macros/can_fly_with_deku_leaf_indoors"
+        ]
+      },
+      {
+        "name": "can_reach_end_of_wind_temple_many_cyclones_room",
+        "access_rules": [
+          "@Macros/can_reach_wind_temple_kidnapping_room, @Macros/_can_reach_end_of_wind_temple_many_cyclones_room"
+        ]
+      },
+      {
+        "name": "can_open_wind_temple_upper_giant_grate",
+        "access_rules": [
+          "@Macros/can_reach_end_of_wind_temple_many_cyclones_room, boots"
+        ]
+      },
+      {
+        "name": "can_access_hyrule",
+        "access_rules": [
+          "triforce_8"
+        ]
+      },
+      {
+        "name": "_can_reach_dragon_roost_cavern_boss_stairs",
+        "access_rules": [
+          "grapple",
+          "@Macros/can_fly_with_deku_leaf_indoors",
+          "hookshot",
+          "@Macros/has_ice_arrows"
+        ]
+      },
+      {
+        "name": "can_reach_dragon_roost_cavern_boss_stairs",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_dragon_roost_cavern",
+            "drc_small:4",
+            "@Macros/_can_reach_dragon_roost_cavern_boss_stairs"
+          ]
+        ]
+      },
+      {
+        "name": "can_defeat_door_flowers",
+        "access_rules": [
+          "boomerang",
+          "bow",
+          "bombs",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "_can_defeat_door_flowers_or_grapple",
+        "access_rules": [
+          "@Macros/can_defeat_door_flowers",
+          "grapple"
+        ]
+      },
+      {
+        "name": "can_defeat_mothulas",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_bring_east_servant_of_the_tower"
+      },
+      {
+        "name": "can_bring_west_servant_of_the_tower",
+        "access_rules": [
+          [
+            "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors",
+            "@Macros/can_play_command_melody",
+            "bow"
+          ]
+        ]
+      },
+      {
+        "name": "can_bring_north_servant_of_the_tower",
+        "access_rules": [
+          [
+            "totg_small:2",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_play_command_melody"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_tower_of_the_gods_third_floor",
+        "access_rules": [
+          [
+            "@Macros/can_reach_tower_of_the_gods_second_floor",
+            "@Macros/can_bring_east_servant_of_the_tower",
+            "@Macros/can_bring_west_servant_of_the_tower",
+            "@Macros/can_bring_north_servant_of_the_tower",
+            "windwaker"
+          ]
+        ]
+      },
+      {
+        "name": "can_defeat_armos",
+        "access_rules": [
+          "sword",
+          "bow",
+          "bombs",
+          "hammer",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_get_past_forsaken_fortress_gate",
+        "access_rules": [
+          "bombs"
+        ]
+      },
+      {
+        "name": "can_get_inside_forsaken_fortress",
+        "access_rules": [
+          "@Macros/can_get_past_forsaken_fortress_gate, hammer"
+        ]
+      },
+      {
+        "name": "_can_fly_with_deku_leaf_indoors_or_hookshot",
+        "access_rules": [
+          "@Macros/can_fly_with_deku_leaf_indoors",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "can_aim_mirror_shield",
+        "access_rules": [
+          "shield_2, sword",
+          "shield_2, windwaker",
+          "shield_2, grapple",
+          "shield_2, boomerang",
+          "shield_2, leaf",
+          "shield_2, bow",
+          "shield_2, hookshot"
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_basement",
+        "access_rules": [
+          [
+            "@Macros/can_reach_earth_temple_sun_statue_room",
+            "@Macros/can_play_command_melody",
+            "@Macros/can_aim_mirror_shield"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_redead_hub_room",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_basement, @Macros/can_play_earth_gods_lyric"
+        ]
+      },
+      {
+        "name": "_can_play_command_melody_or_can_aim_mirror_shield",
+        "access_rules": [
+          "@Macros/can_play_command_melody",
+          "@Macros/can_aim_mirror_shield"
+        ]
+      },
+      {
+        "name": "can_defeat_red_bubbles",
+        "access_rules": [
+          "sword",
+          "hammer",
+          "bow",
+          "bombs",
+          "@Macros/can_fan_with_deku_leaf, grapple",
+          "hookshot, grapple"
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_third_crypt",
+        "access_rules": [
+          [
+            "@Macros/can_reach_earth_temple_redead_hub_room",
+            "@Macros/_can_play_command_melody_or_can_aim_mirror_shield",
+            "power",
+            "hammer",
+            "et_small:3",
+            "@Macros/can_defeat_red_bubbles",
+            "@Macros/can_play_command_melody",
+            "@Macros/can_aim_mirror_shield"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_earth_temple_tall_vine_room",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_third_crypt, @Macros/can_play_earth_gods_lyric"
+        ]
+      },
+      {
+        "name": "can_open_wind_temple_lower_giant_grate",
+        "access_rules": [
+          [
+            "@Macros/can_reach_wind_temple_kidnapping_room",
+            "hookshot",
+            "@Macros/can_defeat_blue_bubbles"
+          ]
+        ]
+      },
+      {
+        "name": "can_reach_wind_temple_tall_basement_room",
+        "access_rules": [
+          [
+            "@Macros/can_open_wind_temple_upper_giant_grate",
+            "@Macros/can_open_wind_temple_lower_giant_grate",
+            "wt_small:2"
+          ]
+        ]
+      },
+      {
+        "name": "can_cut_down_outset_trees",
+        "access_rules": [
+          "sword",
+          "boomerang",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_reach_outset_island_upper_level",
+        "access_rules": [
+          "@Macros/can_cut_down_outset_trees"
+        ]
+      },
+      {
+        "name": "can_move_boulders",
+        "access_rules": [
+          "bombs",
+          "power"
+        ]
+      },
+      {
+        "name": "can_buy_hyoi_pears"
+      },
+      {
+        "name": "can_access_forest_of_fairies",
+        "access_rules": [
+          "@Macros/can_reach_outset_island_upper_level, @Macros/can_fly_with_deku_leaf_outdoors"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Force Update",
+    "type": "toggle",
+    "codes": "update"
+  }
+]

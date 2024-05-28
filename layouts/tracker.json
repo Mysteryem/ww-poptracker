@@ -108,6 +108,13 @@
                                 "type": "map",
                                 "maps": ["wt"]
                             }
+                        },
+                        {
+                            "title": "Entrances",
+                            "content": {
+                              "type": "layout",
+                              "key": "entrances_layout"
+                            }
                         }
                     ]
                 }

@@ -1,0 +1,304 @@
+[
+  {
+    "name": "Entrance Logic",
+    "children": [
+      {
+        "name": "Dungeon Entrance on Dragon Roost Island"
+      },
+      {
+        "name": "Dungeon Entrance in Forest Haven Sector",
+        "access_rules": [
+          [
+            "@Macros/can_access_forest_haven",
+            "grapple",
+            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+          ]
+        ]
+      },
+      {
+        "name": "Dungeon Entrance in Tower of the Gods Sector",
+        "access_rules": [
+          "din, farore, nayru"
+        ]
+      },
+      {
+        "name": "Dungeon Entrance on Headstone Island",
+        "access_rules": [
+          "power"
+        ]
+      },
+      {
+        "name": "Dungeon Entrance on Gale Isle",
+        "access_rules": [
+          "boots, hammer"
+        ]
+      },
+      {
+        "name": "Miniboss Entrance in Forbidden Woods",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_forbidden_woods",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_defeat_boko_babas",
+            "grapple",
+            "fw_small:1"
+          ]
+        ]
+      },
+      {
+        "name": "Miniboss Entrance in Tower of the Gods",
+        "access_rules": [
+          [
+            "@Macros/can_reach_tower_of_the_gods_second_floor",
+            "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors",
+            "@Macros/_can_play_command_melody_or_bow"
+          ]
+        ]
+      },
+      {
+        "name": "Miniboss Entrance in Earth Temple",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_moblins_and_poes_room, et_small:3"
+        ]
+      },
+      {
+        "name": "Miniboss Entrance in Wind Temple",
+        "access_rules": [
+          "@Macros/can_open_wind_temple_upper_giant_grate, wt_small:2"
+        ]
+      },
+      {
+        "name": "Miniboss Entrance in Hyrule Castle",
+        "access_rules": [
+          "@Macros/can_access_hyrule"
+        ]
+      },
+      {
+        "name": "Boss Entrance in Dragon Roost Cavern",
+        "access_rules": [
+          "@Macros/can_reach_dragon_roost_cavern_boss_stairs, drc_big"
+        ]
+      },
+      {
+        "name": "Boss Entrance in Forbidden Woods",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_forbidden_woods",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_defeat_boko_babas",
+            "@Macros/_can_defeat_door_flowers_or_grapple",
+            "@Macros/can_defeat_mothulas",
+            "fw_big"
+          ]
+        ]
+      },
+      {
+        "name": "Boss Entrance in Tower of the Gods",
+        "access_rules": [
+          [
+            "@Macros/can_reach_tower_of_the_gods_third_floor",
+            "@Macros/can_defeat_armos",
+            "totg_big"
+          ]
+        ]
+      },
+      {
+        "name": "Boss Entrance in Forsaken Fortress",
+        "access_rules": [
+          [
+            "@Macros/can_get_inside_forsaken_fortress",
+            "hammer",
+            "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
+          ]
+        ]
+      },
+      {
+        "name": "Boss Entrance in Earth Temple",
+        "access_rules": [
+          "@Macros/can_reach_earth_temple_tall_vine_room, et_big"
+        ]
+      },
+      {
+        "name": "Boss Entrance in Wind Temple",
+        "access_rules": [
+          [
+            "@Macros/can_reach_wind_temple_tall_basement_room",
+            "hookshot",
+            "boots",
+            "@Macros/can_play_command_melody",
+            "@Macros/can_play_wind_gods_aria",
+            "wt_big"
+          ]
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Outset Island",
+        "access_rules": [
+          "power, @Macros/can_reach_outset_island_upper_level, @Macros/can_fly_with_deku_leaf_outdoors",
+          "power, hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Dragon Roost Island",
+        "access_rules": [
+          "@Macros/can_move_boulders"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Fire Mountain",
+        "access_rules": [
+          "@Macros/has_ice_arrows"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Ice Ring Isle",
+        "access_rules": [
+          "@Macros/has_fire_arrows"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Private Oasis",
+        "access_rules": [
+          "delivery, deed, grapple"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Needle Rock Isle",
+        "access_rules": [
+          "@Macros/has_fire_arrows"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Angular Isles",
+        "access_rules": [
+          "@Macros/can_fly_with_deku_leaf_outdoors",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Boating Course",
+        "access_rules": [
+          "@Macros/can_fly_with_deku_leaf_outdoors",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Stone Watcher Island",
+        "access_rules": [
+          "power"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Overlook Island",
+        "access_rules": [
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Bird's Peak Rock",
+        "access_rules": [
+          "bait, @Macros/can_buy_hyoi_pears"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Pawprint Isle"
+      },
+      {
+        "name": "Secret Cave Entrance on Pawprint Isle Side Isle",
+        "access_rules": [
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Diamond Steppe Island",
+        "access_rules": [
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Bomb Island",
+        "access_rules": [
+          "@Macros/can_move_boulders"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Rock Spire Isle",
+        "access_rules": [
+          "bombs"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Shark Island",
+        "access_rules": [
+          "boots, hammer"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Cliff Plateau Isles"
+      },
+      {
+        "name": "Secret Cave Entrance on Horseshoe Island",
+        "access_rules": [
+          "@Macros/can_fan_with_deku_leaf"
+        ]
+      },
+      {
+        "name": "Secret Cave Entrance on Star Island",
+        "access_rules": [
+          "@Macros/can_move_boulders"
+        ]
+      },
+      {
+        "name": "Inner Entrance in Ice Ring Isle Secret Cave",
+        "access_rules": [
+          "@Exit Logic/can_access_ice_ring_isle_secret_cave, boots"
+        ]
+      },
+      {
+        "name": "Inner Entrance in Cliff Plateau Isles Secret Cave",
+        "access_rules": [
+          [
+            "@Exit Logic/can_access_cliff_plateau_isles_secret_cave",
+            "@Macros/can_defeat_boko_babas",
+            "@Macros/can_fly_with_deku_leaf_indoors"
+          ]
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Outset Island",
+        "access_rules": [
+          "@Macros/can_access_forest_of_fairies, @Macros/can_move_boulders"
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Thorned Fairy Island",
+        "access_rules": [
+          "hammer"
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Eastern Fairy Island",
+        "access_rules": [
+          "@Macros/can_move_boulders"
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Western Fairy Island",
+        "access_rules": [
+          "hammer"
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Southern Fairy Island",
+        "access_rules": [
+          "bombs",
+          "@Macros/has_fire_arrows"
+        ]
+      },
+      {
+        "name": "Fairy Fountain Entrance on Northern Fairy Island"
+      }
+    ]
+  }
+]
