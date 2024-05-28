@@ -493,6 +493,26 @@
         "access_rules": [
           "boomerang"
         ]
+      },
+      {
+        "name": "has_light_arrows",
+        "access_rules": [
+          "bow_3, magic"
+        ]
+      },
+      {
+        "name": "can_defeat_darknuts",
+        "access_rules": [
+          "sword",
+          "@Macros/has_light_arrows",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_defeat_gohdan",
+        "access_rules": [
+          "bow, bombs"
+        ]
       }
     ]
   }

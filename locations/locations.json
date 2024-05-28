@@ -1448,7 +1448,7 @@
           },
           {
             "name": "Darknut Miniboss Room",
-            "ref": "Tower of the Gods/Darknut Miniboss Room/"
+            "ref": "Tower of the Gods Miniboss Arena/Darknut Miniboss Room/"
           },
           {
             "name": "Floating Platforms Room",
@@ -1468,7 +1468,7 @@
           },
           {
             "name": "Gohdan Heart Container",
-            "ref": "Tower of the Gods/Gohdan Heart Container/"
+            "ref": "Gohdan Boss Arena/Gohdan Heart Container/"
           }
         ],
         "map_locations": [

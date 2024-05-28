@@ -4,7 +4,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "$totg_access"
+      "@Exit Logic/can_access_tower_of_the_gods"
     ],
     "visibility_rules": [
       "dungeons_on"
@@ -169,34 +169,6 @@
         ]
       },
       {
-        "name": "Darknut Miniboss Room",
-        "sections": [
-          {
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "bombs,windwaker,totg_small:1,grapple,melody,sword",
-              "bombs,windwaker,totg_small:1,grapple,$can_lightarrow",
-              "bombs,windwaker,totg_small:1,grapple,melody,hammer",
-              "bombs,windwaker,totg_small:1,grapple,bow,sword",
-              "bombs,windwaker,totg_small:1,grapple,bow,hammer",
-              "bombs,windwaker,totg_small:1,$can_fly,melody,sword",
-              "bombs,windwaker,totg_small:1,$can_fly,$can_lightarrow",
-              "bombs,windwaker,totg_small:1,$can_fly,melody,hammer",
-              "bombs,windwaker,totg_small:1,$can_fly,bow,sword",
-              "bombs,windwaker,totg_small:1,$can_fly,bow,hammer"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "totg",
-            "x": 228,
-            "y": 178
-          }
-        ]
-      },
-      {
         "name": "Second Chest Guarded by Armos Knights",
         "sections": [
           {
@@ -288,7 +260,48 @@
             "y": 250
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Tower of the Gods Miniboss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_tower_of_the_gods_miniboss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
+      {
+        "name": "Darknut Miniboss Room",
+        "sections": [
+          {
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Macros/can_defeat_darknuts"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "totg",
+            "x": 228,
+            "y": 178
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gohdan Boss Arena",
+    "access_rules": [
+      "@Exit Logic/can_access_gohdan_boss_arena"
+    ],
+    "visibility_rules": [
+      "dungeons_on"
+    ],
+    "children": [
       {
         "name": "Gohdan Heart Container",
         "sections": [
@@ -296,7 +309,7 @@
             "chest_unopened_img": "images/items/heart2.png",
             "chest_opened_img": "images/items/heart2_gray.png",
             "access_rules": [
-              "bombs,windwaker,melody,bow,totg_small:2,$can_fly,totg_big"
+              "@Macros/can_defeat_gohdan"
             ]
           }
         ],
