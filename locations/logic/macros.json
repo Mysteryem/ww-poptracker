@@ -813,6 +813,28 @@
         "access_rules": [
           "@Macros/can_get_past_forsaken_fortress_gate, @Macros/can_defeat_phantom_ganon"
         ]
+      },
+      {
+        "name": "can_cut_down_hanging_drc_platform",
+        "access_rules": [
+          "sword",
+          "bombs",
+          "bow",
+          "hammer"
+        ]
+      },
+      {
+        "name": "can_reach_dragon_roost_cavern_gaping_maw",
+        "access_rules": [
+          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4, @Macros/can_cut_down_hanging_drc_platform"
+        ]
+      },
+      {
+        "name": "has_tingle_bombs",
+        "access_rules": [
+          "bombs",
+          "tunerlogic_on, tuner"
+        ]
       }
     ]
   }

@@ -86,9 +86,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "drc_small:2,grapple",
-              "drc_small:2,$can_fly",
-              "drc_small:2,hookshot"
+              "drc_small:2, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
             ]
           }
         ],
@@ -175,12 +173,11 @@
         "sections": [
           {
             "access_rules": [
-              "grapple,bombs,drc_small:4,tunerlogic_off",
-              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_off",
-              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_off",
-              "grapple,bombs,drc_small:4,tunerlogic_on,tuner",
-              "grapple,bombs,drc_small:1,$can_fly,tunerlogic_on,tuner",
-              "grapple,bombs,drc_small:1,$can_magicarrow,tunerlogic_on,tuner"
+              [
+                "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
+                "grapple",
+                "@Macros/has_tingle_bombs"
+              ]
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -256,8 +253,7 @@
         "sections": [
           {
             "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly,$can_change_wind"
+              "drc_small:4, @Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
             ]
           }
         ],
@@ -274,8 +270,7 @@
         "sections": [
           {
             "access_rules": [
-              "drc_small:4,bombs,tunerlogic_off",
-              "drc_small:4,bombs,tunerlogic_on,tuner"
+              "drc_small:4, @Macros/has_tingle_bombs"
             ],
             "visibility_rules": [
               "tinglechests_on"
@@ -297,12 +292,11 @@
             "chest_unopened_img": "images/items/chest_bigkey.png",
             "chest_opened_img": "images/items/chest_bigkey_gray.png",
             "access_rules": [
-              "grapple,drc_small:4,sword",
-              "grapple,drc_small:4,bombs",
-              "grapple,drc_small:4,bow",
-              "grapple,drc_small:4,hammer",
-              "grapple,drc_small:1,$can_fly",
-              "grapple,drc_small:1,$can_magicarrow"
+              [
+                "@Macros/can_reach_dragon_roost_cavern_gaping_maw",
+                "grapple",
+                "@Macros/can_stun_magtails"
+              ]
             ]
           }
         ],
@@ -319,10 +313,7 @@
         "sections": [
           {
             "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
+              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
             ]
           }
         ],
@@ -339,10 +330,7 @@
         "sections": [
           {
             "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
+              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
             ]
           }
         ],
@@ -359,10 +347,7 @@
         "sections": [
           {
             "access_rules": [
-              "drc_small:4,grapple",
-              "drc_small:4,$can_fly",
-              "drc_small:4,hookshot",
-              "drc_small:4,$can_magicarrow"
+              "@Macros/can_reach_dragon_roost_cavern_boss_stairs"
             ],
             "visibility_rules": [
               "secretpot_on"
