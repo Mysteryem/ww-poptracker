@@ -49,8 +49,8 @@
     },
     {
         "name": "entrances",
-        "location_size": 18,
+        "location_size": 16,
         "location_border_thickness": 2,
-        "img": "images/maps/sea_chart.png"
+        "img": "images/maps/entrances_chart.png"
     }
 ]
