@@ -2180,7 +2180,8 @@
               ]
             ],
             "visibility_rules": [
-              "mail_on,dungeons_on"
+              "mail_on, dungeons_on, required_bosses_disabled",
+              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_et"
             ]
           },
           {
@@ -2216,7 +2217,8 @@
               "@Forbidden Woods/Kalle Demos Heart Container"
             ],
             "visibility_rules": [
-              "mail_on,dungeons_on"
+              "mail_on, dungeons_on, required_bosses_disabled",
+              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_fw"
             ]
           },
           {
@@ -2241,7 +2243,8 @@
               ]
             ],
             "visibility_rules": [
-              "mail_on,dungeons_on"
+              "mail_on, dungeons_on, required_bosses_disabled",
+              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_ff"
             ]
           },
           {
@@ -2255,7 +2258,8 @@
               ]
             ],
             "visibility_rules": [
-              "mail_on, dungeons_on, expensive_on"
+              "mail_on, dungeons_on, expensive_on, required_bosses_disabled",
+              "mail_on, dungeons_on, expensive_on, required_bosses_enabled, required_bosses_ff"
             ]
           }
         ],

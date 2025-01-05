@@ -167,6 +167,30 @@
       ["secretpot", "islandpuzzles", "misc"]
     ]
   },
+  "required_bosses_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_size": "96,64",
+        "rows": [
+          ["required_bosses"]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_size": "48,48",
+        "rows": [
+          ["required_bosses_drc", "required_bosses_fw"],
+          ["required_bosses_totg", "required_bosses_ff"],
+          ["required_bosses_et", "required_bosses_wt"]
+        ]
+      }
+    ]
+  },
   "logic_settings_grid": {
     "type": "itemgrid",
     "h_alignment": "center",

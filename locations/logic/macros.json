@@ -1117,7 +1117,8 @@
         "access_rules": [
           [
             "@Macros/can_defeat_moblins",
-            "@Macros/can_defeat_mighty_darknuts"
+            "@Macros/can_defeat_mighty_darknuts",
+            "@Macros/can_defeat_all_required_bosses"
           ]
         ]
       },
@@ -1248,6 +1249,64 @@
           "@Macros/can_defeat_bokoblins",
           "@Macros/can_fly_with_deku_leaf_outdoors",// Swift Sail sequence break is allowed because the player must have hammer for the boss entrance, so they can get inside FF without out-of-logic flying to the other FF entrance by setting the wind direction with swift sail
           "grapple"
+        ]
+      },
+      {
+        "name": "_can_defeat_gohma_required_boss",
+        "access_rules": [
+          "required_bosses_drc_excluded",
+          "required_bosses_drc_required, @Dragon Roost Cavern/Gohma Heart Container"
+        ]
+      },
+      {
+        "name": "_can_defeat_kalle_demos_required_boss",
+        "access_rules": [
+          "required_bosses_fw_excluded",
+          "required_bosses_fw_required, @Forbidden Woods/Kalle Demos Heart Container"
+        ]
+      },
+      {
+        "name": "_can_defeat_gohdan_required_boss",
+        "access_rules": [
+          "required_bosses_totg_excluded",
+          "required_bosses_totg_required, @Tower of the Gods/Gohdan Heart Container"
+        ]
+      },
+      {
+        "name": "_can_defeat_jalhalla_required_boss",
+        "access_rules": [
+          "required_bosses_et_excluded",
+          "required_bosses_et_required, @Earth Temple/Jalhalla Heart Container"
+        ]
+      },
+      {
+        "name": "_can_defeat_molgera_required_boss",
+        "access_rules": [
+          "required_bosses_wt_excluded",
+          "required_bosses_wt_required, @Wind Temple/Molgera Heart Container"
+        ]
+      },
+      {
+        "name": "_can_defeat_helmaroc_king_required_boss",
+        "access_rules": [
+          "required_bosses_ff_excluded",
+          "required_bosses_ff_required, @Forsaken Fortress/Helmaroc King Heart Container"
+        ]
+      },
+      {
+        "name": "can_defeat_all_required_bosses",
+        "access_rules": [
+          [
+            "required_bosses_disabled"
+          ],
+          [
+            "@Macros/_can_defeat_gohma_required_boss",
+            "@Macros/_can_defeat_kalle_demos_required_boss",
+            "@Macros/_can_defeat_gohdan_required_boss",
+            "@Macros/_can_defeat_jalhalla_required_boss",
+            "@Macros/_can_defeat_molgera_required_boss",
+            "@Macros/_can_defeat_helmaroc_king_required_boss"
+          ]
         ]
       }
     ]

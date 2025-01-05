@@ -191,21 +191,25 @@ function onClear(slot_data)
         local v = slot_data[slot_data_key]
         if not v then
             print(string.format("Could not find key '%s' in slot data", slot_data_key))
-            return
+            return nil
         end
 
         local obj = Tracker:FindObjectForCode(item_code)
         if not obj then
             print(string.format("Could not find item for code '%s'", item_code))
-            return
+            return nil
         end
 
         if obj.Type == 'toggle' then
-            obj.Active = v ~= 0
+            local active = v ~= 0
+            obj.Active = active
+            return active
         elseif obj.Type == 'progressive' then
             obj.CurrentStage = v
+            return v
         else
             print(string.format("Unsupported item type '%s' for item '%s'", tostring(obj.Type), item_code))
+            return nil
         end
     end
 
@@ -239,6 +243,48 @@ function onClear(slot_data)
     setFromSlotData('sword_mode', 'tww_sword_mode')
     setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
     setFromSlotData('swift_sail', 'swift_sail')
+    local required_bosses = setFromSlotData('required_bosses', 'required_bosses')
+
+    -- Reset required bosses
+    local drc_required = Tracker:FindObjectForCode("required_bosses_drc")
+    local fw_required = Tracker:FindObjectForCode("required_bosses_fw")
+    local totg_required = Tracker:FindObjectForCode("required_bosses_totg")
+    local ff_required = Tracker:FindObjectForCode("required_bosses_ff")
+    local et_required = Tracker:FindObjectForCode("required_bosses_et")
+    local wt_required = Tracker:FindObjectForCode("required_bosses_wt")
+    -- Not required by default
+    drc_required.CurrentStage = 0
+    fw_required.CurrentStage = 0
+    totg_required.CurrentStage = 0
+    ff_required.CurrentStage = 0
+    et_required.CurrentStage = 0
+    wt_required.CurrentStage = 0
+
+    -- Set required bosses
+    if required_bosses then
+        -- Which bosses are required bosses is not currently provided in slot data, however, the locations for a
+        -- non-required boss' dungeon will not be present in the multiworld, so it is possible to check if the locations
+        -- within a dungeon exist. The locations picked must only be possible to disable through being a non-required
+        -- boss' dungeon (or through dungeons being disabled entirely).
+        local check_loc_to_item = {
+            [0x238038] = drc_required, -- @Dragon Roost Cavern/First Room
+            [0x23804e] = fw_required, -- @Forbidden Woods/First Room
+            [0x238061] = totg_required, -- @Tower of the Gods/Chest Behind Bombable Walls
+            [0x238072] = ff_required, -- @Forsaken Fortress/Phantom Ganon
+            [0x238082] = et_required, -- @Earth Temple/Transparent Chest In Warp Pot Room
+            [0x238094] = wt_required, -- @Wind Temple/Chest Between Two Dirt Patches
+        }
+        local all_locations = {Archipelago.CheckedLocations, Archipelago.MissingLocations}
+        for _, locations in ipairs(all_locations) do
+            for _, loc_id in ipairs(locations) do
+                -- Enable the required boss if a location in their dungeon exists.
+                local required_boss_item = check_loc_to_item[loc_id]
+                if required_boss_item ~= nil then
+                    required_boss_item.CurrentStage = 1
+                end
+            end
+        end
+    end
 
     SLOT_DATA_EXIT_TO_ENTRANCE = {}
     local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")

@@ -360,5 +360,139 @@
 				"codes": "setting_show_higher_logic_next_only_disabled"
 			}
 		]
+	},
+	{
+		"name": "Required Bosses (Race Mode)",
+		"type": "progressive",
+		"allow_disabled": false,
+		"loop": true,
+		"codes": "required_bosses",
+		"stages": [
+			{
+				"name": "Disabled - Puppet Ganon Open",
+				"img": "images/items/settings/ganon_boss_door_open_96_64.png",
+				"codes": "required_bosses_disabled"
+			},
+			{
+				"name": "Enabled - Defeat Bosses To Unlock Puppet Ganon",
+				"img": "images/items/settings/ganon_boss_door_closed_96_64.png",
+				"codes": "required_bosses_enabled",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Dragon Roost Cavern Required",
+		"type": "progressive",
+		"allow_disabled": false,
+		"codes": "required_bosses_drc",
+		"stages": [
+			{
+				"name": "Dragon Roost Cavern Not Required",
+				"img": "images/items/settings/gohma_48.png",
+				"codes": "required_bosses_drc_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/gohma_48.png",
+				"codes": "required_bosses_drc_required",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Forbidden Woods Required",
+		"codes": "required_bosses_fw",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"name": "Forbidden Woods Not Required",
+				"img": "images/items/settings/kalle_demos_48.png",
+				"codes": "required_bosses_fw_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/kalle_demos_48.png",
+				"codes": "required_bosses_fw_required",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Tower of the Gods Required",
+		"codes": "required_bosses_totg",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"name": "Tower of the Gods Not Required",
+				"img": "images/items/settings/gohdan_48.png",
+				"codes": "required_bosses_totg_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/gohdan_48.png",
+				"codes": "required_bosses_totg_required",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Earth Temple Required",
+		"codes": "required_bosses_et",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"name": "Earth Temple Not Required",
+				"img": "images/items/settings/jalhalla_48.png",
+				"codes": "required_bosses_et_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/jalhalla_48.png",
+				"codes": "required_bosses_et_required",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Wind Temple Required",
+		"codes": "required_bosses_wt",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"name": "Wind Temple Not Required",
+				"img": "images/items/settings/molgera_48.png",
+				"codes": "required_bosses_wt_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/molgera_48.png",
+				"codes": "required_bosses_wt_required",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
+		"name": "Forsaken Fortress Required",
+		"codes": "required_bosses_ff",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"name": "Forsaken Fortress Not Required",
+				"img": "images/items/settings/helmaroc_king_48.png",
+				"codes": "required_bosses_ff_excluded",
+				"img_mods": "@disabled"
+			},
+			{
+				"img": "images/items/settings/helmaroc_king_48.png",
+				"codes": "required_bosses_ff_required",
+				"inherit_codes": false
+			}
+		]
 	}
 ]

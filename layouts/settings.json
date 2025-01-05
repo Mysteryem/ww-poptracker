@@ -25,6 +25,15 @@
               },
               {
                 "type": "group",
+                "header": "Required Bosses",
+                "dock": "left",
+                "content": {
+                  "type": "layout",
+                  "key": "required_bosses_grid"
+                }
+              },
+              {
+                "type": "group",
                 "header": "Logic",
                 "dock": "left",
                 "content": {
