@@ -1,0 +1,8 @@
+# Image sources
+/.images
+
+# IDE files
+/.idea
+
+# Zip filename used when developing
+/ww-poptracker.zip
