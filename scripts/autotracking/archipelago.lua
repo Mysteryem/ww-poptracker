@@ -203,7 +203,7 @@ function onClear(slot_data)
         if obj.Type == 'toggle' then
             local active = v ~= 0
             obj.Active = active
-            return active
+            return v
         elseif obj.Type == 'progressive' then
             obj.CurrentStage = v
             return v
@@ -243,7 +243,7 @@ function onClear(slot_data)
     setFromSlotData('sword_mode', 'tww_sword_mode')
     setFromSlotData('skip_rematch_bosses', 'tww_rematch_bosses_skipped')
     setFromSlotData('swift_sail', 'swift_sail')
-    local required_bosses = setFromSlotData('required_bosses', 'required_bosses')
+    local required_bosses = setFromSlotData('required_bosses', 'required_bosses') == 1
 
     -- Reset required bosses
     local drc_required = Tracker:FindObjectForCode("required_bosses_drc")
