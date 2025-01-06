@@ -258,6 +258,11 @@ function clearExitMappings()
         local exit_mapping = Tracker:FindObjectForCode(entrance.name)
         exit_mapping_clear(exit_mapping)
     end
+    if PAUSE_ENTRANCE_UPDATES then
+        -- Manually reset the global lookup tables because they won't be updated automatically.
+        exit_to_entrance = {}
+        impossible_exits = {}
+    end
 end
 
 function create_mapping_lua_item(idx, entrance)
