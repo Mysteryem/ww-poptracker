@@ -1,236 +1,254 @@
 {
-  "entrances_layout": {
-    "type": "container",
-    "content": {
-      "type": "array",
-      "orientation": "horizontal",
-      "content": [
-        {
-          "type": "tabbed",//TODO: Options tab that shows the options read from AP
-          "tabs": [
-            {
-              "title": "Assignment",
-              "content": {
-                "type": "tabbed",
-                "h_alignment": "center",
-                "item_h_alignment": "center",
-                "tabs": [
-                  {
-                    "title": "Dungeons",
-                    "content": {
-                      "type": "itemgrid",
-                      "margin": "0,0,0,0",
-                      "item_margin": "0,0",
-                      "item_size": "440,13",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [
-                        ["Dungeon Entrance on Dragon Roost Island"],
-                        ["Boss Entrance in Dragon Roost Cavern"],
-                        [],
-                        ["Dungeon Entrance in Forest Haven Sector"],
-                        ["Miniboss Entrance in Forbidden Woods"],
-                        ["Boss Entrance in Forbidden Woods"],
-                        [],
-                        ["Dungeon Entrance in Tower of the Gods Sector"],
-                        ["Miniboss Entrance in Tower of the Gods"],
-                        ["Boss Entrance in Tower of the Gods"],
-                        [],
-                        ["Dungeon Entrance on Headstone Island"],
-                        ["Miniboss Entrance in Earth Temple"],
-                        ["Boss Entrance in Earth Temple"],
-                        [],
-                        ["Dungeon Entrance on Gale Isle"],
-                        ["Miniboss Entrance in Wind Temple"],
-                        ["Boss Entrance in Wind Temple"],
-                        [],
-                        ["Boss Entrance in Forsaken Fortress"],
-                        [],
-                        ["Miniboss Entrance in Hyrule Castle"]
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Secret Caves",
-                    "content": {
-                      "type": "itemgrid",
-                      "margin": "0,0,0,0",
-                      "item_margin": "0,0",
-                      "item_size": "440,14",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [//todo: Split into puzzle and combat caves
-                        ["Secret Cave Entrance on Angular Isles"],
-                        ["Secret Cave Entrance on Bird's Peak Rock"],
-                        ["Secret Cave Entrance on Boating Course"],
-                        ["Secret Cave Entrance on Bomb Island"],
-                        ["Secret Cave Entrance on Cliff Plateau Isles"],
-                        ["Secret Cave Entrance on Diamond Steppe Island"],
-                        ["Secret Cave Entrance on Dragon Roost Island"],
-                        ["Secret Cave Entrance on Fire Mountain"],
-                        ["Secret Cave Entrance on Horseshoe Island"],
-                        ["Secret Cave Entrance on Ice Ring Isle"],
-                        ["Secret Cave Entrance on Needle Rock Isle"],
-                        ["Secret Cave Entrance on Outset Island"],
-                        ["Secret Cave Entrance on Overlook Island"],
-                        ["Secret Cave Entrance on Pawprint Isle"],
-                        ["Secret Cave Entrance on Pawprint Isle Side Isle"],
-                        ["Secret Cave Entrance on Private Oasis"],
-                        ["Secret Cave Entrance on Rock Spire Isle"],
-                        ["Secret Cave Entrance on Shark Island"],
-                        ["Secret Cave Entrance on Star Island"],
-                        ["Secret Cave Entrance on Stone Watcher Island"]
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Inner Entrances and Fairy Fountains",
-                    "content": {
-                      "type": "itemgrid",
-                      "margin": "0,0,0,0",
-                      "item_margin": "0,0",
-                      "item_size": "440,15",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [
-                        ["Inner Entrance in Cliff Plateau Isles Secret Cave"],
-                        ["Inner Entrance in Ice Ring Isle Secret Cave"],
-                        [],
-                        ["Fairy Fountain Entrance on Northern Fairy Island"],
-                        ["Fairy Fountain Entrance on Eastern Fairy Island"],
-                        ["Fairy Fountain Entrance on Southern Fairy Island"],
-                        ["Fairy Fountain Entrance on Western Fairy Island"],
-                        ["Fairy Fountain Entrance on Outset Island"],
-                        ["Fairy Fountain Entrance on Thorned Fairy Island"]
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "title": "Select Exit",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Dungeons",
-                    "content": {
-                      "type": "itemgrid",
-                      "margin": "0,0,0,0",
-                      "item_margin": "120,0",// item alignment doesn't work, for some reason, if this is "0,0"
-                      "item_size": "199,13",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [
-                        ["Dragon Roost Cavern"],
-                        ["Gohma Boss Arena"],
-                        [],
-                        ["Forbidden Woods"],
-                        ["Forbidden Woods Miniboss Arena"],
-                        ["Kalle Demos Boss Arena"],
-                        [],
-                        ["Tower of the Gods"],
-                        ["Tower of the Gods Miniboss Arena"],
-                        ["Gohdan Boss Arena"],
-                        [],
-                        ["Earth Temple"],
-                        ["Earth Temple Miniboss Arena"],
-                        ["Jalhalla Boss Arena"],
-                        [],
-                        ["Wind Temple"],
-                        ["Wind Temple Miniboss Arena"],
-                        ["Molgera Boss Arena"],
-                        [],
-                        ["Helmaroc King Boss Arena"],
-                        [],
-                        ["Master Sword Chamber"]
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Secret Caves",
-                    "content": {
-                      "type": "itemgrid",
-                      "item_margin": "120,0",
-                      "item_size": "199,14",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [//todo: Split into puzzle and combat caves
-                        ["Angular Isles Secret Cave"],
-                        ["Bird's Peak Rock Secret Cave"],
-                        ["Boating Course Secret Cave"],
-                        ["Bomb Island Secret Cave"],
-                        ["Cliff Plateau Isles Secret Cave"],
-                        ["Diamond Steppe Island Warp Maze Cave"],
-                        ["Dragon Roost Island Secret Cave"],
-                        ["Fire Mountain Secret Cave"],
-                        ["Horseshoe Island Secret Cave"],
-                        ["Ice Ring Isle Secret Cave"],
-                        ["Needle Rock Isle Secret Cave"],
-                        ["Savage Labyrinth"],// Outset Island Secret Cave
-                        ["Overlook Island Secret Cave"],
-                        ["Pawprint Isle Chuchu Cave"],
-                        ["Pawprint Isle Wizzrobe Cave"],
-                        ["Cabana Labyrinth"],// Private Oasis,
-                        ["Rock Spire Isle Secret Cave"],
-                        ["Shark Island Secret Cave"],
-                        ["Star Island Secret Cave"],
-                        ["Stone Watcher Island Secret Cave"]
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Inner Exits and Fairy Fountains",
-                    "content": {
-                      "type": "itemgrid",
-                      "item_margin": "120,0",
-                      "item_size": "199,15",
-                      "item_h_alignment": "center",
-                      "item_v_alignment": "center",
-                      "rows": [
-                        ["Cliff Plateau Isles Inner Cave"],
-                        ["Ice Ring Isle Inner Cave"],
-                        [],
-                        ["Northern Fairy Fountain"],
-                        ["Eastern Fairy Fountain"],
-                        ["Southern Fairy Fountain"],
-                        ["Western Fairy Fountain"],
-                        ["Outset Fairy Fountain"],
-                        ["Thorned Fairy Fountain"]
-                      ]
-                    }
-                  }
-                ]
-              }
+  "entrances_assignment_entrances": {
+    "type": "tabbed",
+    "h_alignment": "center",
+    "item_h_alignment": "center",
+    "tabs": [
+      {
+        "title": "Dungeons",
+        "content": {
+          "type": "layout",
+          "key": "dungeon_entrances_grid"
+        }
+      },
+      {
+        "title": "Secret Caves",
+        "content": {
+          "type": "layout",
+          "key": "cave_entrances_grid"
+        }
+      },
+      {
+        "title": "Inner Entrances and Fairy Fountains",
+        "content": {
+          "type": "layout",
+          "key": "inner_entrances_and_fairy_entrances_grid"
+        }
+      }
+    ]
+  },
+  "entrances_assignment_exits": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Dungeons",
+        "content": {
+          "type": "layout",
+          "key": "dungeon_exits_grid"
+        }
+      },
+      {
+        "title": "Secret Caves",
+        "content": {
+          "type": "layout",
+          "key": "cave_exits_grid"
+        }
+      },
+      {
+        "title": "Inner Exits and Fairy Fountains",
+        "content": {
+          "type": "layout",
+          "key": "inner_exits_and_fairy_exits_grid"
+        }
+      }
+    ]
+  },
+  "entrances_assignment_exits_thin": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Dungeons",
+        "content": {
+          "type": "layout",
+          "key": "dungeon_exits_grid_thin"
+        }
+      },
+      {
+        "title": "Secret Caves",
+        "content": {
+          "type": "layout",
+          "key": "cave_exits_grid_thin"
+        }
+      },
+      {
+        "title": "Inner Exits and Fairy Fountains",
+        "content": {
+          "type": "layout",
+          "key": "inner_exits_and_fairy_exits_grid_thin"
+        }
+      }
+    ]
+  },
+  "entrances_both_tab": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Assignment",
+            "content": {
+              "type": "layout",
+              "key": "entrances_assignment_entrances"
             }
-          ]
-        },
-        {
-          "type": "tabbed",
-          "h_alignment": "center",
-          "tabs": [
+          },
+          {
+            "title": "Select Exit",
+            "content": {
+              "type": "layout",
+              "key": "entrances_assignment_exits"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tabbed",
+        "h_alignment": "center",
+        "tabs": [
+          {
+            "title": "Entrances",
+            "content": {
+              "type": "map",
+              "maps": [
+                "entrances"
+              ]
+            }
+          },
+          {
+            // Note: The title includes a zero-width non-joiner at the end so that map switching does not switch to it.
+            "title": "The Great Sea‌",
+            "content": {
+              "type": "map",
+              "maps": [
+                "seachart"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "entrances_map_tab": {
+    "type": "map",
+    "maps": [
+      "entrances"
+    ]
+  },
+  "entrances_assignment_tab": {
+    // Note: When using "dock", the min width is calculated correctly, but ends up slightly too small and pushes the
+    // tabs of the thin exit tabs down onto a second line. Increasing the item_margin of the thin itemgrids would
+    // probably resolve this.
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "entrances_assignment_entrances"
+      },
+      {
+        "type": "layout",
+        "key": "entrances_assignment_exits_thin"
+      }
+    ]
+  },
+  "entrances_assignment_alt_tab": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "group",
+        "header": "Select Entrance",
+        "content": {
+          "type": "array",
+          "orientation": "horizontal",
+          "content": [
             {
-              "title": "Entrances",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "entrances"
-                ]
-              }
+              "type": "layout",
+              "key": "dungeon_entrances_grid"
             },
             {
-              "title": "The Great Sea",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "seachart"
-                ]
-              }
+              "type": "layout",
+              "key": "cave_entrances_grid"
+            },
+            {
+              "type": "layout",
+              "key": "inner_entrances_and_fairy_entrances_grid"
             }
           ]
         }
-      ]
-    }
+      },
+      {
+        "type": "group",
+        "header": "Then Select Exit",
+        "content": {
+          "type": "array",
+          "orientation": "horizontal",
+          "content": [
+            {
+              "type": "layout",
+              "key": "dungeon_exits_grid"
+            },
+            {
+              "type": "layout",
+              "key": "cave_exits_grid"
+            },
+            {
+              "type": "layout",
+              "key": "inner_exits_and_fairy_exits_grid"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "entrances_map_and_sea_tab": {
+    "type": "map",
+    "maps": [
+      "entrances",
+      "seachart"
+    ]
+  },
+  "entrances_layout": {
+    "type": "tabbed",
+    "tabs": [
+      //TODO: Options tab that shows the options read from AP
+      {
+        "title": "Map + The Great Sea",
+        "content": {
+          "type": "layout",
+          "key": "entrances_map_and_sea_tab"
+        }
+      },
+      {
+        "title": "Map Only",
+        "content": {
+          "type": "layout",
+          "key": "entrances_map_tab"
+        }
+      },
+      {
+        "title": "Assignment Only",
+        "content": {
+          "type": "layout",
+          "key": "entrances_assignment_tab"
+        }
+      },
+      // Can't use this currently because it cannot shrink and forces all other tabs to not shrink below its large size.
+//      {
+//        "title": "Assignment alt.",
+//        "content": {
+//          "type": "layout",
+//          "key": "entrances_assignment_alt_tab"
+//        }
+//      },
+      {
+        "title": "Assignment + Maps",
+        "content": {
+          "type": "layout",
+          "key": "entrances_both_tab"
+        }
+      }
+    ]
   }
 }

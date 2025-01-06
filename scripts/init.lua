@@ -36,6 +36,7 @@ Tracker:AddLocations("locations/salvage.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")
+Tracker:AddLayouts("layouts/entrance_items.json")
 Tracker:AddLayouts("layouts/items_variant.json") -- itemgrid layouts that change depending on the active variant.
 Tracker:AddLayouts("layouts/entrances.json")
 Tracker:AddLayouts("layouts/tracker.json")
