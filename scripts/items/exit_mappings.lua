@@ -212,6 +212,7 @@ function exit_mapping_assign(self, new_exit)
             -- Already assigned
             return true
         else
+            print("Error: "..entrance.name.." is already assigned to entrance.exit and cannot be set to "..tostring(new_exit_name))
             return false
         end
     end
@@ -219,6 +220,11 @@ function exit_mapping_assign(self, new_exit)
     local already_assigned_entrance = exit_to_entrance[new_exit_name]
     if already_assigned_entrance then
         -- Can't assign to an exit that has already been assigned.
+        local entrance_name
+        if entrance then
+            entrance_name = entrance.name
+        end
+        print("Error: "..tostring(new_exit_name).." is already assigned to entrance "..already_assigned_entrance.name..". Cannot assign to "..tostring(entrance_name))
         return false
     end
 
