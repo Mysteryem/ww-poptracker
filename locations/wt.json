@@ -5,7 +5,7 @@
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "visibility_rules": [
       "dungeons_on, required_bosses_disabled",
-      "dungeons_on, required_bosses_enabled, required_bosses_wt"
+      "dungeons_on, required_bosses_wt_required"
     ],
     "map_locations": [
       {

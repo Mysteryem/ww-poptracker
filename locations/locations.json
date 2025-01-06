@@ -2181,7 +2181,7 @@
             ],
             "visibility_rules": [
               "mail_on, dungeons_on, required_bosses_disabled",
-              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_et"
+              "mail_on, dungeons_on, required_bosses_et_required"
             ]
           },
           {
@@ -2218,7 +2218,7 @@
             ],
             "visibility_rules": [
               "mail_on, dungeons_on, required_bosses_disabled",
-              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_fw"
+              "mail_on, dungeons_on, required_bosses_fw_required"
             ]
           },
           {
@@ -2244,7 +2244,7 @@
             ],
             "visibility_rules": [
               "mail_on, dungeons_on, required_bosses_disabled",
-              "mail_on, dungeons_on, required_bosses_enabled, required_bosses_ff"
+              "mail_on, dungeons_on, required_bosses_ff_required"
             ]
           },
           {
@@ -2259,7 +2259,7 @@
             ],
             "visibility_rules": [
               "mail_on, dungeons_on, expensive_on, required_bosses_disabled",
-              "mail_on, dungeons_on, expensive_on, required_bosses_enabled, required_bosses_ff"
+              "mail_on, dungeons_on, expensive_on, required_bosses_ff_required"
             ]
           }
         ],
