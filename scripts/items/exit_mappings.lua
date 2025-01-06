@@ -244,6 +244,12 @@ function exit_mapping_clear(self)
     if old_idx ~= 0 then
         self:Set("exit_idx", 0)
         exit_mapping_update(self, old_idx)
+    else
+        -- Ensure the section is reset if it was manually cleared by the user.
+        local entrance_location_section = Tracker:FindObjectForCode(entrance.entrance_logic .. "/Can Enter")
+        if entrance_location_section then
+            entrance_location_section.AvailableChestCount = entrance_location_section.ChestCount
+        end
     end
 end
 
