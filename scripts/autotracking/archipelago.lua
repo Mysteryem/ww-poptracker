@@ -132,7 +132,9 @@ for _, pair in ipairs(_STAGE_MAPPING) do
 end
 _STAGE_MAPPING = nil
 
-function setNonRandomizedEntrancesFromSlotData(slot_data)
+function setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
+    banned_dungeons = banned_dungeons or {}
+
     local vanilla_dungeons = slot_data['randomize_dungeon_entrances'] == 0
     local vanilla_minibosses = slot_data['randomize_miniboss_entrances'] == 0
     local vanilla_bosses = slot_data['randomize_boss_entrances'] == 0
@@ -152,9 +154,40 @@ function setNonRandomizedEntrancesFromSlotData(slot_data)
     end
     if vanilla_minibosses then
         add_vanilla_entrances("miniboss")
+    else
+        -- In Required Bosses mode, miniboss entrances in non-required dungeons are always vanilla.
+        local dungeon_to_miniboss_entrance = {
+            fw=ENTRANCE_BY_NAME["Miniboss Entrance in Forbidden Woods"],
+            totg=ENTRANCE_BY_NAME["Miniboss Entrance in Tower of the Gods"],
+            et=ENTRANCE_BY_NAME["Miniboss Entrance in Earth Temple"],
+            wt=ENTRANCE_BY_NAME["Miniboss Entrance in Wind Temple"],
+            -- hc=ENTRANCE_BY_NAME["Miniboss Entrance in Hyrule Castle"], -- Never an excluded dungeon
+        }
+        for _, dungeon in ipairs(banned_dungeons) do
+            local entrance = dungeon_to_miniboss_entrance[dungeon]
+            if entrance ~= nil then
+                table.insert(all_vanilla_entrances, entrance)
+            end
+        end
     end
     if vanilla_bosses then
         add_vanilla_entrances("boss")
+    else
+        -- In Required Bosses mode, boss entrances in non-required dungeons are always vanilla.
+        local dungeon_to_boss_entrance = {
+            drc=ENTRANCE_BY_NAME["Boss Entrance in Dragon Roost Cavern"],
+            fw=ENTRANCE_BY_NAME["Boss Entrance in Forbidden Woods"],
+            totg=ENTRANCE_BY_NAME["Boss Entrance in Tower of the Gods"],
+            ff=ENTRANCE_BY_NAME["Boss Entrance in Forsaken Fortress"],
+            et=ENTRANCE_BY_NAME["Boss Entrance in Earth Temple"],
+            wt=ENTRANCE_BY_NAME["Boss Entrance in Wind Temple"],
+        }
+        for _, dungeon in ipairs(banned_dungeons) do
+            local entrance = dungeon_to_boss_entrance[dungeon]
+            if entrance ~= nil then
+                table.insert(all_vanilla_entrances, entrance)
+            end
+        end
     end
     if vanilla_secret_caves then
         add_vanilla_entrances("secret_cave")
@@ -297,7 +330,27 @@ function onClear(slot_data)
 
         PAUSE_ENTRANCE_UPDATES = true
         clearExitMappings()
-        setNonRandomizedEntrancesFromSlotData(slot_data)
+        if required_bosses then
+            -- Banned (non-required) dungeons in Required Bosses mode always have their miniboss and boss entrances
+            -- vanilla.
+            local banned_dungeons = {}
+            local dungeon_to_item = {
+                drc=drc_required,
+                fw=fw_required,
+                totg=totg_required,
+                ff=ff_required,
+                et=et_required,
+                wt=wt_required,
+            }
+            for dungeon, item in pairs(dungeon_to_item) do
+                if item.CurrentStage == 0 then
+                    table.insert(banned_dungeons, dungeon)
+                end
+            end
+            setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
+        else
+            setNonRandomizedEntrancesFromSlotData(slot_data)
+        end
         local entrances = slot_data["entrances"]
         if entrances then
             --print(dump_table(entrances))
