@@ -96,15 +96,26 @@ function get_selected_exit_mapping()
     end
 end
 
+function exit_mapping_get_entrance(self)
+    return ENTRANCES[self:Get("entrance_idx")]
+end
+
+function exit_mapping_get_entrance_name(self)
+    local entrance = exit_mapping_get_entrance(self)
+    if entrance ~= nil then
+        return entrance.name
+    else
+        return nil
+    end
+end
+
 function exit_mapping_get_exit_name(self)
     return EXITS[self:Get("exit_idx")]
 end
 
 function update_exit_mapping_icon(self, entrance_name, exit_name)
     if not entrance_name then
-        local entrance_idx = self:Get("entrance_idx")
-        local entrance = ENTRANCES[entrance_idx]
-        entrance_name = entrance.name
+        entrance_name = exit_mapping_get_entrance_name(self)
     end
 
     if not exit_name then
@@ -137,11 +148,9 @@ end
 -- Update an exit mapping's name, image and exit name after its "exit_idx" has been changed
 function exit_mapping_update(self, old_exit_idx)
     local initial_creation = old_exit_idx == nil
-    local entrance_idx = self:Get("entrance_idx")
-    local entrance = ENTRANCES[entrance_idx]
+    local entrance = exit_mapping_get_entrance(self)
     local entrance_name = entrance.name
-    local exit_idx = self:Get("exit_idx")
-    local exit_name = EXITS[exit_idx]
+    local exit_name = exit_mapping_get_exit_name(self)
 
     -- Items are created before locations, so during creation of the exit mappings, the location sections to clear/reset
     -- won't exist yet.
@@ -190,26 +199,21 @@ function exit_mapping_update(self, old_exit_idx)
     update_entrances()
 end
 
-function exit_mapping_assign(self, new_exit)
-    local new_exit_name
+function exit_mapping_assign(self, new_exit_name)
     local new_exit_idx
-    if type(new_exit) == "number" then
-        new_exit_idx = new_exit
-        new_exit_name = EXITS[new_exit]
+    if new_exit_name == nil then
+        new_exit_idx = 0
     else
-        new_exit_name = new_exit
-        if new_exit == nil then
-            new_exit_idx = 0
-        else
-            new_exit_idx = NAME_TO_EXIT_IDX[new_exit] or 0
-        end
-        if new_exit_idx == 0 and new_exit_name then
-            print("No exit found with the name '" .. new_exit_name .. "'")
-            new_exit_name = nil
-        end
+        new_exit_idx = NAME_TO_EXIT_IDX[new_exit_name] or 0
     end
 
-    local entrance = ENTRANCES[self:Get("entrance_idx")]
+    -- Check that the name was valid, if not, set it to nil and print an error.
+    if new_exit_idx == 0 and new_exit_name ~= nil then
+        print("Error: No exit found with the name '" .. new_exit_name .. "', removing the assignment.")
+        new_exit_name = nil
+    end
+
+    local entrance = exit_mapping_get_entrance(self)
     if entrance and entrance.exit then
         -- Can't change the exit if the entrance already has an exit assigned.
         if entrance.exit == new_exit_name then
@@ -245,7 +249,7 @@ function exit_mapping_assign(self, new_exit)
 end
 
 function exit_mapping_clear(self)
-    local entrance = ENTRANCES[self:Get("entrance_idx")]
+    local entrance = exit_mapping_get_entrance(self)
     if entrance and entrance.exit then
         entrance.exit = nil
     end
