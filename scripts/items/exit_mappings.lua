@@ -96,6 +96,10 @@ function get_selected_exit_mapping()
     end
 end
 
+function exit_mapping_get_exit_name(self)
+    return EXITS[self:Get("exit_idx")]
+end
+
 function update_exit_mapping_icon(self, entrance_name, exit_name)
     if not entrance_name then
         local entrance_idx = self:Get("entrance_idx")

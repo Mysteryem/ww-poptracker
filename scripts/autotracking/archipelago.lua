@@ -430,11 +430,17 @@ function entranceRandoAssignEntranceFromVisitedStage(stage_name)
         if entrance_name then
             local exit_mapping = Tracker:FindObjectForCode(entrance_name)
             if exit_mapping then
-                -- Clear the current assignment if it is already assigned.
-                exit_mapping_clear(exit_mapping)
-                local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
-                if not set_correctly then
-                    print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
+                local existing_assigned_exit_name = exit_mapping_get_exit_name(exit_mapping)
+                if existing_assigned_exit_name ~= exit_name then
+                    -- Clear the current assignment if it is already assigned to something else.
+                    exit_mapping_clear(exit_mapping)
+                    local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
+                    if not set_correctly then
+                        print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
+                    end
+                else
+                    print(string.format("Skipped assigning exit '%s' to entrance '%s' because it is already assigned to that entrance",
+                                        exit_name, entrance_name))
                 end
             end
         else
