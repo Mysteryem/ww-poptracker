@@ -7,8 +7,11 @@ require("scripts/utils")
 CUR_INDEX = -1
 SLOT_DATA = nil
 local VISITED_STAGES_FORMAT = "tww_visited_stages_%i"
+-- The first integer is the team (mostly unused by Archipelago currently). The second integer is the slot number.
+local GOAL_STATUS_FORMAT = "_read_client_status_%i_%i"
 -- Data storage key
 visited_stages_key = nil
+goal_status_key = nil
 
 local SLOT_DATA_EXIT_TO_ENTRANCE = {}
 
@@ -218,6 +221,15 @@ end
 function onClear(slot_data)
     -- Reset the last activated tab from map tracking.
     _last_activated_tab = ""
+
+    -- Reset the goal location
+    local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
+    goal_location.AvailableChestCount = goal_location.ChestCount
+
+    -- Get and subscribe to changes in the player's status to track goal completion
+    goal_status_key = string.format(GOAL_STATUS_FORMAT, Archipelago.TeamNumber, Archipelago.PlayerNumber)
+    Archipelago:Get({goal_status_key})
+    Archipelago:SetNotify({goal_status_key})
 
     -- autotracking settings from YAML
     local function setFromSlotData(slot_data_key, item_code)
@@ -566,7 +578,19 @@ function onRetrieved(key, new_value, old_value)
         print(string.format("called onRetrieved: %s", dump_table(value)))
     end
 
-    if key == visited_stages_key and ENTRANCE_RANDO_ENABLED then
+    if key == goal_status_key then
+        -- CLIENT_UNKNOWN = 0
+        -- CLIENT_CONNECTED = 5
+        -- CLIENT_READY = 10
+        -- CLIENT_PLAYING = 20
+        -- CLIENT_GOAL = 30
+        if new_value == 30 then
+            local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
+            goal_location.AvailableChestCount = goal_location.AvailableChestCount - 1
+        else
+            print(string.format("Current goal status is %s", new_value))
+        end
+    elseif key == visited_stages_key and ENTRANCE_RANDO_ENABLED then
         -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
         -- storage may not exist.
         if new_value ~= nil then

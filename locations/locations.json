@@ -1130,7 +1130,7 @@
             ]
           },
           {
-            "name": "Defeat Ganondorf",
+            "name": "Defeat Ganondorf (Goal)",
             "access_rules": [
               "@Macros/can_reach_and_defeat_ganondorf"
             ]
