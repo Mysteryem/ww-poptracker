@@ -1,9 +1,12 @@
+-- Warning: The scope of this file grew substantially from its original purpose. This file is in dire need of a rewrite.
+
 require("scripts/logic/entrances")
 if not ENTRANCE_RANDO_ENABLED then
     return false
 end
 
-EXITS = {
+-- The names must match those used by the AP World and must match the order of ENTRANCES from entrances.lua.
+local EXITS = {
     "Dragon Roost Cavern",
     "Forbidden Woods",
     "Tower of the Gods",
@@ -49,18 +52,19 @@ EXITS = {
     "Southern Fairy Fountain",
     "Northern Fairy Fountain"
 }
-NAME_TO_EXIT_IDX = {}
+local NAME_TO_EXIT_IDX = {}
 for idx, name in ipairs(EXITS) do
     NAME_TO_EXIT_IDX[name] = idx
 end
 
-NUM_EXITS = #EXITS
 
-_selected_exit_mapping_idx = nil
+------------------------------------------------------------------------------------------------------------------------
+-- Selection handling
+local _selected_exit_mapping_idx = nil
 function set_selected_exit_mapping(new_mapping)
     local new_idx = nil
     if new_mapping then
-        new_idx = new_mapping:Get("entrance_idx")
+        new_idx = new_mapping.ItemState.entrance_idx
     end
 
     local old_idx = _selected_exit_mapping_idx
@@ -84,7 +88,7 @@ function set_selected_exit_mapping(new_mapping)
 end
 
 function is_selected_exit_mapping(mapping)
-    return _selected_exit_mapping_idx and mapping and mapping:Get("entrance_idx") == _selected_exit_mapping_idx
+    return _selected_exit_mapping_idx and mapping and mapping.ItemState.entrance_idx == _selected_exit_mapping_idx
 end
 
 function get_selected_exit_mapping()
@@ -95,9 +99,15 @@ function get_selected_exit_mapping()
         return nil
     end
 end
+------------------------------------------------------------------------------------------------------------------------
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- Methods
+--
+-- Unfortunately, we cannot add these to the lua item instances directly, so they must be called like normal functions.
 function exit_mapping_get_entrance(self)
-    return ENTRANCES[self:Get("entrance_idx")]
+    return ENTRANCES[self.ItemState.entrance_idx]
 end
 
 function exit_mapping_get_entrance_name(self)
@@ -110,7 +120,7 @@ function exit_mapping_get_entrance_name(self)
 end
 
 function exit_mapping_get_exit_name(self)
-    return EXITS[self:Get("exit_idx")]
+    return EXITS[self.ItemState.exit_idx]
 end
 
 function update_exit_mapping_icon(self, entrance_name, exit_name)
@@ -119,7 +129,7 @@ function update_exit_mapping_icon(self, entrance_name, exit_name)
     end
 
     if not exit_name then
-        local exit_idx = self:Get("exit_idx")
+        local exit_idx = self.ItemState.exit_idx
         exit_name = EXITS[exit_idx]
     end
 
@@ -236,13 +246,13 @@ function exit_mapping_assign(self, new_exit_name)
         return false
     end
 
-    local old_idx = self:Get("exit_idx")
+    local old_idx = self.ItemState.exit_idx
     if new_exit_idx == old_idx then
         -- No changes needed
         print(self.Name .. "is already assigned to exit_idx" .. tostring(new_exit_idx))
         return true
     end
-    self:Set("exit_idx", new_exit_idx)
+    self.ItemState.exit_idx = new_exit_idx
 
     exit_mapping_update(self, old_idx)
     return true
@@ -254,9 +264,9 @@ function exit_mapping_clear(self)
         entrance.exit = nil
     end
 
-    local old_idx = self:Get("exit_idx")
+    local old_idx = self.ItemState.exit_idx
     if old_idx ~= 0 then
-        self:Set("exit_idx", 0)
+        self.ItemState.exit_idx = 0
         exit_mapping_update(self, old_idx)
     else
         -- Ensure the section is reset if it was manually cleared by the user.
@@ -266,7 +276,13 @@ function exit_mapping_clear(self)
         end
     end
 end
+------------------------------------------------------------------------------------------------------------------------
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- Functions
+
+-- Clear all exits assigned to exit mappings
 function clearExitMappings()
     for _, entrance in ipairs(ENTRANCES) do
         local exit_mapping = Tracker:FindObjectForCode(entrance.name)
@@ -279,6 +295,8 @@ function clearExitMappings()
     end
 end
 
+-- Create a new exit mapping lua item. These are the main items that store the information on the current assignments of
+-- exits to entrances.
 function create_mapping_lua_item(idx, entrance)
     local mapping_item = ScriptHost:CreateLuaItem()
 
@@ -296,9 +314,9 @@ function create_mapping_lua_item(idx, entrance)
         end
 
         local exit_idx = data.exit_idx
-        local old_idx = self:Get("exit_idx")
+        local old_idx = self.ItemState.exit_idx
         if exit_idx then
-            self:Set("exit_idx", exit_idx)
+            self.ItemState.exit_idx = exit_idx
         end
         exit_mapping_update(self, old_idx)
     end
@@ -309,11 +327,11 @@ function create_mapping_lua_item(idx, entrance)
         return { exit_idx = self.ItemState.exit_idx }
     end
 
-    mapping_item:Set("entrance_idx", idx)
+    mapping_item.ItemState.entrance_idx = idx
 
-    if not mapping_item:Get("exit_idx") then
+    if not mapping_item.ItemState.exit_idx then
         -- Start unassigned.
-        mapping_item:Set("exit_idx", 0)
+        mapping_item.ItemState.exit_idx = 0
     end
 
     local entrance_name = entrance.name
@@ -327,10 +345,10 @@ function create_mapping_lua_item(idx, entrance)
 
     -- Select the mapping for assignment or clear the exit mapping if already assigned
     mapping_item.OnLeftClickFunc = function (self)
-        local old_idx = self:Get("exit_idx")
+        local old_idx = self.ItemState.exit_idx
         if old_idx ~= 0 then
             -- Clear the mapping
-            self:Set("exit_idx", 0)
+            self.ItemState.exit_idx = 0
             exit_mapping_update(self, old_idx)
             return
         else
@@ -344,12 +362,15 @@ function create_mapping_lua_item(idx, entrance)
             end
         end
     end
+    -- The vanilla
     exit_mapping_update(mapping_item, nil)
 
     -- TODO: If an exit has been assigned to an exit mapping, can we make the exit location appear as checkable?
     --       This way, we can tell apart locations we can/cannot access and which of those have been assigned
 end
 
+-- Create a new exit lua item. These are the placeholder items that users click on to assign a specific exit after
+-- clicking on an exit mapping lua item.
 function create_exit_lua_item(idx)
     local exit_item = ScriptHost:CreateLuaItem()
 
@@ -359,12 +380,12 @@ function create_exit_lua_item(idx)
 
     local exit_name = EXITS[idx]
 
-    exit_item:Set("display_name", exit_name)
-
     exit_item.Name = exit_name
     exit_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
 
-    codeFunc = function(self, code) return code == exit_name end
+    local codeFunc = function(self, code)
+        return code == exit_name
+    end
     exit_item.CanProvideCodeFunc = codeFunc
     exit_item.ProvidesCodeFunc = codeFunc
     exit_item.OnLeftClickFunc = function(self)
@@ -376,9 +397,8 @@ function create_exit_lua_item(idx)
                 return
             end
 
-            --selected_exit_mapping = nil
-            local old_idx = selected:Get("exit_idx")
-            selected:Set("exit_idx", idx)
+            local old_idx = selected.ItemState.exit_idx
+            selected.ItemState.exit_idx = idx
 
             set_selected_exit_mapping(nil)
             exit_mapping_update(selected, old_idx)
@@ -386,9 +406,13 @@ function create_exit_lua_item(idx)
         end
     end
 
-    exit_item:Set("exit_idx", idx)
+    exit_item.ItemState.exit_idx = idx
 end
+------------------------------------------------------------------------------------------------------------------------
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- Lua item creation and initialization
 PAUSE_ENTRANCE_UPDATES = true
 for idx, entrance in ipairs(ENTRANCES) do
    create_mapping_lua_item(idx, entrance)
@@ -396,8 +420,7 @@ for idx, entrance in ipairs(ENTRANCES) do
 end
 PAUSE_ENTRANCE_UPDATES = false
 
-if ENTRANCE_RANDO_ENABLED then
-    update_entrances()
-end
+update_entrances()
+------------------------------------------------------------------------------------------------------------------------
 
 return true
