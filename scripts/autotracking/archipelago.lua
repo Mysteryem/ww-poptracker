@@ -1,3 +1,11 @@
+if ARCHIPELAGO_LOADED then
+    print("WARNING: archipelago.lua has already been loaded.")
+    return
+else
+    print("INFO: Loading archipelago.lua")
+    ARCHIPELAGO_LOADED = true
+end
+
 require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
 require("scripts/logic/entrances")
@@ -205,8 +213,8 @@ function setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
     -- For the second pass, set all the entrances to their vanilla exit
     local all_set_correctly = true
     for _, entrance in ipairs(all_vanilla_entrances) do
-        local exit_mapping = Tracker:FindObjectForCode(entrance.name)
-        local set_correctly = exit_mapping_assign(exit_mapping, entrance.vanilla_exit)
+        -- Don't update logic
+        local set_correctly = entrance:Assign(entrance.vanilla_exit, PAUSE_ENTRANCE_UPDATES)
         if not set_correctly then
             -- Exit was most likely already assigned to an entrance
             all_set_correctly = false
@@ -341,7 +349,11 @@ function onClear(slot_data)
         Archipelago:Get({visited_stages_key})
 
         PAUSE_ENTRANCE_UPDATES = true
-        clearExitMappings()
+        for _, entrance in ipairs(ENTRANCES) do
+            -- Prevent logic updates while clearing.
+            -- TODO: Also prevent exit item and section updates?
+            entrance:Unassign(PAUSE_ENTRANCE_UPDATES)
+        end
         if required_bosses then
             -- Banned (non-required) dungeons in Required Bosses mode always have their miniboss and boss entrances
             -- vanilla.
@@ -425,29 +437,32 @@ end
 
 function entranceRandoAssignEntranceFromVisitedStage(stage_name)
     local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
-    if exit_name then
-        local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
-        if entrance_name then
-            local exit_mapping = Tracker:FindObjectForCode(entrance_name)
-            if exit_mapping then
-                local existing_assigned_exit_name = exit_mapping_get_exit_name(exit_mapping)
-                if existing_assigned_exit_name ~= exit_name then
-                    -- Clear the current assignment if it is already assigned to something else.
-                    exit_mapping_clear(exit_mapping)
-                    local set_correctly = exit_mapping_assign(exit_mapping, exit_name)
-                    if not set_correctly then
-                        print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
-                    end
-                else
-                    print(string.format("Skipped assigning exit '%s' to entrance '%s' because it is already assigned to that entrance",
-                                        exit_name, entrance_name))
-                end
-            end
-        else
-            print("Could not find an entrance_name for "..exit_name)
-        end
-    else
+    if not exit_name then
         print("Could not find an exit_name for "..stage_name)
+        return
+    end
+
+    local exit = EXITS_BY_NAME[exit_name]
+    if not exit then
+        print("Could not find an exit with the name "..exit_name)
+        return
+    end
+
+    local entrance_name = SLOT_DATA_EXIT_TO_ENTRANCE[exit_name]
+    if not entrance_name then
+        print("Could not find an entrance_name for "..exit_name)
+        return
+    end
+
+    local entrance = ENTRANCE_BY_NAME[entrance_name]
+    if not entrance then
+        print("Could not find an entrance with the name "..entrance_name)
+        return
+    end
+
+    local set_correctly = entrance:Assign(exit)
+    if not set_correctly then
+        print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
     end
 end
 

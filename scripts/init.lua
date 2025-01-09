@@ -1,3 +1,6 @@
+-- Globals
+ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
+
 -- Logic
 require("scripts/utils")
 require("scripts/logic/logic")
