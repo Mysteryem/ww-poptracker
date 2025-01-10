@@ -23,6 +23,7 @@ local function is_exit_possible(exit, checked_set)
     if impossible_exits[exit_name] then
         -- This exit has already been found to be impossible.
         -- This should not normally happen because left/right click to cycle through exits skips already assigned exits.
+        debugPrint("%s is unreachable from a previous check", exit_name)
         return false
     end
 
@@ -32,6 +33,7 @@ local function is_exit_possible(exit, checked_set)
     end
     if checked_set[exit_name] then
         -- Already checked this exit, so we've got a loop.
+        debugPrint("%s is unreachable due to a loop", exit_name)
         return false
     end
     checked_set[exit_name] = true
@@ -40,6 +42,7 @@ local function is_exit_possible(exit, checked_set)
     local entrance = exit.Entrance
     if not entrance then
         -- No entrance is currently mapped to this exit, so the exit is considered unreachable.
+        debugPrint("%s is unreachable due to not being assigned to an entrance", exit_name)
         return false
     end
 
@@ -47,6 +50,7 @@ local function is_exit_possible(exit, checked_set)
     local parent_exit = entrance.parent_exit
     if parent_exit == nil then
         -- The Great Sea is always accessible.
+        debugPrint("%s is reachable due to its entrance's parent_exit being The Great Sea (nil)", exit_name)
         return true
     else
         return is_exit_possible(parent_exit, checked_set)
@@ -60,7 +64,7 @@ function update_entrances(initializing)
         return
     end
 
-    print("### Updating entrances logic ###")
+    debugPrint("### Updating entrances logic ###")
 
     -- Reset the global lookup tables.
     exit_to_entrance = {}
@@ -93,15 +97,15 @@ function update_entrances(initializing)
     end
 
     -- Check for unreachable exits
+    debugPrint("Checking for and marking impossible exits")
     for _, entrance in ipairs(ENTRANCES) do
         local exit = entrance.exit
         if exit and not is_exit_possible(exit) then
-            --print("Exit '" .. exit_name .. "' is impossible to reach")
+            debugPrint("Exit '%s' is impossible to reach", exit.Name)
             impossible_exits[exit.Name] = true
         end
     end
 
-    -- FIXME: Not working/updating?
     -- Visibly mark impossible exits
     if EXIT_MAPPINGS_LOADED then
         for _, entrance in ipairs(ENTRANCES) do
@@ -110,12 +114,17 @@ function update_entrances(initializing)
             -- It's possible we could be trying to update before all the items have been created in exit_mappings.lua.
             if lua_item then
                 -- TODO: Also find the placeholder items and change their overlay colour too
+                local new_icon_mods
                 if exit and impossible_exits[exit.Name] then
                     -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
                     --       reach (or invalid due to being duplicated).
-                    lua_item.IconMods = "@disabled"
+                    debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.name, exit.Name)
+                    new_icon_mods = "@disabled"
                 else
-                    lua_item.IconMods = "none"
+                    new_icon_mods = "none"
+                end
+                if lua_item.IconMods ~= new_icon_mods then
+                    lua_item.IconMods = new_icon_mods
                 end
             end
         end

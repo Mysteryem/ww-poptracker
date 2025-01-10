@@ -7,13 +7,14 @@ else
 end
 
 require("scripts/objects/exit")
+require("scripts/utils")
 
 Entrance = {}
 Entrance.__index = Entrance
 
 function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
     local self = setmetatable({}, Entrance)
-    print("Creating Entrance " .. name)
+    debugPrint("Creating Entrance %s", name)
     -- The name of this entrance.
     self.name = name
 
@@ -30,7 +31,7 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
     if vanilla_exit.Entrance then
         error("'" .. vanilla_exit.Name .. "' is already assigned to " .. vanilla_exit.Entrance.name)
     end
-    print("Assigned " .. self.name .. " as the entrance used by exit " .. vanilla_exit.Name)
+    debugPrint("Assigned %s as the entrance used by exit %s", self.name, vanilla_exit.Name)
     vanilla_exit.Entrance = self
 
     -- The vanilla exit, stored here for simpler lookup.
@@ -51,7 +52,7 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
             error("No exit exists with the name '" .. tostring(parent_exit_name) .. "'. Known exits: " .. known_exits)
         end
 
-        self.parent_exit_name = parent_exit_name
+        self.parent_exit = parent_exit
     end
     -- The location which holds this entrance's logic, or `nil` if the entrance is always accessible.
     self.entrance_logic = "@Entrance Logic/" .. name
@@ -125,31 +126,31 @@ if ENTRANCE_RANDO_ENABLED then
                 -- Reset the section
                 self:UpdateLocationSection()
             end
-            print(string.format("%s: Unassigned %s", self.name, current_exit.Name))
+            debugPrint("%s: Unassigned %s", self.name, current_exit.Name)
         else
-            print(string.format("%s: Already has no assignment to unassign", self.name))
+            debugPrint("%s: Already has no assignment to unassign", self.name)
         end
     end
 
     function Entrance:Assign(new_exit, replace, prevent_logic_update)
 
         if new_exit then
-            print(string.format("%s: Assigning exit %s", self.name, new_exit.Name))
+            debugPrint("%s: Assigning exit %s", self.name, new_exit.Name)
         else
-            print(string.format("%s: Assigning exit nil", self.name))
+            debugPrint("%s: Assigning exit nil", self.name)
         end
 
         local current_exit = self.exit
         if new_exit == current_exit then
             -- Nothing to do.
-            print(string.format("%s: Already assigned", self.name))
+            debugPrint("%s: Already assigned", self.name)
             return true
         end
 
         if new_exit == nil then
             self:Unassign(prevent_logic_update)
             -- Always succeeds.
-            print(string.format("%s: Unassigned", self.name))
+            debugPrint("%s: Unassigned", self.name)
             return true
         end
 
@@ -185,7 +186,7 @@ if ENTRANCE_RANDO_ENABLED then
             update_entrances()
         end
 
-        print(string.format("%s: Assigned %s", self.name, new_exit.Name))
+        debugPrint("%s: Assigned %s", self.name, new_exit.Name)
     end
 
     function Entrance:GetItemIconPath()
@@ -212,11 +213,11 @@ if ENTRANCE_RANDO_ENABLED then
     function Entrance:UpdateItemIcon(item)
         item = item or self:GetItem()
         local path = self:GetItemIconPath()
-        print("Updating " .. self.name .. " icon to ".. path)
+        debugPrint("Updating %s icon to %s", self.name, path)
         item.Icon = ImageReference:FromPackRelativePath(path)
     end
 
-    function Entrance:UpdateIconIndex(item)
+    function Entrance:UpdateItemExitIndex(item)
         item = item or self:GetItem()
         item.ItemState.exit_idx = self:GetExitIndex()
     end
@@ -224,22 +225,26 @@ if ENTRANCE_RANDO_ENABLED then
     function Entrance:UpdateItemName(item)
         item = item or self:GetItem()
         local exit = self.exit
+        local new_name
         if exit then
-            item.Name = self.name .. " -> " .. exit.Name
+            new_name = self.name .. " -> " .. exit.Name
         else
-            item.Name = "Click to assign " .. self.name
+            new_name = "Click to assign " .. self.name
+        end
+        if item.Name ~= new_name then
+            item.Name = new_name
         end
     end
 
     function Entrance:UpdateItem(item)
         item = item or self:GetItem()
         self:UpdateItemIcon(item)
-        self:UpdateIconIndex(item)
+        self:UpdateItemExitIndex(item)
         self:UpdateItemName(item)
     end
 
     function Entrance:UpdateLocationSection()
-        print(string.format("%s: Updating section", self.name))
+        debugPrint("%s: Updating section", self.name)
         entrance_location_section = Tracker:FindObjectForCode(self.entrance_logic .. "/Can Enter")
         if self.exit then
             -- Clear the section

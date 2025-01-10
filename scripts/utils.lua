@@ -1,3 +1,24 @@
+if UTILS_LOADED then
+    print("WARNING: utils.lua has already been loaded.")
+    return
+else
+    print("INFO: Loading utils.lua")
+    UTILS_LOADED = true
+end
+
+require("scripts/debug")
+
+if DEBUG then
+    function debugPrint(format, ...)
+        print(string.format("DEBUG: "..format, ...))
+    end
+else
+    function debugPrint(format, ...)
+        -- no-op
+    end
+end
+
+
 function has_value(t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end
@@ -58,7 +79,7 @@ end
 
 -- When specified, finishedCallback(...) is called after the timer is finished. The duration argument is
 -- likely to be greater than the requested timer duration because the timer only updates each frame.
-local function runNextFrame(name, func, ...)
+function runNextFrame(name, func, ...)
     -- Can't access the varargs from within frameCallback, so pack them into a local table and unpack in frameCallback.
     local arg = {...}
 

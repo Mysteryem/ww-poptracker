@@ -25,7 +25,7 @@ function create_entrance_lua_item(idx, entrance)
     end
 
     mapping_item.LoadFunc = function (self, data)
-        print("Reading exit mapping for '" .. entrance.name .. "' during load")
+        debugPrint("Reading exit mapping for '%s' during load", entrance.name)
         -- "entrance_idx" is not saved/loaded.
         if data == nil then
             print("Error: Data to read for exit mapping " .. self.Name .. " was nil")
@@ -38,10 +38,10 @@ function create_entrance_lua_item(idx, entrance)
         if loaded_exit_idx and loaded_exit_idx ~= old_idx then
             self.ItemState.exit_idx = loaded_exit_idx
             -- Assign the exit to the entrance if it is not vanilla.
-            print("Assigning non vanilla exit for " .. entrance.name)
+            debugPrint("Assigning non vanilla exit for '%s'", entrance.name)
             entrance:Assign(EXITS[loaded_exit_idx], true, true)
         else
-            print("Updating for vanilla exit for " .. entrance.name)
+            debugPrint("Updating for vanilla exit for '%s'", entrance.name)
             entrance:UpdateItemIcon(self)
             entrance:UpdateItemName(item)
             --entrance:UpdateLocationSection()

@@ -6,12 +6,14 @@ else
     EXIT_LOADED = true
 end
 
+require("scripts/utils")
+
 Exit = {}
 Exit.__index = Exit
 
 function Exit.New(name)
     local self = setmetatable({}, Exit)
-    print("Creating Exit " .. name)
+    debugPrint("Creating Exit " .. name)
     self.Name = name
     -- To be set in Entrance.New
     self.Entrance = nil
@@ -35,13 +37,22 @@ if ENTRANCE_RANDO_ENABLED then
     function Exit:UpdateItem(item)
         item = item or self:GetItem()
         local entrance = self.Entrance
+        local new_name
+        local new_icon_mods
         if entrance then
-            item.Name = entrance.name .. " -> " .. self.Name
+            new_name = entrance.name .. " -> " .. self.Name
             -- Grey out the image to indicate that is has been assigned.
-            item.IconMods = "@disabled"
+            new_icon_mods = "@disabled"
         else
-            item.Name = self.Name
-            item.IconMods = "none"
+            new_name = self.Name
+            new_icon_mods = "none"
+        end
+
+        if item.Name ~= new_name then
+            item.Name = new_name
+        end
+        if item.IconMods ~= new_icon_mods then
+            item.IconMods = new_icon_mods
         end
     end
 end

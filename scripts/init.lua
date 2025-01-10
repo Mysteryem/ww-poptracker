@@ -1,6 +1,10 @@
 -- Globals
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
+-- Debug utils.
+-- Only present as stubs in the pack. Replace with implementations locally through user-override.
+require("scripts/debug")
+
 -- Logic
 require("scripts/utils")
 require("scripts/logic/logic")
@@ -52,3 +56,15 @@ print("Autotracking script loaded")
 
 -- Pause logic updates until the next frame, so that auto-save state can load without causing updates.
 pauseLogicUntilNextFrame("tracker post-init")
+
+if ENTRANCE_RANDO_ENABLED then
+    -- If there is no autosave state, then there are no calls to load exit assignments, so we schedule an update
+    -- ourselves.
+    local function update_entrances_after_load()
+        print("Updating entrances after load")
+        PAUSE_ENTRANCE_UPDATES = false
+        update_entrances()
+        print("Updated entrances after load")
+    end
+    runNextFrame("Delayed entrance logic update", update_entrances_after_load)
+end
