@@ -8,7 +8,6 @@ end
 
 require("scripts/objects/entrance")
 require("scripts/objects/exit")
-require("scripts/logic/entrances")
 
 if not ENTRANCE_RANDO_ENABLED then
     -- Do not create any items if entrance rando is not enabled.
@@ -137,13 +136,12 @@ function create_exit_lua_item(idx, exit)
 end
 
 -- Lua item creation and initialization
-PAUSE_ENTRANCE_UPDATES = true
 for idx, entrance in ipairs(ENTRANCES) do
     create_entrance_lua_item(idx, entrance)
     create_exit_lua_item(idx, entrance.vanilla_exit)
-    -- Unassign each entrance. Prevent logic and section updates. The sections won't exist yet.
-    entrance:Unassign(PAUSE_ENTRANCE_UPDATES, false, true)
 end
-PAUSE_ENTRANCE_UPDATES = false
+
+-- Unassign each entrance. Prevent section updates because the sections won't exist yet.
+Entrance.UnassignAll(false, false, true)
 
 return true

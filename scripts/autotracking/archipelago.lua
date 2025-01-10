@@ -8,7 +8,7 @@ end
 
 require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
-require("scripts/logic/entrances")
+require("scripts/objects/entrance")
 require("scripts/items/exit_mappings")
 require("scripts/utils")
 
@@ -385,7 +385,7 @@ function onClear(slot_data)
             print("'entrances' was not present in slot_data, automatic entrance assignment will not be available")
         end
         PAUSE_ENTRANCE_UPDATES = false
-        update_entrances()
+        Entrance.update_entrances()
     end
 
     -- junk that was in here from the template
@@ -625,7 +625,7 @@ function onRetrieved(key, new_value, old_value)
                     entranceRandoAssignEntranceFromVisitedStage(stage_name)
                 end
                 PAUSE_ENTRANCE_UPDATES = false
-                update_entrances()
+                Entrance.update_entrances()
 
                 Tracker.BulkUpdate = false
                 forceLogicUpdate()

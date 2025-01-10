@@ -58,12 +58,13 @@ print("Autotracking script loaded")
 pauseLogicUntilNextFrame("tracker post-init")
 
 if ENTRANCE_RANDO_ENABLED then
+    require("scripts/objects/entrance")
     -- If there is no autosave state, then there are no calls to load exit assignments, so we schedule an update
     -- ourselves.
     local function update_entrances_after_load()
         print("Updating entrances after load")
         PAUSE_ENTRANCE_UPDATES = false
-        update_entrances()
+        Entrance.update_entrances()
         print("Updated entrances after load")
     end
     runNextFrame("Delayed entrance logic update", update_entrances_after_load)

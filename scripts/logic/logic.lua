@@ -7,7 +7,7 @@ else
 end
 
 require("scripts/objects/exit") -- for `EXITS_BY_NAME`
-require("scripts/logic/entrances") -- for `logically_impossible_exits`
+require("scripts/objects/entrance") -- for `logically_impossible_exits`
 
 function exit_accessibility(exit_name)
     if logically_impossible_exits[exit_name] then
