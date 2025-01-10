@@ -6,12 +6,12 @@ else
     LOGIC_LOADED = true
 end
 
-require("scripts/objects/exit")
-require("scripts/logic/entrances")
+require("scripts/objects/exit") -- for `EXITS_BY_NAME`
+require("scripts/logic/entrances") -- for `logically_impossible_exits`
 
 function exit_accessibility(exit_name)
-    if impossible_exits[exit_name] then
-        -- Exit is part of an inaccessible loop or is somehow assigned to multiple entrances.
+    if logically_impossible_exits[exit_name] then
+        -- Exit is part of an inaccessible loop.
 --         print("Cannot access exit " .. exit_name .. " because it is impossible")
         return AccessibilityLevel.None
     end
@@ -27,8 +27,10 @@ function exit_accessibility(exit_name)
     local exit = EXITS_BY_NAME[exit_name]
     local entrance = exit.Entrance
     if not entrance then
-        -- Exit is currently unmapped and considered unreachable
---         print("Cannot access exit " .. exit_name .. " because it is unmapped")
+        -- An exit not assigned to an entrance should be put in `logically_impossible_exits`, so this code should not
+        -- normally be run.
+        print("ERROR: Cannot evaluate exit accessibility. Missing entrance for exit " .. exit_name)
+        -- With no entrance, the best thing to return is that the exit is inaccessible.
         return AccessibilityLevel.None
     else
         -- Return the entrance's accessibility.

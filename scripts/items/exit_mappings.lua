@@ -146,6 +146,4 @@ for idx, entrance in ipairs(ENTRANCES) do
 end
 PAUSE_ENTRANCE_UPDATES = false
 
-update_entrances(true)
-
 return true
