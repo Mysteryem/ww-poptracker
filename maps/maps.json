@@ -31,8 +31,8 @@
     },
     {
         "name": "ff",
-        "location_size": 10,
-        "location_border_thickness": 1,
+        "location_size": 15,
+        "location_border_thickness": 2,
         "img": "images/maps/ff.png"
     },
     {
