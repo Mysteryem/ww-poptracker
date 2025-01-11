@@ -213,8 +213,8 @@ function setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
     -- For the second pass, set all the entrances to their vanilla exit
     local all_set_correctly = true
     for _, entrance in ipairs(all_vanilla_entrances) do
-        -- Don't update logic
-        local set_correctly = entrance:Assign(entrance.vanilla_exit, PAUSE_ENTRANCE_UPDATES)
+        -- Prevent replacing an already assigned exit. Don't update logic.
+        local set_correctly = entrance:Assign(entrance.vanilla_exit, false, true)
         if not set_correctly then
             -- Exit was most likely already assigned to an entrance
             all_set_correctly = false
@@ -348,12 +348,20 @@ function onClear(slot_data)
         -- current stage name for map switching.
         Archipelago:Get({visited_stages_key})
 
-        PAUSE_ENTRANCE_UPDATES = true
-        for _, entrance in ipairs(ENTRANCES) do
-            -- Prevent logic updates while clearing.
-            -- TODO: Also prevent exit item and section updates?
-            entrance:Unassign(PAUSE_ENTRANCE_UPDATES)
-        end
+        -- onClear is always run with Tracker.BulkUpdate as part of onClearHandler, so there is no need to unassign
+        -- exits and assign vanilla exits using runWithBulkUpdate.
+
+        -- Unassign all entrances. Don't update logic, but do update items and sections.
+        -- If an entrance is randomized and has not been discovered by the player, then it won't be updated after this
+        -- point (until the player discovers where the entrance leads). Therefore, the items and sections need to be
+        -- updated.
+        -- todo?: Maybe this could be avoided by only clearing and setting vanilla entrances when loading visited
+        -- entrances from datastorage. For now, we'll take the hit for wasteful item/section modification for vanilla
+        -- entrances and visited entrances.
+        -- As a separate change, setNonRandomizedEntrancesFromSlotData could be responsible for clearing randomized
+        -- entrances and setting non-randomized entrances.
+        Entrance.UnassignAll(true)
+
         if required_bosses then
             -- Banned (non-required) dungeons in Required Bosses mode always have their miniboss and boss entrances
             -- vanilla.
@@ -375,6 +383,12 @@ function onClear(slot_data)
         else
             setNonRandomizedEntrancesFromSlotData(slot_data)
         end
+
+        -- Update entrance logic and highlighting of impossible entrances.
+        Entrance.update_entrances()
+
+        -- Load the information on which entrance leads to each exit, so that exits can be automatically assigned to
+        -- entrances as the player goes through them.
         local entrances = slot_data["entrances"]
         if entrances then
             --print(dump_table(entrances))
@@ -384,8 +398,6 @@ function onClear(slot_data)
         else
             print("'entrances' was not present in slot_data, automatic entrance assignment will not be available")
         end
-        PAUSE_ENTRANCE_UPDATES = false
-        Entrance.update_entrances()
     end
 
     -- junk that was in here from the template
@@ -435,7 +447,7 @@ function onClearHandler(slot_data)
     onClear(slot_data)
 end
 
-function entranceRandoAssignEntranceFromVisitedStage(stage_name)
+function entranceRandoAssignEntranceFromVisitedStage(stage_name, prevent_logic_update)
     local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
     if not exit_name then
         print("Could not find an exit_name for "..stage_name)
@@ -460,7 +472,8 @@ function entranceRandoAssignEntranceFromVisitedStage(stage_name)
         return
     end
 
-    local set_correctly = entrance:Assign(exit)
+    -- Do not replace an existing assignment.
+    local set_correctly = entrance:Assign(exit, false, prevent_logic_update)
     if not set_correctly then
         print("Warning: Failed to assign entrance mapping "..entrance_name.." -> "..exit_name..".")
     end
@@ -491,7 +504,7 @@ function onMap(stage_name)
 
     -- Assign the current stage_name to its entrance as read from slot_data
     if ENTRANCE_RANDO_ENABLED then
-        entranceRandoAssignEntranceFromVisitedStage(stage_name)
+        entranceRandoAssignEntranceFromVisitedStage(stage_name, false)
     end
 end
 
@@ -617,18 +630,18 @@ function onRetrieved(key, new_value, old_value)
         if new_value ~= nil then
             local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")
             if load_assignments_from_ap.Active then
-                Tracker.BulkUpdate = true
-                PAUSE_ENTRANCE_UPDATES = true
-                -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the
-                -- values are all `true`.
-                for stage_name, _ in pairs(new_value) do
-                    entranceRandoAssignEntranceFromVisitedStage(stage_name)
+                local function loadRetrievedExitAssignments()
+                    -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the
+                    -- values are all `true`.
+                    for stage_name, _ in pairs(new_value) do
+                        entranceRandoAssignEntranceFromVisitedStage(stage_name, true)
+                    end
                 end
-                PAUSE_ENTRANCE_UPDATES = false
-                Entrance.update_entrances()
 
-                Tracker.BulkUpdate = false
-                forceLogicUpdate()
+                -- Run with `Tracker.BulkUpdate = true` to reduce updates from changing item names/icons.
+                runWithBulkUpdate(loadRetrievedExitAssignments)
+                -- Update impossible exits and cause logic to update.
+                Entrance.update_entrances()
             end
         end
     end

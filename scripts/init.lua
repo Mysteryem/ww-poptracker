@@ -1,12 +1,14 @@
 -- Globals
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
--- Debug utils.
--- Only present as stubs in the pack. Replace with implementations locally through user-override.
-require("scripts/debug")
+-- Utils.
+require("scripts/utils")
+
+-- Pause logic updates until the next frame, so that auto-save state can load without causing updates and so that
+-- entrance rando luaitems can be created and set up without causing update.
+pauseLogicUntilNextFrame("tracker post-init")
 
 -- Logic
-require("scripts/utils")
 require("scripts/logic/logic")
 print("Logic scripts loaded")
 
@@ -54,16 +56,14 @@ Tracker:AddLayouts("layouts/settings.json")
 require("scripts/autotracking")
 print("Autotracking script loaded")
 
--- Pause logic updates until the next frame, so that auto-save state can load without causing updates.
-pauseLogicUntilNextFrame("tracker post-init")
-
 if ENTRANCE_RANDO_ENABLED then
     require("scripts/objects/entrance")
     -- If there is no autosave state, then there are no calls to load exit assignments, so we schedule an update
     -- ourselves.
     local function update_entrances_after_load()
         print("Updating entrances after load")
-        PAUSE_ENTRANCE_UPDATES = false
+        -- todo: with the logic being paused for a frame at the start, that forces a logic update, but then
+        -- update_entrances() forces an update again afterwards.
         Entrance.update_entrances()
         print("Updated entrances after load")
     end

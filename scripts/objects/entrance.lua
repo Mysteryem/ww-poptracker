@@ -80,8 +80,6 @@ function Entrance:GetAccessibility()
 end
 
 if ENTRANCE_RANDO_ENABLED then
-    PAUSE_ENTRANCE_UPDATES = false
-
     -- Recursive helper function used when updating entrance logic.
     -- Determine if an exit is possible to reach based on its Entrance and its Entrance's parent_exit.
     local function is_exit_possible(exit, checked_set)
@@ -124,25 +122,32 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
+    -- Update which exits are impossible to reach, and then update logic.
+    -- Call this after updating entrances, either individually or in bulk.
+    -- Impossible exits cause their entrances to be greyed out and `logically_impossible_exits` functions as a logic
+    -- short-circuit if a player makes the entrances form an impossible loop.
     function Entrance.update_entrances()
-        if PAUSE_ENTRANCE_UPDATES or not ENTRANCE_RANDO_ENABLED then
+        if not ENTRANCE_RANDO_ENABLED then
             return
         end
 
         debugPrint("### Updating entrances logic ###")
 
-        -- Check for unreachable exits.
+        -- Check for impossible exits.
+        -- Randomized dungeon entrances with vanilla boss/miniboss entrances
         -- Reset the global lookup table.
         logically_impossible_exits = {}
         debugPrint("Checking for and marking impossible exits")
         for _, exit in ipairs(EXITS) do
-            if not exit.Entrance or not is_exit_possible(exit) then
+            -- An exit without an Entrance is obviously impossible, so we only check exits with an Entrance.
+            if exit.Entrance and not is_exit_possible(exit) then
                 debugPrint("Exit '%s' is impossible to reach", exit.Name)
                 logically_impossible_exits[exit.Name] = true
             end
         end
 
         -- Visibly mark impossible exits
+        -- Generally, there should be very few icons updated here, so we don't bother with using `runWithBulkUpdate()`.
         if EXIT_MAPPINGS_LOADED then
             for _, entrance in ipairs(ENTRANCES) do
                 local exit = entrance.exit
@@ -293,6 +298,7 @@ if ENTRANCE_RANDO_ENABLED then
         end
 
         debugPrint("%s: Assigned %s", self.name, new_exit.Name)
+        return true
     end
 
     function Entrance:GetItemIconPath()

@@ -96,3 +96,22 @@ function pauseLogicUntilNextFrame(name)
     Tracker.BulkUpdate = true
     runNextFrame(name, pauseLogicUpdatesFinished)
 end
+
+function runWithBulkUpdate(func, ...)
+    local originally_enabled = Tracker.BulkUpdate
+    if not originally_enabled then
+        Tracker.BulkUpdate = true
+    end
+
+    local ok, err_or_return = pcall(func, ...)
+
+    if not originally_enabled then
+        Tracker.BulkUpdate = false
+    end
+
+    if not ok then
+        error(err_or_return)
+    else
+        return err_or_return
+    end
+end

@@ -6,6 +6,7 @@ else
     EXIT_MAPPINGS_LOADED = true
 end
 
+require("scripts/utils")
 require("scripts/objects/entrance")
 require("scripts/objects/exit")
 
@@ -135,13 +136,19 @@ function create_exit_lua_item(idx, exit)
     exit_item.ItemState.exit_idx = idx
 end
 
--- Lua item creation and initialization
-for idx, entrance in ipairs(ENTRANCES) do
-    create_entrance_lua_item(idx, entrance)
-    create_exit_lua_item(idx, entrance.vanilla_exit)
+local function createItemsAndUnassignAllExits()
+    -- Lua item creation and initialization
+    for idx, entrance in ipairs(ENTRANCES) do
+        create_entrance_lua_item(idx, entrance)
+        create_exit_lua_item(idx, entrance.vanilla_exit)
+    end
+
+    -- Unassign each entrance. Prevent section updates because the sections won't exist yet.
+    Entrance.UnassignAll(false, false, true)
 end
 
--- Unassign each entrance. Prevent section updates because the sections won't exist yet.
-Entrance.UnassignAll(false, false, true)
+
+runWithBulkUpdate(createItemsAndUnassignAllExits)
+
 
 return true

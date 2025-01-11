@@ -16,20 +16,10 @@ function exit_accessibility(exit_name)
         return AccessibilityLevel.None
     end
 
-    -- This shouldn't normally need to be checked, but it is here for completeness.
-    if exit_name == "The Great Sea" then
-        -- Always accessible
---         print("Can access exit " .. exit_name .. " because it is always accessible")
-        return AccessibilityLevel.Normal
-    end
-
     -- Find the entrance in this entrance <-> exit pair.
     local exit = EXITS_BY_NAME[exit_name]
     local entrance = exit.Entrance
     if not entrance then
-        -- An exit not assigned to an entrance should be put in `logically_impossible_exits`, so this code should not
-        -- normally be run.
-        print("ERROR: Cannot evaluate exit accessibility. Missing entrance for exit " .. exit_name)
         -- With no entrance, the best thing to return is that the exit is inaccessible.
         return AccessibilityLevel.None
     else
