@@ -214,6 +214,13 @@
     "tabs": [
       //TODO: Options tab that shows the options read from AP
       {
+        "title": "Assignment + Maps",
+        "content": {
+          "type": "layout",
+          "key": "entrances_both_tab"
+        }
+      },
+      {
         "title": "Map + The Great Sea",
         "content": {
           "type": "layout",
@@ -233,7 +240,7 @@
           "type": "layout",
           "key": "entrances_assignment_tab"
         }
-      },
+      }
       // Can't use this currently because it cannot shrink and forces all other tabs to not shrink below its large size.
 //      {
 //        "title": "Assignment alt.",
@@ -241,14 +248,7 @@
 //          "type": "layout",
 //          "key": "entrances_assignment_alt_tab"
 //        }
-//      },
-      {
-        "title": "Assignment + Maps",
-        "content": {
-          "type": "layout",
-          "key": "entrances_both_tab"
-        }
-      }
+//      }
     ]
   }
 }
