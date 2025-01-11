@@ -214,7 +214,7 @@ function setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
     local all_set_correctly = true
     for _, entrance in ipairs(all_vanilla_entrances) do
         -- Prevent replacing an already assigned exit. Don't update logic.
-        local set_correctly = entrance:Assign(entrance.vanilla_exit, false, true)
+        local set_correctly = entrance:Assign(entrance.VanillaExit, false, true)
         if not set_correctly then
             -- Exit was most likely already assigned to an entrance
             all_set_correctly = false
@@ -385,7 +385,7 @@ function onClear(slot_data)
         end
 
         -- Update entrance logic and highlighting of impossible entrances.
-        Entrance.update_entrances()
+        Entrance.UpdateEntranceLogic()
 
         -- Load the information on which entrance leads to each exit, so that exits can be automatically assigned to
         -- entrances as the player goes through them.
@@ -641,7 +641,7 @@ function onRetrieved(key, new_value, old_value)
                 -- Run with `Tracker.BulkUpdate = true` to reduce updates from changing item names/icons.
                 runWithBulkUpdate(loadRetrievedExitAssignments)
                 -- Update impossible exits and cause logic to update.
-                Entrance.update_entrances()
+                Entrance.UpdateEntranceLogic()
             end
         end
     end

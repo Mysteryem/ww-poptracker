@@ -21,7 +21,7 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
     local self = setmetatable({}, Entrance)
     debugPrint("Creating Entrance %s", name)
     -- The name of this entrance.
-    self.name = name
+    self.Name = name
 
     local vanilla_exit = EXITS_BY_NAME[vanilla_exit_name]
     if not vanilla_exit then
@@ -34,16 +34,16 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
 
     -- Set `self` as the entrance to the Exit.
     if vanilla_exit.Entrance then
-        error("'" .. vanilla_exit.Name .. "' is already assigned to " .. vanilla_exit.Entrance.name)
+        error("'" .. vanilla_exit.Name .. "' is already assigned to " .. vanilla_exit.Entrance.Name)
     end
-    debugPrint("Assigned %s as the entrance used by exit %s", self.name, vanilla_exit.Name)
+    debugPrint("Assigned %s as the entrance used by exit %s", self.Name, vanilla_exit.Name)
     vanilla_exit.Entrance = self
 
     -- The vanilla exit, stored here for simpler lookup.
-    self.vanilla_exit = vanilla_exit
+    self.VanillaExit = vanilla_exit
     -- The exit that has been assigned to this entrance. Always starts off as vanilla and won't change if Entrance
     -- Randomization is not enabled.
-    self.exit = vanilla_exit
+    self.Exit = vanilla_exit
     -- There are no entrances accessible from multiple different exits, so a single parent_exit is all that is needed.
     -- Is always accessible when not set, indicating that its parent exit name would be "The Great Sea".
     if parent_exit_name then
@@ -57,25 +57,25 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
             error("No exit exists with the name '" .. tostring(parent_exit_name) .. "'. Known exits: " .. known_exits)
         end
 
-        self.parent_exit = parent_exit
+        self.ParentExit = parent_exit
     end
     -- The location which holds this entrance's logic, or `nil` if the entrance is always accessible.
-    self.entrance_logic = "@Entrance Logic/" .. name
+    self.EntranceLogicPath = "@Entrance Logic/" .. name
     -- The type of the entrance: "dungeon", "miniboss", "boss", "secret_cave", "inner", "fairy"
-    self.entrance_type = entrance_type
+    self.EntranceType = entrance_type
 
     if ENTRANCE_RANDO_ENABLED then
-        self.Icon = "images/items/entrances/" .. self.name .. ".png"
+        self.Icon = "images/items/entrances/" .. self.Name .. ".png"
     end
 
     return self
 end
 
 function Entrance:GetAccessibility()
-    if not self.entrance_logic then
+    if not self.EntranceLogicPath then
         return AccessibilityLevel.Normal
     end
-    local location = Tracker:FindObjectForCode(self.entrance_logic)
+    local location = Tracker:FindObjectForCode(self.EntranceLogicPath)
     return location.AccessibilityLevel
 end
 
@@ -112,7 +112,7 @@ if ENTRANCE_RANDO_ENABLED then
         end
 
         -- Check if the parent exit that leads to this entrance is possible
-        local parent_exit = entrance.parent_exit
+        local parent_exit = entrance.ParentExit
         if parent_exit == nil then
             -- The Great Sea is always accessible.
             debugPrint("%s is reachable due to its entrance's parent_exit being The Great Sea (nil)", exit_name)
@@ -124,9 +124,16 @@ if ENTRANCE_RANDO_ENABLED then
 
     -- Update which exits are impossible to reach, and then update logic.
     -- Call this after updating entrances, either individually or in bulk.
+    --
     -- Impossible exits cause their entrances to be greyed out and `logically_impossible_exits` functions as a logic
-    -- short-circuit if a player makes the entrances form an impossible loop.
-    function Entrance.update_entrances()
+    -- short-circuit if a player makes the entrances form an impossible loop. This should be slightly faster than
+    -- letting PopTracker recursively check for accessibility of looped entrances, but is not necessary for an entrance
+    -- rando implementation.
+    --
+    -- Wind Waker's entrance randomization is quite simple compared to most games because there is only a single exit
+    -- into each area, other than The Great Sea. For more complex entrance-rando, checking for impossible exits can
+    -- probably be skipped, and then this function could be replaced with calling `forceLogicUpdate()` directly.
+    function Entrance.UpdateEntranceLogic()
         if not ENTRANCE_RANDO_ENABLED then
             return
         end
@@ -134,7 +141,8 @@ if ENTRANCE_RANDO_ENABLED then
         debugPrint("### Updating entrances logic ###")
 
         -- Check for impossible exits.
-        -- Randomized dungeon entrances with vanilla boss/miniboss entrances
+        -- This notably marks vanilla boss/miniboss entrances with randomized dungeon entrances because the vanilla
+        -- entrances within the dungeons will be assigned to before the exits into the dungeons will be assigned.
         -- Reset the global lookup table.
         logically_impossible_exits = {}
         debugPrint("Checking for and marking impossible exits")
@@ -150,16 +158,16 @@ if ENTRANCE_RANDO_ENABLED then
         -- Generally, there should be very few icons updated here, so we don't bother with using `runWithBulkUpdate()`.
         if EXIT_MAPPINGS_LOADED then
             for _, entrance in ipairs(ENTRANCES) do
-                local exit = entrance.exit
                 local lua_item = entrance:GetItem()
                 -- It's possible we could be trying to update before all the items have been created in exit_mappings.lua.
                 if lua_item then
+                    local exit = entrance.Exit
                     -- TODO: Also find the placeholder items and change their overlay colour too
                     local new_icon_mods
                     if exit and logically_impossible_exits[exit.Name] then
                         -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
                         --       reach (or invalid due to being duplicated).
-                        debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.name, exit.Name)
+                        debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.Name, exit.Name)
                         new_icon_mods = "@disabled"
                     else
                         new_icon_mods = "none"
@@ -198,21 +206,21 @@ if ENTRANCE_RANDO_ENABLED then
     end
 
     function Entrance:Unassign(prevent_logic_update, prevent_item_updates, prevent_section_update)
-        local current_exit = self.exit
+        local current_exit = self.Exit
         if current_exit then
-            -- Safety check
+            -- Sanity check
             local current_exit_entrance = current_exit.Entrance
             if current_exit_entrance then
                 if current_exit_entrance ~= self then
-                    print(string.format("ERROR: While unassigning %s from %s, %s thought it was assigned to %s", current_exit.Name, self.name, current_exit.Name, current_exit_entrance.name))
+                    print(string.format("ERROR: While unassigning %s from %s, %s thought it was assigned to %s", current_exit.Name, self.Name, current_exit.Name, current_exit_entrance.Name))
                 end
             else
-                print(string.format("ERROR: While unassigning %s from %s, %s thought it was not assigned", current_exit.Name, self.name, current_exit.Name))
+                print(string.format("ERROR: While unassigning %s from %s, %s thought it was not assigned", current_exit.Name, self.Name, current_exit.Name))
             end
 
             -- Unassign from both.
             current_exit.Entrance = nil
-            self.exit = nil
+            self.Exit = nil
 
             if not prevent_item_updates then
                 self:UpdateItem()
@@ -220,16 +228,16 @@ if ENTRANCE_RANDO_ENABLED then
             end
 
             if not prevent_logic_update then
-                Entrance.update_entrances()
+                Entrance.UpdateEntranceLogic()
             end
 
             if not prevent_section_update then
                 -- Reset the section
                 self:UpdateLocationSection()
             end
-            debugPrint("%s: Unassigned %s", self.name, current_exit.Name)
+            debugPrint("%s: Unassigned %s", self.Name, current_exit.Name)
         else
-            debugPrint("%s: Already has no assignment to unassign", self.name)
+            debugPrint("%s: Already has no assignment to unassign", self.Name)
         end
     end
 
@@ -239,29 +247,29 @@ if ENTRANCE_RANDO_ENABLED then
             entrance:Unassign(true, prevent_item_updates, prevent_section_update)
         end
         if not prevent_logic_updates then
-            Entrance.update_entrances()
+            Entrance.UpdateEntranceLogic()
         end
     end
 
     function Entrance:Assign(new_exit, replace, prevent_logic_update)
 
         if new_exit then
-            debugPrint("%s: Assigning exit %s", self.name, new_exit.Name)
+            debugPrint("%s: Assigning exit %s", self.Name, new_exit.Name)
         else
-            debugPrint("%s: Assigning exit nil", self.name)
+            debugPrint("%s: Assigning exit nil", self.Name)
         end
 
-        local current_exit = self.exit
+        local current_exit = self.Exit
         if new_exit == current_exit then
             -- Nothing to do.
-            debugPrint("%s: Already assigned", self.name)
+            debugPrint("%s: Already assigned", self.Name)
             return true
         end
 
         if new_exit == nil then
             self:Unassign(prevent_logic_update)
             -- Always succeeds.
-            debugPrint("%s: Unassigned", self.name)
+            debugPrint("%s: Unassigned", self.Name)
             return true
         end
 
@@ -269,7 +277,7 @@ if ENTRANCE_RANDO_ENABLED then
 
         if new_exit_current_entrance then
             if not replace then
-                print(string.format("ERROR: %s is already assigned to %s and cannot be assigned to %s", new_exit.Name, new_exit_current_entrance.name, self.name))
+                print(string.format("ERROR: %s is already assigned to %s and cannot be assigned to %s", new_exit.Name, new_exit_current_entrance.Name, self.Name))
                 return false
             else
                 -- Unassign new_exit from its current Entrance and vice versa.
@@ -281,7 +289,7 @@ if ENTRANCE_RANDO_ENABLED then
         end
 
         -- Finally assign the exit.
-        self.exit = new_exit
+        self.Exit = new_exit
         new_exit.Entrance = self
 
         -- new_exit is not nil, so the section needs updating if current_exit is nil.
@@ -294,16 +302,16 @@ if ENTRANCE_RANDO_ENABLED then
         new_exit:UpdateItem()
 
         if not prevent_logic_update then
-            Entrance.update_entrances()
+            Entrance.UpdateEntranceLogic()
         end
 
-        debugPrint("%s: Assigned %s", self.name, new_exit.Name)
+        debugPrint("%s: Assigned %s", self.Name, new_exit.Name)
         return true
     end
 
     function Entrance:GetItemIconPath()
         local entrance_icon = self.Icon
-        local exit = self.exit
+        local exit = self.Exit
         local exit_overlay
         if exit then
             exit_overlay = exit.EntranceOverlay
@@ -319,13 +327,13 @@ if ENTRANCE_RANDO_ENABLED then
     end
 
     function Entrance:GetItem()
-        return Tracker:FindObjectForCode(self.name)
+        return Tracker:FindObjectForCode(self.Name)
     end
 
     function Entrance:UpdateItemIcon(item)
         item = item or self:GetItem()
         local path = self:GetItemIconPath()
-        debugPrint("Updating %s icon to %s", self.name, path)
+        debugPrint("Updating %s icon to %s", self.Name, path)
         item.Icon = ImageReference:FromPackRelativePath(path)
     end
 
@@ -336,12 +344,12 @@ if ENTRANCE_RANDO_ENABLED then
 
     function Entrance:UpdateItemName(item)
         item = item or self:GetItem()
-        local exit = self.exit
+        local exit = self.Exit
         local new_name
         if exit then
-            new_name = self.name .. " -> " .. exit.Name
+            new_name = self.Name .. " -> " .. exit.Name
         else
-            new_name = "Click to assign " .. self.name
+            new_name = "Click to assign " .. self.Name
         end
         if item.Name ~= new_name then
             item.Name = new_name
@@ -356,9 +364,9 @@ if ENTRANCE_RANDO_ENABLED then
     end
 
     function Entrance:UpdateLocationSection()
-        debugPrint("%s: Updating section", self.name)
-        entrance_location_section = Tracker:FindObjectForCode(self.entrance_logic .. "/Can Enter")
-        if self.exit then
+        debugPrint("%s: Updating section", self.Name)
+        entrance_location_section = Tracker:FindObjectForCode(self.EntranceLogicPath .. "/Can Enter")
+        if self.Exit then
             -- Clear the section
             entrance_location_section.AvailableChestCount = entrance_location_section.AvailableChestCount - 1
         else
@@ -368,7 +376,7 @@ if ENTRANCE_RANDO_ENABLED then
     end
 
     function Entrance:GetExitIndex()
-        local exit = self.exit
+        local exit = self.Exit
         if exit then
             return exit.Index
         else
@@ -436,8 +444,8 @@ ENTRANCE_TYPE_TO_ENTRANCES = {
     fairy={},
 }
 for _, entrance in ipairs(ENTRANCES) do
-    ENTRANCE_BY_NAME[entrance.name] = entrance
-    table.insert(ENTRANCE_TYPE_TO_ENTRANCES[entrance.entrance_type], entrance)
+    ENTRANCE_BY_NAME[entrance.Name] = entrance
+    table.insert(ENTRANCE_TYPE_TO_ENTRANCES[entrance.EntranceType], entrance)
 end
 
 

@@ -25,7 +25,7 @@ function create_entrance_lua_item(idx, entrance)
     end
 
     mapping_item.LoadFunc = function (self, data)
-        debugPrint("Reading exit mapping for '%s' during load", entrance.name)
+        debugPrint("Reading exit mapping for '%s' during load", entrance.Name)
         -- "entrance_idx" is not saved/loaded.
         if data == nil then
             print("Error: Data to read for exit mapping " .. self.Name .. " was nil")
@@ -38,10 +38,10 @@ function create_entrance_lua_item(idx, entrance)
         if loaded_exit_idx and loaded_exit_idx ~= old_idx then
             self.ItemState.exit_idx = loaded_exit_idx
             -- Assign the exit to the entrance if it is not vanilla.
-            debugPrint("Assigning non vanilla exit for '%s'", entrance.name)
+            debugPrint("Assigning non vanilla exit for '%s'", entrance.Name)
             entrance:Assign(EXITS[loaded_exit_idx], true, true)
         else
-            debugPrint("Updating for vanilla exit for '%s'", entrance.name)
+            debugPrint("Updating for vanilla exit for '%s'", entrance.Name)
             entrance:UpdateItemIcon(self)
             entrance:UpdateItemName(item)
             --entrance:UpdateLocationSection()
@@ -63,7 +63,7 @@ function create_entrance_lua_item(idx, entrance)
         mapping_item.ItemState.exit_idx = 0
     end
 
-    local entrance_name = entrance.name
+    local entrance_name = entrance.Name
     mapping_item.Name = entrance_name
 
     local codeFunc = function(self, code)
@@ -75,7 +75,7 @@ function create_entrance_lua_item(idx, entrance)
     -- Select the mapping for assignment or clear the exit mapping if already assigned
     mapping_item.OnLeftClickFunc = function (self)
         local entrance = ENTRANCES[self.ItemState.entrance_idx]
-        local exit = entrance.exit
+        local exit = entrance.Exit
         if exit then
             -- Unassign the exit that is assigned to this entrance.
             entrance:Unassign()
@@ -140,7 +140,7 @@ local function createItemsAndUnassignAllExits()
     -- Lua item creation and initialization
     for idx, entrance in ipairs(ENTRANCES) do
         create_entrance_lua_item(idx, entrance)
-        create_exit_lua_item(idx, entrance.vanilla_exit)
+        create_exit_lua_item(idx, entrance.VanillaExit)
     end
 
     -- Unassign each entrance. Prevent section updates because the sections won't exist yet.

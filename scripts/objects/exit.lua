@@ -40,7 +40,7 @@ if ENTRANCE_RANDO_ENABLED then
         local new_name
         local new_icon_mods
         if entrance then
-            new_name = entrance.name .. " -> " .. self.Name
+            new_name = entrance.Name .. " -> " .. self.Name
             -- Grey out the image to indicate that is has been assigned.
             new_icon_mods = "@disabled"
         else

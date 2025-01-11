@@ -63,8 +63,8 @@ if ENTRANCE_RANDO_ENABLED then
     local function update_entrances_after_load()
         print("Updating entrances after load")
         -- todo: with the logic being paused for a frame at the start, that forces a logic update, but then
-        -- update_entrances() forces an update again afterwards.
-        Entrance.update_entrances()
+        -- UpdateEntranceLogic() forces an update again afterwards.
+        Entrance.UpdateEntranceLogic()
         print("Updated entrances after load")
     end
     runNextFrame("Delayed entrance logic update", update_entrances_after_load)
