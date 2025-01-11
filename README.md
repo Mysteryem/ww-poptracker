@@ -29,4 +29,4 @@ PopTracker pack for The Legend of Zelda: The Wind Waker
 
 3D map renders by VGCartography
 	https://www.deviantart.com/vgcartography
-	https://twitter.com/vgcartography
+	https://bsky.app/profile/vgcartography.bsky.social
