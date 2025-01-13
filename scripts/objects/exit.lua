@@ -11,7 +11,7 @@ require("scripts/utils")
 Exit = {}
 Exit.__index = Exit
 
-function Exit.New(name, icon_path)
+function Exit.New(name, icon_path, short_name)
     local self = setmetatable({}, Exit)
     debugPrint("Creating Exit " .. name)
     self.Name = name
@@ -24,6 +24,8 @@ function Exit.New(name, icon_path)
 
     if ENTRANCE_RANDO_ENABLED then
         self.IconPath = icon_path
+        -- Default to `name` if not provided.
+        self.ShortName = short_name or name
     end
 
     return self
@@ -71,7 +73,7 @@ if ENTRANCE_RANDO_ENABLED then
         local new_text_overlay
         if entrance then
             new_name = entrance.Name .. " -> " .. self.Name
-            new_text_overlay = "from " .. entrance.Name
+            new_text_overlay = "from " .. entrance.ShortName
         else
             new_name = self.Name .. " (to assign, click an entrance and then the exit)"
             new_text_overlay = ""
@@ -110,7 +112,7 @@ if ENTRANCE_RANDO_ENABLED then
 
     function Exit:UpdateLocationSection()
         debugPrint("%s: Updating section", self.Name)
-        exit_location_section = Tracker:FindObjectForCode(self.ExitLogicPath .. "/Entered                                                                          ")
+        exit_location_section = Tracker:FindObjectForCode(self.ExitLogicPath .. "/Entered                                                 ")
         if self.Entrance then
             -- Clear the section
             exit_location_section.AvailableChestCount = exit_location_section.AvailableChestCount - 1
@@ -129,39 +131,39 @@ EXITS = {
     Exit.New("Tower of the Gods", "images/entrances/entrance_dungeon_totg.png"),
     Exit.New("Earth Temple", "images/entrances/entrance_headstone.png"),
     Exit.New("Wind Temple", "images/entrances/entrance_dungeon_wt.png"),
-    Exit.New("Forbidden Woods Miniboss Arena", "images/items/smallkey.png"),
-    Exit.New("Tower of the Gods Miniboss Arena", "images/items/smallkey.png"),
-    Exit.New("Earth Temple Miniboss Arena", "images/items/smallkey.png"),
-    Exit.New("Wind Temple Miniboss Arena", "images/items/smallkey.png"),
+    Exit.New("Forbidden Woods Miniboss Arena", "images/items/smallkey.png", "FW Miniboss"),
+    Exit.New("Tower of the Gods Miniboss Arena", "images/items/smallkey.png", "TotG Miniboss"),
+    Exit.New("Earth Temple Miniboss Arena", "images/items/smallkey.png", "ET Miniboss"),
+    Exit.New("Wind Temple Miniboss Arena", "images/items/smallkey.png", "WT Miniboss"),
     Exit.New("Master Sword Chamber", "images/entrances/entrance_mastersword.png"),
-    Exit.New("Gohma Boss Arena", "images/items/bigkey2.png"),
-    Exit.New("Kalle Demos Boss Arena", "images/items/bigkey2.png"),
-    Exit.New("Gohdan Boss Arena", "images/items/bigkey2.png"),
-    Exit.New("Helmaroc King Boss Arena", "images/entrances/entrance_ff.png"),
-    Exit.New("Jalhalla Boss Arena", "images/items/bigkey2.png"),
-    Exit.New("Molgera Boss Arena", "images/items/bigkey2.png"),
+    Exit.New("Gohma Boss Arena", "images/items/bigkey2.png", "Gohma"),
+    Exit.New("Kalle Demos Boss Arena", "images/items/bigkey2.png", "Kalle Demos"),
+    Exit.New("Gohdan Boss Arena", "images/items/bigkey2.png", "Gohdan"),
+    Exit.New("Helmaroc King Boss Arena", "images/entrances/entrance_ff.png", "Helmaroc King"),
+    Exit.New("Jalhalla Boss Arena", "images/items/bigkey2.png", "Jalhalla"),
+    Exit.New("Molgera Boss Arena", "images/items/bigkey2.png", "Molgera"),
     Exit.New("Savage Labyrinth", "images/entrances/entrance_headstone.png"),
-    Exit.New("Dragon Roost Island Secret Cave", "images/entrances/entrance_rock.png"),
-    Exit.New("Fire Mountain Secret Cave", "images/entrances/entrance_fire_mountain.png"),
-    Exit.New("Ice Ring Isle Secret Cave", "images/entrances/entrance_ice_ring_isle.png"),
+    Exit.New("Dragon Roost Island Secret Cave", "images/entrances/entrance_rock.png", "Dragon Roost Island Cave"),
+    Exit.New("Fire Mountain Secret Cave", "images/entrances/entrance_fire_mountain.png", "Fire Mountain Cave"),
+    Exit.New("Ice Ring Isle Secret Cave", "images/entrances/entrance_ice_ring_isle.png", "Ice Ring Isle Cave"),
     Exit.New("Cabana Labyrinth", "images/entrances/entrance_cabana.png"),
-    Exit.New("Needle Rock Isle Secret Cave", "images/entrances/entrance_needle_rock_isle.png"),
-    Exit.New("Angular Isles Secret Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Boating Course Secret Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Stone Watcher Island Secret Cave", "images/entrances/entrance_headstone.png"),
-    Exit.New("Overlook Island Secret Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Bird's Peak Rock Secret Cave", "images/entrances/entrance_bird's_peak.png"),
+    Exit.New("Needle Rock Isle Secret Cave", "images/entrances/entrance_needle_rock_isle.png", "Needle Rock Isle Cave"),
+    Exit.New("Angular Isles Secret Cave", "images/entrances/entrance_hole.png", "Angular Isles Cave"),
+    Exit.New("Boating Course Secret Cave", "images/entrances/entrance_hole.png", "Boating Course Cave"),
+    Exit.New("Stone Watcher Island Secret Cave", "images/entrances/entrance_headstone.png", "Stone Watcher Island Cave"),
+    Exit.New("Overlook Island Secret Cave", "images/entrances/entrance_hole.png", "Overlook Island Cave"),
+    Exit.New("Bird's Peak Rock Secret Cave", "images/entrances/entrance_bird's_peak.png", "Bird's Peak Rock Cave"),
     Exit.New("Pawprint Isle Chuchu Cave", "images/entrances/entrance_pawprint_isle_chuchu.png"),
     Exit.New("Pawprint Isle Wizzrobe Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Diamond Steppe Island Warp Maze Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Bomb Island Secret Cave", "images/entrances/entrance_rock.png"),
-    Exit.New("Rock Spire Isle Secret Cave", "images/entrances/entrance_rock.png"),
-    Exit.New("Shark Island Secret Cave", "images/entrances/entrance_fire_hole.png"),
-    Exit.New("Cliff Plateau Isles Secret Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Horseshoe Island Secret Cave", "images/entrances/entrance_hole.png"),
-    Exit.New("Star Island Secret Cave", "images/entrances/entrance_rock.png"),
+    Exit.New("Diamond Steppe Island Warp Maze Cave", "images/entrances/entrance_hole.png", "Diamond Steppe Island Cave"),
+    Exit.New("Bomb Island Secret Cave", "images/entrances/entrance_rock.png", "Bomb Island Cave"),
+    Exit.New("Rock Spire Isle Secret Cave", "images/entrances/entrance_rock.png", "Rock Spire Isle Cave"),
+    Exit.New("Shark Island Secret Cave", "images/entrances/entrance_fire_hole.png", "Shark Island Cave"),
+    Exit.New("Cliff Plateau Isles Secret Cave", "images/entrances/entrance_hole.png", "Cliff Plateau Isles Cave"),
+    Exit.New("Horseshoe Island Secret Cave", "images/entrances/entrance_hole.png", "Horseshoe Island Cave"),
+    Exit.New("Star Island Secret Cave", "images/entrances/entrance_rock.png", "Star Island Cave"),
     Exit.New("Ice Ring Isle Inner Cave", "images/entrances/entrance_ice_ring_inner.png"),
-    Exit.New("Cliff Plateau Isles Inner Cave", "images/entrances/entrance_cliff_plateau_inner.png"),
+    Exit.New("Cliff Plateau Isles Inner Cave", "images/entrances/entrance_cliff_plateau_inner.png", "Cliff Plateau Highest Isle"),
     Exit.New("Outset Fairy Fountain", "images/entrances/entrance_rock.png"),
     Exit.New("Thorned Fairy Fountain", "images/entrances/entrance_hammer.png"),
     Exit.New("Eastern Fairy Fountain", "images/entrances/entrance_rock.png"),

@@ -11,7 +11,7 @@
           {
             // The section names are extra long so that there is space to fit all/most of the overlay text on the hosted
             // items because the location names are shorter
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Dragon Roost Cavern"
           }
         ],
@@ -30,7 +30,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Forbidden Woods"
           }
         ],
@@ -49,7 +49,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Tower of the Gods"
           }
         ],
@@ -68,7 +68,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Earth Temple"
           }
         ],
@@ -87,7 +87,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Wind Temple"
           }
         ],
@@ -106,7 +106,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Forbidden Woods Miniboss Arena"
           }
         ],
@@ -125,7 +125,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Tower of the Gods Miniboss Arena"
           }
         ],
@@ -144,7 +144,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Earth Temple Miniboss Arena"
           }
         ],
@@ -163,7 +163,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Wind Temple Miniboss Arena"
           }
         ],
@@ -182,7 +182,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Master Sword Chamber"
           }
         ],
@@ -201,7 +201,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Gohma Boss Arena"
           }
         ],
@@ -220,7 +220,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Kalle Demos Boss Arena"
           }
         ],
@@ -239,7 +239,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Gohdan Boss Arena"
           }
         ],
@@ -258,7 +258,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Helmaroc King Boss Arena"
           }
         ],
@@ -277,7 +277,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Jalhalla Boss Arena"
           }
         ],
@@ -296,7 +296,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Molgera Boss Arena"
           }
         ],
@@ -315,7 +315,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Savage Labyrinth"
           }
         ],
@@ -334,7 +334,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Dragon Roost Island Secret Cave"
           }
         ],
@@ -353,7 +353,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Fire Mountain Secret Cave"
           }
         ],
@@ -372,7 +372,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Ice Ring Isle Secret Cave"
           }
         ],
@@ -391,7 +391,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Cabana Labyrinth"
           }
         ],
@@ -410,7 +410,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Needle Rock Isle Secret Cave"
           }
         ],
@@ -429,7 +429,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Angular Isles Secret Cave"
           }
         ],
@@ -448,7 +448,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Boating Course Secret Cave"
           }
         ],
@@ -467,7 +467,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Stone Watcher Island Secret Cave"
           }
         ],
@@ -486,7 +486,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Overlook Island Secret Cave"
           }
         ],
@@ -505,7 +505,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Bird's Peak Rock Secret Cave"
           }
         ],
@@ -524,7 +524,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Pawprint Isle Chuchu Cave"
           }
         ],
@@ -543,7 +543,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Pawprint Isle Wizzrobe Cave"
           }
         ],
@@ -562,7 +562,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Diamond Steppe Island Warp Maze Cave"
           }
         ],
@@ -581,7 +581,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Bomb Island Secret Cave"
           }
         ],
@@ -600,7 +600,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Rock Spire Isle Secret Cave"
           }
         ],
@@ -619,7 +619,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Shark Island Secret Cave"
           }
         ],
@@ -638,7 +638,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Cliff Plateau Isles Secret Cave"
           }
         ],
@@ -657,7 +657,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Horseshoe Island Secret Cave"
           }
         ],
@@ -676,7 +676,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Star Island Secret Cave"
           }
         ],
@@ -695,7 +695,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Ice Ring Isle Inner Cave"
           }
         ],
@@ -714,7 +714,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Cliff Plateau Isles Inner Cave"
           }
         ],
@@ -733,7 +733,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Outset Fairy Fountain"
           }
         ],
@@ -752,7 +752,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Thorned Fairy Fountain"
           }
         ],
@@ -771,7 +771,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Eastern Fairy Fountain"
           }
         ],
@@ -790,7 +790,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Western Fairy Fountain"
           }
         ],
@@ -809,7 +809,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Southern Fairy Fountain"
           }
         ],
@@ -828,7 +828,7 @@
         ],
         "sections": [
           {
-            "name": "Entered                                                                          ",
+            "name": "Entered                                                 ",
             "hosted_item": "Northern Fairy Fountain"
           }
         ],

@@ -17,7 +17,7 @@ logically_impossible_exits = {}
 Entrance = {}
 Entrance.__index = Entrance
 
-function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_exit_name)
+function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_exit_name, short_name)
     local self = setmetatable({}, Entrance)
     debugPrint("Creating Entrance %s", name)
     -- The name of this entrance.
@@ -66,6 +66,8 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_
 
     if ENTRANCE_RANDO_ENABLED then
         self.IconPath = icon_path
+        -- Default to the same short name as the vanilla exit.
+        self.ShortName = short_name or vanilla_exit.ShortName
     end
 
     return self
@@ -406,7 +408,7 @@ if ENTRANCE_RANDO_ENABLED then
         local new_text_overlay
         if exit then
             new_name = self.Name .. " -> " .. exit.Name
-            new_text_overlay = "to " .. exit.Name
+            new_text_overlay = "to " .. exit.ShortName
         else
             new_name = "Click to assign " .. self.Name
             new_text_overlay = ""
@@ -454,17 +456,17 @@ ENTRANCES = {
     Entrance.New("Dungeon Entrance in Tower of the Gods Sector", "Tower of the Gods", "dungeon", "images/entrances/entrance_dungeon_totg.png"),
     Entrance.New("Dungeon Entrance on Headstone Island", "Earth Temple", "dungeon", "images/entrances/entrance_headstone.png"),
     Entrance.New("Dungeon Entrance on Gale Isle", "Wind Temple", "dungeon", "images/entrances/entrance_dungeon_wt.png"),
-    Entrance.New("Miniboss Entrance in Forbidden Woods", "Forbidden Woods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Forbidden Woods"),
-    Entrance.New("Miniboss Entrance in Tower of the Gods", "Tower of the Gods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Tower of the Gods"),
-    Entrance.New("Miniboss Entrance in Earth Temple", "Earth Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Earth Temple"),
-    Entrance.New("Miniboss Entrance in Wind Temple", "Wind Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Wind Temple"),
+    Entrance.New("Miniboss Entrance in Forbidden Woods", "Forbidden Woods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Forbidden Woods", "FW Miniboss Door"),
+    Entrance.New("Miniboss Entrance in Tower of the Gods", "Tower of the Gods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Tower of the Gods", "TotG Miniboss Door"),
+    Entrance.New("Miniboss Entrance in Earth Temple", "Earth Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Earth Temple", "ET Miniboss Door"),
+    Entrance.New("Miniboss Entrance in Wind Temple", "Wind Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Wind Temple", "WT Miniboss Door"),
     Entrance.New("Miniboss Entrance in Hyrule Castle", "Master Sword Chamber", "miniboss", "images/entrances/entrance_mastersword.png"),
-    Entrance.New("Boss Entrance in Dragon Roost Cavern", "Gohma Boss Arena", "boss", "images/items/bigkey2.png", "Dragon Roost Cavern"),
-    Entrance.New("Boss Entrance in Forbidden Woods", "Kalle Demos Boss Arena", "boss", "images/items/bigkey2.png", "Forbidden Woods"),
-    Entrance.New("Boss Entrance in Tower of the Gods", "Gohdan Boss Arena", "boss", "images/items/bigkey2.png", "Tower of the Gods"),
-    Entrance.New("Boss Entrance in Forsaken Fortress", "Helmaroc King Boss Arena", "boss", "images/entrances/entrance_ff.png"),
-    Entrance.New("Boss Entrance in Earth Temple", "Jalhalla Boss Arena", "boss", "images/items/bigkey2.png", "Earth Temple"),
-    Entrance.New("Boss Entrance in Wind Temple", "Molgera Boss Arena", "boss", "images/items/bigkey2.png", "Wind Temple"),
+    Entrance.New("Boss Entrance in Dragon Roost Cavern", "Gohma Boss Arena", "boss", "images/items/bigkey2.png", "Dragon Roost Cavern", "DRC Boss Door"),
+    Entrance.New("Boss Entrance in Forbidden Woods", "Kalle Demos Boss Arena", "boss", "images/items/bigkey2.png", "Forbidden Woods", "FW Boss Door"),
+    Entrance.New("Boss Entrance in Tower of the Gods", "Gohdan Boss Arena", "boss", "images/items/bigkey2.png", "Tower of the Gods", "TotG Boss Door"),
+    Entrance.New("Boss Entrance in Forsaken Fortress", "Helmaroc King Boss Arena", "boss", "images/entrances/entrance_ff.png", _NIL_PARENT_EXIT, "FF Boss Door"),
+    Entrance.New("Boss Entrance in Earth Temple", "Jalhalla Boss Arena", "boss", "images/items/bigkey2.png", "Earth Temple", "ET Boss Door"),
+    Entrance.New("Boss Entrance in Wind Temple", "Molgera Boss Arena", "boss", "images/items/bigkey2.png", "Wind Temple", "WT Boss Door"),
     Entrance.New("Secret Cave Entrance on Outset Island", "Savage Labyrinth", "secret_cave", "images/entrances/entrance_headstone.png"),
     Entrance.New("Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
     Entrance.New("Secret Cave Entrance on Fire Mountain", "Fire Mountain Secret Cave", "secret_cave", "images/entrances/entrance_fire_mountain.png"),
@@ -476,8 +478,8 @@ ENTRANCES = {
     Entrance.New("Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island Secret Cave", "secret_cave", "images/entrances/entrance_headstone.png"),
     Entrance.New("Secret Cave Entrance on Overlook Island", "Overlook Island Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
     Entrance.New("Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock Secret Cave", "secret_cave", "images/entrances/entrance_bird's_peak.png"),
-    Entrance.New("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle Chuchu Cave", "secret_cave", "images/entrances/entrance_pawprint_isle_chuchu.png"),
-    Entrance.New("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle Wizzrobe Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle Chuchu Cave", "secret_cave", "images/entrances/entrance_pawprint_isle_chuchu.png", _NIL_PARENT_EXIT, "Pawprint Isle Cave"),
+    Entrance.New("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle Wizzrobe Cave", "secret_cave", "images/entrances/entrance_hole.png", _NIL_PARENT_EXIT, "Pawprint Isle Side Isle Cave"),
     Entrance.New("Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave", "secret_cave", "images/entrances/entrance_hole.png"),
     Entrance.New("Secret Cave Entrance on Bomb Island", "Bomb Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
     Entrance.New("Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
@@ -486,7 +488,7 @@ ENTRANCES = {
     Entrance.New("Secret Cave Entrance on Horseshoe Island", "Horseshoe Island Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
     Entrance.New("Secret Cave Entrance on Star Island", "Star Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
     Entrance.New("Inner Entrance in Ice Ring Isle Secret Cave", "Ice Ring Isle Inner Cave", "inner", "images/entrances/entrance_ice_ring_inner.png", "Ice Ring Isle Secret Cave"),
-    Entrance.New("Inner Entrance in Cliff Plateau Isles Secret Cave", "Cliff Plateau Isles Inner Cave", "inner", "images/entrances/entrance_cliff_plateau_inner.png", "Cliff Plateau Isles Secret Cave"),
+    Entrance.New("Inner Entrance in Cliff Plateau Isles Secret Cave", "Cliff Plateau Isles Inner Cave", "inner", "images/entrances/entrance_cliff_plateau_inner.png", "Cliff Plateau Isles Secret Cave", "Cliff Plateau Isles Inner Entrance"),
     Entrance.New("Fairy Fountain Entrance on Outset Island", "Outset Fairy Fountain", "fairy", "images/entrances/entrance_rock.png"),
     Entrance.New("Fairy Fountain Entrance on Thorned Fairy Island", "Thorned Fairy Fountain", "fairy", "images/entrances/entrance_hammer.png"),
     Entrance.New("Fairy Fountain Entrance on Eastern Fairy Island", "Eastern Fairy Fountain", "fairy", "images/entrances/entrance_rock.png"),
