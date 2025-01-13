@@ -17,7 +17,7 @@ logically_impossible_exits = {}
 Entrance = {}
 Entrance.__index = Entrance
 
-function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
+function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_exit_name)
     local self = setmetatable({}, Entrance)
     debugPrint("Creating Entrance %s", name)
     -- The name of this entrance.
@@ -65,7 +65,7 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, parent_exit_name)
     self.EntranceType = entrance_type
 
     if ENTRANCE_RANDO_ENABLED then
-        self.Icon = "images/items/entrances/" .. self.Name .. ".png"
+        self.IconPath = icon_path
     end
 
     return self
@@ -143,6 +143,9 @@ if ENTRANCE_RANDO_ENABLED then
         -- Check for impossible exits.
         -- This notably marks vanilla boss/miniboss entrances with randomized dungeon entrances because the vanilla
         -- entrances within the dungeons will be assigned to before the exits into the dungeons will be assigned.
+        -- Get the exits that were previously logically impossible, so that some updates can be reduced to only those
+        -- which have changed.
+        previously_impossible_exits = logically_impossible_exits
         -- Reset the global lookup table.
         logically_impossible_exits = {}
         debugPrint("Checking for and marking impossible exits")
@@ -161,19 +164,36 @@ if ENTRANCE_RANDO_ENABLED then
                 local lua_item = entrance:GetItem()
                 -- It's possible we could be trying to update before all the items have been created in exit_mappings.lua.
                 if lua_item then
+                    -- First process the current exit of this entrance.
                     local exit = entrance.Exit
                     -- TODO: Also find the placeholder items and change their overlay colour too
-                    local new_icon_mods
-                    if exit and logically_impossible_exits[exit.Name] then
-                        -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
-                        --       reach (or invalid due to being duplicated).
-                        debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.Name, exit.Name)
-                        new_icon_mods = "@disabled"
+                    local new_overlay_background
+                    if exit then
+                        if logically_impossible_exits[exit.Name] then
+                            -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
+                            --       reach (or invalid due to being duplicated).
+                            debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.Name, exit.Name)
+                            -- Display a red background to signify that the entrance is impossible.
+                            new_overlay_background = "#AAEE0000"
+                        else
+                            new_overlay_background = "#00000000"
+                        end
+
+                        -- Also update the background color of the exit's text overlay.
+                        exit:GetItem():SetOverlayBackground(new_overlay_background)
                     else
-                        new_icon_mods = "none"
+                        new_overlay_background = "#00000000"
                     end
-                    if lua_item.IconMods ~= new_icon_mods then
-                        lua_item.IconMods = new_icon_mods
+
+                    -- Update the background color of the entrance's text overlay.
+                    lua_item:SetOverlayBackground(new_overlay_background)
+
+                    -- Now, if the vanilla exit is not assigned to an entrance, also process it, because there is not
+                    -- another entrance that will process it.
+                    local vanilla_exit = entrance.VanillaExit
+                    -- Ensure that every unassigned exit loses its red background if it was previously impossible.
+                    if vanilla_exit.Entrance == nil and previously_impossible_exits[vanilla_exit.Name] then
+                        vanilla_exit:GetItem():SetOverlayBackground("#00000000")
                     end
                 end
             end
@@ -196,12 +216,12 @@ if ENTRANCE_RANDO_ENABLED then
         -- Update the item icons for the entrances.
         if currently_selected and not prevent_currently_selected_item_icon_update then
             -- Update the icon to show that it is no longer selected.
-            currently_selected:UpdateItemIcon()
+            currently_selected:UpdateEntranceItemIconMods()
         end
 
         if entrance then
             -- Update the icon to show that it is selected.
-            entrance:UpdateItemIcon()
+            entrance:UpdateEntranceItemIconMods()
         end
     end
 
@@ -234,6 +254,7 @@ if ENTRANCE_RANDO_ENABLED then
             if not prevent_section_update then
                 -- Reset the section
                 self:UpdateLocationSection()
+                current_exit:UpdateLocationSection()
             end
             debugPrint("%s: Unassigned %s", self.Name, current_exit.Name)
         else
@@ -292,8 +313,16 @@ if ENTRANCE_RANDO_ENABLED then
         self.Exit = new_exit
         new_exit.Entrance = self
 
-        -- new_exit is not nil, so the section needs updating if current_exit is nil.
-        if not current_exit then
+        -- Update the new exit's section.
+        new_exit:UpdateLocationSection()
+
+        if current_exit ~= nil then
+            -- The entrance's section is already cleared, so only update the current exit.
+            current_exit:UpdateLocationSection()
+            current_exit:UpdateItem()
+        else
+            -- current_exit is nil, so the entrance's section was not cleared before, but should be cleared now that an
+            -- exit has been assigned.
             self:UpdateLocationSection()
         end
 
@@ -309,20 +338,46 @@ if ENTRANCE_RANDO_ENABLED then
         return true
     end
 
-    function Entrance:GetItemIconPath()
-        local entrance_icon = self.Icon
+    function Entrance:GetItemIconMods()
         local exit = self.Exit
         local exit_overlay
-        if exit then
-            exit_overlay = exit.EntranceOverlay
-        else
-            exit_overlay = "images/items/entrances/exits/Unknown.png"
-        end
 
         if self:IsSelected() then
-            return string.format("%s:overlay|%s,overlay|images/items/entrances/active_overlay.png", entrance_icon, exit_overlay)
+            if exit then
+                -- Should not normally happen because an entrance with an exit assigned is unassigned when clicked on.
+                return "@disabled,overlay|images/entrances/selection_highlight.png"
+            else
+                return "overlay|images/entrances/selection_highlight.png"
+            end
         else
-            return string.format("%s:overlay|%s", entrance_icon, exit_overlay)
+            if exit then
+                -- Grey out when an exit is assigned
+                return "@disabled"
+            else
+                return "none"
+            end
+        end
+    end
+
+    function Entrance:GetItemIconPath()
+        local entrance_icon_path = self.IconPath
+        local exit = self.Exit
+        local exit_overlay
+
+        if self:IsSelected() then
+            if exit then
+                -- Should not normally happen because an entrance with an exit assigned is unassigned when clicked on.
+                return string.format("%s:@disabled,overlay|images/entrances/selection_highlight.png", entrance_icon_path)
+            else
+                return string.format("%s:overlay|images/entrances/selection_highlight.png", entrance_icon_path)
+            end
+        else
+            if exit then
+                -- Grey out when an exit is assigned
+                return string.format("%s:@disabled", entrance_icon_path)
+            else
+                return entrance_icon_path
+            end
         end
     end
 
@@ -330,37 +385,43 @@ if ENTRANCE_RANDO_ENABLED then
         return Tracker:FindObjectForCode(self.Name)
     end
 
-    function Entrance:UpdateItemIcon(item)
+    function Entrance:UpdateEntranceItemIconMods(item)
         item = item or self:GetItem()
-        local path = self:GetItemIconPath()
-        debugPrint("Updating %s icon to %s", self.Name, path)
-        item.Icon = ImageReference:FromPackRelativePath(path)
+        local icon_mods = self:GetItemIconMods()
+        debugPrint("Updating %s icon mods to %s", self.Name, icon_mods)
+        if item.IconMods ~= icon_mods then
+            item.IconMods = icon_mods
+        end
     end
 
-    function Entrance:UpdateItemExitIndex(item)
+    function Entrance:UpdateEntranceItemExitIndex(item)
         item = item or self:GetItem()
         item.ItemState.exit_idx = self:GetExitIndex()
     end
 
-    function Entrance:UpdateItemName(item)
+    function Entrance:UpdateEntranceItemNameAndOverlayText(item)
         item = item or self:GetItem()
         local exit = self.Exit
         local new_name
+        local new_text_overlay
         if exit then
             new_name = self.Name .. " -> " .. exit.Name
+            new_text_overlay = "to " .. exit.Name
         else
             new_name = "Click to assign " .. self.Name
+            new_text_overlay = ""
         end
         if item.Name ~= new_name then
             item.Name = new_name
+            item:SetOverlay(new_text_overlay)
         end
     end
 
     function Entrance:UpdateItem(item)
         item = item or self:GetItem()
-        self:UpdateItemIcon(item)
-        self:UpdateItemExitIndex(item)
-        self:UpdateItemName(item)
+        self:UpdateEntranceItemIconMods(item)
+        self:UpdateEntranceItemExitIndex(item)
+        self:UpdateEntranceItemNameAndOverlayText(item)
     end
 
     function Entrance:UpdateLocationSection()
@@ -388,50 +449,50 @@ end
 
 -- Each entrance starts with its vanilla exit.
 ENTRANCES = {
-    Entrance.New("Dungeon Entrance on Dragon Roost Island", "Dragon Roost Cavern", "dungeon"),
-    Entrance.New("Dungeon Entrance in Forest Haven Sector", "Forbidden Woods", "dungeon"),
-    Entrance.New("Dungeon Entrance in Tower of the Gods Sector", "Tower of the Gods", "dungeon"),
-    Entrance.New("Dungeon Entrance on Headstone Island", "Earth Temple", "dungeon"),
-    Entrance.New("Dungeon Entrance on Gale Isle", "Wind Temple", "dungeon"),
-    Entrance.New("Miniboss Entrance in Forbidden Woods", "Forbidden Woods Miniboss Arena", "miniboss", "Forbidden Woods"),
-    Entrance.New("Miniboss Entrance in Tower of the Gods", "Tower of the Gods Miniboss Arena", "miniboss", "Tower of the Gods"),
-    Entrance.New("Miniboss Entrance in Earth Temple", "Earth Temple Miniboss Arena", "miniboss", "Earth Temple"),
-    Entrance.New("Miniboss Entrance in Wind Temple", "Wind Temple Miniboss Arena", "miniboss", "Wind Temple"),
-    Entrance.New("Miniboss Entrance in Hyrule Castle", "Master Sword Chamber", "miniboss"),
-    Entrance.New("Boss Entrance in Dragon Roost Cavern", "Gohma Boss Arena", "boss", "Dragon Roost Cavern"),
-    Entrance.New("Boss Entrance in Forbidden Woods", "Kalle Demos Boss Arena", "boss", "Forbidden Woods"),
-    Entrance.New("Boss Entrance in Tower of the Gods", "Gohdan Boss Arena", "boss", "Tower of the Gods"),
-    Entrance.New("Boss Entrance in Forsaken Fortress", "Helmaroc King Boss Arena", "boss"),
-    Entrance.New("Boss Entrance in Earth Temple", "Jalhalla Boss Arena", "boss", "Earth Temple"),
-    Entrance.New("Boss Entrance in Wind Temple", "Molgera Boss Arena", "boss", "Wind Temple"),
-    Entrance.New("Secret Cave Entrance on Outset Island", "Savage Labyrinth", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Fire Mountain", "Fire Mountain Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Ice Ring Isle", "Ice Ring Isle Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Private Oasis", "Cabana Labyrinth", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Needle Rock Isle", "Needle Rock Isle Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Angular Isles", "Angular Isles Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Boating Course", "Boating Course Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Overlook Island", "Overlook Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle Chuchu Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle Wizzrobe Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Bomb Island", "Bomb Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Shark Island", "Shark Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Horseshoe Island", "Horseshoe Island Secret Cave", "secret_cave"),
-    Entrance.New("Secret Cave Entrance on Star Island", "Star Island Secret Cave", "secret_cave"),
-    Entrance.New("Inner Entrance in Ice Ring Isle Secret Cave", "Ice Ring Isle Inner Cave", "inner", "Ice Ring Isle Secret Cave"),
-    Entrance.New("Inner Entrance in Cliff Plateau Isles Secret Cave", "Cliff Plateau Isles Inner Cave", "inner", "Cliff Plateau Isles Secret Cave"),
-    Entrance.New("Fairy Fountain Entrance on Outset Island", "Outset Fairy Fountain", "fairy"),
-    Entrance.New("Fairy Fountain Entrance on Thorned Fairy Island", "Thorned Fairy Fountain", "fairy"),
-    Entrance.New("Fairy Fountain Entrance on Eastern Fairy Island", "Eastern Fairy Fountain", "fairy"),
-    Entrance.New("Fairy Fountain Entrance on Western Fairy Island", "Western Fairy Fountain", "fairy"),
-    Entrance.New("Fairy Fountain Entrance on Southern Fairy Island", "Southern Fairy Fountain", "fairy"),
-    Entrance.New("Fairy Fountain Entrance on Northern Fairy Island", "Northern Fairy Fountain", "fairy"),
+    Entrance.New("Dungeon Entrance on Dragon Roost Island", "Dragon Roost Cavern", "dungeon", "images/entrances/entrance_dungeon_drc.png"),
+    Entrance.New("Dungeon Entrance in Forest Haven Sector", "Forbidden Woods", "dungeon", "images/entrances/entrance_dungeon_fw.png"),
+    Entrance.New("Dungeon Entrance in Tower of the Gods Sector", "Tower of the Gods", "dungeon", "images/entrances/entrance_dungeon_totg.png"),
+    Entrance.New("Dungeon Entrance on Headstone Island", "Earth Temple", "dungeon", "images/entrances/entrance_headstone.png"),
+    Entrance.New("Dungeon Entrance on Gale Isle", "Wind Temple", "dungeon", "images/entrances/entrance_dungeon_wt.png"),
+    Entrance.New("Miniboss Entrance in Forbidden Woods", "Forbidden Woods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Forbidden Woods"),
+    Entrance.New("Miniboss Entrance in Tower of the Gods", "Tower of the Gods Miniboss Arena", "miniboss", "images/items/smallkey.png", "Tower of the Gods"),
+    Entrance.New("Miniboss Entrance in Earth Temple", "Earth Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Earth Temple"),
+    Entrance.New("Miniboss Entrance in Wind Temple", "Wind Temple Miniboss Arena", "miniboss", "images/items/smallkey.png", "Wind Temple"),
+    Entrance.New("Miniboss Entrance in Hyrule Castle", "Master Sword Chamber", "miniboss", "images/entrances/entrance_mastersword.png"),
+    Entrance.New("Boss Entrance in Dragon Roost Cavern", "Gohma Boss Arena", "boss", "images/items/bigkey2.png", "Dragon Roost Cavern"),
+    Entrance.New("Boss Entrance in Forbidden Woods", "Kalle Demos Boss Arena", "boss", "images/items/bigkey2.png", "Forbidden Woods"),
+    Entrance.New("Boss Entrance in Tower of the Gods", "Gohdan Boss Arena", "boss", "images/items/bigkey2.png", "Tower of the Gods"),
+    Entrance.New("Boss Entrance in Forsaken Fortress", "Helmaroc King Boss Arena", "boss", "images/entrances/entrance_ff.png"),
+    Entrance.New("Boss Entrance in Earth Temple", "Jalhalla Boss Arena", "boss", "images/items/bigkey2.png", "Earth Temple"),
+    Entrance.New("Boss Entrance in Wind Temple", "Molgera Boss Arena", "boss", "images/items/bigkey2.png", "Wind Temple"),
+    Entrance.New("Secret Cave Entrance on Outset Island", "Savage Labyrinth", "secret_cave", "images/entrances/entrance_headstone.png"),
+    Entrance.New("Secret Cave Entrance on Dragon Roost Island", "Dragon Roost Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
+    Entrance.New("Secret Cave Entrance on Fire Mountain", "Fire Mountain Secret Cave", "secret_cave", "images/entrances/entrance_fire_mountain.png"),
+    Entrance.New("Secret Cave Entrance on Ice Ring Isle", "Ice Ring Isle Secret Cave", "secret_cave", "images/entrances/entrance_ice_ring_isle.png"),
+    Entrance.New("Secret Cave Entrance on Private Oasis", "Cabana Labyrinth", "secret_cave", "images/entrances/entrance_cabana.png"),
+    Entrance.New("Secret Cave Entrance on Needle Rock Isle", "Needle Rock Isle Secret Cave", "secret_cave", "images/entrances/entrance_needle_rock_isle.png"),
+    Entrance.New("Secret Cave Entrance on Angular Isles", "Angular Isles Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Boating Course", "Boating Course Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Stone Watcher Island", "Stone Watcher Island Secret Cave", "secret_cave", "images/entrances/entrance_headstone.png"),
+    Entrance.New("Secret Cave Entrance on Overlook Island", "Overlook Island Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Bird's Peak Rock", "Bird's Peak Rock Secret Cave", "secret_cave", "images/entrances/entrance_bird's_peak.png"),
+    Entrance.New("Secret Cave Entrance on Pawprint Isle", "Pawprint Isle Chuchu Cave", "secret_cave", "images/entrances/entrance_pawprint_isle_chuchu.png"),
+    Entrance.New("Secret Cave Entrance on Pawprint Isle Side Isle", "Pawprint Isle Wizzrobe Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Diamond Steppe Island", "Diamond Steppe Island Warp Maze Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Bomb Island", "Bomb Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
+    Entrance.New("Secret Cave Entrance on Rock Spire Isle", "Rock Spire Isle Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
+    Entrance.New("Secret Cave Entrance on Shark Island", "Shark Island Secret Cave", "secret_cave", "images/entrances/entrance_fire_hole.png"),
+    Entrance.New("Secret Cave Entrance on Cliff Plateau Isles", "Cliff Plateau Isles Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Horseshoe Island", "Horseshoe Island Secret Cave", "secret_cave", "images/entrances/entrance_hole.png"),
+    Entrance.New("Secret Cave Entrance on Star Island", "Star Island Secret Cave", "secret_cave", "images/entrances/entrance_rock.png"),
+    Entrance.New("Inner Entrance in Ice Ring Isle Secret Cave", "Ice Ring Isle Inner Cave", "inner", "images/entrances/entrance_ice_ring_inner.png", "Ice Ring Isle Secret Cave"),
+    Entrance.New("Inner Entrance in Cliff Plateau Isles Secret Cave", "Cliff Plateau Isles Inner Cave", "inner", "images/entrances/entrance_cliff_plateau_inner.png", "Cliff Plateau Isles Secret Cave"),
+    Entrance.New("Fairy Fountain Entrance on Outset Island", "Outset Fairy Fountain", "fairy", "images/entrances/entrance_rock.png"),
+    Entrance.New("Fairy Fountain Entrance on Thorned Fairy Island", "Thorned Fairy Fountain", "fairy", "images/entrances/entrance_hammer.png"),
+    Entrance.New("Fairy Fountain Entrance on Eastern Fairy Island", "Eastern Fairy Fountain", "fairy", "images/entrances/entrance_rock.png"),
+    Entrance.New("Fairy Fountain Entrance on Western Fairy Island", "Western Fairy Fountain", "fairy", "images/entrances/entrance_hammer.png"),
+    Entrance.New("Fairy Fountain Entrance on Southern Fairy Island", "Southern Fairy Fountain", "fairy", "images/entrances/entrance_fairy_wood.png"),
+    Entrance.New("Fairy Fountain Entrance on Northern Fairy Island", "Northern Fairy Fountain", "fairy", "images/entrances/entrance_fairy_fountain.png"),
 }
 
 ENTRANCE_BY_NAME = {}

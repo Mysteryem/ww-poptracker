@@ -42,8 +42,8 @@ function create_entrance_lua_item(idx, entrance)
             entrance:Assign(EXITS[loaded_exit_idx], true, true)
         else
             debugPrint("Updating for vanilla exit for '%s'", entrance.Name)
-            entrance:UpdateItemIcon(self)
-            entrance:UpdateItemName(item)
+            entrance:UpdateEntranceItemIconMods(self)
+            entrance:UpdateEntranceItemNameAndOverlayText(item)
             --entrance:UpdateLocationSection()
         end
     end
@@ -66,25 +66,44 @@ function create_entrance_lua_item(idx, entrance)
     local entrance_name = entrance.Name
     mapping_item.Name = entrance_name
 
-    local codeFunc = function(self, code)
+    mapping_item.CanProvideCodeFunc = function(self, code)
         return code == entrance_name
     end
-    mapping_item.CanProvideCodeFunc = codeFunc
-    mapping_item.ProvidesCodeFunc = codeFunc
+    mapping_item.ProvidesCodeFunc = function(self, code)
+        -- Note: Must return bool. Returning `nil` or a table is not allowed.
+        if code == entrance_name and entrance.Exit then
+            -- Provide code when assigned.
+            return true
+        else
+            return false
+        end
+    end
 
     -- Select the mapping for assignment or clear the exit mapping if already assigned
-    mapping_item.OnLeftClickFunc = function (self)
-        local entrance = ENTRANCES[self.ItemState.entrance_idx]
+    mapping_item.OnLeftClickFunc = function(self)
+        local exit = entrance.Exit
+        if not exit then
+            if entrance:IsSelected() then
+                -- Deselect the entrance if it was selected.
+                Entrance.Select(nil)
+            else
+                -- Select the entrance.
+                Entrance.Select(entrance)
+
+                -- Swap to exits tab so the user can pick the exit to assign.
+                Tracker:UiHint("ActivateTab", "Exits")
+            end
+        end
+    end
+
+    mapping_item.OnRightClickFunc = function(self)
         local exit = entrance.Exit
         if exit then
             -- Unassign the exit that is assigned to this entrance.
             entrance:Unassign()
-        else
-            -- Select the entrance.
-            Entrance.Select(entrance)
-
-            -- Swap to exits tab so the user can pick the exit to assign.
-            Tracker:UiHint("ActivateTab", "Select Exit")
+        elseif entrance:IsSelected() then
+            -- Deselect the entrance if it was selected.
+            Entrance.Select(nil)
         end
     end
 
@@ -93,8 +112,11 @@ function create_entrance_lua_item(idx, entrance)
         entrance:Assign(EXITS[loaded_idx], true, true)
     end
 
-    -- TODO: If an exit has been assigned to an exit mapping, can we make the exit location appear as checkable?
-    --       This way, we can tell apart locations we can/cannot access and which of those have been assigned
+    mapping_item:SetOverlayAlign("left")
+    -- Looks to be about the same size as section text.
+    mapping_item:SetOverlayFontSize(10)
+
+    mapping_item.Icon = ImageReference:FromPackRelativePath(entrance.IconPath)
 end
 
 -- Create a new exit lua item. These are the placeholder items that users click on to assign a specific exit after
@@ -109,13 +131,20 @@ function create_exit_lua_item(idx, exit)
     local exit_name = exit.Name
 
     exit_item.Name = exit_name
-    exit_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
+    exit_item.Icon = ImageReference:FromPackRelativePath(exit.IconPath)
 
-    local codeFunc = function(self, code)
+    exit_item.CanProvideCodeFunc = function(self, code)
         return code == exit_name
     end
-    exit_item.CanProvideCodeFunc = codeFunc
-    exit_item.ProvidesCodeFunc = codeFunc
+    exit_item.ProvidesCodeFunc = function(self, code)
+        -- Note: Must return bool. Returning `nil` or a table is not allowed.
+        if code == exit_name and exit.Entrance then
+            -- Provide code when assigned.
+            return true
+        else
+            return false
+        end
+    end
     exit_item.OnLeftClickFunc = function(self)
         local selected_entrance = Entrance.SelectedEntrance
         if selected_entrance then
@@ -128,12 +157,21 @@ function create_exit_lua_item(idx, exit)
             Entrance.Select(nil, true)
             selected_entrance:Assign(exit)
 
-            -- Switch back to the assignment tab.
-            Tracker:UiHint("ActivateTab", "Assignment")
+            -- Switch back to the Entrances tab.
+            Tracker:UiHint("ActivateTab", "Entrances")
         end
+        -- TODO: Allow selecting an exit and then clicking an entrance to assign in reverse.
+    end
+
+    exit_item.OnRightClickFunc = function(self)
+        -- TODO: Allow unassigning by right clicking.
     end
 
     exit_item.ItemState.exit_idx = idx
+
+    exit_item:SetOverlayAlign("left")
+    -- Looks to be about the same size as section text.
+    exit_item:SetOverlayFontSize(10)
 end
 
 local function createItemsAndUnassignAllExits()

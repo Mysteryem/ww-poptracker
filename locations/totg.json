@@ -18,13 +18,13 @@
       {
         "name": "Chest Behind Bombable Walls",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+          "@Exit Logic/Tower of the Gods, bombs"
         ]
       },
       {
         "name": "Pot Behind Bombable Walls",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+          "@Exit Logic/Tower of the Gods, bombs"
         ],
         "visibility_rules": [
           "secretpot_on"
@@ -33,25 +33,25 @@
       {
         "name": "Hop Across Floating Boxes",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods"
+          "@Exit Logic/Tower of the Gods"
         ]
       },
       {
         "name": "Light Two Torches",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+          "@Exit Logic/Tower of the Gods, bombs"
         ]
       },
       {
         "name": "Skulls Room Chest",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods, bombs"
+          "@Exit Logic/Tower of the Gods, bombs"
         ]
       },
       {
         "name": "Shoot Eye Above Skulls Room Chest",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods, bombs, bow"
+          "@Exit Logic/Tower of the Gods, bombs, bow"
         ]
       },
       {
@@ -94,7 +94,7 @@
         "chest_unopened_img": "images/items/chest_spiky.png",
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_tower_of_the_gods_miniboss_arena, @Macros/can_defeat_darknuts"
+          "@Exit Logic/Tower of the Gods Miniboss Arena, @Macros/can_defeat_darknuts"
         ]
       },
       {
@@ -133,7 +133,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_gohdan_boss_arena, @Macros/can_defeat_gohdan"
+          "@Exit Logic/Gohdan Boss Arena, @Macros/can_defeat_gohdan"
         ]
       }
     ]
@@ -143,7 +143,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "@Exit Logic/can_access_tower_of_the_gods"
+      "@Exit Logic/Tower of the Gods"
     ],
     "visibility_rules": [
       "dungeons_on"

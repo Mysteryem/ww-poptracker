@@ -18,7 +18,7 @@
       {
         "name": "First Room",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern"
+          "@Exit Logic/Dragon Roost Cavern"
         ]
       },
       {
@@ -26,13 +26,13 @@
         "chest_unopened_img": "images/items/chest_metal.png",
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:1"
         ]
       },
       {
         "name": "Water Jug on Upper Shelf",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:1"
         ],
         "visibility_rules": [
           "secretpot_on"
@@ -41,7 +41,7 @@
       {
         "name": "Boarded Up Chest",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:1"
         ]
       },
       {
@@ -50,12 +50,12 @@
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_dragon_roost_cavern",
+            "@Exit Logic/Dragon Roost Cavern",
             "drc_small:2",
             "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
           ],
           [
-            "@Exit Logic/can_access_dragon_roost_cavern",
+            "@Exit Logic/Dragon Roost Cavern",
             "drc_small:2",
             "hookshot",
             "@General Logic/Normal Logic Obscurity"
@@ -67,31 +67,31 @@
         "chest_unopened_img": "images/items/chest_metal.png",
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:2"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:2"
         ]
       },
       {
         "name": "Rat Room Boarded Up Chest",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:2"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:2"
         ]
       },
       {
         "name": "Bird's Nest",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:3"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:3"
         ]
       },
       {
         "name": "Dark Room",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4"
         ]
       },
       {
         "name": "Tingle Statue in Hub Room",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4, @Macros/has_tingle_bombs"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4, @Macros/has_tingle_bombs"
         ],
         "visibility_rules": [
           "tinglechests_on"
@@ -100,7 +100,7 @@
       {
         "name": "Pot on Upper Shelf in Pot Room",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4"
         ],
         "visibility_rules": [
           "secretpot_on"
@@ -109,7 +109,7 @@
       {
         "name": "Pot Room Chest",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4"
         ]
       },
       {
@@ -117,14 +117,14 @@
         "chest_unopened_img": "images/items/chest_spiky.png",
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4"
         ]
       },
       {
         "name": "Under Rope Bridge",
         "access_rules": [
           [
-            "@Exit Logic/can_access_dragon_roost_cavern",
+            "@Exit Logic/Dragon Roost Cavern",
             "drc_small:4",
             "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
           ]
@@ -181,7 +181,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_gohma_boss_arena, @Macros/can_defeat_gohma"
+          "@Exit Logic/Gohma Boss Arena, @Macros/can_defeat_gohma"
         ]
       }
     ]

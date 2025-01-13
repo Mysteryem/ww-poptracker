@@ -1,212 +1,41 @@
 {
-  "entrances_assignment_entrances": {
-    "type": "tabbed",
-    "h_alignment": "center",
-    "item_h_alignment": "center",
-    "tabs": [
-      {
-        "title": "Dungeons",
-        "content": {
-          "type": "layout",
-          "key": "dungeon_entrances_grid"
-        }
-      },
-      {
-        "title": "Secret Caves",
-        "content": {
-          "type": "layout",
-          "key": "cave_entrances_grid"
-        }
-      },
-      {
-        "title": "Inner Entrances and Fairy Fountains",
-        "content": {
-          "type": "layout",
-          "key": "inner_entrances_and_fairy_entrances_grid"
-        }
-      }
-    ]
-  },
-  "entrances_assignment_exits": {
+  "entrances_and_exits": {
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Dungeons",
+        "title": "Entrances",
         "content": {
-          "type": "layout",
-          "key": "dungeon_exits_grid"
-        }
-      },
-      {
-        "title": "Secret Caves",
-        "content": {
-          "type": "layout",
-          "key": "cave_exits_grid"
-        }
-      },
-      {
-        "title": "Inner Exits and Fairy Fountains",
-        "content": {
-          "type": "layout",
-          "key": "inner_exits_and_fairy_exits_grid"
-        }
-      }
-    ]
-  },
-  "entrances_assignment_exits_thin": {
-    "type": "tabbed",
-    "tabs": [
-      {
-        "title": "Dungeons",
-        "content": {
-          "type": "layout",
-          "key": "dungeon_exits_grid_thin"
-        }
-      },
-      {
-        "title": "Secret Caves",
-        "content": {
-          "type": "layout",
-          "key": "cave_exits_grid_thin"
-        }
-      },
-      {
-        "title": "Inner Exits and Fairy Fountains",
-        "content": {
-          "type": "layout",
-          "key": "inner_exits_and_fairy_exits_grid_thin"
-        }
-      }
-    ]
-  },
-  "entrances_both_tab": {
-    "type": "array",
-    "orientation": "horizontal",
-    "content": [
-      {
-        "type": "tabbed",
-        "tabs": [
-          {
-            "title": "Assignment",
-            "content": {
-              "type": "layout",
-              "key": "entrances_assignment_entrances"
-            }
-          },
-          {
-            "title": "Select Exit",
-            "content": {
-              "type": "layout",
-              "key": "entrances_assignment_exits"
-            }
-          }
-        ]
-      },
-      {
-        "type": "tabbed",
-        "h_alignment": "center",
-        "tabs": [
-          {
-            "title": "Entrances",
-            "content": {
-              "type": "map",
-              "maps": [
-                "entrances"
-              ]
-            }
-          },
-          {
-            // Note: The title includes a zero-width non-joiner at the end so that map switching does not switch to it.
-            "title": "The Great Sea‌",
-            "content": {
-              "type": "map",
-              "maps": [
-                "seachart"
-              ]
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "entrances_map_tab": {
-    "type": "map",
-    "maps": [
-      "entrances"
-    ]
-  },
-  "entrances_assignment_tab": {
-    // Note: When using "dock", the min width is calculated correctly, but ends up slightly too small and pushes the
-    // tabs of the thin exit tabs down onto a second line. Increasing the item_margin of the thin itemgrids would
-    // probably resolve this.
-    "type": "array",
-    "orientation": "horizontal",
-    "content": [
-      {
-        "type": "layout",
-        "key": "entrances_assignment_entrances"
-      },
-      {
-        "type": "layout",
-        "key": "entrances_assignment_exits_thin"
-      }
-    ]
-  },
-  "entrances_assignment_alt_tab": {
-    "type": "array",
-    "orientation": "vertical",
-    "content": [
-      {
-        "type": "group",
-        "header": "Select Entrance",
-        "content": {
-          "type": "array",
-          "orientation": "horizontal",
-          "content": [
-            {
-              "type": "layout",
-              "key": "dungeon_entrances_grid"
-            },
-            {
-              "type": "layout",
-              "key": "cave_entrances_grid"
-            },
-            {
-              "type": "layout",
-              "key": "inner_entrances_and_fairy_entrances_grid"
-            }
+          "type": "map",
+          "maps": [
+            "entrances"
           ]
         }
       },
       {
-        "type": "group",
-        "header": "Then Select Exit",
+        "title": "Exits",
         "content": {
-          "type": "array",
-          "orientation": "horizontal",
-          "content": [
-            {
-              "type": "layout",
-              "key": "dungeon_exits_grid"
-            },
-            {
-              "type": "layout",
-              "key": "cave_exits_grid"
-            },
-            {
-              "type": "layout",
-              "key": "inner_exits_and_fairy_exits_grid"
-            }
+          "type": "map",
+          "maps": [
+            "exits"
           ]
         }
       }
     ]
   },
-  "entrances_map_and_sea_tab": {
-    "type": "map",
-    "maps": [
-      "entrances",
-      "seachart"
+  "entrances_and_exits_and_sea_tab": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "entrances_and_exits"
+      },
+      {
+        "type": "map",
+        "maps": [
+          "seachart"
+        ]
+      }
     ]
   },
   "entrances_layout": {
@@ -214,41 +43,19 @@
     "tabs": [
       //TODO: Options tab that shows the options read from AP
       {
-        "title": "Assignment + Maps",
+        "title": "Entrances + Exits",
         "content": {
           "type": "layout",
-          "key": "entrances_both_tab"
+          "key": "entrances_and_exits"
         }
       },
       {
-        "title": "Map + The Great Sea",
+        "title": "+ The Great Sea",
         "content": {
           "type": "layout",
-          "key": "entrances_map_and_sea_tab"
-        }
-      },
-      {
-        "title": "Map Only",
-        "content": {
-          "type": "layout",
-          "key": "entrances_map_tab"
-        }
-      },
-      {
-        "title": "Assignment Only",
-        "content": {
-          "type": "layout",
-          "key": "entrances_assignment_tab"
+          "key": "entrances_and_exits_and_sea_tab"
         }
       }
-      // Can't use this currently because it cannot shrink and forces all other tabs to not shrink below its large size.
-//      {
-//        "title": "Assignment alt.",
-//        "content": {
-//          "type": "layout",
-//          "key": "entrances_assignment_alt_tab"
-//        }
-//      }
     ]
   }
 }

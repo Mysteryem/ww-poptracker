@@ -65,7 +65,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_helmaroc_king_boss_arena, @Macros/can_defeat_helmaroc_king"
+          "@Exit Logic/Helmaroc King Boss Arena, @Macros/can_defeat_helmaroc_king"
         ]
       }
     ]

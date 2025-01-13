@@ -20,14 +20,14 @@
         "chest_unopened_img": "images/items/chest_metal.png",
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_earth_temple, @Macros/can_play_command_melody"
+          "@Exit Logic/Earth Temple, @Macros/can_play_command_melody"
         ]
       },
       {
         "name": "Behind Curtain In Warp Pot Room",
         "access_rules": [
           [
-            "@Exit Logic/can_access_earth_temple",
+            "@Exit Logic/Earth Temple",
             "@Macros/can_play_command_melody",
             "@Macros/has_fire_arrows",
             "@Macros/_boomerang_or_hookshot"
@@ -87,8 +87,8 @@
         "chest_unopened_img": "images/items/chest_spiky.png",
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_earth_temple_miniboss_arena, @Macros/can_defeat_stalfos",
-          "@Exit Logic/can_access_earth_temple_miniboss_arena, hookshot"
+          "@Exit Logic/Earth Temple Miniboss Arena, @Macros/can_defeat_stalfos",
+          "@Exit Logic/Earth Temple Miniboss Arena, hookshot"
         ]
       },
       {
@@ -188,7 +188,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_jalhalla_boss_arena, @Macros/can_defeat_jalhalla"
+          "@Exit Logic/Jalhalla Boss Arena, @Macros/can_defeat_jalhalla"
         ]
       }
     ]

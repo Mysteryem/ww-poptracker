@@ -20,14 +20,14 @@
         "chest_unopened_img": "images/items/chest_metal.png",
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_forbidden_woods"
+          "@Exit Logic/Forbidden Woods"
         ]
       },
       {
         "name": "Inside Hollow Tree's Mouth",
         "access_rules": [
-          "@Exit Logic/can_access_forbidden_woods, @Macros/can_defeat_door_flowers",
-          "@Exit Logic/can_access_forbidden_woods, @Macros/can_defeat_boko_babas"
+          "@Exit Logic/Forbidden Woods, @Macros/can_defeat_door_flowers",
+          "@Exit Logic/Forbidden Woods, @Macros/can_defeat_boko_babas"
         ]
       },
       {
@@ -36,7 +36,7 @@
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_door_flowers"
           ]
@@ -45,7 +45,7 @@
       {
         "name": "Pot High Above Hollow Tree",
         "access_rules": [
-          "@Exit Logic/can_access_forbidden_woods, @Macros/can_fly_with_deku_leaf_indoors"
+          "@Exit Logic/Forbidden Woods, @Macros/can_fly_with_deku_leaf_indoors"
         ],
         "visibility_rules": [
           "secretpot_on"
@@ -55,7 +55,7 @@
         "name": "Hole in Tree",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas"
           ]
@@ -65,7 +65,7 @@
         "name": "Morth Pit",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple"
@@ -78,7 +78,7 @@
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple"
@@ -89,7 +89,7 @@
         "name": "Vine Maze Right Chest",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple"
@@ -100,7 +100,7 @@
         "name": "Highest Pot in Vine Maze",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple"
@@ -114,7 +114,7 @@
         "name": "Tall Room Before Miniboss",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -122,7 +122,7 @@
             "@Macros/can_defeat_peahats"
           ],
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -136,14 +136,14 @@
         "chest_unopened_img": "images/items/chest_spiky.png",
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_forbidden_woods_miniboss_arena, @Macros/can_defeat_winged_mothulas"
+          "@Exit Logic/Forbidden Woods Miniboss Arena, @Macros/can_defeat_winged_mothulas"
         ]
       },
       {
         "name": "Past Seeds Hanging by Vines",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -152,7 +152,7 @@
             "@Macros/can_destroy_seeds_hanging_by_vines"
           ],
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -166,7 +166,7 @@
         "name": "Chest Across Red Hanging Flower",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -180,7 +180,7 @@
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "grapple",
             "boomerang",
@@ -197,7 +197,7 @@
         "chest_opened_img": "images/items/chest_metal_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -211,7 +211,7 @@
         "chest_opened_img": "images/items/chest_bigkey_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -223,7 +223,7 @@
         "name": "Double Mothula Room",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "@Macros/_can_defeat_door_flowers_or_grapple",
@@ -236,7 +236,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_kalle_demos_boss_arena, @Macros/can_defeat_kalle_demos"
+          "@Exit Logic/Kalle Demos Boss Arena, @Macros/can_defeat_kalle_demos"
         ]
       }
     ]

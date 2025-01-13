@@ -18,7 +18,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_star_island_secret_cave, @Macros/can_defeat_magtails"
+              "@Exit Logic/Star Island Secret Cave, @Macros/can_defeat_magtails"
             ],
             "visibility_rules": [
               "combat_on"
@@ -39,7 +39,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_northern_fairy_fountain"
+              "@Exit Logic/Northern Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -611,7 +611,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_pawprint_isle_chuchu_cave"
+              "@Exit Logic/Pawprint Isle Chuchu Cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -620,7 +620,7 @@
           {
             "name": "Chuchu Cave - Behind Left Boulder",
             "access_rules": [
-              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, @Macros/can_move_boulders"
+              "@Exit Logic/Pawprint Isle Chuchu Cave, @Macros/can_move_boulders"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -629,7 +629,7 @@
           {
             "name": "Chuchu Cave - Behind Right Boulder",
             "access_rules": [
-              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, @Macros/can_move_boulders"
+              "@Exit Logic/Pawprint Isle Chuchu Cave, @Macros/can_move_boulders"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -638,7 +638,7 @@
           {
             "name": "Chuchu Cave - Scale the Wall",
             "access_rules": [
-              "@Exit Logic/can_access_pawprint_isle_chuchu_cave, grapple"
+              "@Exit Logic/Pawprint Isle Chuchu Cave, grapple"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -648,7 +648,7 @@
             "name": "Wizzrobe Cave",
             "access_rules": [
               [
-                "@Exit Logic/can_access_pawprint_isle_wizzrobe_cave",
+                "@Exit Logic/Pawprint Isle Wizzrobe Cave",
                 "@Macros/can_defeat_wizzrobes_at_range",
                 "@Macros/can_defeat_fire_keese",
                 "@Macros/can_defeat_magtails",
@@ -730,7 +730,7 @@
             "name": "Secret Cave",
             "access_rules": [
               [
-                "@Exit Logic/can_access_dragon_roost_island_secret_cave",
+                "@Exit Logic/Dragon Roost Island Secret Cave",
                 "@Macros/can_defeat_keese",
                 "@Macros/can_defeat_red_chuchus"
               ]
@@ -793,7 +793,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_western_fairy_fountain"
+              "@Exit Logic/Western Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -822,7 +822,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_rock_spire_isle_secret_cave"
+              "@Exit Logic/Rock Spire Isle Secret Cave"
             ],
             "visibility_rules": [
               "combat_on"
@@ -905,7 +905,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_eastern_fairy_fountain"
+              "@Exit Logic/Eastern Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -937,7 +937,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_fire_mountain_secret_cave, @Macros/can_defeat_magtails"
+              "@Exit Logic/Fire Mountain Secret Cave, @Macros/can_defeat_magtails"
             ],
             "visibility_rules": [
               "puzzlecaves_on, combat_on"
@@ -1117,7 +1117,7 @@
           {
             "name": "Master Sword Chamber",
             "access_rules": [
-              "@Exit Logic/can_access_master_sword_chamber, @Macros/can_defeat_mighty_darknuts"
+              "@Exit Logic/Master Sword Chamber, @Macros/can_defeat_mighty_darknuts"
             ]
           },
           {
@@ -1150,7 +1150,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_thorned_fairy_fountain"
+              "@Exit Logic/Thorned Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1201,7 +1201,7 @@
           {
             "name": "Cave",
             "access_rules": [
-              "@Exit Logic/can_access_needle_rock_isle_secret_cave, @Macros/has_fire_arrows"
+              "@Exit Logic/Needle Rock Isle Secret Cave, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1321,7 +1321,7 @@
           {
             "name": "Cabana Labyrinth - Lower Floor Chest",
             "access_rules": [
-              "@Exit Logic/can_access_cabana_labyrinth, hammer"
+              "@Exit Logic/Cabana Labyrinth, hammer"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1333,7 +1333,7 @@
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
               [
-                "@Exit Logic/can_access_cabana_labyrinth",
+                "@Exit Logic/Cabana Labyrinth",
                 "hammer",
                 "@Macros/can_play_winds_requiem"
               ]
@@ -1394,7 +1394,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_bomb_island_secret_cave, @Macros/can_stun_magtails"
+              "@Exit Logic/Bomb Island Secret Cave, @Macros/can_stun_magtails"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1429,7 +1429,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_birds_peak_rock_secret_cave, @Macros/can_play_winds_requiem"
+              "@Exit Logic/Bird's Peak Rock Secret Cave, @Macros/can_play_winds_requiem"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1450,7 +1450,7 @@
           {
             "name": "Warp Maze Cave - First Chest",
             "access_rules": [
-              "@Exit Logic/can_access_diamond_steppe_island_warp_maze_cave"
+              "@Exit Logic/Diamond Steppe Island Warp Maze Cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1461,7 +1461,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_diamond_steppe_island_warp_maze_cave"
+              "@Exit Logic/Diamond Steppe Island Warp Maze Cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1522,7 +1522,7 @@
           {
             "name": "Cave",
             "access_rules": [
-              "@Exit Logic/can_access_shark_island_secret_cave, @Macros/can_defeat_miniblins"
+              "@Exit Logic/Shark Island Secret Cave, @Macros/can_defeat_miniblins"
             ],
             "visibility_rules": [
               "combat_on"
@@ -1543,7 +1543,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_southern_fairy_fountain"
+              "@Exit Logic/Southern Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1597,7 +1597,7 @@
             "chest_unopened_img": "images/items/chest_spiky.png",
             "chest_opened_img": "images/items/chest_spiky_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_ice_ring_isle_secret_cave"
+              "@Exit Logic/Ice Ring Isle Secret Cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1606,7 +1606,7 @@
           {
             "name": "Inner Cave - Chest",
             "access_rules": [
-              "@Exit Logic/can_access_ice_ring_isle_inner_cave, @Macros/has_fire_arrows"
+              "@Exit Logic/Ice Ring Isle Inner Cave, @Macros/has_fire_arrows"
             ],
             "visibility_rules": [
               "puzzlecaves_on, combat_on"
@@ -1677,8 +1677,8 @@
           {
             "name": "Cave",
             "access_rules": [
-              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, @Macros/can_defeat_boko_babas",
-              "@Exit Logic/can_access_cliff_plateau_isles_secret_cave, grapple, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
+              "@Exit Logic/Cliff Plateau Isles Secret Cave, @Macros/can_defeat_boko_babas",
+              "@Exit Logic/Cliff Plateau Isles Secret Cave, grapple, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1689,7 +1689,7 @@
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
-              "@Exit Logic/can_access_cliff_plateau_isles_inner_cave"
+              "@Exit Logic/Cliff Plateau Isles Inner Cave"
             ],
             "visibility_rules": [
               "puzzlecaves_on"
@@ -1733,7 +1733,7 @@
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
               [
-                "@Exit Logic/can_access_horseshoe_island_secret_cave",
+                "@Exit Logic/Horseshoe Island Secret Cave",
                 "@Macros/can_defeat_mothulas",
                 "@Macros/can_defeat_winged_mothulas"
               ]
@@ -1795,7 +1795,7 @@
           {
             "name": "Great Fairy",
             "access_rules": [
-              "@Exit Logic/can_access_outset_fairy_fountain"
+              "@Exit Logic/Outset Fairy Fountain"
             ],
             "visibility_rules": [
               "fairies_on"
@@ -1829,7 +1829,7 @@
             "name": "Savage Labyrinth - Floor 30",
             "access_rules": [
               [
-                "@Exit Logic/can_access_savage_labyrinth",
+                "@Exit Logic/Savage Labyrinth",
                 "@Macros/can_defeat_keese",
                 "@Macros/can_defeat_miniblins",
                 "@Macros/can_defeat_red_chuchus",
@@ -2050,7 +2050,7 @@
             "name": "Cave",
             "access_rules": [
               [
-                "@Exit Logic/can_access_angular_isles_secret_cave",
+                "@Exit Logic/Angular Isles Secret Cave",
                 "@Macros/can_aim_mirror_shield",
                 "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
               ]
@@ -2083,12 +2083,12 @@
             "chest_opened_img": "images/items/chest_metal_gray.png",
             "access_rules": [
               [
-                "@Exit Logic/can_access_boating_course_secret_cave",
+                "@Exit Logic/Boating Course Secret Cave",
                 "@Macros/can_hit_diamond_switches_at_range",
                 "@Macros/can_defeat_miniblins_easily"
               ],
               [
-                "@Exit Logic/can_access_boating_course_secret_cave",
+                "@Exit Logic/Boating Course Secret Cave",
                 "@Macros/can_hit_diamond_switches_at_range",
                 "@General Logic/Hard Logic Precision"
               ]

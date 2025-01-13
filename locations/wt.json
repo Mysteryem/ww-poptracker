@@ -18,14 +18,14 @@
       {
         "name": "Chest Between Two Dirt Patches",
         "access_rules": [
-          "@Exit Logic/can_access_wind_temple, @Macros/can_play_command_melody"
+          "@Exit Logic/Wind Temple, @Macros/can_play_command_melody"
         ]
       },
       {
         "name": "Behind Stone Head in Hidden Upper Room",
         "access_rules": [
           [
-            "@Exit Logic/can_access_wind_temple",
+            "@Exit Logic/Wind Temple",
             "@Macros/can_play_command_melody",
             "boots",
             "@Macros/can_fly_with_deku_leaf_indoors",
@@ -143,7 +143,7 @@
         "chest_opened_img": "images/items/chest_spiky_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_wind_temple_miniboss_arena",
+            "@Exit Logic/Wind Temple Miniboss Arena",
             "@Macros/can_defeat_darknuts",
             "@Macros/can_remove_peahat_armor"
           ]
@@ -177,7 +177,7 @@
         "chest_unopened_img": "images/items/heart2.png",
         "chest_opened_img": "images/items/heart2_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_molgera_boss_arena, @Macros/can_defeat_molgera"
+          "@Exit Logic/Molgera Boss Arena, @Macros/can_defeat_molgera"
         ]
       }
     ]
@@ -187,7 +187,7 @@
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "access_rules": [
-      "@Exit Logic/can_access_wind_temple"
+      "@Exit Logic/Wind Temple"
     ],
     "visibility_rules": [
       "dungeons_on"

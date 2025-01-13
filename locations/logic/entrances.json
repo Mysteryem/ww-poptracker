@@ -1,4 +1,5 @@
 [
+  // TODO: Remove chest images
   {
     "name": "Entrance Logic",
     "chest_unopened_img": "images/items/chest_wood.png",
@@ -10,7 +11,8 @@
         "chest_opened_img": "images/entrances/entrance_dungeon_drc_gray.png",
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Dungeon Entrance on Dragon Roost Island"
           }
         ],
         "map_locations": [
@@ -43,7 +45,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Dungeon Entrance in Forest Haven Sector"
           }
         ],
         "map_locations": [
@@ -63,7 +66,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Dungeon Entrance in Tower of the Gods Sector"
           }
         ],
         "map_locations": [
@@ -83,7 +87,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Dungeon Entrance on Headstone Island"
           }
         ],
         "map_locations": [
@@ -103,7 +108,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Dungeon Entrance on Gale Isle"
           }
         ],
         "map_locations": [
@@ -120,7 +126,7 @@
         "chest_opened_img": "images/items/smallkey_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "grapple",
@@ -129,7 +135,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Miniboss Entrance in Forbidden Woods"
           }
         ],
         "map_locations": [
@@ -153,7 +160,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Miniboss Entrance in Tower of the Gods"
           }
         ],
         "map_locations": [
@@ -173,7 +181,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Miniboss Entrance in Earth Temple"
           }
         ],
         "map_locations": [
@@ -193,7 +202,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Miniboss Entrance in Wind Temple"
           }
         ],
         "map_locations": [
@@ -213,7 +223,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Miniboss Entrance in Hyrule Castle"
           }
         ],
         "map_locations": [
@@ -233,7 +244,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Dragon Roost Cavern"
           }
         ],
         "map_locations": [
@@ -250,7 +262,7 @@
         "chest_opened_img": "images/items/bigkey2_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_forbidden_woods",
+            "@Exit Logic/Forbidden Woods",
             "@Macros/can_fly_with_deku_leaf_indoors",
             "@Macros/can_defeat_boko_babas",
             "@Macros/_can_defeat_door_flowers_or_grapple",
@@ -260,7 +272,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Forbidden Woods"
           }
         ],
         "map_locations": [
@@ -284,7 +297,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Tower of the Gods"
           }
         ],
         "map_locations": [
@@ -316,7 +330,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Forsaken Fortress"
           }
         ],
         "map_locations": [
@@ -336,7 +351,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Earth Temple"
           }
         ],
         "map_locations": [
@@ -363,7 +379,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Boss Entrance in Wind Temple"
           }
         ],
         "map_locations": [
@@ -384,7 +401,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Outset Island"
           }
         ],
         "map_locations": [
@@ -404,7 +422,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Dragon Roost Island"
           }
         ],
         "map_locations": [
@@ -424,7 +443,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Fire Mountain"
           }
         ],
         "map_locations": [
@@ -444,7 +464,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Ice Ring Isle"
           }
         ],
         "map_locations": [
@@ -464,7 +485,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Private Oasis"
           }
         ],
         "map_locations": [
@@ -485,7 +507,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Needle Rock Isle"
           }
         ],
         "map_locations": [
@@ -506,7 +529,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Angular Isles"
           }
         ],
         "map_locations": [
@@ -527,7 +551,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Boating Course"
           }
         ],
         "map_locations": [
@@ -547,7 +572,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Stone Watcher Island"
           }
         ],
         "map_locations": [
@@ -567,7 +593,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Overlook Island"
           }
         ],
         "map_locations": [
@@ -588,7 +615,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Bird's Peak Rock"
           }
         ],
         "map_locations": [
@@ -605,7 +633,8 @@
         "chest_opened_img": "images/entrances/entrance_pawprint_isle_chuchu_gray.png",
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Pawprint Isle"
           }
         ],
         "map_locations": [
@@ -625,7 +654,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Pawprint Isle Side Isle"
           }
         ],
         "map_locations": [
@@ -645,7 +675,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Diamond Steppe Island"
           }
         ],
         "map_locations": [
@@ -665,7 +696,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Bomb Island"
           }
         ],
         "map_locations": [
@@ -685,7 +717,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Rock Spire Isle"
           }
         ],
         "map_locations": [
@@ -706,7 +739,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Shark Island"
           }
         ],
         "map_locations": [
@@ -723,7 +757,8 @@
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Cliff Plateau Isles"
           }
         ],
         "map_locations": [
@@ -743,7 +778,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Horseshoe Island"
           }
         ],
         "map_locations": [
@@ -763,7 +799,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Secret Cave Entrance on Star Island"
           }
         ],
         "map_locations": [
@@ -779,11 +816,12 @@
         "chest_unopened_img": "images/entrances/entrance_ice_ring_inner.png",
         "chest_opened_img": "images/entrances/entrance_hole_gray.png",
         "access_rules": [
-          "@Exit Logic/can_access_ice_ring_isle_secret_cave, boots"
+          "@Exit Logic/Ice Ring Isle Secret Cave, boots"
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Inner Entrance in Ice Ring Isle Secret Cave"
           }
         ],
         "map_locations": [
@@ -800,14 +838,15 @@
         "chest_opened_img": "images/entrances/entrance_cliff_plateau_inner_gray.png",
         "access_rules": [
           [
-            "@Exit Logic/can_access_cliff_plateau_isles_secret_cave",
+            "@Exit Logic/Cliff Plateau Isles Secret Cave",
             "@Macros/can_defeat_boko_babas",
             "@Macros/can_fly_with_deku_leaf_indoors"
           ]
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Inner Entrance in Cliff Plateau Isles Secret Cave"
           }
         ],
         "map_locations": [
@@ -827,7 +866,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Outset Island"
           }
         ],
         "map_locations": [
@@ -847,7 +887,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Thorned Fairy Island"
           }
         ],
         "map_locations": [
@@ -867,7 +908,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Eastern Fairy Island"
           }
         ],
         "map_locations": [
@@ -887,7 +929,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Western Fairy Island"
           }
         ],
         "map_locations": [
@@ -908,7 +951,8 @@
         ],
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Southern Fairy Island"
           }
         ],
         "map_locations": [
@@ -925,7 +969,8 @@
         "chest_opened_img": "images/entrances/entrance_fairy_fountain_gray.png",
         "sections": [
           {
-            "name": "Can Enter"
+            "name": "Can Enter",
+            "hosted_item": "Fairy Fountain Entrance on Northern Fairy Island"
           }
         ],
         "map_locations": [

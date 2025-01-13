@@ -52,5 +52,11 @@
         "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/entrances_chart.png"
+    },
+    {
+        "name": "exits",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/entrances_chart.png"
     }
 ]

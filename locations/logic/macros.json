@@ -153,7 +153,7 @@
         "name": "can_reach_tower_of_the_gods_second_floor",
         "access_rules": [
           [
-            "@Exit Logic/can_access_tower_of_the_gods",
+            "@Exit Logic/Tower of the Gods",
             "bombs",
             "totg_small:1",
             "@Macros/can_defeat_yellow_chuchus"
@@ -178,7 +178,7 @@
         "name": "can_reach_earth_temple_sun_statue_room",
         "access_rules": [
           [
-            "@Exit Logic/can_access_earth_temple",
+            "@Exit Logic/Earth Temple",
             "@Macros/can_play_command_melody",
             "@Macros/can_defeat_red_chuchus",
             "@Macros/can_defeat_green_chuchus",
@@ -239,7 +239,7 @@
         "name": "can_reach_wind_temple_kidnapping_room",
         "access_rules": [
           [
-            "@Exit Logic/can_access_wind_temple",
+            "@Exit Logic/Wind Temple",
             "@Macros/can_play_command_melody",
             "boots",
             "@Macros/can_fly_with_deku_leaf_indoors"
@@ -285,7 +285,7 @@
         "name": "can_reach_dragon_roost_cavern_boss_stairs",
         "access_rules": [
           [
-            "@Exit Logic/can_access_dragon_roost_cavern",
+            "@Exit Logic/Dragon Roost Cavern",
             "drc_small:4",
             "@Macros/_can_reach_dragon_roost_cavern_boss_stairs"
           ]
@@ -781,7 +781,7 @@
         "name": "_can_reach_stone_watcher_cave_darknuts",
         "access_rules": [
           [
-            "@Exit Logic/can_access_stone_watcher_island_secret_cave",
+            "@Exit Logic/Stone Watcher Island Secret Cave",
             "@Macros/can_defeat_armos",
             "@Macros/can_defeat_wizzrobes"
           ]
@@ -791,7 +791,7 @@
         "name": "_can_reach_overlook_island_cave_darknuts",
         "access_rules": [
           [
-            "@Exit Logic/can_access_overlook_island_secret_cave",
+            "@Exit Logic/Overlook Island Secret Cave",
             "@Macros/can_defeat_stalfos",
             "@Macros/can_defeat_wizzrobes",
             "@Macros/can_defeat_red_chuchus",
@@ -898,9 +898,9 @@
       {
         "name": "can_reach_dragon_roost_cavern_gaping_maw",
         "access_rules": [
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:4, @Macros/can_cut_down_hanging_drc_platform",
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/can_fly_with_deku_leaf_indoors, @General Logic/Hard Logic Obscurity",
-          "@Exit Logic/can_access_dragon_roost_cavern, drc_small:1, @Macros/has_ice_arrows, @General Logic/Hard Logic Obscurity, @General Logic/Hard Logic Precision"
+          "@Exit Logic/Dragon Roost Cavern, drc_small:4, @Macros/can_cut_down_hanging_drc_platform",
+          "@Exit Logic/Dragon Roost Cavern, drc_small:1, @Macros/can_fly_with_deku_leaf_indoors, @General Logic/Hard Logic Obscurity",
+          "@Exit Logic/Dragon Roost Cavern, drc_small:1, @Macros/has_ice_arrows, @General Logic/Hard Logic Obscurity, @General Logic/Hard Logic Precision"
         ]
       },
       {
