@@ -75,7 +75,7 @@
       {
         "name": "can_cut_grass",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer",
           "boomerang",
           "bombs"
@@ -91,7 +91,7 @@
       {
         "name": "can_defeat_boko_babas",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "boomerang",
           "hammer",
           "bow",
@@ -103,7 +103,7 @@
       {
         "name": "can_defeat_red_chuchus",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer",
           "bombs",
           "bow"
@@ -121,18 +121,18 @@
       {
         "name": "can_defeat_yellow_chuchus",
         "access_rules": [
-          "boomerang, sword",
+          "boomerang, @Macros/_has_hero_sword",
           "bow",
           "bombs",
-          "@Macros/can_fan_with_deku_leaf, sword",
+          "@Macros/can_fan_with_deku_leaf, @Macros/_has_hero_sword",
           "hammer",
-          "grapple, sword, @General Logic/Normal Logic Obscurity, @General Logic/Hard Logic Precision"
+          "grapple, @Macros/_has_hero_sword, @General Logic/Normal Logic Obscurity, @General Logic/Hard Logic Precision"
         ]
       },
       {
         "name": "can_defeat_floormasters",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "hammer, @General Logic/Normal Logic Precision"
         ]
@@ -214,7 +214,7 @@
       {
         "name": "_can_defeat_blue_bubbles_with_leaf_or_hookshot",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "grapple",
           "hammer"
@@ -310,7 +310,7 @@
       {
         "name": "can_defeat_mothulas",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer"
@@ -359,7 +359,7 @@
       {
         "name": "can_defeat_armos",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer",
@@ -397,7 +397,7 @@
       {
         "name": "can_aim_mirror_shield",
         "access_rules": [
-          "shield_2, sword",
+          "shield_2, @Macros/_has_hero_sword",
           "shield_2, windwaker",
           "shield_2, grapple",
           "shield_2, boomerang",
@@ -432,7 +432,7 @@
       {
         "name": "can_defeat_red_bubbles",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer",
           "bow",
           "bombs",
@@ -491,7 +491,7 @@
       {
         "name": "can_cut_down_outset_trees",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "boomerang",
           "hammer",
           "power, @General Logic/Very Hard Logic Obscurity"
@@ -529,7 +529,7 @@
       {
         "name": "can_defeat_winged_mothulas",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer"
@@ -539,8 +539,8 @@
         "name": "can_defeat_kalle_demos",
         "access_rules": [
           "boomerang",
-          "sequence_break_other, [boomerang], bow, mastersword",// Unsure what the minimum arrows needed are, nor if you can one-cycle with the basic sword like you can with the mastersword
-          "sequence_break_other, [boomerang], bow, quiver, sword"
+          "sequence_break_other, [boomerang], bow, @Macros/_has_any_master_sword",// Unsure what the minimum arrows needed are, nor if you can one-cycle with the basic sword like you can with the mastersword
+          "sequence_break_other, [boomerang], bow, quiver, @Macros/_has_hero_sword"
         ]
       },
       {
@@ -552,7 +552,7 @@
       {
         "name": "can_defeat_darknuts",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "@Macros/has_light_arrows",
           "hammer"
         ]
@@ -573,7 +573,7 @@
       {
         "name": "can_defeat_stalfos",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bombs",
           "hammer",
           "@Macros/has_light_arrows"
@@ -589,7 +589,7 @@
       {
         "name": "can_defeat_jalhalla_poes",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer"
@@ -619,7 +619,7 @@
       {
         "name": "can_defeat_molgera",
         "access_rules": [
-          "hookshot, sword",
+          "hookshot, @Macros/_has_hero_sword",
           "hookshot, bow",
           "hookshot, boomerang",
           "hookshot, grapple",
@@ -630,7 +630,7 @@
       {
         "name": "can_defeat_keese",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hookshot",
           "grapple",
           "boomerang",
@@ -642,7 +642,7 @@
       {
         "name": "can_defeat_miniblins",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "grapple",
           "boomerang",
           "bow",
@@ -653,7 +653,7 @@
       {
         "name": "can_defeat_magtails",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer",
           "boomerang",
           "bombs",
@@ -671,8 +671,8 @@
         "name": "can_defeat_peahats",
         "access_rules": [
           "boomerang",
-          "hookshot, sword",
-          "@Macros/can_fan_with_deku_leaf, sword",
+          "hookshot, @Macros/_has_hero_sword",
+          "@Macros/can_fan_with_deku_leaf, @Macros/_has_hero_sword",
           "hammer",
           "bow",
           "bombs"
@@ -681,7 +681,7 @@
       {
         "name": "can_defeat_wizzrobes",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "hookshot",
           "bombs",
@@ -692,14 +692,14 @@
         "name": "_grapple_or_sword_or_hammer",
         "access_rules": [
           "grapple",
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer"
         ]
       },
       {
         "name": "can_defeat_redeads",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "@Macros/has_light_arrows",
           "hammer",
           "bombs"
@@ -719,7 +719,7 @@
       {
         "name": "can_defeat_miniblins_easily",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "boomerang",
           "bow",
           "bombs",
@@ -729,7 +729,7 @@
       {
         "name": "can_defeat_morths",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "boomerang",
           "bow",
           "hookshot"
@@ -738,7 +738,7 @@
       {
         "name": "can_defeat_kargarocs",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "boomerang",
           "bow",
           "hammer",
@@ -755,7 +755,7 @@
       {
         "name": "can_stun_magtails",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "hammer",
           "boomerang",
           "bombs",
@@ -766,7 +766,7 @@
       {
         "name": "can_defeat_darknuts_easily",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "@Macros/has_light_arrows"
         ]
       },
@@ -828,7 +828,7 @@
       {
         "name": "can_sword_fight_with_orca",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "tww_in_swordless_mode"
         ]
       },
@@ -874,7 +874,7 @@
       {
         "name": "can_defeat_phantom_ganon",
         "access_rules": [
-          "tww_outside_swordless_mode, mastersword",
+          "@Macros/_has_any_master_sword",
           "tww_in_swordless_mode, hammer"
         ]
       },
@@ -887,7 +887,7 @@
       {
         "name": "can_cut_down_hanging_drc_platform",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bombs",
           "bow",
           "hammer",
@@ -995,7 +995,7 @@
       {
         "name": "can_defeat_bokoblins",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer"
@@ -1106,7 +1106,7 @@
       {
         "name": "can_defeat_moblins",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "bombs",
           "hammer"
@@ -1179,7 +1179,7 @@
       {
         "name": "can_defeat_bombchus",
         "access_rules": [
-          "sword",
+          "@Macros/_has_hero_sword",
           "bow",
           "boomerang",
           "hammer",
@@ -1218,7 +1218,7 @@
         "access_rules": [
           "@Macros/can_defeat_blue_bubbles",
           "bow, @General Logic/Normal Logic Obscurity",
-          "sword, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision",
+          "@Macros/_has_hero_sword, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision",
           "hammer, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
         ]
       },
@@ -1307,6 +1307,20 @@
             "@Macros/_can_defeat_molgera_required_boss",
             "@Macros/_can_defeat_helmaroc_king_required_boss"
           ]
+        ]
+      },
+      {
+        "name": "_has_hero_sword",
+        "access_rules": [
+          // Support out-of-logic swords in swords optional mode, or starting inventory/plando swords in swordless mode.
+          "[tww_outside_swordless_mode], sword"
+        ]
+      },
+      {
+        "name": "_has_any_master_sword",
+        "access_rules": [
+          // Support out-of-logic swords in swords optional mode, or starting inventory/plando swords in swordless mode.
+          "[tww_outside_swordless_mode], mastersword"
         ]
       }
     ]

@@ -456,7 +456,7 @@
         "name": "Secret Cave Entrance on Needle Rock Isle",
         "access_rules": [
           "@Macros/has_fire_arrows",
-          "sequence_break_other, [@Macros/has_fire_arrows], sword"// Spin attacks and quick spins slowly reduce the size of the ice
+          "sequence_break_other, [@Macros/has_fire_arrows], @Macros/_has_hero_sword"// Spin attacks and quick spins slowly reduce the size of the ice
         ],
         "sections": [
           {
