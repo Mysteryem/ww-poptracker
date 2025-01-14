@@ -258,6 +258,9 @@ function clearExitMappings()
     end
 end
 
+_total_entrance = 0
+_total_exit = 0
+
 function create_mapping_lua_item(idx, entrance)
     local mapping_item = ScriptHost:CreateLuaItem()
 
@@ -299,10 +302,14 @@ function create_mapping_lua_item(idx, entrance)
     mapping_item.Name = entrance_name
 
     local codeFunc = function(self, code)
+        _total_entrance = _total_entrance + 1
+        if _total_entrance % 1000 == 0 then
+            print(tostring(_total_entrance) .. " (entrance)")
+        end
         return code == entrance_name
     end
     mapping_item.CanProvideCodeFunc = codeFunc
-    mapping_item.ProvidesCodeFunc = codeFunc
+    mapping_item.ProvidesCodeFunc = function(self, code) return code == exit_name end
 
     -- Select the mapping for assignment or clear the exit mapping if already assigned
     mapping_item.OnLeftClickFunc = function (self)
@@ -343,9 +350,15 @@ function create_exit_lua_item(idx)
     exit_item.Name = exit_name
     exit_item.Icon = ImageReference:FromPackRelativePath("images/items/exits/" .. exit_name .. ".png")
 
-    codeFunc = function(self, code) return code == exit_name end
+    codeFunc = function(self, code)
+        _total_exit = _total_exit + 1
+        if _total_exit % 1000 == 0 then
+            print(tostring(_total_exit) .. " (exit)")
+        end
+        return code == exit_name
+    end
     exit_item.CanProvideCodeFunc = codeFunc
-    exit_item.ProvidesCodeFunc = codeFunc
+    exit_item.ProvidesCodeFunc = function(self, code) return code == exit_name end
     exit_item.OnLeftClickFunc = function(self)
         local selected = get_selected_exit_mapping()
         if selected then
