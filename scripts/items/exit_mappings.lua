@@ -73,9 +73,9 @@ function create_entrance_lua_item(idx, entrance)
         -- Note: Must return bool. Returning `nil` or a table is not allowed.
         if code == entrance_name and entrance.Exit then
             -- Provide code when assigned.
-            return true
+            return 1
         else
-            return false
+            return 0
         end
     end
 
@@ -156,9 +156,9 @@ function create_exit_lua_item(idx, exit)
         -- Note: Must return bool. Returning `nil` or a table is not allowed.
         if code == exit_name and exit.Entrance then
             -- Provide code when assigned.
-            return true
+            return 1
         else
-            return false
+            return 0
         end
     end
     exit_item.OnLeftClickFunc = function(self)
