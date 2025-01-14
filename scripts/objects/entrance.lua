@@ -10,9 +10,10 @@ require("scripts/objects/exit")
 require("scripts/utils")
 
 -- Entrances may by set by the user such that they form loops that make access to some areas impossible. All of the
--- exits in the loop will be considered impossible.
+-- entrances/exits in the loop will be considered impossible.
 -- Without entrance randomization, all exits will be vanilla, so no exits will be impossible.
 logically_impossible_exits = {}
+logically_impossible_entrances = {}
 
 Entrance = {}
 Entrance.__index = Entrance
@@ -147,56 +148,66 @@ if ENTRANCE_RANDO_ENABLED then
         -- entrances within the dungeons will be assigned to before the exits into the dungeons will be assigned.
         -- Get the exits that were previously logically impossible, so that some updates can be reduced to only those
         -- which have changed.
-        previously_impossible_exits = logically_impossible_exits
-        -- Reset the global lookup table.
+        local previously_impossible_exits = logically_impossible_exits
+        local previously_impossible_entrances = logically_impossible_entrances
+        -- Reset the global lookup tables.
         logically_impossible_exits = {}
+        logically_impossible_entrances = {}
         debugPrint("Checking for and marking impossible exits")
         for _, exit in ipairs(EXITS) do
             -- An exit without an Entrance is obviously impossible, so we only check exits with an Entrance.
-            if exit.Entrance and not is_exit_possible(exit) then
+            local entrance = exit.Entrance
+            if entrance and not is_exit_possible(exit) then
                 debugPrint("Exit '%s' is impossible to reach", exit.Name)
                 logically_impossible_exits[exit.Name] = true
+                logically_impossible_entrances[entrance.Name] = true
             end
         end
 
         -- Visibly mark impossible exits
         -- Generally, there should be very few icons updated here, so we don't bother with using `runWithBulkUpdate()`.
-        if EXIT_MAPPINGS_LOADED then
+        if EXIT_MAPPINGS_FULLY_LOADED then
             for _, entrance in ipairs(ENTRANCES) do
-                local lua_item = entrance:GetItem()
-                -- It's possible we could be trying to update before all the items have been created in exit_mappings.lua.
-                if lua_item then
-                    -- First process the current exit of this entrance.
-                    local exit = entrance.Exit
-                    -- TODO: Also find the placeholder items and change their overlay colour too
-                    local new_overlay_background
-                    if exit then
-                        if logically_impossible_exits[exit.Name] then
-                            -- TODO: Red overlay or something else that stands out more to indicate that the exit is impossible to
-                            --       reach (or invalid due to being duplicated).
+                -- First process the current exit of this entrance.
+                local exit = entrance.Exit
+                local new_overlay_background
+                if exit then
+                    local exit_name = exit.Name
+                    if logically_impossible_exits[exit_name] then
+                        if not previously_impossible_exits[exit_name] then
                             debugPrint("Marked %s as impossible because its exit %s cannot be reached", entrance.Name, exit.Name)
                             -- Display a red background to signify that the entrance is impossible.
                             new_overlay_background = "#AAEE0000"
-                        else
+                        end
+                    else
+                        if previously_impossible_exits[exit_name] then
+                            -- The exit was previously marked as impossible, but it is now possible, so clear the
+                            -- overlay background.
                             new_overlay_background = "#00000000"
                         end
+                    end
 
-                        -- Also update the background color of the exit's text overlay.
+                    if new_overlay_background then
+                        -- Update the background color of the exit's text overlay.
                         exit:GetItem():SetOverlayBackground(new_overlay_background)
-                    else
-                        new_overlay_background = "#00000000"
                     end
+                elseif previously_impossible_entrances[entrance.Name] then
+                    -- The entrance was previously marked as impossible, but it is now possible, so clear the overlay
+                    -- background.
+                    new_overlay_background = "#00000000"
+                end
 
+                if new_overlay_background then
                     -- Update the background color of the entrance's text overlay.
-                    lua_item:SetOverlayBackground(new_overlay_background)
+                    entrance:GetItem():SetOverlayBackground(new_overlay_background)
+                end
 
-                    -- Now, if the vanilla exit is not assigned to an entrance, also process it, because there is not
-                    -- another entrance that will process it.
-                    local vanilla_exit = entrance.VanillaExit
-                    -- Ensure that every unassigned exit loses its red background if it was previously impossible.
-                    if vanilla_exit.Entrance == nil and previously_impossible_exits[vanilla_exit.Name] then
-                        vanilla_exit:GetItem():SetOverlayBackground("#00000000")
-                    end
+                -- Finally, if the vanilla exit is not assigned to an entrance, also process it, because there is not
+                -- another entrance that will process it.
+                local vanilla_exit = entrance.VanillaExit
+                -- Ensure that every unassigned exit loses its red background if it was previously impossible.
+                if vanilla_exit.Entrance == nil and previously_impossible_exits[vanilla_exit.Name] then
+                    vanilla_exit:GetItem():SetOverlayBackground("#00000000")
                 end
             end
         end
