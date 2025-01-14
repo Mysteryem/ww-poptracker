@@ -1,6 +1,9 @@
 -- Globals
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
+-- Allow deferred updates with Tracker.BulkUpdate = true
+Tracker.AllowDeferredLogicUpdate = true
+
 -- Utils.
 require("scripts/utils")
 
