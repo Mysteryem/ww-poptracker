@@ -454,7 +454,7 @@
           {
             "name": "Mrs. Marie - Give 1 Joy Pendant",
             "access_rules": [
-              "spoils"
+              "spoils, @Macros/can_farm_joy_pendants"
             ],
             "visibility_rules": [
               "spoilssq_on"
