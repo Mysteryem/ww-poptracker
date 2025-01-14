@@ -410,7 +410,7 @@ if ENTRANCE_RANDO_ENABLED then
             new_name = self.Name .. " -> " .. exit.Name
             new_text_overlay = "to " .. exit.ShortName
         else
-            new_name = "Click to assign " .. self.Name
+            new_name = "Click to assign an exit to " .. self.Name
             new_text_overlay = ""
         end
         if item.Name ~= new_name then

@@ -37,9 +37,9 @@ if ENTRANCE_RANDO_ENABLED then
     end
 
     function Exit.Select(exit, prevent_currently_selected_item_icon_update)
-        local currently_selected = Exit.SelectedEntrance
+        local currently_selected = Exit.SelectedExit
 
-        Entrance.SelectedEntrance = entrance
+        Exit.SelectedExit = exit
 
         -- Update the item icons for the exits.
         if currently_selected and not prevent_currently_selected_item_icon_update then
@@ -75,7 +75,7 @@ if ENTRANCE_RANDO_ENABLED then
             new_name = entrance.Name .. " -> " .. self.Name
             new_text_overlay = "from " .. entrance.ShortName
         else
-            new_name = self.Name .. " (to assign, click an entrance and then the exit)"
+            new_name = "Click to assign " .. self.Name .. " to an entrance"
             new_text_overlay = ""
         end
         if item.Name ~= new_name then

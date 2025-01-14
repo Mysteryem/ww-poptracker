@@ -82,10 +82,26 @@ function create_entrance_lua_item(idx, entrance)
     -- Select the mapping for assignment or clear the exit mapping if already assigned
     mapping_item.OnLeftClickFunc = function(self)
         local exit = entrance.Exit
-        if not exit then
-            if entrance:IsSelected() then
-                -- Deselect the entrance if it was selected.
-                Entrance.Select(nil)
+
+        if exit ~= nil then
+            -- Already assigned. Use right click to unassign.
+            return
+        end
+
+        if entrance:IsSelected() then
+            -- Deselect the entrance if it was selected.
+            Entrance.Select(nil)
+        else
+            local selected_exit = Exit.SelectedExit
+            if selected_exit then
+                -- Assign the selected exit to this entrance.
+
+                -- Dont' update the icon for `selected_exit` because the Assign() call will do so too.
+                Exit.Select(nil, true)
+                entrance:Assign(selected_exit)
+
+                -- Switch back to the exits tab.
+                Tracker:UiHint("ActivateTab", "Exits")
             else
                 -- Select the entrance.
                 Entrance.Select(entrance)
@@ -146,25 +162,46 @@ function create_exit_lua_item(idx, exit)
         end
     end
     exit_item.OnLeftClickFunc = function(self)
-        local selected_entrance = Entrance.SelectedEntrance
-        if selected_entrance then
-            if exit.Entrance then
-                -- Can't pick an exit that has already been assigned
-                return
-            end
+        local entrance = exit.Entrance
 
-            -- Don't update the icon for `selected_entrance` because the Assign() call will do so too.
-            Entrance.Select(nil, true)
-            selected_entrance:Assign(exit)
-
-            -- Switch back to the Entrances tab.
-            Tracker:UiHint("ActivateTab", "Entrances")
+        if entrance ~= nil then
+            -- Already assigned. Use right click to unassign.
+            return
         end
-        -- TODO: Allow selecting an exit and then clicking an entrance to assign in reverse.
+
+        if exit:IsSelected() then
+            -- Deselect the exit if it was selected.
+            Exit.Select(nil)
+        else
+            local selected_entrance = Entrance.SelectedEntrance
+            if selected_entrance then
+                -- Assign this exit to the selected entrance.
+
+                -- Don't update the icon for `selected_entrance` because the Assign() call will do so too.
+                Entrance.Select(nil, true)
+                selected_entrance:Assign(exit)
+
+                -- Switch back to the Entrances tab.
+                Tracker:UiHint("ActivateTab", "Entrances")
+            else
+                -- Select the exit.
+                Exit.Select(exit)
+
+                -- Swap to the entrances tab to the user can pick the entrance to assign to.
+                Tracker:UiHint("ActivateTab", "Entrances")
+            end
+        end
     end
 
     exit_item.OnRightClickFunc = function(self)
-        -- TODO: Allow unassigning by right clicking.
+        local entrance = exit.Entrance
+        if entrance then
+            -- Unassign this exit from its entrance.
+            entrance:Unassign()
+        elseif exit:IsSelected() then
+            -- Deselect the exit if it was selected.
+            Exit.Select(nil)
+        end
     end
 
     exit_item.ItemState.exit_idx = idx
