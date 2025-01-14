@@ -443,7 +443,13 @@ function onClear(slot_data)
 end
 
 function onClearHandler(slot_data)
-    pauseLogicUntilNextFrame("AP onClearHandler")
+    -- Logic is paused until the second next frame rather than the first.
+    -- When connecting to AP, no frames occur between onClear and the onItem and onLocation calls, so unpausing logic on
+    -- the next frame works.
+    -- But, when already connected to AP and the pack is reloaded, a single frame occurs between onClear and the onItem
+    -- and onLocation calls.
+    -- To cover both cases, logic is only unpaused on the second next frame.
+    pauseLogicUntilFrame("AP onClearHandler", 2)
     onClear(slot_data)
 end
 

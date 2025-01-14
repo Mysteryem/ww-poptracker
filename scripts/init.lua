@@ -9,7 +9,7 @@ require("scripts/utils")
 
 -- Pause logic updates until the next frame, so that auto-save state can load without causing updates and so that
 -- entrance rando luaitems can be created and set up without causing update.
-pauseLogicUntilNextFrame("tracker post-init")
+pauseLogicUntilFrame("tracker post-init")
 
 -- Logic
 require("scripts/logic/logic")

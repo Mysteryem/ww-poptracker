@@ -77,13 +77,17 @@ local function pauseLogicUpdatesFinished(name)
     forceLogicUpdate()
 end
 
--- When specified, finishedCallback(...) is called after the timer is finished. The duration argument is
--- likely to be greater than the requested timer duration because the timer only updates each frame.
-function runNextFrame(name, func, ...)
+function runAfterNFrames(name, n_frames, func, ...)
+    -- n_frames = 0 runs on the next frame, n_frames = 1 runs on the frame after that.
     -- Can't access the varargs from within frameCallback, so pack them into a local table and unpack in frameCallback.
     local arg = {...}
 
     local function frameCallback(_seconds_since_last_frame)
+        if n_frames > 0 then
+            n_frames = n_frames - 1
+            debugPrint("Skipped a frame for %s, %i frames to go.", name, n_frames)
+            return
+        end
         ScriptHost:RemoveOnFrameHandler(name)
         func(name, table.unpack(arg))
     end
@@ -91,10 +95,14 @@ function runNextFrame(name, func, ...)
     ScriptHost:AddOnFrameHandler(name, frameCallback)
 end
 
--- Disable tracker logic updates until the next frame and then re-enable tracker logic updates.
-function pauseLogicUntilNextFrame(name)
+function runNextFrame(name, func, ...)
+    runAfterNFrames(name, 0, func, ...)
+end
+
+-- Disable tracker logic updates until num_frames frames have passed, and then re-enable tracker logic updates.
+function pauseLogicUntilFrame(name, num_frames)
     Tracker.BulkUpdate = true
-    runNextFrame(name, pauseLogicUpdatesFinished)
+    runAfterNFrames(name, (num_frames or 1) - 1, pauseLogicUpdatesFinished)
 end
 
 function runWithBulkUpdate(func, ...)
