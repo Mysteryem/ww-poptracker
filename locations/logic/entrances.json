@@ -127,7 +127,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 606,
+            "x": 632,
             "y": 157
           }
         ]
@@ -150,7 +150,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 606,
+            "x": 632,
             "y": 242
           }
         ]
@@ -169,7 +169,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 606,
+            "x": 632,
             "y": 327
           }
         ]
@@ -188,7 +188,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 606,
+            "x": 632,
             "y": 412
           }
         ]
