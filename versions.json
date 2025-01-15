@@ -1,6 +1,18 @@
 {
   "versions": [
     {
+      "package_version": "1.1.0",
+      "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.1.0.zip",
+      "sha256": "ae1a2cc6807e86d2dacd0042cdb390edcadd92637c5b7d426d5b7de46560af60",
+      "changelog": [
+        "Updated logic to match v2.6.x",
+        "New 3D TotG and FF maps",
+        "Displaying higher difficulties of Logic Precision/Obscurity as out-of-logic is now limited to only showing the next difficulties by default",
+        "Entrance Rando variant reworked",
+        "Required Bosses support"
+      ]
+    },
+    {
       "package_version": "1.0.2",
       "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.0.2.zip",
       "sha256": "3bbad4f5782867588fe471f03268c2571a414e6b84b18873dbb8d94711777228",
