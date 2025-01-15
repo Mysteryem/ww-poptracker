@@ -874,7 +874,7 @@
       {
         "name": "can_defeat_phantom_ganon",
         "access_rules": [
-          "@Macros/_has_any_master_sword",
+          "tww_outside_swordless_mode, mastersword",
           "tww_in_swordless_mode, hammer"
         ]
       },
