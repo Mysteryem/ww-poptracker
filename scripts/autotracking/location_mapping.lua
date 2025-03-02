@@ -259,8 +259,8 @@ LOCATION_MAPPING = {
 
     [0x2380e5] = "@The Great Sea/Rock Spire Isle/Cave",
     [0x2380e6] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 500 Item",
-    [0x2380e7] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 900 Item",
-    [0x2380e8] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 950 Item",
+    [0x2380e7] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 950 Item",
+    [0x2380e8] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 900 Item",
     [0x2380e9] = "@The Great Sea/Rock Spire Isle/Western Lookout Platform - Destroy the Cannons",
     [0x2380ea] = "@The Great Sea/Rock Spire Isle/Eastern Lookout Platform - Destroy the Cannons",
     [0x2380eb] = "@The Great Sea/Rock Spire Isle/Center Lookout Platform",
