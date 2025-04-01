@@ -485,7 +485,7 @@ if ENTRANCE_RANDO_ENABLED then
 
     function Entrance:UpdateLocationSection()
         debugPrint("%s: Updating section", self.Name)
-        entrance_location_section = Tracker:FindObjectForCode(self.EntranceLogicPath .. "/Can Enter")
+        local entrance_location_section = Tracker:FindObjectForCode(self.EntranceLogicPath .. "/Can Enter")
         if self.Exit then
             -- Clear the section
             entrance_location_section.AvailableChestCount = entrance_location_section.AvailableChestCount - 1
