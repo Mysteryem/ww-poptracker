@@ -1,498 +1,499 @@
 [
-	{
-		"name": "Dungeons",
-		"type": "toggle",
-        "img": "images/items/bigkey2.png",
-        "codes": "dungeons,dungeons_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Tingle Chests",
-		"type": "toggle",
-		"img": "images/items/item31.png",
-		"codes": "tinglechests,tinglechests_on",
-        "initial_active_state": true
-	},
-    {
-        "name": "Enable Tuner Logic",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "stages": [
-            {
-                "img": "images/items/item7_off.png",
-                "codes": "tunerlogic,tunerlogic_off"
-            },
-            {
-                "img": "images/items/item7.png",
-                "codes": "tunerlogic,tunerlogic_on",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
-		"name": "Dungeon Secrets",
-		"type": "toggle",
-		"img": "images/items/pot.png",
-		"codes": "secretpot,secretpot_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Puzzle Secret Caves",
-		"type": "toggle",
-		"img": "images/items/item24.png",
-		"codes": "puzzlecaves,puzzlecaves_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Combat Secret Caves",
-		"type": "toggle",
-		"img": "images/items/item21.png",
-		"codes": "combat,combat_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Savage Labyrinth",
-		"type": "toggle",
-		"img": "images/items/item27.png",
-		"codes": "labyrinth,labyrinth_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Great Fairies",
-		"type": "toggle",
-		"img": "images/items/greatfairy.png",
-		"codes": "fairies,fairies_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Short Sidequests",
-		"type": "toggle",
-		"img": "images/items/item8.png",
-		"codes": "shortsq,shortsq_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Long Sidequests",
-		"type": "toggle",
-		"img": "images/items/item8_2.png",
-		"codes": "longsq,longsq_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Spoils Trading",
-		"type": "toggle",
-		"img": "images/items/item4.png",
-		"codes": "spoilssq,spoilssq_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Minigames",
-		"type": "toggle",
-		"img": "images/items/item18.png",
-		"codes": "minigames,minigames_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Battlesquid Minigame",
-		"type": "toggle",
-		"img": "images/items/sploosh.png",
-		"codes": "sploosh,sploosh_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Free Gifts",
-		"type": "toggle",
-		"img": "images/items/tingle.png",
-		"codes": "gifts,gifts_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Mail",
-		"type": "toggle",
-		"img": "images/items/mail.png",
-		"codes": "mail,mail_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Lookout Platforms and Rafts",
-		"type": "toggle",
-		"img": "images/items/lookout.png",
-		"codes": "lookouts,lookouts_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Submarines",
-		"type": "toggle",
-		"img": "images/items/submarine.png",
-		"codes": "submarines,submarines_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Eye Reef Chests",
-		"type": "toggle",
-		"img": "images/items/reef.png",
-		"codes": "reefs,reefs_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Big Octos And Gunboats",
-		"type": "toggle",
-		"img": "images/items/octo.png",
-		"codes": "octos,octos_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Sunken Treasure (From Triforce Charts)",
-		"type": "toggle",
-		"img": "images/items/chart2.png",
-		"codes": "triforcesalvage,triforcesalvage_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Sunken Treasure (From Treasure Charts)",
-		"type": "toggle",
-		"img": "images/items/chart1.png",
-		"codes": "treasuresalvage,treasuresalvage_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Expensive Purchases",
-		"type": "toggle",
-		"img": "images/items/beedle.png",
-		"codes": "expensive,expensive_on",
-		"initial_active_state": true
-	},
-    {
-		"name": "Island Puzzles",
-		"type": "toggle",
-		"img": "images/items/item11.png",
-		"codes": "islandpuzzles,islandpuzzles_on",
-        "initial_active_state": true
-	},
-    {
-		"name": "Miscellaneous",
-		"type": "toggle",
-		"img": "images/items/item23.png",
-		"codes": "misc,misc_on",
-		"initial_active_state": true
-	},
-	{
-		"name": "Logic Obscurity",
-		"type": "progressive",
-		"allow_disabled": false,
-		"loop": false,
-		"codes": "tww_obscure",
-		"stages": [
-			{
-				"name": "Logic Obscurity - None",
-				"img": "images/items/settings/logic_none.png",
-				"img_mods": "overlay|images/items/settings/logic_obscure.png",
-				"codes": "tww_obscure_0"
-			},
-			{
-				"name": "Logic Obscurity - Normal",
-				"img": "images/items/settings/logic_normal.png",
-				"img_mods": "overlay|images/items/settings/logic_obscure.png",
-				"codes": "tww_obscure_1"
-			},
-			{
-				"name": "Logic Obscurity - Hard",
-				"img": "images/items/settings/logic_hard.png",
-				"img_mods": "overlay|images/items/settings/logic_obscure.png",
-				"codes": "tww_obscure_2"
-			},
-			{
-				"name": "Logic Obscurity - Very Hard",
-				"img": "images/items/settings/logic_very_hard.png",
-				"img_mods": "overlay|images/items/settings/logic_obscure.png",
-				"codes": "tww_obscure_3"
-			}
-		]
-	},
-	{
-		"name": "Logic Precision",
-		"type": "progressive",
-		"allow_disabled": false,
-		"loop": false,
-		"codes": "tww_precise",
-		"stages": [
-			{
-				"name": "Logic Precision - None",
-				"img": "images/items/settings/logic_none.png",
-				"img_mods": "overlay|images/items/settings/logic_precise.png",
-				"codes": "tww_precise_0"
-			},
-			{
-				"name": "Logic Precision - Normal",
-				"img": "images/items/settings/logic_normal.png",
-				"img_mods": "overlay|images/items/settings/logic_precise.png",
-				"codes": "tww_precise_1"
-			},
-			{
-				"name": "Logic Precision - Hard",
-				"img": "images/items/settings/logic_hard.png",
-				"img_mods": "overlay|images/items/settings/logic_precise.png",
-				"codes": "tww_precise_2"
-			},
-			{
-				"name": "Logic Precision - Very Hard",
-				"img": "images/items/settings/logic_very_hard.png",
-				"img_mods": "overlay|images/items/settings/logic_precise.png",
-				"codes": "tww_precise_3"
-			}
-		]
-	},
-	{
-		"name": "Sword Mode",
-		"type": "progressive",
-		"allow_disabled": false,
-		"codes": "tww_sword_mode",
-		"stages": [
-			{
-				"name": "Sword Mode - Start with Sword",
-				"codes": "tww_outside_swordless_mode",
-				"img": "images/items/item21.png"
-			},
-			{
-				"name": "Sword Mode - No Starting Sword",
-				"img": "images/items/item21.png",
-				"img_mods": "@disabled"
-			},
-			{
-				"name": "Sword Mode - Swords Optional",
-				"img": "images/items/item20.png",
-				"img_mods": "overlay|images/items/item21.png|@disabled",
-				"inherit_codes": false,
-				"codes": "tww_in_swordless_mode"
-			},
-			{
-				"name": "Sword Mode - Swordless",
-				"img": "images/items/item20.png",
-				"inherit_codes": false,
-				"codes": "tww_in_swordless_mode"
-			}
-		]
-	},
-	{
-		"name": "Skip Rematch Bosses",
-		"type": "toggle",
-		"img": "images/items/settings/skip_rematches.png",
-		"codes": "tww_rematch_bosses_skipped",
-		"initial_active_state": true
-	},
-	{
-		"name": "Swift Sail Changes Wind",
-		"type": "toggle",
-		"img": "images/items/item1.png",
-		"codes": "swift_sail"
-	},
-	{
-		"name": "Show Swift Sail Sequence Breaks",
-		"type": "toggle",
-		"img": "images/items/item1.png",
-		"codes": "sequence_break_swift_sail"
-	},
-	{
-		"name": "Show Ballad of Gales Sequence Breaks",
-		"type": "toggle",
-		"img": "images/items/song1.png",
-		"codes": "sequence_break_ballad"
-	},
-	{
-		"name": "Show Song of Passing Sequence Breaks",
-		"type": "toggle",
-		"img": "images/items/song5.png",
-		"codes": "sequence_break_passing"
-	},
-	{
-		"name": "Show Spoils without Grappling Hook Sequence Breaks",
-		"type": "toggle",
-		"img": "images/items/item3.png",
-		"codes": "sequence_break_spoils_grapple"
-	},
-	{
-		"name": "Show Other Sequence Breaks",
-		"type": "toggle",
-		"img": "images/items/item13.png",
-		"codes": "sequence_break_other"
-	},
-	{
-		"name": "Automatic Map Switching",
-		"type": "toggle",
-		"img": "images/items/chart_tingle.png",
-		"codes": "setting_map_tracking",
-		"initial_active_state": true
-	},
-	{
-		"name": "Only Map Switch To Dungeons",
-		"type": "toggle",
-		"img": "images/items/bigkey2.png",
-		"codes": "setting_map_tracking_dungeons_only"
-	},
-	{
-		"name": "Load Checked Entrances From Archipelago",
-		"type": "toggle",
-		"img": "images/items/item0.png",
-		"codes": "setting_load_exit_assignments_from_ap",
-		"initial_active_state": true
-	},
-	{
-		"name": "Show Higher Logic Difficulties",// Applies to both Logic Precision and Obscurity
-		"type": "progressive",
-		"allow_disabled": false,
-		"initial_stage_idx": 1,
-		"loop": true,
-		"stages": [
-			{
-				"name": "Show Only Current Logic Difficulties",
-				"img": "images/items/settings/show_out_of_logic_none.png",
-				"codes": "setting_show_higher_logic"
-			},
-			{
-				"name": "Show Next Logic Difficulties",
-				"img": "images/items/settings/show_out_of_logic_plus_one.png",
-				"codes": "setting_show_higher_logic_next_only_enabled"
-			},
-			{
-				"name": "Show All Logic Difficulties",
-				"img": "images/items/settings/show_out_of_logic_all.png",
-				"codes": "setting_show_higher_logic_next_only_disabled"
-			}
-		]
-	},
-	{
-		"name": "Required Bosses (Race Mode)",
-		"type": "progressive",
-		"allow_disabled": false,
-		"loop": true,
-		"codes": "required_bosses",
-		"stages": [
-			{
-				"name": "Disabled - Puppet Ganon Open",
-				"img": "images/items/settings/ganon_boss_door_open_96_64.png",
-				"codes": "required_bosses_disabled"
-			},
-			{
-				"name": "Enabled - Defeat Bosses To Unlock Puppet Ganon",
-				"img": "images/items/settings/ganon_boss_door_closed_96_64.png",
-				"codes": "required_bosses_enabled",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Dragon Roost Cavern Required",
-		"type": "progressive",
-		"allow_disabled": false,
-		"codes": "required_bosses_drc",
-		"stages": [
-			{
-				"name": "Dragon Roost Cavern Not Required",
-				"img": "images/items/settings/gohma_48.png",
-				"codes": "required_bosses_drc_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/gohma_48.png",
-				"codes": "required_bosses_drc_required",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Forbidden Woods Required",
-		"codes": "required_bosses_fw",
-		"type": "progressive",
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Forbidden Woods Not Required",
-				"img": "images/items/settings/kalle_demos_48.png",
-				"codes": "required_bosses_fw_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/kalle_demos_48.png",
-				"codes": "required_bosses_fw_required",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Tower of the Gods Required",
-		"codes": "required_bosses_totg",
-		"type": "progressive",
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Tower of the Gods Not Required",
-				"img": "images/items/settings/gohdan_48.png",
-				"codes": "required_bosses_totg_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/gohdan_48.png",
-				"codes": "required_bosses_totg_required",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Earth Temple Required",
-		"codes": "required_bosses_et",
-		"type": "progressive",
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Earth Temple Not Required",
-				"img": "images/items/settings/jalhalla_48.png",
-				"codes": "required_bosses_et_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/jalhalla_48.png",
-				"codes": "required_bosses_et_required",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Wind Temple Required",
-		"codes": "required_bosses_wt",
-		"type": "progressive",
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Wind Temple Not Required",
-				"img": "images/items/settings/molgera_48.png",
-				"codes": "required_bosses_wt_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/molgera_48.png",
-				"codes": "required_bosses_wt_required",
-				"inherit_codes": false
-			}
-		]
-	},
-	{
-		"name": "Forsaken Fortress Required",
-		"codes": "required_bosses_ff",
-		"type": "progressive",
-		"allow_disabled": false,
-		"stages": [
-			{
-				"name": "Forsaken Fortress Not Required",
-				"img": "images/items/settings/helmaroc_king_48.png",
-				"codes": "required_bosses_ff_excluded",
-				"img_mods": "@disabled"
-			},
-			{
-				"img": "images/items/settings/helmaroc_king_48.png",
-				"codes": "required_bosses_ff_required",
-				"inherit_codes": false
-			}
-		]
-	}
+  {
+    "name": "Dungeons",
+    "type": "toggle",
+    "img": "images/items/bigkey2.png",
+    "codes": "dungeons,dungeons_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Tingle Chests",
+    "type": "toggle",
+    "img": "images/items/item31.png",
+    "codes": "tinglechests,tinglechests_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Enable Tuner Logic",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/item7_off.png",
+        "codes": "tunerlogic,tunerlogic_off"
+      },
+      {
+        "img": "images/items/item7.png",
+        "codes": "tunerlogic,tunerlogic_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Secrets",
+    "type": "toggle",
+    "img": "images/items/pot.png",
+    "codes": "secretpot,secretpot_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Puzzle Secret Caves",
+    "type": "toggle",
+    "img": "images/items/item24.png",
+    "codes": "puzzlecaves,puzzlecaves_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Combat Secret Caves",
+    "type": "toggle",
+    "img": "images/items/item21.png",
+    "codes": "combat,combat_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Savage Labyrinth",
+    "type": "toggle",
+    "img": "images/items/item27.png",
+    "codes": "labyrinth,labyrinth_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Great Fairies",
+    "type": "toggle",
+    "img": "images/items/greatfairy.png",
+    "codes": "fairies,fairies_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Short Sidequests",
+    "type": "toggle",
+    "img": "images/items/item8.png",
+    "codes": "shortsq,shortsq_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Long Sidequests",
+    "type": "toggle",
+    "img": "images/items/item8_2.png",
+    "codes": "longsq,longsq_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Spoils Trading",
+    "type": "toggle",
+    "img": "images/items/item4.png",
+    "codes": "spoilssq,spoilssq_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Minigames",
+    "type": "toggle",
+    "img": "images/items/item18.png",
+    "codes": "minigames,minigames_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Battlesquid Minigame",
+    "type": "toggle",
+    "img": "images/items/sploosh.png",
+    "codes": "sploosh,sploosh_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Free Gifts",
+    "type": "toggle",
+    "img": "images/items/tingle.png",
+    "codes": "gifts,gifts_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Mail",
+    "type": "toggle",
+    "img": "images/items/mail.png",
+    "codes": "mail,mail_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Lookout Platforms and Rafts",
+    "type": "toggle",
+    "img": "images/items/lookout.png",
+    "codes": "lookouts,lookouts_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Submarines",
+    "type": "toggle",
+    "img": "images/items/submarine.png",
+    "codes": "submarines,submarines_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Eye Reef Chests",
+    "type": "toggle",
+    "img": "images/items/reef.png",
+    "codes": "reefs,reefs_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Big Octos And Gunboats",
+    "type": "toggle",
+    "img": "images/items/octo.png",
+    "codes": "octos,octos_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Sunken Treasure (From Triforce Charts)",
+    "type": "toggle",
+    "img": "images/items/chart2.png",
+    "codes": "triforcesalvage,triforcesalvage_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Sunken Treasure (From Treasure Charts)",
+    "type": "toggle",
+    "img": "images/items/chart1.png",
+    "codes": "treasuresalvage,treasuresalvage_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Expensive Purchases",
+    "type": "toggle",
+    "img": "images/items/beedle.png",
+    "codes": "expensive,expensive_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Island Puzzles",
+    "type": "toggle",
+    "img": "images/items/item11.png",
+    "codes": "islandpuzzles,islandpuzzles_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Miscellaneous",
+    "type": "toggle",
+    "img": "images/items/item23.png",
+    "codes": "misc,misc_on",
+    "initial_active_state": true
+  },
+  {
+    "name": "Logic Obscurity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": false,
+    "codes": "tww_obscure",
+    "stages": [
+      {
+        "name": "Logic Obscurity - None",
+        "img": "images/items/settings/logic_none.png",
+        "img_mods": "overlay|images/items/settings/logic_obscure.png",
+        "codes": "tww_obscure_0"
+      },
+      {
+        "name": "Logic Obscurity - Normal",
+        "img": "images/items/settings/logic_normal.png",
+        "img_mods": "overlay|images/items/settings/logic_obscure.png",
+        "codes": "tww_obscure_1"
+      },
+      {
+        "name": "Logic Obscurity - Hard",
+        "img": "images/items/settings/logic_hard.png",
+        "img_mods": "overlay|images/items/settings/logic_obscure.png",
+        "codes": "tww_obscure_2"
+      },
+      {
+        "name": "Logic Obscurity - Very Hard",
+        "img": "images/items/settings/logic_very_hard.png",
+        "img_mods": "overlay|images/items/settings/logic_obscure.png",
+        "codes": "tww_obscure_3"
+      }
+    ]
+  },
+  {
+    "name": "Logic Precision",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": false,
+    "codes": "tww_precise",
+    "stages": [
+      {
+        "name": "Logic Precision - None",
+        "img": "images/items/settings/logic_none.png",
+        "img_mods": "overlay|images/items/settings/logic_precise.png",
+        "codes": "tww_precise_0"
+      },
+      {
+        "name": "Logic Precision - Normal",
+        "img": "images/items/settings/logic_normal.png",
+        "img_mods": "overlay|images/items/settings/logic_precise.png",
+        "codes": "tww_precise_1"
+      },
+      {
+        "name": "Logic Precision - Hard",
+        "img": "images/items/settings/logic_hard.png",
+        "img_mods": "overlay|images/items/settings/logic_precise.png",
+        "codes": "tww_precise_2"
+      },
+      {
+        "name": "Logic Precision - Very Hard",
+        "img": "images/items/settings/logic_very_hard.png",
+        "img_mods": "overlay|images/items/settings/logic_precise.png",
+        "codes": "tww_precise_3"
+      }
+    ]
+  },
+  {
+    "name": "Sword Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "tww_sword_mode",
+    "stages": [
+      {
+        "name": "Sword Mode - Start with Sword",
+        "codes": "tww_outside_swordless_mode",
+        "img": "images/items/item21.png"
+      },
+      {
+        "name": "Sword Mode - No Starting Sword",
+        "img": "images/items/item21.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "name": "Sword Mode - Swords Optional",
+        "img": "images/items/item20.png",
+        "img_mods": "overlay|images/items/item21.png|@disabled",
+        "inherit_codes": false,
+        "codes": "tww_in_swordless_mode"
+      },
+      {
+        "name": "Sword Mode - Swordless",
+        "img": "images/items/item20.png",
+        "inherit_codes": false,
+        "codes": "tww_in_swordless_mode"
+      }
+    ]
+  },
+  {
+    "name": "Skip Rematch Bosses",
+    "type": "toggle",
+    "img": "images/items/settings/skip_rematches.png",
+    "codes": "tww_rematch_bosses_skipped",
+    "initial_active_state": true
+  },
+  {
+    "name": "Swift Sail Changes Wind",
+    "type": "toggle",
+    "img": "images/items/item1.png",
+    "codes": "swift_sail"
+  },
+  {
+    "name": "Show Swift Sail Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/item1.png",
+    "codes": "sequence_break_swift_sail"
+  },
+  {
+    "name": "Show Ballad of Gales Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/song1.png",
+    "codes": "sequence_break_ballad"
+  },
+  {
+    "name": "Show Song of Passing Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/song5.png",
+    "codes": "sequence_break_passing"
+  },
+  {
+    "name": "Show Spoils without Grappling Hook Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/item3.png",
+    "codes": "sequence_break_spoils_grapple"
+  },
+  {
+    "name": "Show Other Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/item13.png",
+    "codes": "sequence_break_other"
+  },
+  {
+    "name": "Automatic Map Switching",
+    "type": "toggle",
+    "img": "images/items/chart_tingle.png",
+    "codes": "setting_map_tracking",
+    "initial_active_state": true
+  },
+  {
+    "name": "Only Map Switch To Dungeons",
+    "type": "toggle",
+    "img": "images/items/bigkey2.png",
+    "codes": "setting_map_tracking_dungeons_only"
+  },
+  {
+    "name": "Load Checked Entrances From Archipelago",
+    "type": "toggle",
+    "img": "images/items/item0.png",
+    "codes": "setting_load_exit_assignments_from_ap",
+    "initial_active_state": true
+  },
+  {
+    // Applies to both Logic Precision and Obscurity
+    "name": "Show Higher Logic Difficulties",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
+    "loop": true,
+    "stages": [
+      {
+        "name": "Show Only Current Logic Difficulties",
+        "img": "images/items/settings/show_out_of_logic_none.png",
+        "codes": "setting_show_higher_logic"
+      },
+      {
+        "name": "Show Next Logic Difficulties",
+        "img": "images/items/settings/show_out_of_logic_plus_one.png",
+        "codes": "setting_show_higher_logic_next_only_enabled"
+      },
+      {
+        "name": "Show All Logic Difficulties",
+        "img": "images/items/settings/show_out_of_logic_all.png",
+        "codes": "setting_show_higher_logic_next_only_disabled"
+      }
+    ]
+  },
+  {
+    "name": "Required Bosses (Race Mode)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "codes": "required_bosses",
+    "stages": [
+      {
+        "name": "Disabled - Puppet Ganon Open",
+        "img": "images/items/settings/ganon_boss_door_open_96_64.png",
+        "codes": "required_bosses_disabled"
+      },
+      {
+        "name": "Enabled - Defeat Bosses To Unlock Puppet Ganon",
+        "img": "images/items/settings/ganon_boss_door_closed_96_64.png",
+        "codes": "required_bosses_enabled",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dragon Roost Cavern Required",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "required_bosses_drc",
+    "stages": [
+      {
+        "name": "Dragon Roost Cavern Not Required",
+        "img": "images/items/settings/gohma_48.png",
+        "codes": "required_bosses_drc_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/gohma_48.png",
+        "codes": "required_bosses_drc_required",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Forbidden Woods Required",
+    "codes": "required_bosses_fw",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Forbidden Woods Not Required",
+        "img": "images/items/settings/kalle_demos_48.png",
+        "codes": "required_bosses_fw_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/kalle_demos_48.png",
+        "codes": "required_bosses_fw_required",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Tower of the Gods Required",
+    "codes": "required_bosses_totg",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Tower of the Gods Not Required",
+        "img": "images/items/settings/gohdan_48.png",
+        "codes": "required_bosses_totg_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/gohdan_48.png",
+        "codes": "required_bosses_totg_required",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Earth Temple Required",
+    "codes": "required_bosses_et",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Earth Temple Not Required",
+        "img": "images/items/settings/jalhalla_48.png",
+        "codes": "required_bosses_et_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/jalhalla_48.png",
+        "codes": "required_bosses_et_required",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Wind Temple Required",
+    "codes": "required_bosses_wt",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Wind Temple Not Required",
+        "img": "images/items/settings/molgera_48.png",
+        "codes": "required_bosses_wt_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/molgera_48.png",
+        "codes": "required_bosses_wt_required",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Forsaken Fortress Required",
+    "codes": "required_bosses_ff",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Forsaken Fortress Not Required",
+        "img": "images/items/settings/helmaroc_king_48.png",
+        "codes": "required_bosses_ff_excluded",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/settings/helmaroc_king_48.png",
+        "codes": "required_bosses_ff_required",
+        "inherit_codes": false
+      }
+    ]
+  }
 ]
