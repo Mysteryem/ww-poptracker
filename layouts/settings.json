@@ -16,7 +16,7 @@
             "content": [
               {
                 "type": "group",
-                "header": "Progression",
+                "header": "Locations",
                 "dock": "left",
                 "content": {
                   "type": "layout",
