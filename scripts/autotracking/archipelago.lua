@@ -348,9 +348,6 @@ function onClear(slot_data)
         -- current stage name for map switching.
         Archipelago:Get({visited_stages_key})
 
-        -- onClear is always run with Tracker.BulkUpdate as part of onClearHandler, so there is no need to unassign
-        -- exits and assign vanilla exits using runWithBulkUpdate.
-
         -- Unassign all entrances. Don't update logic, but do update items and sections.
         -- If an entrance is randomized and has not been discovered by the player, then it won't be updated after this
         -- point (until the player discovers where the entrance leads). Therefore, the items and sections need to be
@@ -633,8 +630,7 @@ function onRetrieved(key, new_value, old_value)
                     end
                 end
 
-                -- Run with `Tracker.BulkUpdate = true` to reduce updates from changing item names/icons.
-                runWithBulkUpdate(loadRetrievedExitAssignments)
+                loadRetrievedExitAssignments()
                 -- Update impossible exits and cause logic to update.
                 Entrance.UpdateEntranceLogic()
             end

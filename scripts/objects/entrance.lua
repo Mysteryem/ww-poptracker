@@ -165,7 +165,6 @@ if ENTRANCE_RANDO_ENABLED then
         end
 
         -- Visibly mark impossible exits
-        -- Generally, there should be very few icons updated here, so we don't bother with using `runWithBulkUpdate()`.
         if EXIT_MAPPINGS_FULLY_LOADED then
             for _, entrance in ipairs(ENTRANCES) do
                 -- First process the current exit of this entrance.

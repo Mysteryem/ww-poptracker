@@ -227,7 +227,7 @@ local function createItemsAndUnassignAllExits()
 end
 
 
-runWithBulkUpdate(createItemsAndUnassignAllExits)
+createItemsAndUnassignAllExits()
 
 -- Can be used to check if LuaItems are guaranteed to exist yet.
 EXIT_MAPPINGS_FULLY_LOADED = true
