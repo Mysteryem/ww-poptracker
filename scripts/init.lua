@@ -1,15 +1,11 @@
 -- Globals
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
--- Allow deferred updates with Tracker.BulkUpdate = true
-Tracker.AllowDeferredLogicUpdate = true
+-- Only update logic at most once per frame
+Tracker.AllowDeferredLogicUpdate = true -- TODO: Remove as of 0.31.0 which enables this by default.
 
 -- Utils.
 require("scripts/utils")
-
--- Pause logic updates until the next frame, so that auto-save state can load without causing updates and so that
--- entrance rando luaitems can be created and set up without causing update.
-pauseLogicUntilFrame("tracker post-init")
 
 -- Logic
 require("scripts/logic/logic")
@@ -73,8 +69,6 @@ if ENTRANCE_RANDO_ENABLED then
     -- ourselves.
     local function update_entrances_after_load()
         print("Updating entrances after load")
-        -- todo: with the logic being paused for a frame at the start, that forces a logic update, but then
-        -- UpdateEntranceLogic() forces an update again afterwards.
         Entrance.UpdateEntranceLogic()
         print("Updated entrances after load")
     end

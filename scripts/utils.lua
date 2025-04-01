@@ -71,12 +71,6 @@ function forceLogicUpdate()
     end
 end
 
-local function pauseLogicUpdatesFinished(name)
-    print(name .. ": Re-enabling tracker logic updates")
-    Tracker.BulkUpdate = false
-    forceLogicUpdate()
-end
-
 function runAfterNFrames(name, n_frames, func, ...)
     -- n_frames = 0 runs on the next frame, n_frames = 1 runs on the frame after that.
     -- Can't access the varargs from within frameCallback, so pack them into a local table and unpack in frameCallback.
@@ -97,12 +91,6 @@ end
 
 function runNextFrame(name, func, ...)
     runAfterNFrames(name, 0, func, ...)
-end
-
--- Disable tracker logic updates until num_frames frames have passed, and then re-enable tracker logic updates.
-function pauseLogicUntilFrame(name, num_frames)
-    Tracker.BulkUpdate = true
-    runAfterNFrames(name, (num_frames or 1) - 1, pauseLogicUpdatesFinished)
 end
 
 function runWithBulkUpdate(func, ...)

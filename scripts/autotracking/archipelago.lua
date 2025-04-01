@@ -442,17 +442,6 @@ function onClear(slot_data)
     end
 end
 
-function onClearHandler(slot_data)
-    -- Logic is paused until the second next frame rather than the first.
-    -- When connecting to AP, no frames occur between onClear and the onItem and onLocation calls, so unpausing logic on
-    -- the next frame works.
-    -- But, when already connected to AP and the pack is reloaded, a single frame occurs between onClear and the onItem
-    -- and onLocation calls.
-    -- To cover both cases, logic is only unpaused on the second next frame.
-    pauseLogicUntilFrame("AP onClearHandler", 2)
-    onClear(slot_data)
-end
-
 function entranceRandoAssignEntranceFromVisitedStage(stage_name, prevent_logic_update)
     local exit_name = STAGE_NAME_TO_EXIT_NAME[stage_name]
     if not exit_name then
@@ -655,7 +644,7 @@ end
 
 -- add AP callbacks
 -- un-/comment as needed
-Archipelago:AddClearHandler("clear handler", onClearHandler)
+Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddBouncedHandler("bounced handler", onBounced)
 Archipelago:AddRetrievedHandler("retrieved handler", onRetrieved)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
