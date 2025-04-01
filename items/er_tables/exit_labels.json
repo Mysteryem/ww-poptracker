@@ -1,0 +1,547 @@
+// Copy from EXITS in exit.lua
+// Find:
+//    Exit\.New\("([^"]+)".+
+//
+// Replace:
+//    {
+//        "name": "$1",
+//        "type": "static",
+//        "img": "images/items/entrance_label_placeholder.png",
+//        "codes": "Label placeholder for $1"
+//    },
+//    {
+//        "name": "$1",
+//        "type": "static",
+//        "img": "images/items/entrance_label_placeholder.png",
+//        "codes": "Label for $1"
+//    },
+[
+    {
+        "name": "Dragon Roost Cavern",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dragon Roost Cavern"
+    },
+    {
+        "name": "Dragon Roost Cavern",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dragon Roost Cavern"
+    },
+    {
+        "name": "Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Forbidden Woods"
+    },
+    {
+        "name": "Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Forbidden Woods"
+    },
+    {
+        "name": "Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Tower of the Gods"
+    },
+    {
+        "name": "Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Tower of the Gods"
+    },
+    {
+        "name": "Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Earth Temple"
+    },
+    {
+        "name": "Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Earth Temple"
+    },
+    {
+        "name": "Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Wind Temple"
+    },
+    {
+        "name": "Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Wind Temple"
+    },
+    {
+        "name": "Forbidden Woods Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Forbidden Woods Miniboss Arena"
+    },
+    {
+        "name": "Forbidden Woods Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Forbidden Woods Miniboss Arena"
+    },
+    {
+        "name": "Tower of the Gods Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Tower of the Gods Miniboss Arena"
+    },
+    {
+        "name": "Tower of the Gods Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Tower of the Gods Miniboss Arena"
+    },
+    {
+        "name": "Earth Temple Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Earth Temple Miniboss Arena"
+    },
+    {
+        "name": "Earth Temple Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Earth Temple Miniboss Arena"
+    },
+    {
+        "name": "Wind Temple Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Wind Temple Miniboss Arena"
+    },
+    {
+        "name": "Wind Temple Miniboss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Wind Temple Miniboss Arena"
+    },
+    {
+        "name": "Master Sword Chamber",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Master Sword Chamber"
+    },
+    {
+        "name": "Master Sword Chamber",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Master Sword Chamber"
+    },
+    {
+        "name": "Gohma Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Gohma Boss Arena"
+    },
+    {
+        "name": "Gohma Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Gohma Boss Arena"
+    },
+    {
+        "name": "Kalle Demos Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Kalle Demos Boss Arena"
+    },
+    {
+        "name": "Kalle Demos Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Kalle Demos Boss Arena"
+    },
+    {
+        "name": "Gohdan Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Gohdan Boss Arena"
+    },
+    {
+        "name": "Gohdan Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Gohdan Boss Arena"
+    },
+    {
+        "name": "Helmaroc King Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Helmaroc King Boss Arena"
+    },
+    {
+        "name": "Helmaroc King Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Helmaroc King Boss Arena"
+    },
+    {
+        "name": "Jalhalla Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Jalhalla Boss Arena"
+    },
+    {
+        "name": "Jalhalla Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Jalhalla Boss Arena"
+    },
+    {
+        "name": "Molgera Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Molgera Boss Arena"
+    },
+    {
+        "name": "Molgera Boss Arena",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Molgera Boss Arena"
+    },
+    {
+        "name": "Savage Labyrinth",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Savage Labyrinth"
+    },
+    {
+        "name": "Savage Labyrinth",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Savage Labyrinth"
+    },
+    {
+        "name": "Dragon Roost Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dragon Roost Island Secret Cave"
+    },
+    {
+        "name": "Dragon Roost Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dragon Roost Island Secret Cave"
+    },
+    {
+        "name": "Fire Mountain Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fire Mountain Secret Cave"
+    },
+    {
+        "name": "Fire Mountain Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fire Mountain Secret Cave"
+    },
+    {
+        "name": "Ice Ring Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Ice Ring Isle Secret Cave"
+    },
+    {
+        "name": "Ice Ring Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Ice Ring Isle Secret Cave"
+    },
+    {
+        "name": "Cabana Labyrinth",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Cabana Labyrinth"
+    },
+    {
+        "name": "Cabana Labyrinth",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Cabana Labyrinth"
+    },
+    {
+        "name": "Needle Rock Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Needle Rock Isle Secret Cave"
+    },
+    {
+        "name": "Needle Rock Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Needle Rock Isle Secret Cave"
+    },
+    {
+        "name": "Angular Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Angular Isles Secret Cave"
+    },
+    {
+        "name": "Angular Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Angular Isles Secret Cave"
+    },
+    {
+        "name": "Boating Course Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boating Course Secret Cave"
+    },
+    {
+        "name": "Boating Course Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boating Course Secret Cave"
+    },
+    {
+        "name": "Stone Watcher Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Stone Watcher Island Secret Cave"
+    },
+    {
+        "name": "Stone Watcher Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Stone Watcher Island Secret Cave"
+    },
+    {
+        "name": "Overlook Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Overlook Island Secret Cave"
+    },
+    {
+        "name": "Overlook Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Overlook Island Secret Cave"
+    },
+    {
+        "name": "Bird's Peak Rock Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Bird's Peak Rock Secret Cave"
+    },
+    {
+        "name": "Bird's Peak Rock Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Bird's Peak Rock Secret Cave"
+    },
+    {
+        "name": "Pawprint Isle Chuchu Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Pawprint Isle Chuchu Cave"
+    },
+    {
+        "name": "Pawprint Isle Chuchu Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Pawprint Isle Chuchu Cave"
+    },
+    {
+        "name": "Pawprint Isle Wizzrobe Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Pawprint Isle Wizzrobe Cave"
+    },
+    {
+        "name": "Pawprint Isle Wizzrobe Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Pawprint Isle Wizzrobe Cave"
+    },
+    {
+        "name": "Diamond Steppe Island Warp Maze Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Diamond Steppe Island Warp Maze Cave"
+    },
+    {
+        "name": "Diamond Steppe Island Warp Maze Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Diamond Steppe Island Warp Maze Cave"
+    },
+    {
+        "name": "Bomb Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Bomb Island Secret Cave"
+    },
+    {
+        "name": "Bomb Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Bomb Island Secret Cave"
+    },
+    {
+        "name": "Rock Spire Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Rock Spire Isle Secret Cave"
+    },
+    {
+        "name": "Rock Spire Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Rock Spire Isle Secret Cave"
+    },
+    {
+        "name": "Shark Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Shark Island Secret Cave"
+    },
+    {
+        "name": "Shark Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Shark Island Secret Cave"
+    },
+    {
+        "name": "Cliff Plateau Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Cliff Plateau Isles Secret Cave"
+    },
+    {
+        "name": "Cliff Plateau Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Cliff Plateau Isles Secret Cave"
+    },
+    {
+        "name": "Horseshoe Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Horseshoe Island Secret Cave"
+    },
+    {
+        "name": "Horseshoe Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Horseshoe Island Secret Cave"
+    },
+    {
+        "name": "Star Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Star Island Secret Cave"
+    },
+    {
+        "name": "Star Island Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Star Island Secret Cave"
+    },
+    {
+        "name": "Ice Ring Isle Inner Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Ice Ring Isle Inner Cave"
+    },
+    {
+        "name": "Ice Ring Isle Inner Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Ice Ring Isle Inner Cave"
+    },
+    {
+        "name": "Cliff Plateau Isles Inner Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Cliff Plateau Isles Inner Cave"
+    },
+    {
+        "name": "Cliff Plateau Isles Inner Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Cliff Plateau Isles Inner Cave"
+    },
+    {
+        "name": "Outset Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Outset Fairy Fountain"
+    },
+    {
+        "name": "Outset Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Outset Fairy Fountain"
+    },
+    {
+        "name": "Thorned Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Thorned Fairy Fountain"
+    },
+    {
+        "name": "Thorned Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Thorned Fairy Fountain"
+    },
+    {
+        "name": "Eastern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Eastern Fairy Fountain"
+    },
+    {
+        "name": "Eastern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Eastern Fairy Fountain"
+    },
+    {
+        "name": "Western Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Western Fairy Fountain"
+    },
+    {
+        "name": "Western Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Western Fairy Fountain"
+    },
+    {
+        "name": "Southern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Southern Fairy Fountain"
+    },
+    {
+        "name": "Southern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Southern Fairy Fountain"
+    },
+    {
+        "name": "Northern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Northern Fairy Fountain"
+    },
+    {
+        "name": "Northern Fairy Fountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Northern Fairy Fountain"
+    }
+]

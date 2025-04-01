@@ -133,6 +133,8 @@ function create_entrance_lua_item(idx, entrance)
     mapping_item:SetOverlayFontSize(10)
 
     mapping_item.Icon = ImageReference:FromPackRelativePath(entrance.IconPath)
+
+    entrance:InitializeLabels()
 end
 
 -- Create a new exit lua item. These are the placeholder items that users click on to assign a specific exit after
@@ -209,6 +211,8 @@ function create_exit_lua_item(idx, exit)
     exit_item:SetOverlayAlign("left")
     -- Looks to be about the same size as section text.
     exit_item:SetOverlayFontSize(10)
+
+    exit:InitializeLabels()
 end
 
 local function createItemsAndUnassignAllExits()

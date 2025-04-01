@@ -1,0 +1,59 @@
+{
+  "inner_entrances_and_fairy_entrances_table_placeholder_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "210,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["Label placeholder for Inner Entrance in Cliff Plateau Isles Secret Cave"],
+      ["Label placeholder for Inner Entrance in Ice Ring Isle Secret Cave"],
+      [],
+      ["Label placeholder for Fairy Fountain Entrance on Northern Fairy Island"],
+      ["Label placeholder for Fairy Fountain Entrance on Eastern Fairy Island"],
+      ["Label placeholder for Fairy Fountain Entrance on Southern Fairy Island"],
+      ["Label placeholder for Fairy Fountain Entrance on Western Fairy Island"],
+      ["Label placeholder for Fairy Fountain Entrance on Outset Island"],
+      ["Label placeholder for Fairy Fountain Entrance on Thorned Fairy Island"]
+    ]
+  },
+  "inner_entrances_and_fairy_entrances_table_spacer_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "20,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      [],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"]
+    ]
+  },
+  "inner_entrances_and_fairy_entrances_table_label_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "210,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["Label for Inner Entrance in Cliff Plateau Isles Secret Cave"],
+      ["Label for Inner Entrance in Ice Ring Isle Secret Cave"],
+      [],
+      ["Label for Fairy Fountain Entrance on Northern Fairy Island"],
+      ["Label for Fairy Fountain Entrance on Eastern Fairy Island"],
+      ["Label for Fairy Fountain Entrance on Southern Fairy Island"],
+      ["Label for Fairy Fountain Entrance on Western Fairy Island"],
+      ["Label for Fairy Fountain Entrance on Outset Island"],
+      ["Label for Fairy Fountain Entrance on Thorned Fairy Island"]
+    ]
+  }
+}

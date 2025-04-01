@@ -15,11 +15,14 @@ pauseLogicUntilFrame("tracker post-init")
 require("scripts/logic/logic")
 print("Logic scripts loaded")
 
--- Lua Items
--- The base variant does not have entrance rando, so these items and their global functions are not needed and loading
--- exit_mappings.lua will return `false`.
-if require("scripts/items/exit_mappings") then
-    print("Exit mapping lua items loaded")
+-- ER items
+if ENTRANCE_RANDO_ENABLED then
+    -- Table items
+    Tracker:AddItems("items/er_tables/entrance_labels.json")
+    Tracker:AddItems("items/er_tables/exit_labels.json")
+    Tracker:AddItems("items/er_tables/shared.json")
+    -- Lua Items
+    require("scripts/items/exit_mappings")
 end
 
 -- Items
@@ -50,6 +53,12 @@ Tracker:AddLocations("locations/salvage.json")
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/items_variant.json") -- itemgrid layouts that change depending on the active variant.
 Tracker:AddLayouts("layouts/entrances.json")
+Tracker:AddLayouts("layouts/er_tables/dungeon_entrances.json")
+Tracker:AddLayouts("layouts/er_tables/secret_cave_entrances.json")
+Tracker:AddLayouts("layouts/er_tables/inner_and_fairy_entrances.json")
+Tracker:AddLayouts("layouts/er_tables/dungeon_exits.json")
+Tracker:AddLayouts("layouts/er_tables/secret_cave_exits.json")
+Tracker:AddLayouts("layouts/er_tables/inner_and_fairy_exits.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")

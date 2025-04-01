@@ -1,0 +1,59 @@
+{
+  "inner_exits_and_fairy_exits_table_placeholder_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "210,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["Label placeholder for Cliff Plateau Isles Inner Cave"],
+      ["Label placeholder for Ice Ring Isle Inner Cave"],
+      [],
+      ["Label placeholder for Northern Fairy Fountain"],
+      ["Label placeholder for Eastern Fairy Fountain"],
+      ["Label placeholder for Southern Fairy Fountain"],
+      ["Label placeholder for Western Fairy Fountain"],
+      ["Label placeholder for Outset Fairy Fountain"],
+      ["Label placeholder for Thorned Fairy Fountain"]
+    ]
+  },
+  "inner_exits_and_fairy_exits_table_spacer_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "20,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      [],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"],
+      ["ER Table Arrow"]
+    ]
+  },
+  "inner_exits_and_fairy_exits_table_label_grid": {
+    "type": "itemgrid",
+    "margin": "0,0,0,0",
+    "item_margin": "0,0",
+    "item_size": "210,15",
+    "item_h_alignment": "center",
+    "item_v_alignment": "center",
+    "rows": [
+      ["Label for Cliff Plateau Isles Inner Cave"],
+      ["Label for Ice Ring Isle Inner Cave"],
+      [],
+      ["Label for Northern Fairy Fountain"],
+      ["Label for Eastern Fairy Fountain"],
+      ["Label for Southern Fairy Fountain"],
+      ["Label for Western Fairy Fountain"],
+      ["Label for Outset Fairy Fountain"],
+      ["Label for Thorned Fairy Fountain"]
+    ]
+  }
+}

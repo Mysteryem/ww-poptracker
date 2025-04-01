@@ -110,6 +110,45 @@ if ENTRANCE_RANDO_ENABLED then
         self:UpdateExitItemNameAndOverlayText(item)
     end
 
+    function Exit:GetLabelItem()
+        return Tracker:FindObjectForCode("Label for " .. self.Name)
+    end
+
+    function Exit:GetLabelPlaceholderItem()
+        return Tracker:FindObjectForCode("Label placeholder for " .. self.Name)
+    end
+
+    function Exit:InitializeLabels()
+        -- The label on the left that shows the assigned entrance.
+        local label = self:GetLabelItem()
+        label:SetOverlayAlign("right")
+        label:SetOverlayColor("#FFAAAAAA")
+
+        -- The label on the right that shows the exit name.
+        local label_placeholder = self:GetLabelPlaceholderItem()
+        label_placeholder:SetOverlayAlign("left")
+        label_placeholder:SetOverlay(self.ShortName)
+        label_placeholder:SetOverlayColor("#FFFFFFFF")
+    end
+
+    function Exit:UpdateLabelItem()
+        local item = self:GetLabelItem()
+        if item == nil then
+            debugPrint("Could not get label item for exit %s", self.Name)
+            return
+        end
+        local entrance = self.Entrance
+        local new_text_overlay
+        if entrance then
+            new_text_overlay = entrance.ShortName
+            item:SetOverlayBackground("#00000000")
+        else
+            new_text_overlay = "                                                 "
+            item:SetOverlayBackground("#FF222222")
+        end
+        item:SetOverlay(new_text_overlay)
+    end
+
     function Exit:UpdateLocationSection()
         debugPrint("%s: Updating section", self.Name)
         exit_location_section = Tracker:FindObjectForCode(self.ExitLogicPath .. "/Entered                                                 ")

@@ -1,0 +1,547 @@
+// Copy from ENTRANCES in entrance.lua
+// Find:
+//   Entrance\.New\("([^"]+)".+
+//
+// Replace:
+//    {
+//        "name": "$1",
+//        "type": "static",
+//        "img": "images/items/entrance_label_placeholder.png",
+//        "codes": "Label placeholder for $1"
+//    },
+//    {
+//        "name": "$1",
+//        "type": "static",
+//        "img": "images/items/entrance_label_placeholder.png",
+//        "codes": "Label for $1"
+//    },
+[
+    {
+        "name": "Dungeon Entrance on Dragon Roost Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dungeon Entrance on Dragon Roost Island"
+    },
+    {
+        "name": "Dungeon Entrance on Dragon Roost Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dungeon Entrance on Dragon Roost Island"
+    },
+        {
+        "name": "Dungeon Entrance in Forest Haven Sector",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dungeon Entrance in Forest Haven Sector"
+    },
+    {
+        "name": "Dungeon Entrance in Forest Haven Sector",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dungeon Entrance in Forest Haven Sector"
+    },
+        {
+        "name": "Dungeon Entrance in Tower of the Gods Sector",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dungeon Entrance in Tower of the Gods Sector"
+    },
+    {
+        "name": "Dungeon Entrance in Tower of the Gods Sector",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dungeon Entrance in Tower of the Gods Sector"
+    },
+        {
+        "name": "Dungeon Entrance on Headstone Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dungeon Entrance on Headstone Island"
+    },
+    {
+        "name": "Dungeon Entrance on Headstone Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dungeon Entrance on Headstone Island"
+    },
+        {
+        "name": "Dungeon Entrance on Gale Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Dungeon Entrance on Gale Isle"
+    },
+    {
+        "name": "Dungeon Entrance on Gale Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Dungeon Entrance on Gale Isle"
+    },
+        {
+        "name": "Miniboss Entrance in Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Miniboss Entrance in Forbidden Woods"
+    },
+    {
+        "name": "Miniboss Entrance in Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Miniboss Entrance in Forbidden Woods"
+    },
+        {
+        "name": "Miniboss Entrance in Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Miniboss Entrance in Tower of the Gods"
+    },
+    {
+        "name": "Miniboss Entrance in Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Miniboss Entrance in Tower of the Gods"
+    },
+        {
+        "name": "Miniboss Entrance in Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Miniboss Entrance in Earth Temple"
+    },
+    {
+        "name": "Miniboss Entrance in Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Miniboss Entrance in Earth Temple"
+    },
+        {
+        "name": "Miniboss Entrance in Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Miniboss Entrance in Wind Temple"
+    },
+    {
+        "name": "Miniboss Entrance in Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Miniboss Entrance in Wind Temple"
+    },
+        {
+        "name": "Miniboss Entrance in Hyrule Castle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Miniboss Entrance in Hyrule Castle"
+    },
+    {
+        "name": "Miniboss Entrance in Hyrule Castle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Miniboss Entrance in Hyrule Castle"
+    },
+        {
+        "name": "Boss Entrance in Dragon Roost Cavern",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Dragon Roost Cavern"
+    },
+    {
+        "name": "Boss Entrance in Dragon Roost Cavern",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Dragon Roost Cavern"
+    },
+        {
+        "name": "Boss Entrance in Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Forbidden Woods"
+    },
+    {
+        "name": "Boss Entrance in Forbidden Woods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Forbidden Woods"
+    },
+        {
+        "name": "Boss Entrance in Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Tower of the Gods"
+    },
+    {
+        "name": "Boss Entrance in Tower of the Gods",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Tower of the Gods"
+    },
+        {
+        "name": "Boss Entrance in Forsaken Fortress",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Forsaken Fortress"
+    },
+    {
+        "name": "Boss Entrance in Forsaken Fortress",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Forsaken Fortress"
+    },
+        {
+        "name": "Boss Entrance in Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Earth Temple"
+    },
+    {
+        "name": "Boss Entrance in Earth Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Earth Temple"
+    },
+        {
+        "name": "Boss Entrance in Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Boss Entrance in Wind Temple"
+    },
+    {
+        "name": "Boss Entrance in Wind Temple",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Boss Entrance in Wind Temple"
+    },
+        {
+        "name": "Secret Cave Entrance on Outset Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Outset Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Outset Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Outset Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Dragon Roost Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Dragon Roost Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Dragon Roost Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Dragon Roost Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Fire Mountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Fire Mountain"
+    },
+    {
+        "name": "Secret Cave Entrance on Fire Mountain",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Fire Mountain"
+    },
+        {
+        "name": "Secret Cave Entrance on Ice Ring Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Ice Ring Isle"
+    },
+    {
+        "name": "Secret Cave Entrance on Ice Ring Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Ice Ring Isle"
+    },
+        {
+        "name": "Secret Cave Entrance on Private Oasis",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Private Oasis"
+    },
+    {
+        "name": "Secret Cave Entrance on Private Oasis",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Private Oasis"
+    },
+        {
+        "name": "Secret Cave Entrance on Needle Rock Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Needle Rock Isle"
+    },
+    {
+        "name": "Secret Cave Entrance on Needle Rock Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Needle Rock Isle"
+    },
+        {
+        "name": "Secret Cave Entrance on Angular Isles",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Angular Isles"
+    },
+    {
+        "name": "Secret Cave Entrance on Angular Isles",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Angular Isles"
+    },
+        {
+        "name": "Secret Cave Entrance on Boating Course",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Boating Course"
+    },
+    {
+        "name": "Secret Cave Entrance on Boating Course",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Boating Course"
+    },
+        {
+        "name": "Secret Cave Entrance on Stone Watcher Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Stone Watcher Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Stone Watcher Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Stone Watcher Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Overlook Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Overlook Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Overlook Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Overlook Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Bird's Peak Rock",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Bird's Peak Rock"
+    },
+    {
+        "name": "Secret Cave Entrance on Bird's Peak Rock",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Bird's Peak Rock"
+    },
+        {
+        "name": "Secret Cave Entrance on Pawprint Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Pawprint Isle"
+    },
+    {
+        "name": "Secret Cave Entrance on Pawprint Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Pawprint Isle"
+    },
+        {
+        "name": "Secret Cave Entrance on Pawprint Isle Side Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Pawprint Isle Side Isle"
+    },
+    {
+        "name": "Secret Cave Entrance on Pawprint Isle Side Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Pawprint Isle Side Isle"
+    },
+        {
+        "name": "Secret Cave Entrance on Diamond Steppe Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Diamond Steppe Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Diamond Steppe Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Diamond Steppe Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Bomb Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Bomb Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Bomb Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Bomb Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Rock Spire Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Rock Spire Isle"
+    },
+    {
+        "name": "Secret Cave Entrance on Rock Spire Isle",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Rock Spire Isle"
+    },
+        {
+        "name": "Secret Cave Entrance on Shark Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Shark Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Shark Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Shark Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Cliff Plateau Isles",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Cliff Plateau Isles"
+    },
+    {
+        "name": "Secret Cave Entrance on Cliff Plateau Isles",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Cliff Plateau Isles"
+    },
+        {
+        "name": "Secret Cave Entrance on Horseshoe Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Horseshoe Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Horseshoe Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Horseshoe Island"
+    },
+        {
+        "name": "Secret Cave Entrance on Star Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Secret Cave Entrance on Star Island"
+    },
+    {
+        "name": "Secret Cave Entrance on Star Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Secret Cave Entrance on Star Island"
+    },
+        {
+        "name": "Inner Entrance in Ice Ring Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Inner Entrance in Ice Ring Isle Secret Cave"
+    },
+    {
+        "name": "Inner Entrance in Ice Ring Isle Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Inner Entrance in Ice Ring Isle Secret Cave"
+    },
+        {
+        "name": "Inner Entrance in Cliff Plateau Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Inner Entrance in Cliff Plateau Isles Secret Cave"
+    },
+    {
+        "name": "Inner Entrance in Cliff Plateau Isles Secret Cave",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Inner Entrance in Cliff Plateau Isles Secret Cave"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Outset Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Outset Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Outset Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Outset Island"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Thorned Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Thorned Fairy Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Thorned Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Thorned Fairy Island"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Eastern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Eastern Fairy Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Eastern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Eastern Fairy Island"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Western Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Western Fairy Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Western Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Western Fairy Island"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Southern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Southern Fairy Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Southern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Southern Fairy Island"
+    },
+        {
+        "name": "Fairy Fountain Entrance on Northern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label placeholder for Fairy Fountain Entrance on Northern Fairy Island"
+    },
+    {
+        "name": "Fairy Fountain Entrance on Northern Fairy Island",
+        "type": "static",
+        "img": "images/items/entrance_label_placeholder.png",
+        "codes": "Label for Fairy Fountain Entrance on Northern Fairy Island"
+    }
+]

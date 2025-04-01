@@ -258,6 +258,8 @@ if ENTRANCE_RANDO_ENABLED then
             if not prevent_item_updates then
                 self:UpdateItem()
                 current_exit:UpdateItem()
+                self:UpdateLabelItem()
+                current_exit:UpdateLabelItem()
             end
 
             if not prevent_logic_update then
@@ -333,6 +335,7 @@ if ENTRANCE_RANDO_ENABLED then
             -- The entrance's section is already cleared, so only update the current exit.
             current_exit:UpdateLocationSection()
             current_exit:UpdateItem()
+            current_exit:UpdateLabelItem()
         else
             -- current_exit is nil, so the entrance's section was not cleared before, but should be cleared now that an
             -- exit has been assigned.
@@ -342,6 +345,10 @@ if ENTRANCE_RANDO_ENABLED then
         -- Update the items for the entrance and exit.
         self:UpdateItem()
         new_exit:UpdateItem()
+
+        -- Update the items for the entrance and exit labels.
+        self:UpdateLabelItem()
+        new_exit:UpdateLabelItem()
 
         if not prevent_logic_update then
             Entrance.UpdateEntranceLogic()
@@ -435,6 +442,45 @@ if ENTRANCE_RANDO_ENABLED then
         self:UpdateEntranceItemIconMods(item)
         self:UpdateEntranceItemExitIndex(item)
         self:UpdateEntranceItemNameAndOverlayText(item)
+    end
+
+    function Entrance:GetLabelItem()
+        return Tracker:FindObjectForCode("Label for " .. self.Name)
+    end
+
+    function Entrance:GetLabelPlaceholderItem()
+        return Tracker:FindObjectForCode("Label placeholder for " .. self.Name)
+    end
+
+    function Entrance:InitializeLabels()
+        -- The label on the left that shows the entrance name.
+        local label_placeholder = self:GetLabelPlaceholderItem()
+        label_placeholder:SetOverlayAlign("right")
+        label_placeholder:SetOverlay(self.ShortName)
+        label_placeholder:SetOverlayColor("#FFFFFFFF")
+
+        -- The label on the right that shows the assigned exit.
+        local label = self:GetLabelItem()
+        label:SetOverlayAlign("left")
+        label:SetOverlayColor("#FFAAAAAA")
+    end
+
+    function Entrance:UpdateLabelItem()
+        local item = self:GetLabelItem()
+        if item == nil then
+            debugPrint("Could not get label item for entrance %s", self.Name)
+            return
+        end
+        local exit = self.Exit
+        local new_text_overlay
+        if exit then
+            new_text_overlay = exit.ShortName
+            item:SetOverlayBackground("#00000000")
+        else
+            new_text_overlay = "                                                 "
+            item:SetOverlayBackground("#FF222222")
+        end
+        item:SetOverlay(new_text_overlay)
     end
 
     function Entrance:UpdateLocationSection()
