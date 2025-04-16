@@ -365,7 +365,7 @@
         ]
     },
     {
-        "name": "Progressive Quiver",
+        "name": "Quiver Capacity Upgrade",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,
@@ -383,7 +383,7 @@
         ]
     },
     {
-        "name": "Progressive Bomb Bag",
+        "name": "Bomb Bag Capacity Upgrade",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,
@@ -401,7 +401,7 @@
         ]
     },
     {
-        "name": "Progressive Wallet",
+        "name": "Wallet Capacity Upgrade",
         "type": "progressive",
         "allow_disabled": true,
         "initial_stage_idx": 0,
