@@ -1,9 +1,6 @@
 -- Globals
 ENTRANCE_RANDO_ENABLED = Tracker.ActiveVariantUID == "variant_entrance_rando"
 
--- Only update logic at most once per frame
-Tracker.AllowDeferredLogicUpdate = true -- TODO: Remove as of 0.31.0 which enables this by default.
-
 -- Utils.
 require("scripts/utils")
 
