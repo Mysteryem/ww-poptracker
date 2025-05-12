@@ -60,11 +60,15 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_
 
         self.ParentExit = parent_exit
     end
-    -- The location which holds this entrance's logic, or `nil` if the entrance is always accessible.
+    -- The location which holds this entrance's logic.
     self.EntranceLogicPath = "@Entrance Logic/" .. name
-    -- The type of the entrance: "dungeon", "miniboss", "boss", "secret_cave", "inner", "fairy"
+    -- The type of the entrance: "dungeon", "miniboss", "boss", "secret_cave", "inner", "fairy".
+    -- ER is enabled/disabled according to these categories, so this makes it easier to assign an entire category to
+    -- their vanilla exits when connecting to Archipelago.
     self.EntranceType = entrance_type
 
+    -- The icons and short name are only needed when ER is enabled because the lua items that display the icons and use
+    -- the short names in overlay text over those icons, only exist when ER is enabled.
     if ENTRANCE_RANDO_ENABLED then
         self.IconPath = icon_path
         -- Default to the same short name as the vanilla exit.
@@ -75,22 +79,30 @@ function Entrance.New(name, vanilla_exit_name, entrance_type, icon_path, parent_
 end
 
 function Entrance:GetAccessibility()
-    if not self.EntranceLogicPath then
-        return AccessibilityLevel.Normal
-    end
+    -- The logic for each entrance is defined on a JSON location specific to that entrance. Because the logic is defined
+    -- on the location and not the section within the location, there is no concern about the returned
+    -- `AccessibilityLevel` being `AccessibilityLevel.Cleared`.
+    -- Storing the logic on JSON locations *might* make the logic more resilient to infinite recursion issues because
+    -- PopTracker normally handles infinite recursion in JSON rules, but it is unclear if this is the case.
     local location = Tracker:FindObjectForCode(self.EntranceLogicPath)
     return location.AccessibilityLevel
 end
 
+-- Most of the Entrance methods/functions are only defined when ER is enabled because they are not needed otherwise.
 if ENTRANCE_RANDO_ENABLED then
+
     -- Recursive helper function used when updating entrance logic.
     -- Determine if an exit is possible to reach based on its Entrance and its Entrance's parent_exit.
+    --
+    -- Specific to The Wind Waker Entrance Randomization, ER cannot form loops, the user, however, can assign entrances
+    -- such that they do form loops. Detecting these loops allows for a faster return when determining if an exit is
+    -- accessible, but the logic appears to work without causing infinite recursion even when detecting loops is
+    -- disabled and a loop is deliberately created.
     local function is_exit_possible(exit, checked_set)
         local exit_name = exit.Name
 
         if logically_impossible_exits[exit_name] then
             -- This exit has already been found to be impossible.
-            -- This should not normally happen because left/right click to cycle through exits skips already assigned exits.
             debugPrint("%s is unreachable from a previous check", exit_name)
             return false
         end
@@ -128,8 +140,8 @@ if ENTRANCE_RANDO_ENABLED then
     -- Update which exits are impossible to reach, and then update logic.
     -- Call this after updating entrances, either individually or in bulk.
     --
-    -- Impossible exits cause their entrances to be greyed out and `logically_impossible_exits` functions as a logic
-    -- short-circuit if a player makes the entrances form an impossible loop. This should be slightly faster than
+    -- Impossible exits cause their entrances to have a red overlay and `logically_impossible_exits` functions as a
+    -- logic short-circuit if a player makes the entrances form an impossible loop. This should be slightly faster than
     -- letting PopTracker recursively check for accessibility of looped entrances, but is not necessary for an entrance
     -- rando implementation.
     --
@@ -211,15 +223,27 @@ if ENTRANCE_RANDO_ENABLED then
             end
         end
 
-        -- Force logic to update because the result of lua functions that check exit accessibility may now give different
-        -- results.
+        -- Force logic to update because the result of lua functions that check exit accessibility may now give
+        -- different results.
+        -- If there is no need to care about whether an entrance's assignment is impossible, then an ER implementation
+        -- can likely replace this entire `Entrance.UpdateEntranceLogic` function with just the `forceLogicUpdate()`
+        -- call.
         forceLogicUpdate()
     end
 
+    -- Return whether this Entrance is the currently selected entrance, i.e. the most recent unassigned entrance that
+    -- the user clicked on.
+    -- This is used when determining what icon mods should be shown over the Entrance's icon, allowing a selection
+    -- highlight overlay to be shown on this Entrance's icon.
     function Entrance:IsSelected()
         return Entrance.SelectedEntrance == self
     end
 
+    -- Select an Entrance. This is a function, not a method, because `nil` can be passed as the `entrance` to deselect
+    -- whatever is the currently selected Entrance.
+    -- If a dedicated `Entrance.Deselect()` function was added, this `Entrance.Select()` could be replaced with an
+    -- `Entrance:Select()` method.
+    -- Passing `true` as the second argument will suppress updating the icon of the currently selected Entrance.
     function Entrance.Select(entrance, prevent_currently_selected_item_icon_update)
         local currently_selected = Entrance.SelectedEntrance
 
@@ -237,6 +261,8 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
+    -- Unassign an Entrance from its currently assigned exit.
+    -- Arguments can be provided to suppress logic updates, suppress item updates and/or suppress section updates.
     function Entrance:Unassign(prevent_logic_update, prevent_item_updates, prevent_section_update)
         local current_exit = self.Exit
         if current_exit then
@@ -257,6 +283,7 @@ if ENTRANCE_RANDO_ENABLED then
             if not prevent_item_updates then
                 self:UpdateItem()
                 current_exit:UpdateItem()
+                -- TODO: Rename LabelItem to TableItem or TextItem or TableTextItem
                 self:UpdateLabelItem()
                 current_exit:UpdateLabelItem()
             end
@@ -276,6 +303,8 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
+    -- Unassign the Exits from all Entrances.
+    -- Arguments can be provided to suppress logic updates, suppress item updates and/or suppress section updates.
     function Entrance.UnassignAll(prevent_logic_updates, prevent_item_updates, prevent_section_update)
         -- Unassign in bulk, not causing logic updates until all exits have been unassigned from entrances.
         for _, entrance in ipairs(ENTRANCES) do
@@ -286,6 +315,12 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
+    -- Assign an Exit to this Entrance. Passing `nil` as the Exit to assign unassigns the current Exit like
+    -- `Entrance:Unassign()`.
+    -- Replacing an already assigned Exit is only allowed when the `replace` argument is `true`.
+    -- Logic updates are suppressed when the `prevent_logic_update` argument is `true`.
+    --
+    -- Returns whether the assignment was successful.
     function Entrance:Assign(new_exit, replace, prevent_logic_update)
 
         if new_exit then
@@ -357,6 +392,8 @@ if ENTRANCE_RANDO_ENABLED then
         return true
     end
 
+    -- Get the icon mods that should be used with the Entrance's item icon, determined by the current state of the
+    -- Entrance.
     function Entrance:GetItemIconMods()
         local exit = self.Exit
         local exit_overlay
@@ -378,32 +415,14 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
-    function Entrance:GetItemIconPath()
-        local entrance_icon_path = self.IconPath
-        local exit = self.Exit
-        local exit_overlay
-
-        if self:IsSelected() then
-            if exit then
-                -- Should not normally happen because an entrance with an exit assigned is unassigned when clicked on.
-                return string.format("%s:@disabled,overlay|images/entrances/selection_highlight.png", entrance_icon_path)
-            else
-                return string.format("%s:overlay|images/entrances/selection_highlight.png", entrance_icon_path)
-            end
-        else
-            if exit then
-                -- Grey out when an exit is assigned
-                return string.format("%s:@disabled", entrance_icon_path)
-            else
-                return entrance_icon_path
-            end
-        end
-    end
-
+    -- Get the item object for this Entrance.
     function Entrance:GetItem()
         return Tracker:FindObjectForCode(self.Name)
     end
 
+    -- Update the Entrance's item's icon mods according to the current state of the Entrance.
+    -- If the item object has already been retrieved, it can be passed as an argument to this method to skip retrieving
+    -- the item object again.
     function Entrance:UpdateEntranceItemIconMods(item)
         item = item or self:GetItem()
         local icon_mods = self:GetItemIconMods()
@@ -413,11 +432,21 @@ if ENTRANCE_RANDO_ENABLED then
         end
     end
 
+    -- Update the index stored in the Entrance's item's `.ItemState`. The `.ItemState` is the data written to the
+    -- tracker's auto-save state or any manually exported states. When the `.ItemState` for an Entrance's item is loaded
+    -- when opening the tracker or when importing a state, the index set in the `.ItemState` determines the Exit that
+    -- should be assigned to the Entrance, allowing for users to close and re-open the tracker without losing Entrance
+    -- assignments.
+    -- If the item object has already been retrieved, it can be passed as an argument to this method to skip retrieving
+    -- the item object again.
     function Entrance:UpdateEntranceItemExitIndex(item)
         item = item or self:GetItem()
         item.ItemState.exit_idx = self:GetExitIndex()
     end
 
+    -- Update the name of the Entrance item and its overlay text according to the current state of the Entrance.
+    -- If the item object has already been retrieved, it can be passed as an argument to this method to skip retrieving
+    -- the item object again.
     function Entrance:UpdateEntranceItemNameAndOverlayText(item)
         item = item or self:GetItem()
         local exit = self.Exit
