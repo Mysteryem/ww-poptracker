@@ -403,7 +403,8 @@
           "shield_2, boomerang",
           "shield_2, leaf",
           "shield_2, bow",
-          "shield_2, hookshot"
+          "shield_2, hookshot",
+          "sequence_break_other, shield_2, picto, [never]"
         ]
       },
       {
