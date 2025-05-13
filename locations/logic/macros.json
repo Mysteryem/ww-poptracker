@@ -383,8 +383,19 @@
       {
         "name": "can_get_inside_forsaken_fortress",
         "access_rules": [
-          "@Macros/can_get_past_forsaken_fortress_gate, hammer",
-          "sequence_break_other, @Macros/can_get_past_forsaken_fortress_gate, [hammer], @Macros/can_fly_with_deku_leaf_outdoors"// Fly across to the other entrance into Forsaken Fortress
+          [
+            "hammer",
+            "@Macros/can_get_past_forsaken_fortress_gate"
+          ],
+          // Fly across to the other entrance into Forsaken Fortress, the door cannot be opened until Phantom Ganon has
+          // been defeated.
+          [
+            "sequence_break_other",
+            "@Macros/can_get_past_forsaken_fortress_gate",
+            "[hammer]",
+            "@Macros/can_fly_with_deku_leaf_outdoors",
+            "@Macros/can_reach_and_defeat_phantom_ganon"
+          ]
         ]
       },
       {
