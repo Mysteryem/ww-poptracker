@@ -228,6 +228,17 @@
             "@Macros/can_defeat_boko_babas",
             "@Macros/_can_defeat_door_flowers_or_grapple",
             "@Macros/can_defeat_mothulas"
+          ],
+          [
+            // Without a normal means to defeat mothulas, a Deku Stick can be brought into this room in order to defeat
+            // the Mothulas. Defeat a Boku Baba in the room with the Hole in Tree chest and carry the Deku Stick all the
+            // way to this room. Note that it is the randomizer that adds the ability to carry items between rooms.
+            "sequence_break_other",
+            "@Exit Logic/Forbidden Woods",
+            "@Macros/can_fly_with_deku_leaf_indoors",
+            "@Macros/can_defeat_boko_babas",
+            "@Macros/_can_defeat_door_flowers_or_grapple",
+            "[@Macros/can_defeat_mothulas]"
           ]
         ]
       },

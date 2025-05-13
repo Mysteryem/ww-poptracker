@@ -235,12 +235,8 @@
         "name": "Boss Entrance in Forbidden Woods",
         "access_rules": [
           [
-            "@Exit Logic/Forbidden Woods",
-            "@Macros/can_fly_with_deku_leaf_indoors",
-            "@Macros/can_defeat_boko_babas",
-            "@Macros/_can_defeat_door_flowers_or_grapple",
-            "@Macros/can_defeat_mothulas",
-            "fw_big"
+            "fw_big",
+            "@Forbidden Woods/Double Mothula Room"
           ]
         ],
         "sections": [
