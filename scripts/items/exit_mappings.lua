@@ -54,6 +54,7 @@ function create_entrance_lua_item(idx, entrance)
         return { exit_idx = self.ItemState.exit_idx }
     end
 
+    -- The entrance_idx identifies which Entrance object in ENTRANCES this lua item represents.
     mapping_item.ItemState.entrance_idx = idx
 
     local loaded_idx = mapping_item.ItemState.exit_idx
@@ -70,7 +71,8 @@ function create_entrance_lua_item(idx, entrance)
         return code == entrance_name
     end
     mapping_item.ProvidesCodeFunc = function(self, code)
-        -- Note: Must return bool. Returning `nil` or a table is not allowed.
+        -- Note: Must return bool/int. Returning `nil` or a table is not allowed.
+        --       Returning int 0/1 should be slightly faster.
         if code == entrance_name and entrance.Exit then
             -- Provide code when assigned.
             return 1
@@ -79,7 +81,7 @@ function create_entrance_lua_item(idx, entrance)
         end
     end
 
-    -- Select the mapping for assignment or clear the exit mapping if already assigned
+    -- Select the mapping for assignment, or deselect it if it is selected.
     mapping_item.OnLeftClickFunc = function(self)
         local exit = entrance.Exit
 
@@ -100,7 +102,7 @@ function create_entrance_lua_item(idx, entrance)
                 Exit.Select(nil, true)
                 entrance:Assign(selected_exit)
 
-                -- Switch back to the exits tab.
+                -- The user selected an exit first, so switch back to the exits tab.
                 Tracker:UiHint("ActivateTab", "Exits")
             else
                 -- Select the entrance.
@@ -112,6 +114,7 @@ function create_entrance_lua_item(idx, entrance)
         end
     end
 
+    -- Unassign the exit from this entrance, or deselect this entrance if it is selected.
     mapping_item.OnRightClickFunc = function(self)
         local exit = entrance.Exit
         if exit then
@@ -134,11 +137,15 @@ function create_entrance_lua_item(idx, entrance)
 
     mapping_item.Icon = ImageReference:FromPackRelativePath(entrance.IconPath)
 
+    -- Initialize this entrance's static json items displayed in a table that use overlay text to display which exit
+    -- each entrance leads to.
     entrance:InitializeLabels()
 end
 
 -- Create a new exit lua item. These are the placeholder items that users click on to assign a specific exit after
--- clicking on an exit mapping lua item.
+-- clicking on an entrance lua item. Exit lua items are effectively static, their index never changes and is neither
+-- loaded nor saved to auto-save/exported state.
+-- Clicking on an exit lua item first and then
 function create_exit_lua_item(idx, exit)
     local exit_item = ScriptHost:CreateLuaItem()
 
@@ -155,7 +162,8 @@ function create_exit_lua_item(idx, exit)
         return code == exit_name
     end
     exit_item.ProvidesCodeFunc = function(self, code)
-        -- Note: Must return bool. Returning `nil` or a table is not allowed.
+        -- Note: Must return bool/int. Returning `nil` or a table is not allowed.
+        --       Returning 0/1 should be slightly faster.
         if code == exit_name and exit.Entrance then
             -- Provide code when assigned.
             return 1
