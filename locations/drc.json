@@ -126,7 +126,7 @@
           [
             "@Exit Logic/Dragon Roost Cavern",
             "drc_small:4",
-            "@Macros/_grapple_or_can_fly_with_deku_leaf_indoors"
+            "@Macros/_grapple_or_can_fly_with_deku_leaf_outdoors"
           ]
         ]
       },

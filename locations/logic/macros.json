@@ -168,6 +168,13 @@
         ]
       },
       {
+        "name": "_grapple_or_can_fly_with_deku_leaf_outdoors",
+        "access_rules": [
+          "grapple",
+          "@Macros/can_fly_with_deku_leaf_outdoors"
+        ]
+      },
+      {
         "name": "_can_play_command_melody_or_bow",
         "access_rules": [
           "@Macros/can_play_command_melody",
