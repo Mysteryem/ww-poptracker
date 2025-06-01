@@ -598,34 +598,38 @@ function onBounced(value)
     onMap(data["tww_stage_name"])
 end
 
+local function updateForStatusChange(status_value)
+    -- CLIENT_UNKNOWN = 0
+    -- CLIENT_CONNECTED = 5
+    -- CLIENT_READY = 10
+    -- CLIENT_PLAYING = 20
+    -- CLIENT_GOAL = 30
+    if status_value == 30 then
+        local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
+        goal_location.AvailableChestCount = goal_location.AvailableChestCount - 1
+    else
+        print(string.format("Current goal status is %s", status_value))
+    end
+end
+
 -- called in response to an Archipelago:Get(key_list)
-function onRetrieved(key, new_value, old_value)
+function onRetrieved(key, value)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onRetrieved: %s", dump_table(value)))
     end
 
     if key == goal_status_key then
-        -- CLIENT_UNKNOWN = 0
-        -- CLIENT_CONNECTED = 5
-        -- CLIENT_READY = 10
-        -- CLIENT_PLAYING = 20
-        -- CLIENT_GOAL = 30
-        if new_value == 30 then
-            local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
-            goal_location.AvailableChestCount = goal_location.AvailableChestCount - 1
-        else
-            print(string.format("Current goal status is %s", new_value))
-        end
+        updateForStatusChange(value)
     elseif key == visited_stages_key and ENTRANCE_RANDO_ENABLED then
         -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
         -- storage may not exist.
-        if new_value ~= nil then
+        if value ~= nil then
             local load_assignments_from_ap = Tracker:FindObjectForCode("setting_load_exit_assignments_from_ap")
             if load_assignments_from_ap.Active then
                 local function loadRetrievedExitAssignments()
                     -- The data is stored as a dictionary used as a set, so the keys are the visited stage names and the
                     -- values are all `true`.
-                    for stage_name, _ in pairs(new_value) do
+                    for stage_name, _ in pairs(value) do
                         entranceRandoAssignEntranceFromVisitedStage(stage_name, true)
                     end
                 end
@@ -638,11 +642,28 @@ function onRetrieved(key, new_value, old_value)
     end
 end
 
+-- called when a datastorage value, watched by request of Archipelago:SetNotify(key_list), is changed
+function onNotifyUpdate(key, new_value, old_value)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onNotifyUpdate: %s", dump_table(value)))
+    end
+
+    if new_value == old_value then
+        -- No change, so nothing to update.
+        return
+    end
+
+    if key == goal_status_key then
+        updateForStatusChange(new_value)
+    end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddBouncedHandler("bounced handler", onBounced)
 Archipelago:AddRetrievedHandler("retrieved handler", onRetrieved)
+Archipelago:AddSetReplyHandler("setreply handler", onNotifyUpdate)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
 end
