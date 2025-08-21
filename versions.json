@@ -1,6 +1,23 @@
 {
   "versions": [
     {
+      "package_version": "1.2.0",
+      "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.2.0.zip",
+      "sha256": "c406bed60ccbf09ed68808e2d1b93b7e6ee31ccebae2c469074acd24caa01e73",
+      "changelog": [
+        "Quiver/Bomb Bag/Wallet item names have been updated",
+        "Added some more out-of-logic tricks",
+        "Re-added the ER table view in the ER variant of the pack",
+        "Fix Phantom Ganon showing as out-of-logic with Master Sword in Swords Optional mode",
+        "Fix autotracking for the 900 and 950 rupee locations",
+        "Fix a couple of always-out-of-logic tricks missing requirements",
+        "Fix DRC - Under Rope Bridge checking for indoors flying instead of outdoors flying",
+        "Fix Hyrule locations being visible when dungeon locations are disabled",
+        "Fix goal location only updating when connecting/reconnecting",
+        "Fix ET Many Mirrors Room chests being swapped on the map"
+      ]
+    },
+    {
       "package_version": "1.1.0",
       "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.1.0.zip",
       "sha256": "ae1a2cc6807e86d2dacd0042cdb390edcadd92637c5b7d426d5b7de46560af60",
