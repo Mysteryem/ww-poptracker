@@ -318,6 +318,12 @@
     "codes": "sequence_break_other"
   },
   {
+    "name": "Show Tingle Tuner Sequence Breaks",
+    "type": "toggle",
+    "img": "images/items/item7.png",
+    "codes": "sequence_break_tingle_tuner"
+  },
+  {
     "name": "Automatic Map Switching",
     "type": "toggle",
     "img": "images/items/chart_tingle.png",

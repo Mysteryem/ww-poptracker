@@ -374,8 +374,10 @@
       },
       {
         "name": "Secret Cave Entrance on Dragon Roost Island",
+        "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "sequence_break_tingle_tuner, tuner, [@Macros/can_move_boulders]"
         ],
         "sections": [
           {
@@ -641,8 +643,13 @@
       },
       {
         "name": "Secret Cave Entrance on Rock Spire Isle",
+        "_comment": [
+          "Tingle Bombs can be used here. The second bomb needs to be positioned with the GBA dpad, the others can be",
+          " placed right on the edge before the rock."
+        ],
         "access_rules": [
-          "bombs"
+          "bombs",
+          "sequence_break_tingle_tuner, tuner, [bombs]"
         ],
         "sections": [
           {
@@ -663,6 +670,7 @@
         "access_rules": [
           "boots, hammer",
           // This might be possible with hammer instead of sword, but this needs to be proven before it is added.
+          // This might be possible using Tingle Bombs.
           "sequence_break_other, sword, [boots], [hammer], bombs"// The knockback from a bomb explosion can launch Link into the entrance from the elevated section, a jump slash is needed.
         ],
         "sections": [
@@ -716,8 +724,10 @@
       },
       {
         "name": "Secret Cave Entrance on Star Island",
+        "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
-          "@Macros/can_move_boulders"
+          "@Macros/can_move_boulders",
+          "sequence_break_tingle_tuner, tuner, [@Macros/can_move_boulders]"
         ],
         "sections": [
           {
