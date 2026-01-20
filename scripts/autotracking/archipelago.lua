@@ -226,6 +226,15 @@ function setNonRandomizedEntrancesFromSlotData(slot_data, banned_dungeons)
     end
 end
 
+local HINTS_DATASTORAGE_KEY
+local HINT_ENUM_VALUE_TO_HIGHLIGHT = {
+    [0] = Highlight.Unspecified,
+    [10] = Highlight.NoPriority,
+    [20] = Highlight.Avoid,
+    [30] = Highlight.Priority,
+    [40] = Highlight.None,
+}
+
 function onClear(slot_data)
     -- Reset the last activated tab from map tracking.
     _last_activated_tab = ""
@@ -236,8 +245,12 @@ function onClear(slot_data)
 
     -- Get and subscribe to changes in the player's status to track goal completion
     goal_status_key = string.format(GOAL_STATUS_FORMAT, Archipelago.TeamNumber, Archipelago.PlayerNumber)
-    Archipelago:Get({goal_status_key})
-    Archipelago:SetNotify({goal_status_key})
+    -- Get and subscribe to changes to the player's hints.
+    HINTS_DATASTORAGE_KEY = string.format("_read_hints_%i_%i", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+    -- Send the requests to the AP server.
+    local datastorage_keys = {goal_status_key, HINTS_DATASTORAGE_KEY}
+    Archipelago:SetNotify(datastorage_keys)
+    Archipelago:Get(datastorage_keys)
 
     -- autotracking settings from YAML
     local function setFromSlotData(slot_data_key, item_code)
@@ -612,6 +625,31 @@ local function updateForStatusChange(status_value)
     end
 end
 
+local function updateForHintsChange(hints_value)
+    local self_player = Archipelago.PlayerNumber
+    for _, hint in ipairs(hints_value) do
+        if hint.finding_player == self_player then
+            local location_id = hint.location
+            local section_name = LOCATION_MAPPING[location_id]
+            if section_name ~= nil then
+                local section = Tracker:FindObjectForCode(section_name)
+                if section ~= nil then
+                    local highlight = HINT_ENUM_VALUE_TO_HIGHLIGHT[hint.status]
+                    if highlight ~= nil then
+                        section.Highlight = highlight
+                    else
+                        print("Error: Could not find highlight value for "..tostring(hint.status))
+                    end
+                else
+                    print("Error: Could not find section for path "..section_name)
+                end
+            else
+                print("Error: Could not find section name for location_id "..tostring(location_id))
+            end
+        end
+    end
+end
+
 -- called in response to an Archipelago:Get(key_list)
 function onRetrieved(key, value)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -620,6 +658,8 @@ function onRetrieved(key, value)
 
     if key == goal_status_key then
         updateForStatusChange(value)
+    elseif key == HINTS_DATASTORAGE_KEY then
+        updateForHintsChange(value)
     elseif key == visited_stages_key and ENTRANCE_RANDO_ENABLED then
         -- If the player has not connected the AP client and visited any stages yet, the value in the server's data
         -- storage may not exist.
@@ -655,6 +695,8 @@ function onNotifyUpdate(key, new_value, old_value)
 
     if key == goal_status_key then
         updateForStatusChange(new_value)
+    elseif key == HINTS_DATASTORAGE_KEY then
+        updateForHintsChange(new_value)
     end
 end
 
