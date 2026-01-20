@@ -377,7 +377,7 @@
         "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
           "@Macros/can_move_boulders",
-          "sequence_break_tingle_tuner, tuner, [@Macros/can_move_boulders]"
+          "@Macros/_tingle_tuner_sequence_break, [@Macros/can_move_boulders]"
         ],
         "sections": [
           {
@@ -649,7 +649,7 @@
         ],
         "access_rules": [
           "bombs",
-          "sequence_break_tingle_tuner, tuner, [bombs]"
+          "@Macros/_tingle_tuner_sequence_break, [bombs]"
         ],
         "sections": [
           {
@@ -727,7 +727,7 @@
         "_comment": "Tingle Bombs can be used here.",
         "access_rules": [
           "@Macros/can_move_boulders",
-          "sequence_break_tingle_tuner, tuner, [@Macros/can_move_boulders]"
+          "@Macros/_tingle_tuner_sequence_break, [@Macros/can_move_boulders]"
         ],
         "sections": [
           {

@@ -1381,6 +1381,12 @@
             "hammer"
           ]
         ]
+      },
+      {
+        "name": "_tingle_tuner_sequence_break",
+        "access_rules": [
+          "sequence_break_tingle_tuner, tuner"
+        ]
       }
     ]
   }
