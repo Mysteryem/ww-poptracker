@@ -27,3 +27,16 @@ function exit_accessibility(exit_name)
         return entrance:GetAccessibility()
     end
 end
+
+-- Intended for use with 'checkable' logic where it is undesirable to show SequenceBreak + Inspect as either blue or
+-- yellow.
+function exit_accessibility_no_sequence_break(exit_name)
+    local accessibility = exit_accessibility(exit_name)
+    if accessibility == AccessibilityLevel.Normal then
+        return 1
+    else
+        -- SequenceBreak should not be returned by this function because it can be confusing when Inspect is mixed with
+        -- SequenceBreak.
+        return 0
+    end
+end

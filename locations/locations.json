@@ -831,7 +831,8 @@
           {
             "name": "Beedle's Special Shop Ship - 500 Item",
             "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees"
+              "wallet, @Macros/can_farm_lots_of_rupees",
+              "{}"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -840,7 +841,8 @@
           {
             "name": "Beedle's Special Shop Ship - 900 Item",
             "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees"
+              "wallet, @Macros/can_farm_lots_of_rupees",
+              "{}"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -849,7 +851,8 @@
           {
             "name": "Beedle's Special Shop Ship - 950 Item",
             "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees"
+              "wallet, @Macros/can_farm_lots_of_rupees",
+              "{}"
             ],
             "visibility_rules": [
               "expensive_on"
@@ -1837,26 +1840,13 @@
           },
           {
             "name": "Savage Labyrinth - Floor 30",
+            "inspectable_sequence_break": true,
             "access_rules": [
               [
-                "@Exit Logic/Savage Labyrinth",
-                "@Macros/can_defeat_keese",
-                "@Macros/can_defeat_miniblins",
-                "@Macros/can_defeat_red_chuchus",
-                "@Macros/can_defeat_magtails",
-                "@Macros/can_defeat_fire_keese",
-                "@Macros/can_defeat_peahats",
-                "@Macros/can_defeat_green_chuchus",
-                "@Macros/can_defeat_boko_babas",
-                "@Macros/can_defeat_mothulas",
-                "@Macros/can_defeat_winged_mothulas",
-                "@Macros/can_defeat_wizzrobes",
-                "@Macros/can_defeat_armos",
-                "@Macros/can_defeat_yellow_chuchus",
-                "@Macros/can_defeat_red_bubbles",
-                "@Macros/can_defeat_darknuts",
-                "@Macros/can_play_winds_requiem",
-                "@Macros/_grapple_or_sword_or_hammer"
+                "@Macros/_can_complete_savage_labyrinth_floor_30"
+              ],
+              [
+                "{$exit_accessibility_no_sequence_break|Savage Labyrinth}"
               ]
             ],
             "visibility_rules": [
@@ -1865,16 +1855,17 @@
           },
           {
             "name": "Savage Labyrinth - Floor 50",
+            "inspectable_sequence_break": true,
+            "_comment": [
+              "'@' rules turn Inspect into Normal accessibility, so Floor 50 cannot use",
+              " '@The Great Sea/Outset Island/Savage Labyrinth - Floor 30' in its access rules."
+            ],
             "access_rules": [
               [
-                "@The Great Sea/Outset Island/Savage Labyrinth - Floor 30",
-                "@Macros/can_aim_mirror_shield",
-                "@Macros/can_defeat_redeads",
-                "@Macros/can_defeat_blue_bubbles",
-                "@Macros/can_defeat_dark_chuchus",
-                "@Macros/can_defeat_poes",
-                "@Macros/can_defeat_stalfos",
-                "hammer"
+                "@Macros/_can_complete_savage_labyrinth_floor_50"
+              ],
+              [
+                "{$exit_accessibility_no_sequence_break|Savage Labyrinth}"
               ]
             ],
             "visibility_rules": [

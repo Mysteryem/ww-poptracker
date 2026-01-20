@@ -826,7 +826,7 @@
         "name": "_can_farm_knights_crests",
         "access_rules": [
           "@The Great Sea/Ice Ring Isle/Inner Cave - Chest",
-          "@The Great Sea/Outset Island/Savage Labyrinth - Floor 30",
+          "@Macros/_can_complete_savage_labyrinth_floor_30",
           "@Earth Temple/Big Key Chest, @Macros/can_defeat_darknuts_easily",
           "@Wind Temple/Big Key Chest, @Macros/can_defeat_darknuts_easily",
           "@The Great Sea/Shark Island/Cave",
@@ -1340,6 +1340,46 @@
         "access_rules": [
           // Support out-of-logic swords in swords optional mode, or starting inventory/plando swords in swordless mode.
           "[tww_outside_swordless_mode], mastersword"
+        ]
+      },
+      {
+        "name": "_can_complete_savage_labyrinth_floor_30",
+        "access_rules": [
+          [
+            "@Exit Logic/Savage Labyrinth",
+            "@Macros/can_defeat_keese",
+            "@Macros/can_defeat_miniblins",
+            "@Macros/can_defeat_red_chuchus",
+            "@Macros/can_defeat_magtails",
+            "@Macros/can_defeat_fire_keese",
+            "@Macros/can_defeat_peahats",
+            "@Macros/can_defeat_green_chuchus",
+            "@Macros/can_defeat_boko_babas",
+            "@Macros/can_defeat_mothulas",
+            "@Macros/can_defeat_winged_mothulas",
+            "@Macros/can_defeat_wizzrobes",
+            "@Macros/can_defeat_armos",
+            "@Macros/can_defeat_yellow_chuchus",
+            "@Macros/can_defeat_red_bubbles",
+            "@Macros/can_defeat_darknuts",
+            "@Macros/can_play_winds_requiem",
+            "@Macros/_grapple_or_sword_or_hammer"
+          ]
+        ]
+      },
+      {
+        "name": "_can_complete_savage_labyrinth_floor_50",
+        "access_rules": [
+          [
+            "@Macros/_can_complete_savage_labyrinth_floor_30",
+            "@Macros/can_aim_mirror_shield",
+            "@Macros/can_defeat_redeads",
+            "@Macros/can_defeat_blue_bubbles",
+            "@Macros/can_defeat_dark_chuchus",
+            "@Macros/can_defeat_poes",
+            "@Macros/can_defeat_stalfos",
+            "hammer"
+          ]
         ]
       }
     ]
