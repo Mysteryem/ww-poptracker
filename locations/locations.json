@@ -367,6 +367,9 @@
             "name": "Transparent Chest",
             "chest_unopened_img": "images/items/chest_metal.png",
             "chest_opened_img": "images/items/chest_metal_gray.png",
+            "_comment": [
+              "A Tingle Balloon can skip the Deku Leaf flying/Hookshot."
+            ],
             "access_rules": [
               [
                 "@Macros/can_play_winds_requiem",
@@ -378,6 +381,19 @@
                 "[@Macros/can_play_winds_requiem]",
                 "@Macros/has_fire_arrows",
                 "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot"
+              ],
+              [
+                "@Macros/_tingle_tuner_sequence_break",
+                "@Macros/can_play_winds_requiem",
+                "@Macros/has_fire_arrows",
+                "[@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot]"
+              ],
+              [
+                "@Macros/_tingle_tuner_sequence_break",
+                "@Macros/_swift_sail_sequence_break",
+                "[@Macros/can_play_winds_requiem]",
+                "@Macros/has_fire_arrows",
+                "[@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot]"
               ]
             ],
             "visibility_rules": [
