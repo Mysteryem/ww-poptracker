@@ -4,5 +4,8 @@
 # IDE files
 /.idea
 
+# Scripts to help with development
+/.scripts
+
 # Zip filename used when developing
 /ww-poptracker.zip
