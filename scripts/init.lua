@@ -41,6 +41,7 @@ Tracker:AddLocations("locations/fw.json")
 Tracker:AddLocations("locations/et.json")
 Tracker:AddLocations("locations/locations.json")
 Tracker:AddLocations("locations/salvage.json")
+Tracker:AddLocations("locations/salvage_overview.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

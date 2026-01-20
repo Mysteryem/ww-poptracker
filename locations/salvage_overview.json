@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Salvaging",
+    "sections": [
+      {
+        "name": "Greatfish Isle - Sunken Triforce 1",
+        "ref": "Triforce Salvaging/Greatfish Isle - Sunken Triforce 1/Salvage"
+      },
+      {
+        "name": "Gale Isle - Sunken Triforce 2",
+        "ref": "Triforce Salvaging/Gale Isle - Sunken Triforce 2/Salvage"
+      },
+      {
+        "name": "Stone Watcher Island - Sunken Triforce 3",
+        "ref": "Triforce Salvaging/Stone Watcher Island - Sunken Triforce 3/Salvage"
+      },
+      {
+        "name": "Outset island - Sunken Triforce 4",
+        "ref": "Triforce Salvaging/Outset island - Sunken Triforce 4/Salvage"
+      },
+      {
+        "name": "Cliff Plateau Isles - Sunken Triforce 5",
+        "ref": "Triforce Salvaging/Cliff Plateau Isles - Sunken Triforce 5/Salvage"
+      },
+      {
+        "name": "Southern Triangle Island - Sunken Triforce 6",
+        "ref": "Triforce Salvaging/Southern Triangle Island - Sunken Triforce 6/Salvage"
+      },
+      {
+        "name": "Seven-Star Isles - Sunken Triforce 7",
+        "ref": "Triforce Salvaging/Seven-Star Isles - Sunken Triforce 7/Salvage"
+      },
+      {
+        "name": "Two-Eye Reef - Sunken Triforce 8",
+        "ref": "Triforce Salvaging/Two-Eye Reef - Sunken Triforce 8/Salvage"
+      },
+      {
+        "name": "Private Oasis - Sunken Treasure 1",
+        "ref": "Treasure Salvaging/Private Oasis - Sunken Treasure 1/Salvage"
+      },
+      {
+        "name": "Rock Spire Isle - Sunken Treasure 2",
+        "ref": "Treasure Salvaging/Rock Spire Isle - Sunken Treasure 2/Salvage"
+      },
+      {
+        "name": "Eastern Fairy Island - Sunken Treasure 3",
+        "ref": "Treasure Salvaging/Eastern Fairy Island - Sunken Treasure 3/Salvage"
+      },
+      {
+        "name": "Southern Fairy Island - Sunken Treasure 4",
+        "ref": "Treasure Salvaging/Southern Fairy Island - Sunken Treasure 4/Salvage"
+      },
+      {
+        "name": "Thorned Fairy Island - Sunken Treasure 5",
+        "ref": "Treasure Salvaging/Thorned Fairy Island - Sunken Treasure 5/Salvage"
+      },
+      {
+        "name": "Six-Eye Reef - Sunken Treasure 6",
+        "ref": "Treasure Salvaging/Six-Eye Reef - Sunken Treasure 6/Salvage"
+      },
+      {
+        "name": "Star Island - Sunken Treasure 7",
+        "ref": "Treasure Salvaging/Star Island - Sunken Treasure 7/Salvage"
+      },
+      {
+        "name": "Western Fairy Island - Sunken Treasure 8",
+        "ref": "Treasure Salvaging/Western Fairy Island - Sunken Treasure 8/Salvage"
+      },
+      {
+        "name": "Horseshoe Island - Sunken Treasure 9",
+        "ref": "Treasure Salvaging/Horseshoe Island - Sunken Treasure 9/Salvage"
+      },
+      {
+        "name": "Tingle Island - Sunken Treasure 10",
+        "ref": "Treasure Salvaging/Tingle Island - Sunken Treasure 10/Salvage"
+      },
+      {
+        "name": "Crescent Moon Island - Sunken Treasure 11",
+        "ref": "Treasure Salvaging/Crescent Moon Island - Sunken Treasure 11/Salvage"
+      },
+      {
+        "name": "Five-Eye Reef - Sunken Treasure 12",
+        "ref": "Treasure Salvaging/Five-Eye Reef - Sunken Treasure 12/Salvage"
+      },
+      {
+        "name": "Overlook Island - Sunken Treasure 13",
+        "ref": "Treasure Salvaging/Overlook Island - Sunken Treasure 13/Salvage"
+      },
+      {
+        "name": "Tower of The Gods Sector - Sunken Treasure 14",
+        "ref": "Treasure Salvaging/Tower of The Gods Sector - Sunken Treasure 14/Salvage"
+      },
+      {
+        "name": "Angular Isles - Sunken Treasure 15",
+        "ref": "Treasure Salvaging/Angular Isles - Sunken Treasure 15/Salvage"
+      },
+      {
+        "name": "Shark Island - Sunken Treasure 16",
+        "ref": "Treasure Salvaging/Shark Island - Sunken Treasure 16/Salvage"
+      },
+      {
+        "name": "Ice Ring Isle - Sunken Treasure 17",
+        "ref": "Treasure Salvaging/Ice Ring Isle - Sunken Treasure 17/Salvage"
+      },
+      {
+        "name": "Windfall Island - Sunken Treasure 18",
+        "ref": "Treasure Salvaging/Windfall Island - Sunken Treasure 18/Salvage"
+      },
+      {
+        "name": "Flight Control Platform - Sunken Treasure 19",
+        "ref": "Treasure Salvaging/Flight Control Platform - Sunken Treasure 19/Salvage"
+      },
+      {
+        "name": "Bomb Island - Sunken Treasure 20",
+        "ref": "Treasure Salvaging/Bomb Island - Sunken Treasure 20/Salvage"
+      },
+      {
+        "name": "Cyclops Reef - Sunken Treasure 21",
+        "ref": "Treasure Salvaging/Cyclops Reef - Sunken Treasure 21/Salvage"
+      },
+      {
+        "name": "Spectacle Island - Sunken Treasure 22",
+        "ref": "Treasure Salvaging/Spectacle Island - Sunken Treasure 22/Salvage"
+      },
+      {
+        "name": "Diamond Steppe Island - Sunken Treasure 23",
+        "ref": "Treasure Salvaging/Diamond Steppe Island - Sunken Treasure 23/Salvage"
+      },
+      {
+        "name": "Northern Fairy Island - Sunken Treasure 24",
+        "ref": "Treasure Salvaging/Northern Fairy Island - Sunken Treasure 24/Salvage"
+      },
+      {
+        "name": "Forsaken Fortress Sector - Sunken Treasure 25",
+        "ref": "Treasure Salvaging/Forsaken Fortress Sector - Sunken Treasure 25/Salvage"
+      },
+      {
+        "name": "Northern Triangle Island - Sunken Treasure 26",
+        "ref": "Treasure Salvaging/Northern Triangle Island - Sunken Treasure 26/Salvage"
+      },
+      {
+        "name": "Star Belt Archipelago - Sunken Treasure 27",
+        "ref": "Treasure Salvaging/Star Belt Archipelago - Sunken Treasure 27/Salvage"
+      },
+      {
+        "name": "Needle Rock Isle - Sunken Treasure 28",
+        "ref": "Treasure Salvaging/Needle Rock Isle - Sunken Treasure 28/Salvage"
+      },
+      {
+        "name": "Mother and Child Isles - Sunken Treasure 29",
+        "ref": "Treasure Salvaging/Mother and Child Isles - Sunken Treasure 29/Salvage"
+      },
+      {
+        "name": "Pawprint Isle - Sunken Treasure 30",
+        "ref": "Treasure Salvaging/Pawprint Isle - Sunken Treasure 30/Salvage"
+      },
+      {
+        "name": "Forest Haven - Sunken Treasure 31",
+        "ref": "Treasure Salvaging/Forest Haven - Sunken Treasure 31/Salvage"
+      },
+      {
+        "name": "Boating Course - Sunken Treasure 32",
+        "ref": "Treasure Salvaging/Boating Course - Sunken Treasure 32/Salvage"
+      },
+      {
+        "name": "Five-Star Isles - Sunken Treasure 33",
+        "ref": "Treasure Salvaging/Five-Star Isles - Sunken Treasure 33/Salvage"
+      },
+      {
+        "name": "Eastern Triangle Island - Sunken Treasure 34",
+        "ref": "Treasure Salvaging/Eastern Triangle Island - Sunken Treasure 34/Salvage"
+      },
+      {
+        "name": "Islet of Steel - Sunken Treasure 35",
+        "ref": "Treasure Salvaging/Islet of Steel - Sunken Treasure 35/Salvage"
+      },
+      {
+        "name": "Bird's Peak Rock - Sunken Treasure 36",
+        "ref": "Treasure Salvaging/Bird's Peak Rock - Sunken Treasure 36/Salvage"
+      },
+      {
+        "name": "Fire Mountain - Sunken Treasure 37",
+        "ref": "Treasure Salvaging/Fire Mountain - Sunken Treasure 37/Salvage"
+      },
+      {
+        "name": "Three-Eye Reef - Sunken Treasure 38",
+        "ref": "Treasure Salvaging/Three-Eye Reef - Sunken Treasure 38/Salvage"
+      },
+      {
+        "name": "Dragon Roost Island - Sunken Treasure 39",
+        "ref": "Treasure Salvaging/Dragon Roost Island - Sunken Treasure 39/Salvage"
+      },
+      {
+        "name": "Headstone Island - Sunken Treasure 40",
+        "ref": "Treasure Salvaging/Headstone Island - Sunken Treasure 40/Salvage"
+      },
+      {
+        "name": "Four-Eye Reef - Sunken Treasure 41",
+        "ref": "Treasure Salvaging/Four-Eye Reef - Sunken Treasure 41/Salvage"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "seachart",
+        "x": 639,
+        "y": 582
+      }
+    ]
+  }
+]
