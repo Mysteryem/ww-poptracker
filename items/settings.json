@@ -344,6 +344,13 @@
     "initial_active_state": true
   },
   {
+    "name": "Show Precise Sea Locations",
+    "type": "toggle",
+    "img": "images/items/chart1.png",
+    "codes": "setting_show_precise_sea_locations",
+    "initial_active_state": true
+  },
+  {
     // Applies to both Logic Precision and Obscurity
     "name": "Show Higher Logic Difficulties",
     "type": "progressive",

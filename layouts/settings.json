@@ -78,6 +78,15 @@
                   "type": "layout",
                   "key": "auto_tracking_settings_grid"
                 }
+              },
+              {
+                "type": "group",
+                "header": "Other",
+                "dock": "left",
+                "content": {
+                  "type": "layout",
+                  "key": "other_tracker_settings_grid"
+                }
               }
             ]
           }
