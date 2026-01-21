@@ -292,10 +292,10 @@ LOCATION_MAPPING = {
     [0x2380fe] = "@The Great Sea/Five-Star Isles/Submarine",
     [0x2380fc] = "@The Great Sea/Five-Star Isles/Lookout Platform - Destroy the Cannons",
 
-    [0x2380ff] = "@The Great Sea/Seven-Star Isles/Center Platform",
-    [0x238100] = "@The Great Sea/Seven-Star Isles/Northern Platform",
-    [0x238101] = "@The Great Sea/Seven-Star Isles/Southern Platform",
-    [0x238102] = "@The Great Sea/Seven-Star Isles/Big Octo",
+    [0x2380ff] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Center Lookout Platform",
+    [0x238100] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Northern Lookout Platform",
+    [0x238101] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Southern Lookout Platform",
+    [0x238102] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Big Octo/",
 
     [0x238103] = "@The Great Sea/Cyclops Reef/Destroy the Cannons and Gunboats",
     [0x238104] = "@The Great Sea/Cyclops Reef/Lookout Platform - Defeat the Enemies",

@@ -110,44 +110,29 @@
         "sections": [
           {
             "name": "Center Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Center Lookout Platform"
           },
           {
             "name": "Northern Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Northern Lookout Platform"
           },
           {
             "name": "Southern Platform",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_wizzrobes_at_range"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Southern Lookout Platform"
           },
           {
             "name": "Big Octo",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_12_eye_big_octos, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Big Octo/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 485,
-            "y": 55
+            "y": 55,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

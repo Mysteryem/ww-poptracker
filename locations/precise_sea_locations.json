@@ -155,6 +155,68 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Seven-Star Isles",
+        "children": [
+          {
+            "name": "Seven-Star Isles - Lookout Platforms",
+            "visibility_rules": [
+              "lookouts_on"
+            ],
+            "sections": [
+              {
+                "name": "Center Lookout Platform"
+              },
+              {
+                "name": "Northern Lookout Platform"
+              },
+              {
+                "name": "Southern Lookout Platform",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_wizzrobes_at_range"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 495,
+                "y": 63,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Seven-Star Isles - Big Octo",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_salvage.png",
+                "chest_opened_img": "images/items/chest_salvage_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_12_eye_big_octos, grapple"
+                ],
+                "visibility_rules": [
+                  "octos_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 475,
+                "y": 65,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
