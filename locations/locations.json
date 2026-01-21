@@ -9,27 +9,21 @@
         "sections": [
           {
             "name": "Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Star Island/Star Island - Lookout Platform/"
           },
           {
             "name": "Cave",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "@Exit Logic/Star Island Secret Cave, @Macros/can_defeat_magtails"
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
+            "ref": "The Great Sea (Precise)/Star Island/Star Island - Cave/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 140,
-            "y": 55
+            "y": 55,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

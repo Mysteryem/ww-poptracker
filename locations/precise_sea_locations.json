@@ -1,0 +1,59 @@
+[
+  {
+    "name": "The Great Sea (Precise)",
+    "chest_unopened_img": "images/items/chest_wood.png",
+    "chest_opened_img": "images/items/chest_wood_gray.png",
+    "children": [
+      {
+        "name": "Star Island",
+        "children": [
+          {
+            "name": "Star Island - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Star Island Secret Cave, @Macros/can_defeat_magtails"
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 139,
+                "y": 38,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Star Island - Lookout Platform",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 131,
+                "y": 62,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
