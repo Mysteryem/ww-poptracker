@@ -217,6 +217,40 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Overlook Island",
+        "children": [
+          {
+            "name": "Overlook Island - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  [
+                    "@Macros/_can_reach_overlook_island_cave_darknuts",
+                    "@Macros/can_defeat_darknuts",
+                    "@Macros/can_play_winds_requiem"
+                  ]
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 573,
+                "y": 55,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

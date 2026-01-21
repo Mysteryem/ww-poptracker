@@ -832,8 +832,8 @@
           "@The Great Sea/Shark Island/Cave",
           "@The Great Sea/Stone Watcher Island/Cave, @Macros/can_defeat_darknuts_easily",// This includes can_play_winds_requiem logic, but this logic is not actually required,
           "sequence_break_other, @Macros/_can_reach_stone_watcher_cave_darknuts, [@The Great Sea/Stone Watcher Island/Cave], @Macros/can_defeat_darknuts_easily",
-          "@The Great Sea/Overlook Island/Cave, @Macros/can_defeat_darknuts_easily",
-          "sequence_break_other, @Macros/_can_reach_overlook_island_cave_darknuts, [@The Great Sea/Overlook Island/Cave], @Macros/can_defeat_darknuts_easily",
+          "@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/, @Macros/can_defeat_darknuts_easily",
+          "sequence_break_other, @Macros/_can_reach_overlook_island_cave_darknuts, [@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/], @Macros/can_defeat_darknuts_easily",
           "@Macros/can_access_hyrule"
         ]
       },

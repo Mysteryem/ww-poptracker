@@ -218,7 +218,7 @@ LOCATION_MAPPING = {
     [0x2380c7] = "@The Great Sea/Islet of Steel/Interior",
     [0x2380c8] = "@The Great Sea/Islet of Steel/Lookout Platform - Defeat the Enemies",
 
-    [0x2380c9] = "@The Great Sea/Overlook Island/Cave",
+    [0x2380c9] = "@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/",
 
     [0x2380ca] = "@The Great Sea/Bird's Peak Rock/Cave",
 
