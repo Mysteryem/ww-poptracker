@@ -32,27 +32,21 @@
         "sections": [
           {
             "name": "Great Fairy",
-            "access_rules": [
-              "@Exit Logic/Northern Fairy Fountain"
-            ],
-            "visibility_rules": [
-              "fairies_on"
-            ]
+            "ref": "The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Great Fairy/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Submarine/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 55
+            "y": 55,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

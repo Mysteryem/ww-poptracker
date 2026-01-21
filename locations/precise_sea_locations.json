@@ -53,6 +53,56 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Northern Fairy Island",
+        "children": [
+          {
+            "name": "Northern Fairy Island - Great Fairy",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Northern Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 242,
+                "y": 68,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Northern Fairy Island - Submarine",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "visibility_rules": [
+                  "submarines_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 211,
+                "y": 49,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

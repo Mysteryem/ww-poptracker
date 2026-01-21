@@ -243,8 +243,8 @@ LOCATION_MAPPING = {
     [0x2380d9] = "@The Great Sea/Southern Fairy Island/Lookout Platform - Destroy the Northwest Cannons",
     [0x2380da] = "@The Great Sea/Southern Fairy Island/Lookout Platform - Destroy the Southeast Cannons",
 
-    [0x2380db] = "@The Great Sea/Northern Fairy Island/Great Fairy",
-    [0x2380dc] = "@The Great Sea/Northern Fairy Island/Submarine",
+    [0x2380db] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Great Fairy/",
+    [0x2380dc] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Submarine/",
     
     [0x2380dd] = "@The Great Sea/Tingle Island/Ankle - Reward for All Tingle Statues",
     [0x2380de] = "@The Great Sea/Tingle Island/Big Octo",
