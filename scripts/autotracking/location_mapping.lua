@@ -272,8 +272,8 @@ LOCATION_MAPPING = {
     [0x2380ef] = "@The Great Sea/Cliff Plateau Isles/Highest Isle",
     [0x2380f0] = "@The Great Sea/Cliff Plateau Isles/Lookout Platform",
 
-    [0x2380f1] = "@The Great Sea/Crescent Moon Island/Chest",
-    [0x2380f2] = "@The Great Sea/Crescent Moon Island/Submarine",
+    [0x2380f1] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Chest/",
+    [0x2380f2] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Submarine/",
 
     [0x2380f3] = "@The Great Sea/Horseshoe Island/Play Golf",
     [0x2380f4] = "@The Great Sea/Horseshoe Island/Cave",

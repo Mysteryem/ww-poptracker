@@ -87,29 +87,21 @@
         "sections": [
           {
             "name": "Chest",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "visibility_rules": [
-              "misc_on"
-            ]
+            "ref": "The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Chest/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_miniblins"
-            ],
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Submarine/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 398,
-            "y": 55
+            "y": 55,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

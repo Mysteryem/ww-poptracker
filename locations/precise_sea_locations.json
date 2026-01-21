@@ -103,6 +103,58 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Crescent Moon Island",
+        "children": [
+          {
+            "name": "Crescent Moon Island - Chest",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 400,
+                "y": 53,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Crescent Moon Island - Submarine",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_miniblins"
+                ],
+                "visibility_rules": [
+                  "submarines_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 408,
+                "y": 33,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
