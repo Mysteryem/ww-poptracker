@@ -136,7 +136,7 @@ LOCATION_MAPPING = {
     [0x238076] = "@Forsaken Fortress/Chest on Bed",
     [0x238077] = "@Forsaken Fortress/Helmaroc King Heart Container",
 
-    [0x238078] = "@The Great Sea/Mother and Child Isles/Inside Mother Isle",
+    [0x238078] = "@The Great Sea (Precise)/Mother and Child Isles/Mother and Child Isles - Inside Mother Isle/",
 
     [0x238079] = "@The Great Sea/Fire Mountain/Cave - Chest",
     [0x23807a] = "@The Great Sea/Fire Mountain/Lookout Platform Chest",

@@ -277,6 +277,36 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Mother and Child Isles",
+        "children": [
+          {
+            "name": "Mother and Child Isles - Inside Mother Isle",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Macros/can_play_ballad_of_gales"
+                ],
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              }
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "seachart",
+            "x": 155,
+            "y": 136,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          }
+        ]
       }
     ]
   }
