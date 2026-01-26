@@ -1342,22 +1342,21 @@
         "sections": [
           {
             "name": "Spectacle Island - Barrel Shooting - First Prize",
-            "visibility_rules": [
-              "minigames_on"
-            ]
+            "ref": "The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - First Prize"
           },
           {
             "name": "Spectacle Island - Barrel Shooting - Second Prize",
-            "visibility_rules": [
-              "minigames_on"
-            ]
+            "ref": "The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - Second Prize"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 138
+            "y": 138,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
