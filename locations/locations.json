@@ -679,37 +679,21 @@
         "sections": [
           {
             "name": "Bird-Man Contest - First Prize",
-            "access_rules": [
-              "@Macros/can_fly_with_deku_leaf_outdoors, magic_2",
-              "sequence_break_other, [@Macros/can_fly_with_deku_leaf_outdoors], [magic_2], bombs, windwaker, passing"// Start the contest and use a bomb with a jump attack to escape the area. Sail over to the end of the contest area and play the song of passing, now exit KoRL and you should win the contest.
-            ],
-            "visibility_rules": [
-              "minigames_on"
-            ]
+            "ref": "The Great Sea (Precise)/Flight Control Platform/Flight Control Platform - Bird-Man Content - First Prize/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              [
-                "@Macros/can_defeat_wizzrobes",
-                "@Macros/can_defeat_red_chuchus",
-                "@Macros/can_defeat_green_chuchus",
-                "@Macros/can_defeat_miniblins",
-                "@Macros/can_defeat_wizzrobes_at_range"
-              ]
-            ],
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Flight Control Platform/Flight Control Platform - Submarine/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 573,
-            "y": 138
+            "y": 138,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
