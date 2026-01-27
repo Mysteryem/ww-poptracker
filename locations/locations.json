@@ -702,25 +702,21 @@
         "sections": [
           {
             "name": "Great Fairy",
-            "access_rules": [
-              "@Exit Logic/Western Fairy Fountain"
-            ],
-            "visibility_rules": [
-              "fairies_on"
-            ]
+            "ref": "The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Great Fairy/"
           },
           {
             "name": "Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Lookout Platform/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 55,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

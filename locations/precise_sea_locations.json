@@ -492,6 +492,54 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Western Fairy Island",
+        "children": [
+          {
+            "name": "Western Fairy Island - Great Fairy",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Western Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 35,
+                "y": 218,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Western Fairy Island - Lookout Platform",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 63,
+                "y": 225,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

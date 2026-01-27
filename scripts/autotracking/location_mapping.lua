@@ -236,8 +236,8 @@ LOCATION_MAPPING = {
     [0x2380d4] = "@The Great Sea/Eastern Fairy Island/Great Fairy",
     [0x2380d5] = "@The Great Sea/Eastern Fairy Island/Lookout Platform - Defeat the Cannons and Enemies",
 
-    [0x2380d6] = "@The Great Sea/Western Fairy Island/Great Fairy",
-    [0x2380d7] = "@The Great Sea/Western Fairy Island/Lookout Platform",
+    [0x2380d6] = "@The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Great Fairy/",
+    [0x2380d7] = "@The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Lookout Platform/",
 
     [0x2380d8] = "@The Great Sea/Southern Fairy Island/Great Fairy",
     [0x2380d9] = "@The Great Sea/Southern Fairy Island/Lookout Platform - Destroy the Northwest Cannons",
