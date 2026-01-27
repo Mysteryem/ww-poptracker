@@ -725,86 +725,45 @@
         "sections": [
           {
             "name": "Cave",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Exit Logic/Rock Spire Isle Secret Cave"
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Cave"
           },
           {
             "name": "Beedle's Special Shop Ship - 500 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 500 Item"
           },
           {
             "name": "Beedle's Special Shop Ship - 900 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 950 Item"
           },
           {
             "name": "Beedle's Special Shop Ship - 950 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 900 Item"
           },
           {
             "name": "Western Lookout Platform - Destroy the Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Western Lookout Platform - Destroy the Cannons"
           },
           {
             "name": "Eastern Lookout Platform - Destroy the Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Eastern Lookout Platform - Destroy the Cannons"
           },
           {
             "name": "Center Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Center Lookout Platform"
           },
           {
             "name": "Southeast Gunboat",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "bombs, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Southeast Gunboat/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 140,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

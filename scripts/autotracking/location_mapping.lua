@@ -257,14 +257,14 @@ LOCATION_MAPPING = {
     [0x2380e3] = "@The Great Sea/Bomb Island/Lookout Platform - Defeat the Enemies",
     [0x2380e4] = "@The Great Sea/Bomb Island/Submarine",
 
-    [0x2380e5] = "@The Great Sea/Rock Spire Isle/Cave",
-    [0x2380e6] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 500 Item",
-    [0x2380e7] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 950 Item",
-    [0x2380e8] = "@The Great Sea/Rock Spire Isle/Beedle's Special Shop Ship - 900 Item",
-    [0x2380e9] = "@The Great Sea/Rock Spire Isle/Western Lookout Platform - Destroy the Cannons",
-    [0x2380ea] = "@The Great Sea/Rock Spire Isle/Eastern Lookout Platform - Destroy the Cannons",
-    [0x2380eb] = "@The Great Sea/Rock Spire Isle/Center Lookout Platform",
-    [0x2380ec] = "@The Great Sea/Rock Spire Isle/Southeast Gunboat",
+    [0x2380e5] = "@The Great Sea (Precise)/Rock Spire Isle/Cave",
+    [0x2380e6] = "@The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 500 Item",
+    [0x2380e7] = "@The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 950 Item",
+    [0x2380e8] = "@The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 900 Item",
+    [0x2380e9] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Western Lookout Platform - Destroy the Cannons",
+    [0x2380ea] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Eastern Lookout Platform - Destroy the Cannons",
+    [0x2380eb] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Center Lookout Platform",
+    [0x2380ec] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Southeast Gunboat/",
 
     [0x2380ed] = "@The Great Sea/Shark Island/Cave",
 
