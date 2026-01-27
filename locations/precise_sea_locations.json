@@ -715,6 +715,57 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Eastern Fairy Island",
+        "children": [
+          {
+            "name": "Eastern Fairy Island - Great Fairy",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Eastern Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 416,
+                "y": 234,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Eastern Fairy Island - Lookout Platform - Defeat the Cannons and Enemies",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Macros/can_destroy_cannons"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 391,
+                "y": 214,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -763,28 +763,21 @@
         "sections": [
           {
             "name": "Great Fairy",
-            "access_rules": [
-              "@Exit Logic/Eastern Fairy Fountain"
-            ],
-            "visibility_rules": [
-              "fairies_on"
-            ]
+            "ref": "The Great Sea (Precise)/Eastern Fairy Island/Eastern Fairy Island - Great Fairy/"
           },
           {
             "name": "Lookout Platform - Defeat the Cannons and Enemies",
-            "access_rules": [
-              "@Macros/can_destroy_cannons"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Eastern Fairy Island/Eastern Fairy Island - Lookout Platform - Defeat the Cannons and Enemies/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 398,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
