@@ -246,8 +246,8 @@ LOCATION_MAPPING = {
     [0x2380db] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Great Fairy/",
     [0x2380dc] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Submarine/",
     
-    [0x2380dd] = "@The Great Sea/Tingle Island/Ankle - Reward for All Tingle Statues",
-    [0x2380de] = "@The Great Sea/Tingle Island/Big Octo",
+    [0x2380dd] = "@The Great Sea (Precise)/Tingle Island/Tingle Island - Ankle - Reward for All Tingle Statues/",
+    [0x2380de] = "@The Great Sea (Precise)/Tingle Island/Tingle Island - Big Octo/",
 
     [0x2380df] = "@The Great Sea/Diamond Steppe Island/Warp Maze Cave - First Chest",
     [0x2380e0] = "@The Great Sea/Diamond Steppe Island/Warp Maze Cave - Second Chest",

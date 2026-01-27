@@ -662,6 +662,59 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Tingle Island",
+        "children": [
+          {
+            "name": "Tingle Island - Ankle - Reward for All Tingle Statues",
+            "sections": [
+              {
+                "access_rules": [
+                  "statue:5"
+                ],
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 226,
+                "y": 233,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tingle Island - Big Octo",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_salvage.png",
+                "chest_opened_img": "images/items/chest_salvage_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_12_eye_big_octos, grapple"
+                ],
+                "visibility_rules": [
+                  "octos_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 220,
+                "y": 205,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -55,30 +55,21 @@
         "sections": [
           {
             "name": "Ankle - Reward for All Tingle Statues",
-            "access_rules": [
-              "statue:5"
-            ],
-            "visibility_rules": [
-              "misc_on"
-            ]
+            "ref": "The Great Sea (Precise)/Tingle Island/Tingle Island - Ankle - Reward for All Tingle Statues/"
           },
           {
             "name": "Big Octo",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_12_eye_big_octos, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Tingle Island/Tingle Island - Big Octo/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
