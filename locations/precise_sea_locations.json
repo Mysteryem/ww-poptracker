@@ -334,6 +334,100 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Pawprint Isle",
+        "children": [
+          {
+            "name": "Pawprint Isle - Lookout Platform - Defeat the Enemies",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 404,
+                "y": 133,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chuchu Cave - Chest",
+            "chest_unopened_img": "images/items/chest_spiky.png",
+            "chest_opened_img": "images/items/chest_spiky_gray.png",
+            "access_rules": [
+              "@Exit Logic/Pawprint Isle Chuchu Cave"
+            ],
+            "visibility_rules": [
+              "puzzlecaves_on"
+            ]
+          },
+          {
+            "name": "Chuchu Cave - Behind Left Boulder",
+            "access_rules": [
+              "@Exit Logic/Pawprint Isle Chuchu Cave, @Macros/can_move_boulders"
+            ],
+            "visibility_rules": [
+              "puzzlecaves_on"
+            ]
+          },
+          {
+            "name": "Chuchu Cave - Behind Right Boulder",
+            "access_rules": [
+              "@Exit Logic/Pawprint Isle Chuchu Cave, @Macros/can_move_boulders"
+            ],
+            "visibility_rules": [
+              "puzzlecaves_on"
+            ]
+          },
+          {
+            "name": "Chuchu Cave - Scale the Wall",
+            "access_rules": [
+              "@Exit Logic/Pawprint Isle Chuchu Cave, grapple"
+            ],
+            "visibility_rules": [
+              "puzzlecaves_on"
+            ]
+          },
+          {
+            "name": "Wizzrobe Cave",
+            "access_rules": [
+              [
+                "@Exit Logic/Pawprint Isle Wizzrobe Cave",
+                "@Macros/can_defeat_wizzrobes_at_range",
+                "@Macros/can_defeat_fire_keese",
+                "@Macros/can_defeat_magtails",
+                "@Macros/can_defeat_red_chuchus",
+                "@Macros/can_defeat_green_chuchus",
+                "@Macros/can_defeat_yellow_chuchus",
+                "@Macros/can_defeat_red_bubbles",
+                "@Macros/can_remove_peahat_armor"
+              ]
+            ],
+            "visibility_rules": [
+              "combat_on"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "seachart",
+            "x": 383,
+            "y": 149,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          }
+        ]
       }
     ]
   }
