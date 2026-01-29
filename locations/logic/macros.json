@@ -989,7 +989,7 @@
         "name": "can_defeat_12_eye_big_octos",
         "access_rules": [
           "bow, quiver",
-          "bow_3",
+          "@Macros/has_light_arrows",
           "bombs",
           "boomerang"
         ]
