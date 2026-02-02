@@ -848,6 +848,31 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Star Belt Archipelago",
+        "children": [
+          {
+            "name": "Star Belt Archipelago - Lookout Platform",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 597,
+                "y": 213,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -817,16 +817,17 @@
         "sections": [
           {
             "name": "Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Star Belt Archipelago/Star Belt Archipelago - Lookout Platform/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 573,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

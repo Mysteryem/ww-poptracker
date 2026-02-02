@@ -286,7 +286,7 @@ LOCATION_MAPPING = {
     [0x2380fa] = "@The Great Sea (Precise)/Star Island/Star Island - Lookout Platform/",
     [0x2380f9] = "@The Great Sea (Precise)/Star Island/Star Island - Cave/",
 
-    [0x2380fb] = "@The Great Sea/Star Belt Archipelago/Lookout Platform",
+    [0x2380fb] = "@The Great Sea (Precise)/Star Belt Archipelago/Star Belt Archipelago - Lookout Platform/",
 
     [0x2380fd] = "@The Great Sea/Five-Star Isles/Raft",
     [0x2380fe] = "@The Great Sea/Five-Star Isles/Submarine",
