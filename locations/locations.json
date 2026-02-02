@@ -786,47 +786,29 @@
         "sections": [
           {
             "name": "Cave - Chest",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "@Exit Logic/Fire Mountain Secret Cave, @Macros/can_defeat_magtails"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on, combat_on"
-            ]
+            "ref": "The Great Sea (Precise)/Fire Mountain/Fire Mountain - Cave - Chest/"
           },
           {
             "name": "Lookout Platform Chest",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Fire Mountain/Fire Mountain - Lookout Platform/Chest"
           },
           {
             "name": "Lookout Platform - Destroy the Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Fire Mountain/Fire Mountain - Lookout Platform/Destroy the Cannons"
           },
           {
             "name": "Big Octo",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_big_octos, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Fire Mountain/Fire Mountain - Big Octo/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 485,
-            "y": 219
+            "y": 219,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

@@ -138,10 +138,10 @@ LOCATION_MAPPING = {
 
     [0x238078] = "@The Great Sea (Precise)/Mother and Child Isles/Mother and Child Isles - Inside Mother Isle/",
 
-    [0x238079] = "@The Great Sea/Fire Mountain/Cave - Chest",
-    [0x23807a] = "@The Great Sea/Fire Mountain/Lookout Platform Chest",
-    [0x23807b] = "@The Great Sea/Fire Mountain/Lookout Platform - Destroy the Cannons",
-    [0x23807c] = "@The Great Sea/Fire Mountain/Big Octo",
+    [0x238079] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Cave - Chest/",
+    [0x23807a] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Lookout Platform/Chest",
+    [0x23807b] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Lookout Platform/Destroy the Cannons",
+    [0x23807c] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Big Octo/",
 
     [0x23807d] = "@The Great Sea/Ice Ring Isle/Frozen Chest",
     [0x23807e] = "@The Great Sea/Ice Ring Isle/Cave - Chest",
