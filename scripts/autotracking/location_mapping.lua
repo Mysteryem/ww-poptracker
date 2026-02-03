@@ -96,7 +96,7 @@ LOCATION_MAPPING = {
     [0x23805e] = "@Forbidden Woods/Double Mothula Room",
     [0x23805f] = "@Forbidden Woods/Kalle Demos Heart Container",
 
-    [0x238060] = "@The Great Sea/Greatfish Isle/Hidden Chest",
+    [0x238060] = "@The Great Sea (Precise)/Greatfish Isle/Greatfish Isle - Hidden Chest/",
 
     [0x238061] = "@Tower of the Gods/Chest Behind Bombable Walls",
     [0x238062] = "@Tower of the Gods/Pot Behind Bombable Walls",
