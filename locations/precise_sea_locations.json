@@ -873,6 +873,36 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Three-Eye Reef",
+        "children": [
+          {
+            "name": "Three-Eye Reef - Destroy the Cannons and Gunboats",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "reefs_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 37,
+                "y": 314,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
