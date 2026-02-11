@@ -874,27 +874,21 @@
         "sections": [
           {
             "name": "Destroy the Cannons and Gunboats",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "reefs_on"
-            ]
+            "ref": "The Great Sea (Precise)/Cyclops Reef/Cyclops Reef - Destroy the Cannons and Gunboats/"
           },
           {
             "name": "Lookout Platform - Defeat the Enemies",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Cyclops Reef/Cyclops Reef - Lookout Platform - Defeat the Enemies/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 300
+            "y": 300,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
