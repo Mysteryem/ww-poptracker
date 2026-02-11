@@ -311,9 +311,9 @@ LOCATION_MAPPING = {
     [0x23810a] = "@The Great Sea/Five-Eye Reef/Destroy the Cannons",
     [0x23810b] = "@The Great Sea/Five-Eye Reef/Lookout Platform",
 
-    [0x23810c] = "@The Great Sea/Six-Eye Reef/Destroy the Cannons and Gunboats",
-    [0x23810d] = "@The Great Sea/Six-Eye Reef/Lookout Platform - Destroy the Cannons",
-    [0x23810e] = "@The Great Sea/Six-Eye Reef/Submarine",
+    [0x23810c] = "@The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Destroy the Cannons and Gunboats/",
+    [0x23810d] = "@The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Lookout Platform - Destroy the Cannons/",
+    [0x23810e] = "@The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Submarine/",
 
     [0x23810f] = "@Treasure Salvaging/Forsaken Fortress Sector - Sunken Treasure 25/Salvage",
     [0x238110] = "@Treasure Salvaging/Star Island - Sunken Treasure 7/Salvage",

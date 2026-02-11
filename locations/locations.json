@@ -897,38 +897,25 @@
         "sections": [
           {
             "name": "Destroy the Cannons and Gunboats",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "reefs_on"
-            ]
+            "ref": "The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Destroy the Cannons and Gunboats/"
           },
           {
             "name": "Lookout Platform - Destroy the Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Lookout Platform - Destroy the Cannons/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Submarine/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 311,
-            "y": 300
+            "y": 300,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
