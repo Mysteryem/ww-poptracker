@@ -229,9 +229,9 @@ LOCATION_MAPPING = {
     [0x2380cf] = "@The Great Sea (Precise)/Pawprint Isle/Wizzrobe Cave",
     [0x2380d0] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle - Lookout Platform - Defeat the Enemies/",
 
-    [0x2380d1] = "@The Great Sea/Thorned Fairy Island/Great Fairy",
-    [0x2380d2] = "@The Great Sea/Thorned Fairy Island/Northeastern Lookout Platform - Destroy the Cannons",
-    [0x2380d3] = "@The Great Sea/Thorned Fairy Island/Southwestern Lookout Platform - Defeat the Enemies",
+    [0x2380d1] = "@The Great Sea (Precise)/Thorned Fairy Island/Thorned Fairy Island - Great Fairy/",
+    [0x2380d2] = "@The Great Sea (Precise)/Thorned Fairy Island/Thorned Fairy Island - Lookout Platforms/Northeastern Lookout Platform - Destroy the Cannons",
+    [0x2380d3] = "@The Great Sea (Precise)/Thorned Fairy Island/Thorned Fairy Island - Lookout Platforms/Southwestern Lookout Platform - Defeat the Enemies",
 
     [0x2380d4] = "@The Great Sea (Precise)/Eastern Fairy Island/Eastern Fairy Island - Great Fairy/",
     [0x2380d5] = "@The Great Sea (Precise)/Eastern Fairy Island/Eastern Fairy Island - Lookout Platform - Defeat the Cannons and Enemies/",

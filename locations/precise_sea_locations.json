@@ -1058,6 +1058,67 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Thorned Fairy Island",
+        "children": [
+          {
+            "name": "Thorned Fairy Island - Great Fairy",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Thorned Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 589,
+                "y": 315,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Thorned Fairy Island - Lookout Platforms",
+            "sections": [
+              {
+                "name": "Northeastern Lookout Platform - Destroy the Cannons",
+                "access_rules": [
+                  "@Macros/can_destroy_cannons"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              },
+              {
+                "name": "Southwestern Lookout Platform - Defeat the Enemies",
+                "access_rules": [
+                  "@Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 573,
+                "y": 299,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
