@@ -1021,30 +1021,21 @@
         "sections": [
           {
             "name": "Interior",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "bombs, @Macros/can_play_winds_requiem"
-            ],
-            "visibility_rules": [
-              "misc_on"
-            ]
+            "ref": "The Great Sea (Precise)/Islet of Steel/Islet of Steel - Interior/"
           },
           {
             "name": "Lookout Platform - Defeat the Enemies",
-            "access_rules": [
-              "@Macros/can_defeat_wizzrobes_at_range"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Islet of Steel/Islet of Steel - Lookout Platform - Defeat the Enemies/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 140,
-            "y": 382
+            "y": 382,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

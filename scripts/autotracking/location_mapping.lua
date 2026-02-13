@@ -215,8 +215,8 @@ LOCATION_MAPPING = {
     [0x2380c5] = "@The Great Sea/Stone Watcher Island/Lookout Platform Chest",
     [0x2380c6] = "@The Great Sea/Stone Watcher Island/Lookout Platform - Destroy the Cannons",
 
-    [0x2380c7] = "@The Great Sea/Islet of Steel/Interior",
-    [0x2380c8] = "@The Great Sea/Islet of Steel/Lookout Platform - Defeat the Enemies",
+    [0x2380c7] = "@The Great Sea (Precise)/Islet of Steel/Islet of Steel - Interior/",
+    [0x2380c8] = "@The Great Sea (Precise)/Islet of Steel/Islet of Steel - Lookout Platform - Defeat the Enemies/",
 
     [0x2380c9] = "@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/",
 

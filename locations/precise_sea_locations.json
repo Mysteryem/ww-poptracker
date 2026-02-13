@@ -1188,6 +1188,59 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Islet of Steel",
+        "children": [
+          {
+            "name": "Islet of Steel - Interior",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "bombs, @Macros/can_play_winds_requiem"
+                ],
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 154,
+                "y": 366,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Islet of Steel - Lookout Platform - Defeat the Enemies",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Macros/can_defeat_wizzrobes_at_range"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 136,
+                "y": 385,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
