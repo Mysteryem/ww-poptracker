@@ -1044,42 +1044,25 @@
         "sections": [
           {
             "name": "Cave",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              [
-                "@Macros/_can_reach_stone_watcher_cave_darknuts",
-                "@Macros/can_defeat_darknuts",
-                "@Macros/can_play_winds_requiem"
-              ]
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
+            "ref": "The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Cave/"
           },
           {
             "name": "Lookout Platform Chest",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Lookout Platform/Chest"
           },
           {
             "name": "Lookout Platform - Destroy the Cannons",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "@Macros/can_destroy_cannons"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Lookout Platform/Destroy the Cannons"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 382
+            "y": 382,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

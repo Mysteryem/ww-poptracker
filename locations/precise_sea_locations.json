@@ -1241,6 +1241,72 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Stone Watcher Island",
+        "children": [
+          {
+            "name": "Stone Watcher Island - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  [
+                    "@Macros/_can_reach_stone_watcher_cave_darknuts",
+                    "@Macros/can_defeat_darknuts",
+                    "@Macros/can_play_winds_requiem"
+                  ]
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 209,
+                "y": 382,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Stone Watcher Island - Lookout Platform",
+            "sections": [
+              {
+                "name": "Chest",
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              },
+              {
+                "name": "Destroy the Cannons",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Macros/can_destroy_cannons"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 238,
+                "y": 385,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
