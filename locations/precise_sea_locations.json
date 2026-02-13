@@ -1388,6 +1388,76 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Bomb Island",
+        "children": [
+          {
+            "name": "Bomb Island - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Bomb Island Secret Cave, @Macros/can_stun_magtails"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 502,
+                "y": 365,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bomb Island - Lookout Platform - Defeat the Enemies",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 485,
+                "y": 378,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bomb Island - Submarine",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "submarines_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 491,
+                "y": 399,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -253,9 +253,9 @@ LOCATION_MAPPING = {
     [0x2380e0] = "@The Great Sea/Diamond Steppe Island/Warp Maze Cave - Second Chest",
     [0x2380e1] = "@The Great Sea/Diamond Steppe Island/Big Octo",
 
-    [0x2380e2] = "@The Great Sea/Bomb Island/Cave",
-    [0x2380e3] = "@The Great Sea/Bomb Island/Lookout Platform - Defeat the Enemies",
-    [0x2380e4] = "@The Great Sea/Bomb Island/Submarine",
+    [0x2380e2] = "@The Great Sea (Precise)/Bomb Island/Bomb Island - Cave/",
+    [0x2380e3] = "@The Great Sea (Precise)/Bomb Island/Bomb Island - Lookout Platform - Defeat the Enemies/",
+    [0x2380e4] = "@The Great Sea (Precise)/Bomb Island/Bomb Island - Submarine/",
 
     [0x2380e5] = "@The Great Sea (Precise)/Rock Spire Isle/Cave",
     [0x2380e6] = "@The Great Sea (Precise)/Rock Spire Isle/Beedle's Special Shop Ship - 500 Item",
