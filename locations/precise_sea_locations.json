@@ -1307,6 +1307,87 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Private Oasis",
+        "children": [
+          {
+            "name": "Private Oasis",
+            "sections": [
+              {
+                "name": "Chest at Top of Waterfall",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "hookshot",
+                  "@Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Cabana Labyrinth - Lower Floor Chest",
+                "access_rules": [
+                  "@Exit Logic/Cabana Labyrinth, hammer"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              },
+              {
+                "name": "Cabana Labyrinth - Upper Floor Chest",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  [
+                    "@Exit Logic/Cabana Labyrinth",
+                    "hammer",
+                    "@Macros/can_play_winds_requiem"
+                  ]
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 415,
+                "y": 398,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Private Oasis - Big Octo",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_salvage.png",
+                "chest_opened_img": "images/items/chest_salvage_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_big_octos, grapple"
+                ],
+                "visibility_rules": [
+                  "octos_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 389,
+                "y": 382,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

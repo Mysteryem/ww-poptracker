@@ -193,10 +193,10 @@ LOCATION_MAPPING = {
     [0x2380b5] = "@The Great Sea/Great Sea/Withered Trees",
     [0x2380b6] = "@The Great Sea/Great Sea/Ghost Ship",
 
-    [0x2380b7] = "@The Great Sea/Private Oasis/Chest at Top of Waterfall",
-    [0x2380b8] = "@The Great Sea/Private Oasis/Cabana Labyrinth - Lower Floor Chest",
-    [0x2380b9] = "@The Great Sea/Private Oasis/Cabana Labyrinth - Upper Floor Chest",
-    [0x2380ba] = "@The Great Sea/Private Oasis/Big Octo",
+    [0x2380b7] = "@The Great Sea (Precise)/Private Oasis/Private Oasis/Chest at Top of Waterfall",
+    [0x2380b8] = "@The Great Sea (Precise)/Private Oasis/Private Oasis/Cabana Labyrinth - Lower Floor Chest",
+    [0x2380b9] = "@The Great Sea (Precise)/Private Oasis/Private Oasis/Cabana Labyrinth - Upper Floor Chest",
+    [0x2380ba] = "@The Great Sea (Precise)/Private Oasis/Private Oasis - Big Octo/",
     
     [0x2380bb] = "@The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - First Prize",
     [0x2380bc] = "@The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - Second Prize",

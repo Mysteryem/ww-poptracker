@@ -1071,57 +1071,29 @@
         "sections": [
           {
             "name": "Chest at Top of Waterfall",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "hookshot",
-              "@Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Private Oasis/Private Oasis/Chest at Top of Waterfall"
           },
           {
             "name": "Cabana Labyrinth - Lower Floor Chest",
-            "access_rules": [
-              "@Exit Logic/Cabana Labyrinth, hammer"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Private Oasis/Private Oasis/Cabana Labyrinth - Lower Floor Chest"
           },
           {
             "name": "Cabana Labyrinth - Upper Floor Chest",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              [
-                "@Exit Logic/Cabana Labyrinth",
-                "hammer",
-                "@Macros/can_play_winds_requiem"
-              ]
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Private Oasis/Private Oasis/Cabana Labyrinth - Upper Floor Chest"
           },
           {
             "name": "Big Octo",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_big_octos, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Private Oasis/Private Oasis - Big Octo/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 398,
-            "y": 382
+            "y": 382,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
