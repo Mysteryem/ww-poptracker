@@ -201,9 +201,9 @@ LOCATION_MAPPING = {
     [0x2380bb] = "@The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - First Prize",
     [0x2380bc] = "@The Great Sea (Precise)/Spectacle Island/Spectacle Island - Barrel Shooting - Second Prize",
 
-    [0x2380bd] = "@The Great Sea/Needle Rock Isle/Chest in Ring of Fire",
-    [0x2380be] = "@The Great Sea/Needle Rock Isle/Cave",
-    [0x2380bf] = "@The Great Sea/Needle Rock Isle/Golden Gunboat",
+    [0x2380bd] = "@The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle/Chest in Ring of Fire",
+    [0x2380be] = "@The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle/Cave",
+    [0x2380bf] = "@The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle - Golden Gunboat/",
 
     [0x2380c0] = "@The Great Sea/Angular Isles/Peak",
     [0x2380c1] = "@The Great Sea/Angular Isles/Cave",

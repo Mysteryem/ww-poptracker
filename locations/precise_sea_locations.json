@@ -1119,6 +1119,75 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Needle Rock Isle",
+        "children": [
+          {
+            "name": "Needle Rock Isle",
+            "sections": [
+              {
+                "name": "Chest in Ring of Fire",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "_comment": [
+                  "The switch can be activated out-of-logic by shooting a fire arrow near it."
+                ],
+                "access_rules": [
+                  "bait, @Macros/can_buy_hyoi_pears",
+                  "sequence_break_other, @Macros/has_fire_arrows, [bait], [@Macros/can_buy_hyoi_pears]"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Cave",
+                "access_rules": [
+                  "@Exit Logic/Needle Rock Isle Secret Cave, @Macros/has_fire_arrows"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 68,
+                "y": 398,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Needle Rock Isle - Golden Gunboat",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_salvage.png",
+                "chest_opened_img": "images/items/chest_salvage_gray.png",
+                "access_rules": [
+                  "bombs, grapple"
+                ],
+                "visibility_rules": [
+                  "octos_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 40,
+                "y": 375,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

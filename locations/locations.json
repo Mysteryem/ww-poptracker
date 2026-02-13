@@ -994,42 +994,25 @@
         "sections": [
           {
             "name": "Chest in Ring of Fire",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "bait, @Macros/can_buy_hyoi_pears",
-              "sequence_break_other, @Macros/has_fire_arrows, [bait], [@Macros/can_buy_hyoi_pears]"// The switch can be activated by shooting a fire arrow near it.
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle/Chest in Ring of Fire"
           },
           {
             "name": "Cave",
-            "access_rules": [
-              "@Exit Logic/Needle Rock Isle Secret Cave, @Macros/has_fire_arrows"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle/Cave"
           },
           {
             "name": "Golden Gunboat",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "bombs, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle - Golden Gunboat/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 55,
-            "y": 382
+            "y": 382,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
