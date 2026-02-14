@@ -1175,41 +1175,25 @@
         "sections": [
           {
             "name": "Warp Maze Cave - First Chest",
-            "access_rules": [
-              "@Exit Logic/Diamond Steppe Island Warp Maze Cave"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Warp Maze Cave/First Chest"
           },
           {
             "name": "Warp Maze Cave - Second Chest",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Exit Logic/Diamond Steppe Island Warp Maze Cave"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Warp Maze Cave/Second Chest"
           },
           {
             "name": "Big Octo",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_big_octos, grapple"
-            ],
-            "visibility_rules": [
-              "octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Big Octo/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 55,
-            "y": 464
+            "y": 464,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

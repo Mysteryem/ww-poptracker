@@ -249,9 +249,9 @@ LOCATION_MAPPING = {
     [0x2380dd] = "@The Great Sea (Precise)/Tingle Island/Tingle Island - Ankle - Reward for All Tingle Statues/",
     [0x2380de] = "@The Great Sea (Precise)/Tingle Island/Tingle Island - Big Octo/",
 
-    [0x2380df] = "@The Great Sea/Diamond Steppe Island/Warp Maze Cave - First Chest",
-    [0x2380e0] = "@The Great Sea/Diamond Steppe Island/Warp Maze Cave - Second Chest",
-    [0x2380e1] = "@The Great Sea/Diamond Steppe Island/Big Octo",
+    [0x2380df] = "@The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Warp Maze Cave/First Chest",
+    [0x2380e0] = "@The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Warp Maze Cave/Second Chest",
+    [0x2380e1] = "@The Great Sea (Precise)/Diamond Steppe Island/Diamond Steppe Island - Big Octo/",
 
     [0x2380e2] = "@The Great Sea (Precise)/Bomb Island/Bomb Island - Cave/",
     [0x2380e3] = "@The Great Sea (Precise)/Bomb Island/Bomb Island - Lookout Platform - Defeat the Enemies/",
