@@ -1559,31 +1559,21 @@
         "sections": [
           {
             "name": "Peak",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Angular Isles/Angular Isles/Peak"
           },
           {
             "name": "Cave",
-            "access_rules": [
-              [
-                "@Exit Logic/Angular Isles Secret Cave",
-                "@Macros/can_aim_mirror_shield",
-                "@Macros/_can_fly_with_deku_leaf_indoors_or_hookshot"
-              ]
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea (Precise)/Angular Isles/Angular Isles/Cave"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 398,
-            "y": 546
+            "y": 546,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

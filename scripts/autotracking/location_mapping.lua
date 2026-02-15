@@ -205,8 +205,8 @@ LOCATION_MAPPING = {
     [0x2380be] = "@The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle/Cave",
     [0x2380bf] = "@The Great Sea (Precise)/Needle Rock Isle/Needle Rock Isle - Golden Gunboat/",
 
-    [0x2380c0] = "@The Great Sea/Angular Isles/Peak",
-    [0x2380c1] = "@The Great Sea/Angular Isles/Cave",
+    [0x2380c0] = "@The Great Sea (Precise)/Angular Isles/Angular Isles/Peak",
+    [0x2380c1] = "@The Great Sea (Precise)/Angular Isles/Angular Isles/Cave",
 
     [0x2380c2] = "@The Great Sea/Boating Course/Raft",
     [0x2380c3] = "@The Great Sea/Boating Course/Cave",
