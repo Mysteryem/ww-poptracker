@@ -300,9 +300,9 @@ LOCATION_MAPPING = {
     [0x238103] = "@The Great Sea (Precise)/Cyclops Reef/Cyclops Reef - Destroy the Cannons and Gunboats/",
     [0x238104] = "@The Great Sea (Precise)/Cyclops Reef/Cyclops Reef - Lookout Platform - Defeat the Enemies/",
 
-    [0x238105] = "@The Great Sea/Two-Eye Reef/Destroy the Cannons and Gunboats",
-    [0x238106] = "@The Great Sea/Two-Eye Reef/Lookout Platform",
-    [0x238107] = "@The Great Sea/Two-Eye Reef/Big Octo Great Fairy",
+    [0x238105] = "@The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Destroy the Cannons and Gunboats/",
+    [0x238106] = "@The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Lookout Platform/",
+    [0x238107] = "@The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Big Octo Great Fairy/",
 
     [0x238108] = "@The Great Sea (Precise)/Three-Eye Reef/Three-Eye Reef - Destroy the Cannons and Gunboats/",
 

@@ -1532,38 +1532,25 @@
         "sections": [
           {
             "name": "Destroy the Cannons and Gunboats",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "bombs, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "reefs_on"
-            ]
+            "ref": "The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Destroy the Cannons and Gunboats/"
           },
           {
             "name": "Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Lookout Platform/"
           },
           {
             "name": "Big Octo Great Fairy",
-            "chest_unopened_img": "images/items/chest_salvage.png",
-            "chest_opened_img": "images/items/chest_salvage_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_big_octos"
-            ],
-            "visibility_rules": [
-              "fairies_on,octos_on"
-            ]
+            "ref": "The Great Sea (Precise)/Two-Eye Reef/Two-Eye Reef - Big Octo Great Fairy/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 311,
-            "y": 546
+            "y": 546,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
