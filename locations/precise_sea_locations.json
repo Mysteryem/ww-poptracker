@@ -1517,6 +1517,56 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Five-Eye Reef",
+        "children": [
+          {
+            "name": "Five-Eye Reef - Destroy the Cannons",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "reefs_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 123,
+                "y": 448,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Five-Eye Reef - Lookout Platform",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 145,
+                "y": 465,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

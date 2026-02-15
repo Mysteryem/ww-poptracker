@@ -308,8 +308,8 @@ LOCATION_MAPPING = {
 
     [0x238109] = "@The Great Sea (Precise)/Four-Eye Reef/Four-Eye Reef - Destroy the Cannons and Gunboats",
 
-    [0x23810a] = "@The Great Sea/Five-Eye Reef/Destroy the Cannons",
-    [0x23810b] = "@The Great Sea/Five-Eye Reef/Lookout Platform",
+    [0x23810a] = "@The Great Sea (Precise)/Five-Eye Reef/Five-Eye Reef - Destroy the Cannons/",
+    [0x23810b] = "@The Great Sea (Precise)/Five-Eye Reef/Five-Eye Reef - Lookout Platform/",
 
     [0x23810c] = "@The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Destroy the Cannons and Gunboats/",
     [0x23810d] = "@The Great Sea (Precise)/Six-Eye Reef/Six-Eye Reef - Lookout Platform - Destroy the Cannons/",

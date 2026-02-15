@@ -1202,27 +1202,21 @@
         "sections": [
           {
             "name": "Destroy the Cannons",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "reefs_on"
-            ]
+            "ref": "The Great Sea (Precise)/Five-Eye Reef/Five-Eye Reef - Destroy the Cannons/"
           },
           {
             "name": "Lookout Platform",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Five-Eye Reef/Five-Eye Reef - Lookout Platform/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 140,
-            "y": 464
+            "y": 464,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
