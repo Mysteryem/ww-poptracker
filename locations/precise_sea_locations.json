@@ -1828,6 +1828,79 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Horseshoe Island",
+        "children": [
+          {
+            "name": "Horseshoe Island",
+            "sections": [
+              {
+                "name": "Play Golf",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  [
+                    "@Macros/can_fan_with_deku_leaf",
+                    "@Macros/_can_fly_with_deku_leaf_outdoors_or_hookshot"
+                  ]
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Cave",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  [
+                    "@Exit Logic/Horseshoe Island Secret Cave",
+                    "@Macros/can_defeat_mothulas",
+                    "@Macros/can_defeat_winged_mothulas"
+                  ]
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 35,
+                "y": 546,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Horseshoe Island - Lookout Platforms",
+            "visibility_rules": [
+              "lookouts_on"
+            ],
+            "sections": [
+              {
+                "name": "Northwestern Lookout Platform"
+              },
+              {
+                "name": "Southeastern Lookout Platform"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 63,
+                "y": 561,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

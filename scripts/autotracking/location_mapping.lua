@@ -275,10 +275,10 @@ LOCATION_MAPPING = {
     [0x2380f1] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Chest/",
     [0x2380f2] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Submarine/",
 
-    [0x2380f3] = "@The Great Sea/Horseshoe Island/Play Golf",
-    [0x2380f4] = "@The Great Sea/Horseshoe Island/Cave",
-    [0x2380f5] = "@The Great Sea/Horseshoe Island/Northwestern Lookout Platform",
-    [0x2380f6] = "@The Great Sea/Horseshoe Island/Southeastern Lookout Platform",
+    [0x2380f3] = "@The Great Sea (Precise)/Horseshoe Island/Horseshoe Island/Play Golf",
+    [0x2380f4] = "@The Great Sea (Precise)/Horseshoe Island/Horseshoe Island/Cave",
+    [0x2380f5] = "@The Great Sea (Precise)/Horseshoe Island/Horseshoe Island - Lookout Platforms/Northwestern Lookout Platform",
+    [0x2380f6] = "@The Great Sea (Precise)/Horseshoe Island/Horseshoe Island - Lookout Platforms/Southeastern Lookout Platform",
 
     [0x2380f7] = "@The Great Sea (Precise)/Flight Control Platform/Flight Control Platform - Bird-Man Content - First Prize/",
     [0x2380f8] = "@The Great Sea (Precise)/Flight Control Platform/Flight Control Platform - Submarine/",
