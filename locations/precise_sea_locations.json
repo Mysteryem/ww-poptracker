@@ -1901,6 +1901,119 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Outset Island",
+        "children": [
+          {
+            "name": "Outset Island",
+            "sections": [
+              {
+                "name": "Underneath Link's House",
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              },
+              {
+                "name": "Mesa the Grasscutter's House",
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              },
+              {
+                "name": "Orca - Give 10 Knight's Crests",
+                "access_rules": [
+                  [
+                    "spoils",
+                    "@Macros/can_farm_knights_crests",
+                    "@Macros/can_sword_fight_with_orca",
+                    "magic"
+                  ]
+                ],
+                "visibility_rules": [
+                  "spoilssq_on"
+                ]
+              },
+              {
+                "name": "Great Fairy",
+                "access_rules": [
+                  "@Exit Logic/Outset Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              },
+              {
+                "name": "Jabun's Cave",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "bombs"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Dig up Black Soil",
+                "access_rules": [
+                  [
+                    "bait",
+                    "@Macros/can_buy_bait",
+                    "power"
+                  ]
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Savage Labyrinth - Floor 30",
+                "inspectable_sequence_break": true,
+                "access_rules": [
+                  [
+                    "@Macros/_can_complete_savage_labyrinth_floor_30"
+                  ],
+                  [
+                    "{$exit_accessibility_no_sequence_break|Savage Labyrinth}"
+                  ]
+                ],
+                "visibility_rules": [
+                  "labyrinth_on"
+                ]
+              },
+              {
+                "name": "Savage Labyrinth - Floor 50",
+                "inspectable_sequence_break": true,
+                "_comment": [
+                  "'@' rules turn Inspect into Normal accessibility, so Floor 50 cannot use",
+                  " '@The Great Sea/Outset Island/Savage Labyrinth - Floor 30' in its access rules."
+                ],
+                "access_rules": [
+                  [
+                    "@Macros/_can_complete_savage_labyrinth_floor_50"
+                  ],
+                  [
+                    "{$exit_accessibility_no_sequence_break|Savage Labyrinth}"
+                  ]
+                ],
+                "visibility_rules": [
+                  "labyrinth_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 140,
+                "y": 561,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
