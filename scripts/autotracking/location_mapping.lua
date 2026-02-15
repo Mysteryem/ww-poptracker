@@ -74,8 +74,8 @@ LOCATION_MAPPING = {
     [0x23804a] = "@Dragon Roost Cavern/Boss Stairs Right Pot",
     [0x23804b] = "@Dragon Roost Cavern/Gohma Heart Container",
 
-    [0x23804c] = "@The Great Sea/Forest Haven/On Tree Branch",
-    [0x23804d] = "@The Great Sea/Forest Haven/Small Island Chest",
+    [0x23804c] = "@The Great Sea (Precise)/Forest Haven/Forest Haven/On Tree Branch",
+    [0x23804d] = "@The Great Sea (Precise)/Forest Haven/Forest Haven/Small Island Chest",
 
     [0x23804e] = "@Forbidden Woods/First Room",
     [0x23804f] = "@Forbidden Woods/Inside Hollow Tree's Mouth",

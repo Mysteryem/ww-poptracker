@@ -1298,48 +1298,21 @@
         "sections": [
           {
             "name": "On Tree Branch",
-            "access_rules": [
-              [
-                "@Macros/can_access_forest_haven",
-                "grapple"
-              ],
-              [
-                "@Macros/can_access_forest_haven",
-                "@Macros/_forest_haven_grapple_skip"
-              ]
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Forest Haven/Forest Haven/On Tree Branch"
           },
           {
             "name": "Small Island Chest",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              [
-                "@Macros/can_access_forest_haven",
-                "grapple",
-                "@Macros/can_fly_with_deku_leaf_outdoors",
-                "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
-              ],
-              [
-                "@Macros/can_access_forest_haven",
-                "@Macros/_forest_haven_grapple_skip",
-                "@Macros/can_fly_with_deku_leaf_outdoors",
-                "@Macros/_can_cut_grass_or_has_magic_meter_upgrade"
-              ]
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Forest Haven/Forest Haven/Small Island Chest"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 485,
-            "y": 464
+            "y": 464,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
