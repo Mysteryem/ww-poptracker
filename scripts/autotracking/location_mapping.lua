@@ -143,9 +143,9 @@ LOCATION_MAPPING = {
     [0x23807b] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Lookout Platform/Destroy the Cannons",
     [0x23807c] = "@The Great Sea (Precise)/Fire Mountain/Fire Mountain - Big Octo/",
 
-    [0x23807d] = "@The Great Sea/Ice Ring Isle/Frozen Chest",
-    [0x23807e] = "@The Great Sea/Ice Ring Isle/Cave - Chest",
-    [0x23807f] = "@The Great Sea/Ice Ring Isle/Inner Cave - Chest",
+    [0x23807d] = "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Frozen Chest",
+    [0x23807e] = "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Cave - Chest",
+    [0x23807f] = "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Inner Cave - Chest",
 
     [0x238080] = "@The Great Sea/Headstone Island/Top of the Island",
     [0x238081] = "@The Great Sea/Headstone Island/Submarine",

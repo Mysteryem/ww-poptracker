@@ -1658,6 +1658,57 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Ice Ring Isle",
+        "children": [
+          {
+            "name": "Ice Ring Isle",
+            "sections": [
+              {
+                "name": "Frozen Chest",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/has_fire_arrows"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Cave - Chest",
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Ice Ring Isle Secret Cave"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              },
+              {
+                "name": "Inner Cave - Chest",
+                "access_rules": [
+                  "@Exit Logic/Ice Ring Isle Inner Cave, @Macros/has_fire_arrows"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on, combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 383,
+                "y": 479,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
