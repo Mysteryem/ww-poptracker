@@ -2183,6 +2183,65 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Boating Course",
+        "children": [
+          {
+            "name": "Boating Course - Raft",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 488,
+                "y": 554,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Boating Course - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  [
+                    "@Exit Logic/Boating Course Secret Cave",
+                    "@Macros/can_hit_diamond_switches_at_range",
+                    "@Macros/can_defeat_miniblins_easily"
+                  ],
+                  [
+                    "@Exit Logic/Boating Course Secret Cave",
+                    "@Macros/can_hit_diamond_switches_at_range",
+                    "@General Logic/Hard Logic Precision"
+                  ]
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on, combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 470,
+                "y": 530,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -208,8 +208,8 @@ LOCATION_MAPPING = {
     [0x2380c0] = "@The Great Sea (Precise)/Angular Isles/Angular Isles/Peak",
     [0x2380c1] = "@The Great Sea (Precise)/Angular Isles/Angular Isles/Cave",
 
-    [0x2380c2] = "@The Great Sea/Boating Course/Raft",
-    [0x2380c3] = "@The Great Sea/Boating Course/Cave",
+    [0x2380c2] = "@The Great Sea (Precise)/Boating Course/Boating Course - Raft/",
+    [0x2380c3] = "@The Great Sea (Precise)/Boating Course/Boating Course - Cave/",
 
     [0x2380c4] = "@The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Cave/",
     [0x2380c5] = "@The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Lookout Platform/Chest",
