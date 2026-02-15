@@ -239,9 +239,9 @@ LOCATION_MAPPING = {
     [0x2380d6] = "@The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Great Fairy/",
     [0x2380d7] = "@The Great Sea (Precise)/Western Fairy Island/Western Fairy Island - Lookout Platform/",
 
-    [0x2380d8] = "@The Great Sea/Southern Fairy Island/Great Fairy",
-    [0x2380d9] = "@The Great Sea/Southern Fairy Island/Lookout Platform - Destroy the Northwest Cannons",
-    [0x2380da] = "@The Great Sea/Southern Fairy Island/Lookout Platform - Destroy the Southeast Cannons",
+    [0x2380d8] = "@The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Great Fairy/",
+    [0x2380d9] = "@The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Lookout Platform/Destroy the Northwest Cannons",
+    [0x2380da] = "@The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Lookout Platform/Destroy the Southeast Cannons",
 
     [0x2380db] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Great Fairy/",
     [0x2380dc] = "@The Great Sea (Precise)/Northern Fairy Island/Northern Fairy Island - Submarine/",

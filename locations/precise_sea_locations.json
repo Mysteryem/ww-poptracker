@@ -1595,6 +1595,69 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Southern Fairy Island",
+        "children": [
+          {
+            "name": "Southern Fairy Island - Great Fairy",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Southern Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "fairies_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 297,
+                "y": 449,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Southern Fairy Island - Lookout Platform",
+            "sections": [
+              {
+                "name": "Destroy the Northwest Cannons",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              },
+              {
+                "name": "Destroy the Southeast Cannons",
+                "access_rules": [
+                  "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
+                ],
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 317,
+                "y": 466,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

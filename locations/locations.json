@@ -1244,39 +1244,25 @@
         "sections": [
           {
             "name": "Great Fairy",
-            "access_rules": [
-              "@Exit Logic/Southern Fairy Fountain"
-            ],
-            "visibility_rules": [
-              "fairies_on"
-            ]
+            "ref": "The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Great Fairy/"
           },
           {
             "name": "Lookout Platform - Destroy the Northwest Cannons",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Lookout Platform/Destroy the Northwest Cannons"
           },
           {
             "name": "Lookout Platform - Destroy the Southeast Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons, @Macros/can_fly_with_deku_leaf_outdoors"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Southern Fairy Island/Southern Fairy Island - Lookout Platform/Destroy the Southeast Cannons"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 311,
-            "y": 464
+            "y": 464,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
