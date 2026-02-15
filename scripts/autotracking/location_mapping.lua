@@ -266,7 +266,7 @@ LOCATION_MAPPING = {
     [0x2380eb] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Lookout Platforms/Center Lookout Platform",
     [0x2380ec] = "@The Great Sea (Precise)/Rock Spire Isle/Rock Spire Isle - Southeast Gunboat/",
 
-    [0x2380ed] = "@The Great Sea/Shark Island/Cave",
+    [0x2380ed] = "@The Great Sea (Precise)/Shark Island/Shark Island - Cave/",
 
     [0x2380ee] = "@The Great Sea/Cliff Plateau Isles/Cave",
     [0x2380ef] = "@The Great Sea/Cliff Plateau Isles/Highest Isle",

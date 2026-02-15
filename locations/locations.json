@@ -1225,19 +1225,17 @@
         "sections": [
           {
             "name": "Cave",
-            "access_rules": [
-              "@Exit Logic/Shark Island Secret Cave, @Macros/can_defeat_miniblins"
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
+            "ref": "The Great Sea (Precise)/Shark Island/Shark Island - Cave/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 464
+            "y": 464,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

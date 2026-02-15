@@ -1567,6 +1567,34 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Shark Island",
+        "children": [
+          {
+            "name": "Shark Island - Cave",
+            "sections": [
+              {
+                "access_rules": [
+                  "@Exit Logic/Shark Island Secret Cave, @Macros/can_defeat_miniblins"
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 225,
+                "y": 481,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
