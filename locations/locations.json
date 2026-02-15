@@ -1509,30 +1509,21 @@
         "sections": [
           {
             "name": "Top of the Island",
-            "access_rules": [
-              "bait, @Macros/can_buy_hyoi_pears"
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea (Precise)/Headstone Island/Headstone Island - Top of the Island/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Macros/can_defeat_bombchus"
-            ],
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Headstone Island/Headstone Island - Submarine/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 225,
-            "y": 546
+            "y": 546,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },

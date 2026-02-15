@@ -2014,6 +2014,59 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Headstone Island",
+        "children": [
+          {
+            "name": "Headstone Island - Top of the Island",
+            "sections": [
+              {
+                "access_rules": [
+                  "bait, @Macros/can_buy_hyoi_pears"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 241,
+                "y": 560,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Headstone Island - Submarine",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Macros/can_defeat_bombchus"
+                ],
+                "visibility_rules": [
+                  "submarines_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 219,
+                "y": 532,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

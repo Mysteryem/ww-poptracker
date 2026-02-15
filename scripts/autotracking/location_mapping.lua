@@ -147,8 +147,8 @@ LOCATION_MAPPING = {
     [0x23807e] = "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Cave - Chest",
     [0x23807f] = "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Inner Cave - Chest",
 
-    [0x238080] = "@The Great Sea/Headstone Island/Top of the Island",
-    [0x238081] = "@The Great Sea/Headstone Island/Submarine",
+    [0x238080] = "@The Great Sea (Precise)/Headstone Island/Headstone Island - Top of the Island/",
+    [0x238081] = "@The Great Sea (Precise)/Headstone Island/Headstone Island - Submarine/",
 
     [0x238082] = "@Earth Temple/Transparent Chest In Warp Pot Room",
     [0x238083] = "@Earth Temple/Behind Curtain In Warp Pot Room",
