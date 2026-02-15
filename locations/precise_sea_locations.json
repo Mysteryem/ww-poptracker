@@ -1767,6 +1767,67 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Cliff Plateau Isles",
+        "children": [
+          {
+            "name": "Cliff Plateau Isles",
+            "sections": [
+              {
+                "name": "Cave",
+                "access_rules": [
+                  "@Exit Logic/Cliff Plateau Isles Secret Cave, @Macros/can_defeat_boko_babas",
+                  "@Exit Logic/Cliff Plateau Isles Secret Cave, grapple, @General Logic/Normal Logic Obscurity, @General Logic/Normal Logic Precision"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              },
+              {
+                "name": "Highest Isle",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Cliff Plateau Isles Inner Cave"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 557,
+                "y": 448,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cliff Plateau Isles - Lookout Platform",
+            "sections": [
+              {
+                "visibility_rules": [
+                  "lookouts_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 586,
+                "y": 461,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

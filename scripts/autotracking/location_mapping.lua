@@ -268,9 +268,9 @@ LOCATION_MAPPING = {
 
     [0x2380ed] = "@The Great Sea (Precise)/Shark Island/Shark Island - Cave/",
 
-    [0x2380ee] = "@The Great Sea/Cliff Plateau Isles/Cave",
-    [0x2380ef] = "@The Great Sea/Cliff Plateau Isles/Highest Isle",
-    [0x2380f0] = "@The Great Sea/Cliff Plateau Isles/Lookout Platform",
+    [0x2380ee] = "@The Great Sea (Precise)/Cliff Plateau Isles/Cliff Plateau Isles/Cave",
+    [0x2380ef] = "@The Great Sea (Precise)/Cliff Plateau Isles/Cliff Plateau Isles/Highest Isle",
+    [0x2380f0] = "@The Great Sea (Precise)/Cliff Plateau Isles/Cliff Plateau Isles - Lookout Platform/",
 
     [0x2380f1] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Chest/",
     [0x2380f2] = "@The Great Sea (Precise)/Crescent Moon Island/Crescent Moon Island - Submarine/",
