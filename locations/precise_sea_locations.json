@@ -2176,16 +2176,16 @@
                   "puzzlecaves_on"
                 ]
               }
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 400,
-            "y": 562,
-            "restrict_visibility_rules": [
-              "setting_show_precise_sea_locations"
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 400,
+                "y": 562,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
             ]
           }
         ]
