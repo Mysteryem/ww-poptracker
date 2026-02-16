@@ -288,9 +288,9 @@ LOCATION_MAPPING = {
 
     [0x2380fb] = "@The Great Sea (Precise)/Star Belt Archipelago/Star Belt Archipelago - Lookout Platform/",
 
-    [0x2380fd] = "@The Great Sea/Five-Star Isles/Raft",
-    [0x2380fe] = "@The Great Sea/Five-Star Isles/Submarine",
-    [0x2380fc] = "@The Great Sea/Five-Star Isles/Lookout Platform - Destroy the Cannons",
+    [0x2380fd] = "@The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Raft/",
+    [0x2380fe] = "@The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Submarine/",
+    [0x2380fc] = "@The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Lookout Platform - Destroy the Cannons/",
 
     [0x2380ff] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Center Lookout Platform",
     [0x238100] = "@The Great Sea (Precise)/Seven-Star Isles/Seven-Star Isles - Lookout Platforms/Northern Lookout Platform",

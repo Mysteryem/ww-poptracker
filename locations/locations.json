@@ -1605,33 +1605,25 @@
         "sections": [
           {
             "name": "Raft",
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Raft/"
           },
           {
             "name": "Submarine",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "visibility_rules": [
-              "submarines_on"
-            ]
+            "ref": "The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Submarine/"
           },
           {
             "name": "Lookout Platform - Destroy the Cannons",
-            "access_rules": [
-              "@Macros/can_destroy_cannons"
-            ],
-            "visibility_rules": [
-              "lookouts_on"
-            ]
+            "ref": "The Great Sea (Precise)/Five-Star Isles/Five-Star Isles - Lookout Platform - Destroy the Cannons/"
           }
         ],
         "map_locations": [
           {
             "map": "seachart",
             "x": 573,
-            "y": 546
+            "y": 546,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
