@@ -548,6 +548,62 @@
         "name": "Rock Spire Isle",
         "children": [
           {
+            "name": "Rock Spire Isle",
+            "sections": [
+              {
+                "name": "Cave",
+                "chest_unopened_img": "images/items/chest_metal.png",
+                "chest_opened_img": "images/items/chest_metal_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Rock Spire Isle Secret Cave"
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              },
+              {
+                "name": "Beedle's Special Shop Ship - 500 Item",
+                "access_rules": [
+                  "wallet, @Macros/can_farm_lots_of_rupees",
+                  "{}"
+                ],
+                "visibility_rules": [
+                  "expensive_on"
+                ]
+              },
+              {
+                "name": "Beedle's Special Shop Ship - 900 Item",
+                "access_rules": [
+                  "wallet, @Macros/can_farm_lots_of_rupees",
+                  "{}"
+                ],
+                "visibility_rules": [
+                  "expensive_on"
+                ]
+              },
+              {
+                "name": "Beedle's Special Shop Ship - 950 Item",
+                "access_rules": [
+                  "wallet, @Macros/can_farm_lots_of_rupees",
+                  "{}"
+                ],
+                "visibility_rules": [
+                  "expensive_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 122,
+                "y": 201,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          },
+          {
             "name": "Rock Spire Isle - Lookout Platforms",
             "sections": [
               {
@@ -609,59 +665,6 @@
                   "setting_show_precise_sea_locations"
                 ]
               }
-            ]
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cave",
-            "chest_unopened_img": "images/items/chest_metal.png",
-            "chest_opened_img": "images/items/chest_metal_gray.png",
-            "access_rules": [
-              "@Exit Logic/Rock Spire Isle Secret Cave"
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
-          },
-          {
-            "name": "Beedle's Special Shop Ship - 500 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
-          },
-          {
-            "name": "Beedle's Special Shop Ship - 900 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
-          },
-          {
-            "name": "Beedle's Special Shop Ship - 950 Item",
-            "access_rules": [
-              "wallet, @Macros/can_farm_lots_of_rupees",
-              "{}"
-            ],
-            "visibility_rules": [
-              "expensive_on"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 122,
-            "y": 201,
-            "restrict_visibility_rules": [
-              "setting_show_precise_sea_locations"
             ]
           }
         ]
