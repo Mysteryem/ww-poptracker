@@ -5,7 +5,7 @@
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "children": [
       {
-        "name": "Star Island",
+        "name": "Star Island Sector",
         "children": [
           {
             "name": "Star Island - Cave",
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "name": "Northern Fairy Island",
+        "name": "Northern Fairy Island Sector",
         "children": [
           {
             "name": "Northern Fairy Island - Great Fairy",
@@ -105,7 +105,7 @@
         ]
       },
       {
-        "name": "Crescent Moon Island",
+        "name": "Crescent Moon Island Sector",
         "children": [
           {
             "name": "Crescent Moon Island - Chest",
@@ -157,7 +157,7 @@
         ]
       },
       {
-        "name": "Seven-Star Isles",
+        "name": "Seven-Star Isles Sector",
         "children": [
           {
             "name": "Seven-Star Isles - Lookout Platforms",
@@ -219,7 +219,7 @@
         ]
       },
       {
-        "name": "Overlook Island",
+        "name": "Overlook Island Sector",
         "children": [
           {
             "name": "Overlook Island - Cave",
@@ -253,7 +253,7 @@
         ]
       },
       {
-        "name": "Four-Eye Reef",
+        "name": "Four-Eye Reef Sector",
         "sections": [
           {
             "name": "Four-Eye Reef - Destroy the Cannons and Gunboats",
@@ -279,7 +279,7 @@
         ]
       },
       {
-        "name": "Mother and Child Isles",
+        "name": "Mother and Child Isles Sector",
         "children": [
           {
             "name": "Mother and Child Isles - Inside Mother Isle",
@@ -309,7 +309,7 @@
         ]
       },
       {
-        "name": "Spectacle Island",
+        "name": "Spectacle Island Sector",
         "sections": [
           {
             "name": "Spectacle Island - Barrel Shooting - First Prize",
@@ -336,7 +336,7 @@
         ]
       },
       {
-        "name": "Pawprint Isle",
+        "name": "Pawprint Isle Sector",
         "children": [
           {
             "name": "Pawprint Isle",
@@ -433,7 +433,7 @@
         ]
       },
       {
-        "name": "Flight Control Platform",
+        "name": "Flight Control Platform Sector",
         "children": [
           {
             "name": "Flight Control Platform - Bird-Man Content - First Prize",
@@ -497,7 +497,7 @@
         ]
       },
       {
-        "name": "Western Fairy Island",
+        "name": "Western Fairy Island Sector",
         "children": [
           {
             "name": "Western Fairy Island - Great Fairy",
@@ -545,7 +545,7 @@
         ]
       },
       {
-        "name": "Rock Spire Isle",
+        "name": "Rock Spire Isle Sector",
         "children": [
           {
             "name": "Rock Spire Isle",
@@ -670,7 +670,7 @@
         ]
       },
       {
-        "name": "Tingle Island",
+        "name": "Tingle Island Sector",
         "children": [
           {
             "name": "Tingle Island - Ankle - Reward for All Tingle Statues",
@@ -723,7 +723,7 @@
         ]
       },
       {
-        "name": "Eastern Fairy Island",
+        "name": "Eastern Fairy Island Sector",
         "children": [
           {
             "name": "Eastern Fairy Island - Great Fairy",
@@ -774,7 +774,7 @@
         ]
       },
       {
-        "name": "Fire Mountain",
+        "name": "Fire Mountain Sector",
         "children": [
           {
             "name": "Fire Mountain - Cave - Chest",
@@ -856,7 +856,7 @@
         ]
       },
       {
-        "name": "Star Belt Archipelago",
+        "name": "Star Belt Archipelago Sector",
         "children": [
           {
             "name": "Star Belt Archipelago - Lookout Platform",
@@ -881,7 +881,7 @@
         ]
       },
       {
-        "name": "Three-Eye Reef",
+        "name": "Three-Eye Reef Sector",
         "children": [
           {
             "name": "Three-Eye Reef - Destroy the Cannons and Gunboats",
@@ -911,7 +911,7 @@
         ]
       },
       {
-        "name": "Greatfish Isle",
+        "name": "Greatfish Isle Sector",
         "children": [
           {
             "name": "Greatfish Isle - Hidden Chest",
@@ -941,7 +941,7 @@
         ]
       },
       {
-        "name": "Cyclops Reef",
+        "name": "Cyclops Reef Sector",
         "children": [
           {
             "name": "Cyclops Reef - Destroy the Cannons and Gunboats",
@@ -991,7 +991,7 @@
         ]
       },
       {
-        "name": "Six-Eye Reef",
+        "name": "Six-Eye Reef Sector",
         "children": [
           {
             "name": "Six-Eye Reef - Destroy the Cannons and Gunboats",
@@ -1066,7 +1066,7 @@
         ]
       },
       {
-        "name": "Thorned Fairy Island",
+        "name": "Thorned Fairy Island Sector",
         "children": [
           {
             "name": "Thorned Fairy Island - Great Fairy",
@@ -1127,7 +1127,7 @@
         ]
       },
       {
-        "name": "Needle Rock Isle",
+        "name": "Needle Rock Isle Sector",
         "children": [
           {
             "name": "Needle Rock Isle",
@@ -1196,7 +1196,7 @@
         ]
       },
       {
-        "name": "Islet of Steel",
+        "name": "Islet of Steel Sector",
         "children": [
           {
             "name": "Islet of Steel - Interior",
@@ -1249,7 +1249,7 @@
         ]
       },
       {
-        "name": "Stone Watcher Island",
+        "name": "Stone Watcher Island Sector",
         "children": [
           {
             "name": "Stone Watcher Island - Cave",
@@ -1315,7 +1315,7 @@
         ]
       },
       {
-        "name": "Private Oasis",
+        "name": "Private Oasis Sector",
         "children": [
           {
             "name": "Private Oasis",
@@ -1396,7 +1396,7 @@
         ]
       },
       {
-        "name": "Bomb Island",
+        "name": "Bomb Island Sector",
         "children": [
           {
             "name": "Bomb Island - Cave",
@@ -1466,7 +1466,7 @@
         ]
       },
       {
-        "name": "Diamond Steppe Island",
+        "name": "Diamond Steppe Island Sector",
         "children": [
           {
             "name": "Diamond Steppe Island - Warp Maze Cave",
@@ -1525,7 +1525,7 @@
         ]
       },
       {
-        "name": "Five-Eye Reef",
+        "name": "Five-Eye Reef Sector",
         "children": [
           {
             "name": "Five-Eye Reef - Destroy the Cannons",
@@ -1575,7 +1575,7 @@
         ]
       },
       {
-        "name": "Shark Island",
+        "name": "Shark Island Sector",
         "children": [
           {
             "name": "Shark Island - Cave",
@@ -1603,7 +1603,7 @@
         ]
       },
       {
-        "name": "Southern Fairy Island",
+        "name": "Southern Fairy Island Sector",
         "children": [
           {
             "name": "Southern Fairy Island - Great Fairy",
@@ -1666,7 +1666,7 @@
         ]
       },
       {
-        "name": "Ice Ring Isle",
+        "name": "Ice Ring Isle Sector",
         "children": [
           {
             "name": "Ice Ring Isle",
@@ -1717,7 +1717,7 @@
         ]
       },
       {
-        "name": "Forest Haven",
+        "name": "Forest Haven Sector",
         "children": [
           {
             "name": "Forest Haven",
@@ -1775,7 +1775,7 @@
         ]
       },
       {
-        "name": "Cliff Plateau Isles",
+        "name": "Cliff Plateau Isles Sector",
         "children": [
           {
             "name": "Cliff Plateau Isles",
@@ -1836,7 +1836,7 @@
         ]
       },
       {
-        "name": "Horseshoe Island",
+        "name": "Horseshoe Island Sector",
         "children": [
           {
             "name": "Horseshoe Island",
@@ -1909,7 +1909,7 @@
         ]
       },
       {
-        "name": "Outset Island",
+        "name": "Outset Island Sector",
         "children": [
           {
             "name": "Outset Island",
@@ -2022,7 +2022,7 @@
         ]
       },
       {
-        "name": "Headstone Island",
+        "name": "Headstone Island Sector",
         "children": [
           {
             "name": "Headstone Island - Top of the Island",
@@ -2075,7 +2075,7 @@
         ]
       },
       {
-        "name": "Two-Eye Reef",
+        "name": "Two-Eye Reef Sector",
         "children": [
           {
             "name": "Two-Eye Reef - Destroy the Cannons and Gunboats",
@@ -2150,7 +2150,7 @@
         ]
       },
       {
-        "name": "Angular Isles",
+        "name": "Angular Isles Sector",
         "children": [
           {
             "name": "Angular Isles",
@@ -2191,7 +2191,7 @@
         ]
       },
       {
-        "name": "Boating Course",
+        "name": "Boating Course Sector",
         "children": [
           {
             "name": "Boating Course - Raft",
@@ -2250,7 +2250,7 @@
         ]
       },
       {
-        "name": "Five-Star Isles",
+        "name": "Five-Star Isles Sector",
         "children": [
           {
             "name": "Five-Star Isles - Raft",

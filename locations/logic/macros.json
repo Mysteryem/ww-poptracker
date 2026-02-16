@@ -825,15 +825,15 @@
       {
         "name": "_can_farm_knights_crests",
         "access_rules": [
-          "@The Great Sea (Precise)/Ice Ring Isle/Ice Ring Isle/Inner Cave - Chest",
+          "@The Great Sea (Precise)/Ice Ring Isle Sector/Ice Ring Isle/Inner Cave - Chest",
           "@Macros/_can_complete_savage_labyrinth_floor_30",
           "@Earth Temple/Big Key Chest, @Macros/can_defeat_darknuts_easily",
           "@Wind Temple/Big Key Chest, @Macros/can_defeat_darknuts_easily",
-          "@The Great Sea (Precise)/Shark Island/Shark Island - Cave/",
-          "@The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Cave/, @Macros/can_defeat_darknuts_easily",// This includes can_play_winds_requiem logic, but this logic is not actually required,
-          "sequence_break_other, @Macros/_can_reach_stone_watcher_cave_darknuts, [@The Great Sea (Precise)/Stone Watcher Island/Stone Watcher Island - Cave/], @Macros/can_defeat_darknuts_easily",
-          "@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/, @Macros/can_defeat_darknuts_easily",
-          "sequence_break_other, @Macros/_can_reach_overlook_island_cave_darknuts, [@The Great Sea (Precise)/Overlook Island/Overlook Island - Cave/], @Macros/can_defeat_darknuts_easily",
+          "@The Great Sea (Precise)/Shark Island Sector/Shark Island - Cave/",
+          "@The Great Sea (Precise)/Stone Watcher Island Sector/Stone Watcher Island - Cave/, @Macros/can_defeat_darknuts_easily",// This includes can_play_winds_requiem logic, but this logic is not actually required,
+          "sequence_break_other, @Macros/_can_reach_stone_watcher_cave_darknuts, [@The Great Sea (Precise)/Stone Watcher Island Sector/Stone Watcher Island - Cave/], @Macros/can_defeat_darknuts_easily",
+          "@The Great Sea (Precise)/Overlook Island Sector/Overlook Island - Cave/, @Macros/can_defeat_darknuts_easily",
+          "sequence_break_other, @Macros/_can_reach_overlook_island_cave_darknuts, [@The Great Sea (Precise)/Overlook Island Sector/Overlook Island - Cave/], @Macros/can_defeat_darknuts_easily",
           "@Macros/can_access_hyrule"
         ]
       },
@@ -875,7 +875,7 @@
           "bombs",
           "grapple",
           "@Entrance Logic/Secret Cave Entrance on Shark Island, @Macros/can_fly_with_deku_leaf_outdoors",
-          "@The Great Sea (Precise)/Cliff Plateau Isles/Cliff Plateau Isles/Highest Isle",
+          "@The Great Sea (Precise)/Cliff Plateau Isles Sector/Cliff Plateau Isles/Highest Isle",
           "@Macros/can_fan_with_deku_leaf",
           "@Entrance Logic/Secret Cave Entrance on Boating Course"
         ]
