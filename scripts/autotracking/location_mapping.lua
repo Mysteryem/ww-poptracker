@@ -222,11 +222,11 @@ LOCATION_MAPPING = {
 
     [0x2380ca] = "@The Great Sea/Bird's Peak Rock/Cave",
 
-    [0x2380cb] = "@The Great Sea (Precise)/Pawprint Isle/Chuchu Cave - Chest",
-    [0x2380cc] = "@The Great Sea (Precise)/Pawprint Isle/Chuchu Cave - Behind Left Boulder",
-    [0x2380cd] = "@The Great Sea (Precise)/Pawprint Isle/Chuchu Cave - Behind Right Boulder",
-    [0x2380ce] = "@The Great Sea (Precise)/Pawprint Isle/Chuchu Cave - Scale the Wall",
-    [0x2380cf] = "@The Great Sea (Precise)/Pawprint Isle/Wizzrobe Cave",
+    [0x2380cb] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle/Chuchu Cave - Chest",
+    [0x2380cc] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle/Chuchu Cave - Behind Left Boulder",
+    [0x2380cd] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle/Chuchu Cave - Behind Right Boulder",
+    [0x2380ce] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle/Chuchu Cave - Scale the Wall",
+    [0x2380cf] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle/Wizzrobe Cave",
     [0x2380d0] = "@The Great Sea (Precise)/Pawprint Isle/Pawprint Isle - Lookout Platform - Defeat the Enemies/",
 
     [0x2380d1] = "@The Great Sea (Precise)/Thorned Fairy Island/Thorned Fairy Island - Great Fairy/",
