@@ -1,6 +1,6 @@
 [
   {
-    "name": "The Great Sea (Precise)",
+    "name": "The Great Sea",
     "chest_unopened_img": "images/items/chest_wood.png",
     "chest_opened_img": "images/items/chest_wood_gray.png",
     "children": [
@@ -1993,7 +1993,7 @@
                 "inspectable_sequence_break": true,
                 "_comment": [
                   "'@' rules turn Inspect into Normal accessibility, so Floor 50 cannot use",
-                  " '@The Great Sea/Outset Island/Savage Labyrinth - Floor 30' in its access rules."
+                  " '@The Great Sea (Deprecated)/Outset Island/Savage Labyrinth - Floor 30' in its access rules."
                 ],
                 "access_rules": [
                   [

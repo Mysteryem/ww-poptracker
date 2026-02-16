@@ -240,7 +240,7 @@ function onClear(slot_data)
     _last_activated_tab = ""
 
     -- Reset the goal location
-    local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
+    local goal_location = Tracker:FindObjectForCode("@The Great Sea (Deprecated)/Hyrule/Defeat Ganondorf (Goal)")
     goal_location.AvailableChestCount = goal_location.ChestCount
 
     -- Get and subscribe to changes in the player's status to track goal completion
@@ -618,7 +618,7 @@ local function updateForStatusChange(status_value)
     -- CLIENT_PLAYING = 20
     -- CLIENT_GOAL = 30
     if status_value == 30 then
-        local goal_location = Tracker:FindObjectForCode("@The Great Sea/Hyrule/Defeat Ganondorf (Goal)")
+        local goal_location = Tracker:FindObjectForCode("@The Great Sea (Deprecated)/Hyrule/Defeat Ganondorf (Goal)")
         goal_location.AvailableChestCount = goal_location.AvailableChestCount - 1
     else
         print(string.format("Current goal status is %s", status_value))
