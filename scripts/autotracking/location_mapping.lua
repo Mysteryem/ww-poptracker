@@ -198,8 +198,8 @@ LOCATION_MAPPING = {
     [0x2380b9] = "@The Great Sea/Private Oasis Sector/Private Oasis/Cabana Labyrinth - Upper Floor Chest",
     [0x2380ba] = "@The Great Sea/Private Oasis Sector/Private Oasis - Big Octo/",
     
-    [0x2380bb] = "@The Great Sea/Spectacle Island Sector/Spectacle Island - Barrel Shooting - First Prize",
-    [0x2380bc] = "@The Great Sea/Spectacle Island Sector/Spectacle Island - Barrel Shooting - Second Prize",
+    [0x2380bb] = "@The Great Sea/Spectacle Island Sector/Spectacle Island/Barrel Shooting - First Prize",
+    [0x2380bc] = "@The Great Sea/Spectacle Island Sector/Spectacle Island/Barrel Shooting - Second Prize",
 
     [0x2380bd] = "@The Great Sea/Needle Rock Isle Sector/Needle Rock Isle/Chest in Ring of Fire",
     [0x2380be] = "@The Great Sea/Needle Rock Isle Sector/Needle Rock Isle/Cave",

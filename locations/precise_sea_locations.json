@@ -310,27 +310,32 @@
       },
       {
         "name": "Spectacle Island Sector",
-        "sections": [
+        "children": [
           {
-            "name": "Spectacle Island - Barrel Shooting - First Prize",
-            "visibility_rules": [
-              "minigames_on"
-            ]
-          },
-          {
-            "name": "Spectacle Island - Barrel Shooting - Second Prize",
-            "visibility_rules": [
-              "minigames_on"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 212,
-            "y": 149,
-            "restrict_visibility_rules": [
-              "setting_show_precise_sea_locations"
+            "name": "Spectacle Island",
+            "sections": [
+              {
+                "name": "Barrel Shooting - First Prize",
+                "visibility_rules": [
+                  "minigames_on"
+                ]
+              },
+              {
+                "name": "Barrel Shooting - Second Prize",
+                "visibility_rules": [
+                  "minigames_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 212,
+                "y": 149,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
             ]
           }
         ]

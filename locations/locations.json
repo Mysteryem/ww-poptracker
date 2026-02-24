@@ -1137,11 +1137,11 @@
         "sections": [
           {
             "name": "Spectacle Island - Barrel Shooting - First Prize",
-            "ref": "The Great Sea/Spectacle Island Sector/Spectacle Island - Barrel Shooting - First Prize"
+            "ref": "The Great Sea/Spectacle Island Sector/Spectacle Island/Barrel Shooting - First Prize"
           },
           {
             "name": "Spectacle Island - Barrel Shooting - Second Prize",
-            "ref": "The Great Sea/Spectacle Island Sector/Spectacle Island - Barrel Shooting - Second Prize"
+            "ref": "The Great Sea/Spectacle Island Sector/Spectacle Island/Barrel Shooting - Second Prize"
           }
         ],
         "map_locations": [
