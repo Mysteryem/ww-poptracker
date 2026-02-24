@@ -220,7 +220,7 @@ LOCATION_MAPPING = {
 
     [0x2380c9] = "@The Great Sea/Overlook Island Sector/Overlook Island - Cave/",
 
-    [0x2380ca] = "@The Great Sea (Deprecated)/Bird's Peak Rock/Cave",
+    [0x2380ca] = "@The Great Sea/Bird's Peak Rock Sector/Bird's Peak Rock - Cave/",
 
     [0x2380cb] = "@The Great Sea/Pawprint Isle Sector/Pawprint Isle/Chuchu Cave - Chest",
     [0x2380cc] = "@The Great Sea/Pawprint Isle Sector/Pawprint Isle/Chuchu Cave - Behind Left Boulder",

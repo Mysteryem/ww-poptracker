@@ -1515,6 +1515,36 @@
         ]
       },
       {
+        "name": "Bird's Peak Rock Sector",
+        "children": [
+          {
+            "name": "Bird's Peak Rock - Cave",
+            "sections": [
+              {
+                "chest_unopened_img": "images/items/chest_spiky.png",
+                "chest_opened_img": "images/items/chest_spiky_gray.png",
+                "access_rules": [
+                  "@Exit Logic/Bird's Peak Rock Secret Cave, @Macros/can_play_winds_requiem"
+                ],
+                "visibility_rules": [
+                  "puzzlecaves_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 573,
+                "y": 382,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Diamond Steppe Island Sector",
         "children": [
           {

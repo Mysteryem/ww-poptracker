@@ -1174,14 +1174,7 @@
         "sections": [
           {
             "name": "Cave",
-            "chest_unopened_img": "images/items/chest_spiky.png",
-            "chest_opened_img": "images/items/chest_spiky_gray.png",
-            "access_rules": [
-              "@Exit Logic/Bird's Peak Rock Secret Cave, @Macros/can_play_winds_requiem"
-            ],
-            "visibility_rules": [
-              "puzzlecaves_on"
-            ]
+            "ref": "The Great Sea/Bird's Peak Rock Sector/Bird's Peak Rock - Cave/"
           }
         ],
         "map_locations": [
@@ -1190,7 +1183,10 @@
             "x": 573,
             "y": 382,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
