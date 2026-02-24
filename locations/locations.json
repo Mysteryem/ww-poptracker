@@ -1588,7 +1588,20 @@
             "x": 695,
             "y": 582,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 695,
+            "y": 582,
+            "border_thickness": 1,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
@@ -1853,7 +1866,19 @@
             "x": 695,
             "y": 497,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 695,
+            "y": 497,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       }
