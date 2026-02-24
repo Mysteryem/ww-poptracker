@@ -240,7 +240,7 @@ function onClear(slot_data)
     _last_activated_tab = ""
 
     -- Reset the goal location
-    local goal_location = Tracker:FindObjectForCode("@The Great Sea (Deprecated)/Hyrule/Defeat Ganondorf (Goal)")
+    local goal_location = Tracker:FindObjectForCode("@The Great Sea/Tower of the Gods Sector/Hyrule/Defeat Ganondorf (Goal)")
     goal_location.AvailableChestCount = goal_location.ChestCount
 
     -- Get and subscribe to changes in the player's status to track goal completion

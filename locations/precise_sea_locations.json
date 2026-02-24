@@ -1066,6 +1066,55 @@
         ]
       },
       {
+        "name": "Tower of the Gods Sector",
+        "children": [
+          {
+            "name": "Hyrule",
+            "sections": [
+              {
+                "name": "Master Sword Chamber",
+                "access_rules": [
+                  "@Exit Logic/Master Sword Chamber, @Macros/can_defeat_mighty_darknuts"
+                ],
+                "visibility_rules": [
+                  // Hyrule can never be a non-required dungeon, so is unaffected by Required Bosses.
+                  "dungeons_on"
+                ]
+              },
+              {
+                "name": "Ganon's Tower - Maze Chest",
+                "access_rules": [
+                  [
+                    "@Macros/can_reach_ganons_tower_phantom_ganon_room",
+                    "@Macros/can_defeat_phantom_ganon"
+                  ]
+                ],
+                "visibility_rules": [
+                  // Hyrule can never be a non-required dungeon, so is unaffected by Required Bosses.
+                  "dungeons_on"
+                ]
+              },
+              {
+                // The goal is always be present, even with dungeons disabled, so the other locations within Hyrule need
+                // to use individual visibility rules.
+                "name": "Defeat Ganondorf (Goal)",
+                "access_rules": [
+                  "@Macros/can_reach_and_defeat_ganondorf"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 398,
+                "y": 300,
+                "size": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Thorned Fairy Island Sector",
         "children": [
           {

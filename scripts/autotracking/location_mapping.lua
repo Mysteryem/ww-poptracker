@@ -115,8 +115,8 @@ LOCATION_MAPPING = {
     [0x23806f] = "@Tower of the Gods/Big Key Chest",
     [0x238070] = "@Tower of the Gods/Gohdan Heart Container",
 
-    [0x238071] = "@The Great Sea (Deprecated)/Hyrule/Master Sword Chamber",
-    [0x2380a4] = "@The Great Sea (Deprecated)/Hyrule/Ganon's Tower - Maze Chest",
+    [0x238071] = "@The Great Sea/Tower of the Gods Sector/Hyrule/Master Sword Chamber",
+    [0x2380a4] = "@The Great Sea/Tower of the Gods Sector/Hyrule/Ganon's Tower - Maze Chest",
     
     [0x2380a5] = "@The Great Sea (Deprecated)/Mailbox/Letter from Hoskit's Girlfriend",
     [0x2380a6] = "@The Great Sea (Deprecated)/Mailbox/Letter from Baito's Mother",
