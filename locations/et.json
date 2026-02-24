@@ -11,7 +11,8 @@
       {
         "map": "seachart",
         "x": 695,
-        "y": 327
+        "y": 327,
+        "size": 18
       }
     ],
     "sections": [
