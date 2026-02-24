@@ -294,16 +294,16 @@
                   "misc_on"
                 ]
               }
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "seachart",
-            "x": 155,
-            "y": 136,
-            "restrict_visibility_rules": [
-              "setting_show_precise_sea_locations"
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 155,
+                "y": 136,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
             ]
           }
         ]
