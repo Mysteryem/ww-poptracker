@@ -21,6 +21,8 @@
             "map": "seachart",
             "x": 140,
             "y": 55,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -44,6 +46,8 @@
             "map": "seachart",
             "x": 225,
             "y": 55,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -67,6 +71,8 @@
             "map": "seachart",
             "x": 225,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -90,6 +96,8 @@
             "map": "seachart",
             "x": 398,
             "y": 55,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -121,6 +129,8 @@
             "map": "seachart",
             "x": 485,
             "y": 55,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -140,6 +150,8 @@
             "map": "seachart",
             "x": 573,
             "y": 55,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -159,6 +171,8 @@
             "map": "seachart",
             "x": 55,
             "y": 138,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -177,7 +191,9 @@
           {
             "map": "seachart",
             "x": 140,
-            "y": 138
+            "y": 138,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -233,7 +249,9 @@
           {
             "map": "seachart",
             "x": 302,
-            "y": 126
+            "y": 126,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -379,7 +397,9 @@
           {
             "map": "seachart",
             "x": 324,
-            "y": 126
+            "y": 126,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -490,7 +510,9 @@
           {
             "map": "seachart",
             "x": 302,
-            "y": 146
+            "y": 146,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -552,7 +574,9 @@
           {
             "map": "seachart",
             "x": 324,
-            "y": 146
+            "y": 146,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -589,6 +613,8 @@
             "map": "seachart",
             "x": 398,
             "y": 138,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -661,7 +687,9 @@
           {
             "map": "seachart",
             "x": 485,
-            "y": 138
+            "y": 138,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -682,6 +710,8 @@
             "map": "seachart",
             "x": 573,
             "y": 138,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -705,6 +735,8 @@
             "map": "seachart",
             "x": 55,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -752,6 +784,8 @@
             "map": "seachart",
             "x": 140,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -775,6 +809,8 @@
             "map": "seachart",
             "x": 398,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -806,6 +842,8 @@
             "map": "seachart",
             "x": 485,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -825,6 +863,8 @@
             "map": "seachart",
             "x": 573,
             "y": 219,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -844,6 +884,8 @@
             "map": "seachart",
             "x": 55,
             "y": 300,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -863,6 +905,8 @@
             "map": "seachart",
             "x": 140,
             "y": 300,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -886,6 +930,8 @@
             "map": "seachart",
             "x": 225,
             "y": 300,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -913,6 +959,8 @@
             "map": "seachart",
             "x": 311,
             "y": 300,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -958,7 +1006,9 @@
           {
             "map": "seachart",
             "x": 398,
-            "y": 300
+            "y": 300,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -983,6 +1033,8 @@
             "map": "seachart",
             "x": 573,
             "y": 300,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1010,6 +1062,8 @@
             "map": "seachart",
             "x": 55,
             "y": 382,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1033,6 +1087,8 @@
             "map": "seachart",
             "x": 140,
             "y": 382,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1060,6 +1116,8 @@
             "map": "seachart",
             "x": 225,
             "y": 382,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1091,6 +1149,8 @@
             "map": "seachart",
             "x": 398,
             "y": 382,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1114,6 +1174,8 @@
             "map": "seachart",
             "x": 225,
             "y": 138,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1141,6 +1203,8 @@
             "map": "seachart",
             "x": 485,
             "y": 382,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1166,7 +1230,9 @@
           {
             "map": "seachart",
             "x": 573,
-            "y": 382
+            "y": 382,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -1191,6 +1257,8 @@
             "map": "seachart",
             "x": 55,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1214,6 +1282,8 @@
             "map": "seachart",
             "x": 140,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1233,6 +1303,8 @@
             "map": "seachart",
             "x": 225,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1260,6 +1332,8 @@
             "map": "seachart",
             "x": 311,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1287,6 +1361,8 @@
             "map": "seachart",
             "x": 398,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1310,6 +1386,8 @@
             "map": "seachart",
             "x": 485,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1337,6 +1415,8 @@
             "map": "seachart",
             "x": 573,
             "y": 464,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1368,6 +1448,8 @@
             "map": "seachart",
             "x": 55,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1415,6 +1497,8 @@
             "map": "seachart",
             "x": 140,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1500,7 +1584,9 @@
           {
             "map": "seachart",
             "x": 695,
-            "y": 582
+            "y": 582,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       },
@@ -1521,6 +1607,8 @@
             "map": "seachart",
             "x": 225,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1548,6 +1636,8 @@
             "map": "seachart",
             "x": 311,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1571,6 +1661,8 @@
             "map": "seachart",
             "x": 398,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1594,6 +1686,8 @@
             "map": "seachart",
             "x": 485,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1621,6 +1715,8 @@
             "map": "seachart",
             "x": 573,
             "y": 546,
+            "border_thickness": 2,
+            "size": 18,
             "force_invisibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -1753,7 +1849,9 @@
           {
             "map": "seachart",
             "x": 695,
-            "y": 497
+            "y": 497,
+            "border_thickness": 2,
+            "size": 18
           }
         ]
       }
