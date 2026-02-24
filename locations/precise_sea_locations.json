@@ -336,6 +336,85 @@
         ]
       },
       {
+        "name": "Dragon Roost Island Sector",
+        "children": [
+          {
+            "name": "Dragon Roost Island",
+            "sections": [
+              {
+                "name": "Wind Shrine",
+                "access_rules": [
+                  "windwaker"
+                ],
+                "visibility_rules": [
+                  "misc_on"
+                ]
+              },
+              {
+                "name": "Rito Aerie - Give Hoskit 20 Golden Feathers",
+                "access_rules": [
+                  "spoils, @Macros/can_farm_golden_feathers"
+                ],
+                "visibility_rules": [
+                  "spoilssq_on"
+                ]
+              },
+              {
+                "name": "Chest on Top of Boulder",
+                "access_rules": [
+                  "bow",
+                  "bait, @Macros/can_buy_hyoi_pears",
+                  "boomerang",
+                  "bombs"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Fly Across Platforms Around Island",
+                "access_rules": [
+                  "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break, @Macros/_can_cut_grass_or_has_magic_meter_upgrade"
+                ],
+                "visibility_rules": [
+                  "islandpuzzles_on"
+                ]
+              },
+              {
+                "name": "Rito Aerie - Mail Sorting",
+                "visibility_rules": [
+                  "minigames_on"
+                ]
+              },
+              {
+                "name": "Secret Cave",
+                "access_rules": [
+                  [
+                    "@Exit Logic/Dragon Roost Island Secret Cave",
+                    "@Macros/can_defeat_keese",
+                    "@Macros/can_defeat_red_chuchus"
+                  ]
+                ],
+                "visibility_rules": [
+                  "combat_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "seachart",
+                "x": 485,
+                "y": 138,
+                "size": 16,
+                "restrict_visibility_rules": [
+                  "setting_show_precise_sea_locations"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Pawprint Isle Sector",
         "children": [
           {

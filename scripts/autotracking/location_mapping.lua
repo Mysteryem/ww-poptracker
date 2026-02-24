@@ -46,12 +46,12 @@ LOCATION_MAPPING = {
     [0x238030] = "@The Great Sea (Deprecated)/Windfall Island - Short Sidequests/Minenco - Miss Windfall Photo",
     [0x238031] = "@The Great Sea (Deprecated)/Windfall Island - Long Sidequests/Linda and Anton",
 
-    [0x238032] = "@The Great Sea (Deprecated)/Dragon Roost Island/Wind Shrine",
-    [0x238033] = "@The Great Sea (Deprecated)/Dragon Roost Island/Rito Aerie - Give Hoskit 20 Golden Feathers",
-    [0x238034] = "@The Great Sea (Deprecated)/Dragon Roost Island/Chest on Top of Boulder",
-    [0x238035] = "@The Great Sea (Deprecated)/Dragon Roost Island/Fly Across Platforms Around Island",
-    [0x238036] = "@The Great Sea (Deprecated)/Dragon Roost Island/Rito Aerie - Mail Sorting",
-    [0x238037] = "@The Great Sea (Deprecated)/Dragon Roost Island/Secret Cave",
+    [0x238032] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Wind Shrine",
+    [0x238033] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Rito Aerie - Give Hoskit 20 Golden Feathers",
+    [0x238034] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Chest on Top of Boulder",
+    [0x238035] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Fly Across Platforms Around Island",
+    [0x238036] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Rito Aerie - Mail Sorting",
+    [0x238037] = "@The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Secret Cave",
 
     [0x238038] = "@Dragon Roost Cavern/First Room",
     [0x238039] = "@Dragon Roost Cavern/Alcove With Water Jugs",

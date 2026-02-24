@@ -677,61 +677,27 @@
         "sections": [
           {
             "name": "Wind Shrine",
-            "access_rules": [
-              "windwaker"
-            ],
-            "visibility_rules": [
-              "misc_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Wind Shrine"
           },
           {
             "name": "Rito Aerie - Give Hoskit 20 Golden Feathers",
-            "access_rules": [
-              "spoils, @Macros/can_farm_golden_feathers"
-            ],
-            "visibility_rules": [
-              "spoilssq_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Rito Aerie - Give Hoskit 20 Golden Feathers"
           },
           {
             "name": "Chest on Top of Boulder",
-            "access_rules": [
-              "bow",
-              "bait, @Macros/can_buy_hyoi_pears",
-              "boomerang",
-              "bombs"
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Chest on Top of Boulder"
           },
           {
             "name": "Fly Across Platforms Around Island",
-            "access_rules": [
-              "@Macros/_can_fly_with_deku_leaf_outdoors_no_swift_sail_sequence_break, @Macros/_can_cut_grass_or_has_magic_meter_upgrade"
-            ],
-            "visibility_rules": [
-              "islandpuzzles_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Fly Across Platforms Around Island"
           },
           {
             "name": "Rito Aerie - Mail Sorting",
-            "visibility_rules": [
-              "minigames_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Rito Aerie - Mail Sorting"
           },
           {
             "name": "Secret Cave",
-            "access_rules": [
-              [
-                "@Exit Logic/Dragon Roost Island Secret Cave",
-                "@Macros/can_defeat_keese",
-                "@Macros/can_defeat_red_chuchus"
-              ]
-            ],
-            "visibility_rules": [
-              "combat_on"
-            ]
+            "ref": "The Great Sea/Dragon Roost Island Sector/Dragon Roost Island/Secret Cave"
           }
         ],
         "map_locations": [
@@ -740,7 +706,10 @@
             "x": 485,
             "y": 138,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
