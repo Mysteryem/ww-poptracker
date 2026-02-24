@@ -193,7 +193,10 @@
             "x": 140,
             "y": 138,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
