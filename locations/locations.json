@@ -254,7 +254,19 @@
             "x": 302,
             "y": 126,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 302,
+            "y": 126,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
@@ -402,7 +414,19 @@
             "x": 324,
             "y": 126,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 324,
+            "y": 126,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
@@ -515,7 +539,19 @@
             "x": 302,
             "y": 146,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 302,
+            "y": 146,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
@@ -579,7 +615,19 @@
             "x": 324,
             "y": 146,
             "border_thickness": 2,
-            "size": 18
+            "size": 18,
+            "force_invisibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
+          },
+          {
+            "map": "seachart",
+            "x": 324,
+            "y": 146,
+            "size": 18,
+            "restrict_visibility_rules": [
+              "setting_show_precise_sea_locations"
+            ]
           }
         ]
       },
