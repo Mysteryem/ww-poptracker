@@ -2062,6 +2062,7 @@
                 "map": "seachart",
                 "x": 140,
                 "y": 561,
+                "size": 18,
                 "restrict_visibility_rules": [
                   "setting_show_precise_sea_locations"
                 ]
