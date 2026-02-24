@@ -306,7 +306,7 @@ LOCATION_MAPPING = {
 
     [0x238108] = "@The Great Sea/Three-Eye Reef Sector/Three-Eye Reef - Destroy the Cannons and Gunboats/",
 
-    [0x238109] = "@The Great Sea/Four-Eye Reef Sector/Four-Eye Reef - Destroy the Cannons and Gunboats",
+    [0x238109] = "@The Great Sea/Four-Eye Reef Sector/Four-Eye Reef - Destroy the Cannons and Gunboats/",
 
     [0x23810a] = "@The Great Sea/Five-Eye Reef Sector/Five-Eye Reef - Destroy the Cannons/",
     [0x23810b] = "@The Great Sea/Five-Eye Reef Sector/Five-Eye Reef - Lookout Platform/",
