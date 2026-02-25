@@ -261,8 +261,8 @@
           },
           {
             "map": "seachart",
-            "x": 303,
-            "y": 126,
+            "x": 304,
+            "y": 127,
             "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
@@ -422,7 +422,7 @@
           {
             "map": "seachart",
             "x": 323,
-            "y": 126,
+            "y": 127,
             "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
@@ -546,7 +546,7 @@
           },
           {
             "map": "seachart",
-            "x": 303,
+            "x": 304,
             "y": 146,
             "size": 16,
             "restrict_visibility_rules": [
