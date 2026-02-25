@@ -1,6 +1,19 @@
 {
   "versions": [
     {
+      "package_version": "1.3.0",
+      "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.3.0.zip",
+      "sha256": "00cbf726e400dae9923d2d3a1d15af2d5c2e2e55e01cb291e2f82b6ae2c00737",
+      "changelog": [
+        "Changed The Great Sea map locations to be more precise",
+        "Added hint highlighting",
+        "Added a Salvage overview to The Great Sea map",
+        "Added a setting to show some Tingle Tuner sequence breaks",
+        "Added 'checkable' logic for Savage Labyrinth and expensive Beedle",
+        "Fix 12-eye Big Octos with Light Arrows missing the Magic requirement"
+      ]
+    },
+    {
       "package_version": "1.2.0",
       "download_url": "https://github.com/Mysteryem/ww-poptracker/archive/refs/tags/v1.2.0.zip",
       "sha256": "c406bed60ccbf09ed68808e2d1b93b7e6ee31ccebae2c469074acd24caa01e73",
