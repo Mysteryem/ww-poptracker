@@ -894,7 +894,7 @@
             "map_locations": [
               {
                 "map": "seachart",
-                "x": 470,
+                "x": 469,
                 "y": 201,
                 "size": 16,
                 "restrict_visibility_rules": [
@@ -947,8 +947,8 @@
             "map_locations": [
               {
                 "map": "seachart",
-                "x": 501,
-                "y": 228,
+                "x": 502,
+                "y": 227,
                 "restrict_visibility_rules": [
                   "setting_show_precise_sea_locations"
                 ]
