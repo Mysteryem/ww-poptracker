@@ -424,6 +424,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode(v)
         if obj then
             obj.AvailableChestCount = obj.ChestCount
+            obj.Highlight = Highlight.None
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onClear: could not find object for code %s", v))
         end
