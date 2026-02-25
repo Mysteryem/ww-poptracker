@@ -1238,8 +1238,8 @@
             "map_locations": [
               {
                 "map": "seachart",
-                "x": 589,
-                "y": 315,
+                "x": 590,
+                "y": 314,
                 "size": 16,
                 "restrict_visibility_rules": [
                   "setting_show_precise_sea_locations"
