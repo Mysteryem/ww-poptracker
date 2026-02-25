@@ -2470,7 +2470,7 @@
               {
                 "map": "seachart",
                 "x": 611,
-                "y": 573,
+                "y": 568,
                 "restrict_visibility_rules": [
                   "setting_show_precise_sea_locations"
                 ]
@@ -2492,7 +2492,7 @@
               {
                 "map": "seachart",
                 "x": 595,
-                "y": 559,
+                "y": 564,
                 "restrict_visibility_rules": [
                   "setting_show_precise_sea_locations"
                 ]
