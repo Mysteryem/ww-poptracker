@@ -261,9 +261,9 @@
           },
           {
             "map": "seachart",
-            "x": 302,
+            "x": 303,
             "y": 126,
-            "size": 18,
+            "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -421,9 +421,9 @@
           },
           {
             "map": "seachart",
-            "x": 324,
+            "x": 323,
             "y": 126,
-            "size": 18,
+            "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -546,9 +546,9 @@
           },
           {
             "map": "seachart",
-            "x": 302,
+            "x": 303,
             "y": 146,
-            "size": 18,
+            "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
             ]
@@ -622,9 +622,9 @@
           },
           {
             "map": "seachart",
-            "x": 324,
+            "x": 323,
             "y": 146,
-            "size": 18,
+            "size": 16,
             "restrict_visibility_rules": [
               "setting_show_precise_sea_locations"
             ]
