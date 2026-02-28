@@ -498,7 +498,12 @@ function onMap(stage_name)
             local map_switch_dungeons_only_setting = Tracker:FindObjectForCode("setting_map_tracking_dungeons_only")
             if map_switch_dungeons_only_setting then
                 if not map_switch_dungeons_only_setting.Active or tab_name ~= "The Great Sea" then
-                    Tracker:UiHint("ActivateTab", tab_name)
+					if tab_name == "The Great Sea" and ENTRANCE_RANDO_ENABLED then
+						Tracker:UiHint("ActivateTab", "Entrances")
+						Tracker:UiHint("ActivateTab", "+ The Great Sea")
+					else
+						Tracker:UiHint("ActivateTab", tab_name)
+					end
                 end
                 -- Always set the last activated tab, so that if the player has the setting on that only switches when
                 -- entering a dungeon, enters a dungeon, leaves, and then re-enters, the map will switch to the dungeon
